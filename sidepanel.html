@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser AI Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="title">
+          <div class="badge">AI</div>
+          <div>
+            <div class="h1">Помощник браузера</div>
+            <div class="h2">Команды на естественном языке → действия</div>
+          </div>
+        </div>
+        <div class="status">
+          <span id="statusDot" class="dot"></span>
+          <span id="statusText">idle</span>
+        </div>
+      </header>
+
+      <section class="panel">
+        <label class="label" for="prompt">Команда</label>
+        <textarea id="prompt" class="prompt" rows="4" placeholder="Например: зайди на https://vk.com и напиши первым 3 друзьям "Привет!""></textarea>
+        <div class="row">
+          <button id="runBtn" class="btn primary">Выполнить</button>
+          <button id="stopBtn" class="btn">Стоп</button>
+        </div>
+
+        <details class="details">
+          <summary>План (JSON действий) — можно вставить вручную</summary>
+          <textarea id="plan" class="plan" rows="10" placeholder='[
+  {"type":"navigate","url":"https://example.com"},
+  {"type":"click","selector":"a.login"},
+  {"type":"type","selector":"input[name=email]","text":"test@example.com","clear":true},
+  {"type":"scroll","deltaY":800},
+  {"type":"waitFor","selector":".feed"}
+]'></textarea>
+          <div class="row">
+            <button id="runPlanBtn" class="btn">Выполнить план</button>
+            <button id="clearLogBtn" class="btn">Очистить лог</button>
+          </div>
+        </details>
+      </section>
+
+      <section class="panel">
+        <div class="row between">
+          <div class="label">Лог</div>
+          <button id="copyLogBtn" class="btn small">Скопировать</button>
+        </div>
+        <pre id="log" class="log"></pre>
+      </section>
+
+      <footer class="footer">
+        <div>
+          Планировщик: <code>POST http://localhost:8080/api/plan</code> (опционально)
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="sidepanel.js"></script>
+  </body>
+</html>

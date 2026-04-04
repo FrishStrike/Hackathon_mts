@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Browser AI Assistant",
+  "version": "0.1.0",
+  "description": "Управление реальным браузером через естественный язык: план действий + исполнение кликов/ввода/скролла.",
+  "action": {
+    "default_title": "AI Assistant"
+  },
+  "side_panel": {
+    "default_path": "ui/panel.html"
+  },
+  "permissions": ["activeTab", "scripting", "tabs", "sidePanel", "storage"],
+  "host_permissions": ["<all_urls>", "http://localhost/*", "http://127.0.0.1/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://r2cdn.perplexity.ai; img-src 'self' data: https:; connect-src 'self' http://localhost:* http://127.0.0.1:* https:;"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
