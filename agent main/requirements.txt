@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+httpx
+openai
+python-dotenv
+mcp
+groq
+anyio
+json-repair
