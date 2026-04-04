@@ -489,25 +489,35 @@
   floaters.id = 'yumi-floaters';
 
   const floaterLayout = [
-    { asset: 9, left: '8%',  top: '14%', size: 48, rotate: '-12deg', drift: '11.4s', bob: '4.0s', delay: '-1.1s' },
-    { asset: 1, left: '22%', top: '18%', size: 44, rotate: '8deg',   drift: '9.5s',  bob: '3.7s', delay: '-2.6s' },
-    { asset: 3, left: '37%', top: '13%', size: 40, rotate: '-8deg',  drift: '10.8s', bob: '4.3s', delay: '-0.7s' },
-    { asset: 6, left: '52%', top: '17%', size: 44, rotate: '-6deg',  drift: '12.2s', bob: '4.5s', delay: '-1.8s' },
-    { asset: 2, left: '68%', top: '14%', size: 42, rotate: '9deg',   drift: '10.6s', bob: '3.8s', delay: '-3.0s' },
-    { asset: 4, left: '82%', top: '19%', size: 48, rotate: '-9deg',  drift: '12.8s', bob: '4.4s', delay: '-1.5s' },
-    { asset: 9, left: '11%', top: '33%', size: 50, rotate: '14deg',  drift: '11.2s', bob: '4.2s', delay: '-2.8s' },
-    { asset: 8, left: '27%', top: '38%', size: 38, rotate: '-10deg', drift: '11.8s', bob: '4.7s', delay: '-0.9s' },
-    { asset: 0, left: '43%', top: '31%', size: 34, rotate: '12deg',  drift: '10.1s', bob: '3.6s', delay: '-2.4s' },
-    { asset: 7, left: '59%', top: '37%', size: 38, rotate: '-7deg',  drift: '10.3s', bob: '3.9s', delay: '-1.0s' },
-    { asset: 1, left: '74%', top: '33%', size: 44, rotate: '7deg',   drift: '12.0s', bob: '4.8s', delay: '-3.1s' },
-    { asset: 3, left: '87%', top: '39%', size: 36, rotate: '-11deg', drift: '9.7s',  bob: '3.7s', delay: '-0.6s' },
-    { asset: 8, left: '9%',  top: '56%', size: 40, rotate: '8deg',   drift: '11.6s', bob: '4.1s', delay: '-2.2s' },
-    { asset: 2, left: '23%', top: '63%', size: 36, rotate: '6deg',   drift: '10.9s', bob: '4.2s', delay: '-1.7s' },
-    { asset: 4, left: '38%', top: '69%', size: 42, rotate: '-8deg',  drift: '11.1s', bob: '4.0s', delay: '-2.0s' },
-    { asset: 6, left: '54%', top: '72%', size: 46, rotate: '10deg',  drift: '12.4s', bob: '4.6s', delay: '-0.8s' },
-    { asset: 9, left: '70%', top: '66%', size: 44, rotate: '-9deg',  drift: '10.7s', bob: '3.9s', delay: '-2.7s' },
-    { asset: 1, left: '84%', top: '61%', size: 40, rotate: '11deg',  drift: '11.9s', bob: '4.3s', delay: '-1.3s' },
+    { asset: 0, left: '31%', top: '47%', size: 38, rotate: '8deg',   drift: '9.5s',  bob: '3.7s', delay: '-2.6s' },
+    { asset: 1, left: '47%', top: '44%', size: 38, rotate: '-6deg',  drift: '12.2s', bob: '4.5s', delay: '-1.8s' },
+    { asset: 2, left: '61%', top: '47%', size: 36, rotate: '9deg',   drift: '10.6s', bob: '3.8s', delay: '-3.0s' },
+    { asset: 3, left: '23%', top: '60%', size: 44, rotate: '14deg',  drift: '11.2s', bob: '4.2s', delay: '-2.8s' },
+    { asset: 4, left: '35%', top: '66%', size: 40, rotate: '-10deg', drift: '11.8s', bob: '4.7s', delay: '-0.9s' },
+    { asset: 5, left: '48%', top: '58%', size: 34, rotate: '12deg',  drift: '10.1s', bob: '3.6s', delay: '-2.4s' },
+    { asset: 6, left: '60%', top: '64%', size: 38, rotate: '-7deg',  drift: '10.3s', bob: '3.9s', delay: '-1.0s' },
+    { asset: 7, left: '71%', top: '59%', size: 42, rotate: '7deg',   drift: '12.0s', bob: '4.8s', delay: '-3.1s' },
+    { asset: 8, left: '76%', top: '70%', size: 36, rotate: '-11deg', drift: '9.7s',  bob: '3.7s', delay: '-0.6s' },
+    { asset: 9, left: '27%', top: '76%', size: 42, rotate: '8deg',   drift: '11.6s', bob: '4.1s', delay: '-2.2s' },
   ];
+
+  function getResponsiveLeft(leftPercent) {
+    const width = window.innerWidth || document.documentElement.clientWidth || 0;
+    if (width > 560) return leftPercent;
+    if (leftPercent < 50) {
+      return Math.max(0.5, leftPercent - 14);
+    }
+    return Math.min(97, leftPercent + 8);
+  }
+
+  function applyFloaterLayout() {
+    Array.from(floaters.children).forEach((img, index) => {
+      const cfg = floaterLayout[index];
+      if (!cfg) return;
+      img.style.left = `${getResponsiveLeft(parseFloat(cfg.left))}%`;
+      img.style.top = cfg.top;
+    });
+  }
 
   floaterLayout.forEach((cfg, index) => {
     const img = document.createElement('img');
@@ -526,6 +536,8 @@
   });
 
   document.body.appendChild(floaters);
+  applyFloaterLayout();
+  window.addEventListener('resize', applyFloaterLayout);
 
   const stage = document.createElement('div');
   stage.id = 'yumi-stage';
