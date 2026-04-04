@@ -51,6 +51,42 @@
       max-width: 600px !important;
       z-index: 100 !important;
     }
+    [class*="composer"] textarea,[class*="query"] textarea,[class*="input-area"] textarea,
+    [class*="InputArea"] textarea,[class*="QueryInput"] textarea,[class*="chat-input"] textarea,
+    [class*="ChatInput"] textarea,form:has(textarea) textarea,
+    [class*="composer"] input[type="text"],[class*="query"] input[type="text"],
+    [class*="input-area"] input[type="text"],[class*="InputArea"] input[type="text"],
+    [class*="QueryInput"] input[type="text"],[class*="chat-input"] input[type="text"],
+    [class*="ChatInput"] input[type="text"],form:has(textarea) input[type="text"] {
+      min-height: 44px !important;
+      height: 44px !important;
+      line-height: 44px !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      display: block !important;
+      align-self: center !important;
+      overflow: hidden !important;
+      color: rgba(53, 47, 43, 0.68) !important;
+    }
+    [class*="composer"] textarea::placeholder,[class*="query"] textarea::placeholder,[class*="input-area"] textarea::placeholder,
+    [class*="InputArea"] textarea::placeholder,[class*="QueryInput"] textarea::placeholder,[class*="chat-input"] textarea::placeholder,
+    [class*="ChatInput"] textarea::placeholder,form:has(textarea) textarea::placeholder,
+    [class*="composer"] input[type="text"]::placeholder,[class*="query"] input[type="text"]::placeholder,
+    [class*="input-area"] input[type="text"]::placeholder,[class*="InputArea"] input[type="text"]::placeholder,
+    [class*="QueryInput"] input[type="text"]::placeholder,[class*="chat-input"] input[type="text"]::placeholder,
+    [class*="ChatInput"] input[type="text"]::placeholder,form:has(textarea) input[type="text"]::placeholder {
+      opacity: 0.6 !important;
+      color: rgba(213, 138, 176, 0.72) !important;
+    }
+    aside[aria-label="История чатов"] input[type="text"] {
+      color: rgba(53, 47, 43, 0.68) !important;
+    }
+    aside[aria-label="История чатов"] input[type="text"]::placeholder {
+      opacity: 0.6 !important;
+      color: rgba(53, 47, 43, 0.52) !important;
+    }
     @media (max-width: 950px) {
       body[data-yumi-mode="mini"] [class*="composer"],
       body[data-yumi-mode="mini"] [class*="query"],
@@ -90,6 +126,19 @@
     header img[src^="/avatars/"],
     main img[src^="/avatars/"] {
       display: none !important;
+    }
+
+    header h1 {
+      font-size: 28px !important;
+      line-height: 1 !important;
+    }
+
+    /* ── History drawer should fill the full extension height ── */
+    aside.sidebar-noise[aria-label="История чатов"] {
+      top: 0 !important;
+      bottom: 0 !important;
+      height: 100vh !important;
+      max-height: 100vh !important;
     }
 
     /* ── Hero stage ── */
@@ -148,7 +197,7 @@
       position: fixed !important;
       bottom: calc(var(--yumi-gap-h, 12px) - 34px) !important;
       left: -28px !important;
-      z-index: 98 !important;
+      z-index: 1 !important;
       pointer-events: none !important;
     }
     #yumi-mini.visible { display: flex; }
@@ -782,9 +831,9 @@
   // ─── Patch placeholder + скрыть плюс ─────────────────────
   function patchInput() {
     document.querySelectorAll('textarea, input[type="text"], input:not([type])').forEach(el => {
-      if (el.placeholder !== 'Чем я могу тебе помочь?') {
-        el.placeholder = 'Чем я могу тебе помочь?';
-      }
+      const isHistorySearch = !!(el.closest('aside[aria-label="История чатов"]') || el.className?.toString().includes('sidebar-input'));
+      const nextPlaceholder = isHistorySearch ? 'Что ищешь?' : 'С чем помочь?';
+      if (el.placeholder !== nextPlaceholder) el.placeholder = nextPlaceholder;
     });
     document.querySelectorAll('button, [role="button"]').forEach(el => {
       if (el.textContent.trim() === '+' || el.textContent.trim() === '＋') {
@@ -793,8 +842,20 @@
     });
   }
 
+  function patchHeader() {
+    document.querySelectorAll('header span').forEach((el) => {
+      if (el.textContent.trim().startsWith('build ')) {
+        el.style.display = 'none';
+      }
+    });
+  }
+
   // ─── Init ─────────────────────────────────────────────────
-  const observer = new MutationObserver(detectMode);
+  const observer = new MutationObserver(() => {
+    patchInput();
+    patchHeader();
+    detectMode();
+  });
 
   function init() {
     const root = document.getElementById('root');
@@ -802,8 +863,12 @@
     observer.observe(root, { childList: true, subtree: true });
     window.addEventListener('hashchange', detectMode);
     window.addEventListener('popstate', detectMode);
+    document.addEventListener('focusin', patchInput);
+    document.addEventListener('click', patchInput);
+    document.addEventListener('input', patchInput);
     detectMode();
     patchInput();
+    patchHeader();
     setAvatar('welcome');
   }
 
