@@ -1,0 +1,18 @@
+services:
+  ml-service:
+    build: .
+    container_name: hackathon-ml-service
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+    networks:
+      - hackathon-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  hackathon-net:
+    external: true

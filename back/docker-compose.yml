@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: hackathon-postgres
+    environment:
+      POSTGRES_DB: hack
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pass
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - hackathon-net
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7
+    container_name: hackathon-redis
+    ports:
+      - '6379:6379'
+    networks:
+      - hackathon-net
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  go-backend:
+    build: .
+    container_name: hackathon-go-backend
+    ports:
+      - '8080:8080'
+    environment:
+      PORT: 8080
+      POSTGRES_HOST: postgres
+      REDIS_HOST: redis
+      ML_SERVICE_URL: http://ml-service:8001
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - hackathon-net
+
+volumes:
+  postgres_data:
+
+networks:
+  hackathon-net:
+    driver: bridge
