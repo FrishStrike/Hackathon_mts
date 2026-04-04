@@ -2,7 +2,7 @@
 (function () {
   // Если скрипт инжектится повторно (роутинг/перезагрузка виджета) — чистим прошлую инстанцию,
   // чтобы Юми не "дублировалась".
-  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip', 'yumi-composer-bg'];
+  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip'];
   for (const id of existingIds) {
     const el = document.getElementById(id);
     if (el) el.remove();
@@ -39,17 +39,6 @@
   const style = document.createElement('style');
   style.id = 'yumi-style';
   style.textContent = `
-    /* ── Composer fix ── */
-    #yumi-composer-bg {
-      position: fixed !important;
-      bottom: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      height: var(--yumi-gap-h, 12px) !important;
-      background: var(--yumi-panel-bg, #fff) !important;
-      z-index: 99 !important;
-      pointer-events: none !important;
-    }
     [class*="composer"],[class*="query"],[class*="input-area"],
     [class*="InputArea"],[class*="QueryInput"],[class*="chat-input"],
     [class*="ChatInput"],form:has(textarea) {
@@ -61,6 +50,33 @@
       width: calc(100% - 32px) !important;
       max-width: 600px !important;
       z-index: 100 !important;
+    }
+    @media (max-width: 950px) {
+      body[data-yumi-mode="mini"] [class*="composer"],
+      body[data-yumi-mode="mini"] [class*="query"],
+      body[data-yumi-mode="mini"] [class*="input-area"],
+      body[data-yumi-mode="mini"] [class*="InputArea"],
+      body[data-yumi-mode="mini"] [class*="QueryInput"],
+      body[data-yumi-mode="mini"] [class*="chat-input"],
+      body[data-yumi-mode="mini"] [class*="ChatInput"],
+      body[data-yumi-mode="mini"] form:has(textarea) {
+        left: 150px !important;
+        right: 12px !important;
+        width: auto !important;
+        max-width: none !important;
+        transform: none !important;
+      }
+    }
+    @media (max-width: 950px) {
+      [class*="composer"],[class*="query"],[class*="input-area"],
+      [class*="InputArea"],[class*="QueryInput"],[class*="chat-input"],
+      [class*="ChatInput"],form:has(textarea) {
+        left: 50% !important;
+        right: auto !important;
+        width: calc(100% - 32px) !important;
+        max-width: 600px !important;
+        transform: translateX(-50%) !important;
+      }
     }
 
     /* ── Disable built-in React avatars from the bundled UI ── */
@@ -79,8 +95,7 @@
     /* ── Hero stage ── */
     #yumi-stage {
       position: fixed !important;
-      /* опускаем аватар ниже области ввода, чтобы панель поиска не заезжала на него */
-      bottom: calc(-1 * (var(--yumi-composer-h, 72px) - 12px)) !important;
+      bottom: max(-86px, calc(-1 * (var(--yumi-composer-h, 72px) - 68px))) !important;
       left: 0; right: 0;
       display: flex;
       flex-direction: column;
@@ -96,7 +111,7 @@
     }
     #yumi-aura {
       position: absolute;
-      bottom: var(--yumi-composer-h, 72px);
+      bottom: max(32px, calc(var(--yumi-composer-h, 72px) - 18px));
       left: 50%; transform: translateX(-50%);
       width: 520px; height: 400px;
       border-radius: 50%;
@@ -107,8 +122,8 @@
     #yumi-img {
       position: relative;
       z-index: 0;
-      width: min(630px, 92vw);
-      height: min(630px, 92vw);
+      width: min(900px, 96vw);
+      height: min(900px, 96vw);
       object-fit: contain;
       margin-bottom: 0;
       filter: drop-shadow(0 6px 32px rgba(244,114,182,0.25));
@@ -132,8 +147,8 @@
       flex-shrink: 0;
       position: fixed !important;
       bottom: calc(var(--yumi-gap-h, 12px) - 34px) !important;
-      left: 12px !important;
-      z-index: 9999 !important;
+      left: -28px !important;
+      z-index: 98 !important;
       pointer-events: none !important;
     }
     #yumi-mini.visible { display: flex; }
@@ -324,6 +339,49 @@
       filter: saturate(0.92) drop-shadow(0 10px 24px rgba(190, 24, 93, 0.18));
     }
 
+    @media (max-height: 820px) {
+      #yumi-stage {
+        bottom: max(-32px, calc(var(--yumi-composer-h, 72px) - 42px)) !important;
+      }
+      #yumi-aura {
+        bottom: 12px;
+        width: min(420px, 78vw);
+        height: min(280px, 34vh);
+      }
+      #yumi-img {
+        width: min(560px, 88vw, 62vh);
+        height: min(560px, 88vw, 62vh);
+      }
+    }
+
+    @media (max-height: 700px) {
+      #yumi-stage {
+        bottom: max(-22px, calc(var(--yumi-composer-h, 72px) - 32px)) !important;
+      }
+      #yumi-aura {
+        width: min(340px, 72vw);
+        height: min(220px, 28vh);
+      }
+      #yumi-img {
+        width: min(500px, 84vw, 56vh);
+        height: min(500px, 84vw, 56vh);
+      }
+    }
+
+    @media (max-width: 760px) {
+      #yumi-mini {
+        bottom: calc(var(--yumi-gap-h, 12px) - 28px) !important;
+        left: -32px !important;
+      }
+    }
+
+    @media (max-width: 560px) {
+      #yumi-mini {
+        bottom: calc(var(--yumi-gap-h, 12px) - 20px) !important;
+        left: -36px !important;
+      }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       #yumi-img, #yumi-aura, #yumi-mini img, #yumi-mini-glow {
         animation: none !important;
@@ -348,11 +406,6 @@
   stage.appendChild(aura);
   stage.appendChild(heroImg);
   document.body.appendChild(stage);
-
-  // Подложка под полем ввода
-  const composerBg = document.createElement('div');
-  composerBg.id = 'yumi-composer-bg';
-  document.body.appendChild(composerBg);
 
   // ─── Mini DOM ─────────────────────────────────────────────
   const mini = document.createElement('div');
@@ -446,6 +499,7 @@
   function setMode(newMode) {
     if (currentMode === newMode) return;
     currentMode = newMode;
+    document.body.dataset.yumiMode = newMode;
 
     if (newMode === 'mini') {
       stage.classList.add('hidden');
