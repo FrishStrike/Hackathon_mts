@@ -2,13 +2,24 @@
 (function () {
   // Если скрипт инжектится повторно (роутинг/перезагрузка виджета) — чистим прошлую инстанцию,
   // чтобы Юми не "дублировалась".
-  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip'];
+  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip', 'yumi-floaters'];
   for (const id of existingIds) {
     const el = document.getElementById(id);
     if (el) el.remove();
   }
 
   const BASE = chrome.runtime.getURL("avatars/");
+  const FLOATING_ASSETS = [
+    'bow.png',
+    'brain.jpg',
+    'bulb.png',
+    'butterfly.png',
+    'computer.png',
+    'Hello_Kitty.png',
+    'sprout.png',
+    'strawberry.png',
+    'USB_flash_driver.jpg',
+  ].map((file) => chrome.runtime.getURL(`floating-assets/${file}`));
 
   // ─── Emotion map (CLAUDE.md) ──────────────────────────────
   const EMOTION_MAP = {
@@ -34,6 +45,8 @@
   let lastTypedAt   = 0;
   let heroSwapTimer = null;
   let miniSwapTimer = null;
+  let blinkLoopTimer = null;
+  let blinkResetTimer = null;
 
   // ─── CSS ─────────────────────────────────────────────────
   const style = document.createElement('style');
@@ -157,6 +170,27 @@
     #yumi-stage.hidden {
       opacity: 0;
       transform: translateY(40px) scale(0.92);
+    }
+    #yumi-floaters {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+    #yumi-floaters.visible {
+      opacity: 1;
+    }
+    .yumi-floater {
+      position: absolute;
+      object-fit: contain;
+      image-rendering: pixelated;
+      opacity: 0.9;
+      filter: drop-shadow(0 10px 18px rgba(244, 114, 182, 0.12));
+      animation: yumiFloaterDrift var(--drift-duration, 10s) ease-in-out infinite,
+                 yumiFloaterBob var(--bob-duration, 4s) ease-in-out infinite;
+      animation-delay: var(--delay, 0s);
     }
     #yumi-aura {
       position: absolute;
@@ -311,6 +345,16 @@
       65%      { transform: scale(.99); }
       100%     { transform: scale(1.02); }
     }
+    @keyframes yumiFloaterDrift {
+      0%,100% { transform: translate3d(0, 0, 0) rotate(-4deg) scale(1); }
+      25%     { transform: translate3d(10px, -12px, 0) rotate(2deg) scale(1.04); }
+      50%     { transform: translate3d(-8px, -24px, 0) rotate(6deg) scale(0.98); }
+      75%     { transform: translate3d(12px, -8px, 0) rotate(-2deg) scale(1.02); }
+    }
+    @keyframes yumiFloaterBob {
+      0%,100% { opacity: 0.78; }
+      50%     { opacity: 0.98; }
+    }
     @keyframes yumiAura {
       0%,100% { background: radial-gradient(ellipse, rgba(244,114,182,0.55), transparent 68%); }
       50%      { background: radial-gradient(ellipse, rgba(143,189,101,0.55), transparent 68%); }
@@ -432,7 +476,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      #yumi-img, #yumi-aura, #yumi-mini img, #yumi-mini-glow {
+      #yumi-img, #yumi-aura, #yumi-mini img, #yumi-mini-glow, .yumi-floater {
         animation: none !important;
         transition: none !important;
       }
@@ -441,6 +485,48 @@
   document.head.appendChild(style);
 
   // ─── Hero DOM ─────────────────────────────────────────────
+  const floaters = document.createElement('div');
+  floaters.id = 'yumi-floaters';
+
+  const floaterLayout = [
+    { asset: 9, left: '8%',  top: '14%', size: 48, rotate: '-12deg', drift: '11.4s', bob: '4.0s', delay: '-1.1s' },
+    { asset: 1, left: '22%', top: '18%', size: 44, rotate: '8deg',   drift: '9.5s',  bob: '3.7s', delay: '-2.6s' },
+    { asset: 3, left: '37%', top: '13%', size: 40, rotate: '-8deg',  drift: '10.8s', bob: '4.3s', delay: '-0.7s' },
+    { asset: 6, left: '52%', top: '17%', size: 44, rotate: '-6deg',  drift: '12.2s', bob: '4.5s', delay: '-1.8s' },
+    { asset: 2, left: '68%', top: '14%', size: 42, rotate: '9deg',   drift: '10.6s', bob: '3.8s', delay: '-3.0s' },
+    { asset: 4, left: '82%', top: '19%', size: 48, rotate: '-9deg',  drift: '12.8s', bob: '4.4s', delay: '-1.5s' },
+    { asset: 9, left: '11%', top: '33%', size: 50, rotate: '14deg',  drift: '11.2s', bob: '4.2s', delay: '-2.8s' },
+    { asset: 8, left: '27%', top: '38%', size: 38, rotate: '-10deg', drift: '11.8s', bob: '4.7s', delay: '-0.9s' },
+    { asset: 0, left: '43%', top: '31%', size: 34, rotate: '12deg',  drift: '10.1s', bob: '3.6s', delay: '-2.4s' },
+    { asset: 7, left: '59%', top: '37%', size: 38, rotate: '-7deg',  drift: '10.3s', bob: '3.9s', delay: '-1.0s' },
+    { asset: 1, left: '74%', top: '33%', size: 44, rotate: '7deg',   drift: '12.0s', bob: '4.8s', delay: '-3.1s' },
+    { asset: 3, left: '87%', top: '39%', size: 36, rotate: '-11deg', drift: '9.7s',  bob: '3.7s', delay: '-0.6s' },
+    { asset: 8, left: '9%',  top: '56%', size: 40, rotate: '8deg',   drift: '11.6s', bob: '4.1s', delay: '-2.2s' },
+    { asset: 2, left: '23%', top: '63%', size: 36, rotate: '6deg',   drift: '10.9s', bob: '4.2s', delay: '-1.7s' },
+    { asset: 4, left: '38%', top: '69%', size: 42, rotate: '-8deg',  drift: '11.1s', bob: '4.0s', delay: '-2.0s' },
+    { asset: 6, left: '54%', top: '72%', size: 46, rotate: '10deg',  drift: '12.4s', bob: '4.6s', delay: '-0.8s' },
+    { asset: 9, left: '70%', top: '66%', size: 44, rotate: '-9deg',  drift: '10.7s', bob: '3.9s', delay: '-2.7s' },
+    { asset: 1, left: '84%', top: '61%', size: 40, rotate: '11deg',  drift: '11.9s', bob: '4.3s', delay: '-1.3s' },
+  ];
+
+  floaterLayout.forEach((cfg, index) => {
+    const img = document.createElement('img');
+    img.className = 'yumi-floater';
+    img.src = FLOATING_ASSETS[cfg.asset % FLOATING_ASSETS.length];
+    img.alt = '';
+    img.style.left = cfg.left;
+    img.style.top = cfg.top;
+    img.style.width = `${cfg.size}px`;
+    img.style.height = `${cfg.size}px`;
+    img.style.transform = `rotate(${cfg.rotate})`;
+    img.style.setProperty('--drift-duration', cfg.drift);
+    img.style.setProperty('--bob-duration', cfg.bob);
+    img.style.setProperty('--delay', cfg.delay);
+    floaters.appendChild(img);
+  });
+
+  document.body.appendChild(floaters);
+
   const stage = document.createElement('div');
   stage.id = 'yumi-stage';
 
@@ -491,6 +577,35 @@
     if (resetDelay > 0) scheduleReset(resetDelay);
   }
 
+  function clearBlinkTimers() {
+    clearTimeout(blinkLoopTimer);
+    clearTimeout(blinkResetTimer);
+    blinkLoopTimer = null;
+    blinkResetTimer = null;
+  }
+
+  function scheduleBlinkLoop() {
+    clearBlinkTimers();
+    if (!['idle', 'welcome', 'gentle'].includes(currentState)) return;
+
+    const nextDelay = 2600 + Math.round(Math.random() * 2200);
+    blinkLoopTimer = setTimeout(() => {
+      if (!['idle', 'welcome', 'gentle'].includes(currentState)) return;
+
+      const smileSrc = BASE + 'Smile.png';
+      heroImg.src = smileSrc;
+      miniImg.src = smileSrc;
+
+      blinkResetTimer = setTimeout(() => {
+        if (!['idle', 'welcome', 'gentle'].includes(currentState)) return;
+        const calmSrc = BASE + 'Normal.png';
+        heroImg.src = calmSrc;
+        miniImg.src = calmSrc;
+        scheduleBlinkLoop();
+      }, 180);
+    }, nextDelay);
+  }
+
   // ─── Смена аватара с crossfade ────────────────────────────
   function setAvatar(state) {
     if (state === currentState) return;
@@ -499,7 +614,8 @@
     mini.dataset.state = state;
 
     const emotion = EMOTION_MAP[state] ?? EMOTION_MAP.idle;
-    const newSrc  = BASE + emotion.img;
+    const calmState = ['idle', 'welcome', 'gentle'].includes(state);
+    const newSrc  = calmState ? (BASE + 'Normal.png') : (BASE + emotion.img);
     const newAnim = 'yumi-anim--' + emotion.anim;
     const nextHeroClass = `${newAnim} transitioning`;
     const nextMiniClass = `${newAnim} transitioning`;
@@ -542,23 +658,28 @@
     // Glow при активном состоянии
     const activeStates = ['thinking','searching','analyzing','comparing','error','retry'];
     mini.classList.toggle('active', activeStates.includes(state));
+    scheduleBlinkLoop();
   }
 
   // ─── Переключение режимов ─────────────────────────────────
   function setMode(newMode) {
-    if (currentMode === newMode) return;
+    const modeChanged = currentMode !== newMode;
     currentMode = newMode;
     document.body.dataset.yumiMode = newMode;
 
     if (newMode === 'mini') {
+      floaters.classList.remove('visible');
       stage.classList.add('hidden');
       mini.classList.add('visible');
+      if (!modeChanged) return;
       setAvatar('idle');
       return;
     }
 
+    floaters.classList.add('visible');
     stage.classList.remove('hidden');
     mini.classList.remove('visible');
+    if (!modeChanged) return;
     setAvatar('welcome');
   }
 
