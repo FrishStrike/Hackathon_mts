@@ -1,5 +1,13 @@
 // ─── Юми: Hero/Mini режимы + система эмоций ─────────────────
 (function () {
+  // Если скрипт инжектится повторно (роутинг/перезагрузка виджета) — чистим прошлую инстанцию,
+  // чтобы Юми не "дублировалась".
+  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip', 'yumi-composer-bg'];
+  for (const id of existingIds) {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  }
+
   const BASE = chrome.runtime.getURL("avatars/");
 
   // ─── Emotion map (CLAUDE.md) ──────────────────────────────
@@ -23,9 +31,13 @@
   let currentMode   = 'hero';
   let resetTimer    = null;
   let typingTimer   = null;
+  let lastTypedAt   = 0;
+  let heroSwapTimer = null;
+  let miniSwapTimer = null;
 
   // ─── CSS ─────────────────────────────────────────────────
   const style = document.createElement('style');
+  style.id = 'yumi-style';
   style.textContent = `
     /* ── Composer fix ── */
     #yumi-composer-bg {
@@ -49,6 +61,19 @@
       width: calc(100% - 32px) !important;
       max-width: 600px !important;
       z-index: 100 !important;
+    }
+
+    /* ── Disable built-in React avatars from the bundled UI ── */
+    .agent-avatar-frame,
+    .agent-avatar-frame-stage,
+    .agent-stage-image,
+    .agent-stage-image-intro,
+    .avatar-aura,
+    .avatar-orb,
+    .intro-stage,
+    header img[src^="/avatars/"],
+    main img[src^="/avatars/"] {
+      display: none !important;
     }
 
     /* ── Hero stage ── */
@@ -99,49 +124,40 @@
       display: none;
       align-items: center;
       justify-content: center;
-      width: 48px; height: 48px;
-      border-radius: 50%;
-      overflow: hidden;
-      cursor: pointer;
+      width: 224px;
+      height: 224px;
+      border-radius: 0;
+      overflow: visible;
+      cursor: default;
       flex-shrink: 0;
-      transition: transform 200ms ease, box-shadow 200ms ease;
       position: fixed !important;
-      top: 8px !important;
-      left: 8px !important;
+      bottom: calc(var(--yumi-gap-h, 12px) - 34px) !important;
+      left: 12px !important;
       z-index: 9999 !important;
+      pointer-events: none !important;
     }
     #yumi-mini.visible { display: flex; }
-    #yumi-mini:hover { transform: scale(1.12); }
     #yumi-mini img {
-      width: 100%; height: 100%;
-      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       transition: opacity 175ms ease, transform 175ms ease;
-      border-radius: 50%;
+      filter: drop-shadow(0 8px 18px rgba(0,0,0,0.10));
     }
     #yumi-mini img.transitioning {
       opacity: 0;
       transform: scale(0.9);
     }
-    #yumi-mini-glow {
-      position: absolute;
-      inset: -3px;
-      border-radius: 50%;
-      background: conic-gradient(
-        rgba(244,114,182,0.7),
-        rgba(143,189,101,0.7),
-        rgba(244,114,182,0.7)
-      );
-      z-index: -1;
-      animation: yumiMiniSpin 3s linear infinite;
-      opacity: 0;
-      transition: opacity 300ms;
+    #yumi-mini-glow,
+    #yumi-tooltip {
+      display: none !important;
     }
-    #yumi-mini.active #yumi-mini-glow { opacity: 1; }
 
     /* ── Tooltip ── */
     #yumi-tooltip {
       position: fixed;
-      top: 60px; left: 12px;
+      bottom: calc(var(--yumi-gap-h, 12px) + 72px);
+      left: 12px;
       background: rgba(22,28,19,0.92);
       color: #f5f0eb;
       font-size: 11px;
@@ -165,14 +181,27 @@
       0%,100% { transform: translateY(0px) scale(1); }
       50%      { transform: translateY(-12px) scale(1.015); }
     }
+    @keyframes yumiMiniFloat {
+      0%,100% { transform: translateY(0px) scale(1); }
+      50%      { transform: translateY(-6px) scale(1.02); }
+    }
     @keyframes yumiBounce {
       0%,100% { transform: translateY(0); }
       30%      { transform: translateY(-18px); }
       60%      { transform: translateY(-6px); }
     }
+    @keyframes yumiMiniBounce {
+      0%,100% { transform: translateY(0); }
+      30%      { transform: translateY(-10px); }
+      60%      { transform: translateY(-4px); }
+    }
     @keyframes yumiPulse {
       0%,100% { transform: scale(1);    opacity: 1;    }
       50%      { transform: scale(1.05); opacity: 0.82; }
+    }
+    @keyframes yumiMiniPulse {
+      0%,100% { transform: scale(1); opacity: 1; }
+      50%      { transform: scale(1.03); opacity: 0.86; }
     }
     @keyframes yumiShake {
       0%,100% { transform: translateX(0); }
@@ -180,6 +209,43 @@
       40%      { transform: translateX(9px); }
       60%      { transform: translateX(-5px); }
       80%      { transform: translateX(5px); }
+    }
+    @keyframes yumiMiniShake {
+      0%,100% { transform: translateX(0); }
+      20%      { transform: translateX(-6px); }
+      40%      { transform: translateX(6px); }
+      60%      { transform: translateX(-3px); }
+      80%      { transform: translateX(3px); }
+    }
+    @keyframes yumiSearchSweep {
+      0%,100% { transform: translateX(0) translateY(0) scale(1.02); }
+      25%      { transform: translateX(-8px) translateY(-2px) scale(1.03); }
+      50%      { transform: translateX(8px) translateY(0) scale(1.04); }
+      75%      { transform: translateX(-4px) translateY(2px) scale(1.03); }
+    }
+    @keyframes yumiAnalyzeLean {
+      0%,100% { transform: rotate(0deg) scale(1.02); }
+      25%      { transform: rotate(-1.6deg) scale(1.03); }
+      50%      { transform: rotate(.8deg) scale(1.035); }
+      75%      { transform: rotate(-.8deg) scale(1.03); }
+    }
+    @keyframes yumiCompareTilt {
+      0%,100% { transform: rotate(0deg) translateY(0); }
+      25%      { transform: rotate(-2.4deg) translateY(-3px); }
+      50%      { transform: rotate(2.4deg) translateY(0); }
+      75%      { transform: rotate(-1.4deg) translateY(2px); }
+    }
+    @keyframes yumiSuccessPop {
+      0%       { transform: scale(1); }
+      35%      { transform: scale(1.08); }
+      65%      { transform: scale(.98); }
+      100%     { transform: scale(1.03); }
+    }
+    @keyframes yumiMiniSuccessPop {
+      0%       { transform: scale(1); }
+      35%      { transform: scale(1.06); }
+      65%      { transform: scale(.99); }
+      100%     { transform: scale(1.02); }
     }
     @keyframes yumiAura {
       0%,100% { background: radial-gradient(ellipse, rgba(244,114,182,0.55), transparent 68%); }
@@ -194,6 +260,69 @@
     .yumi-anim--bounce { animation: yumiBounce 0.6s ease forwards; }
     .yumi-anim--pulse  { animation: yumiPulse  1.5s ease-in-out infinite; }
     .yumi-anim--shake  { animation: yumiShake  0.5s ease forwards; }
+    #yumi-mini .yumi-anim--float  { animation: yumiMiniFloat  2.8s ease-in-out infinite; }
+    #yumi-mini .yumi-anim--bounce { animation: yumiMiniBounce 0.55s ease forwards; }
+    #yumi-mini .yumi-anim--pulse  { animation: yumiMiniPulse  1.35s ease-in-out infinite; }
+    #yumi-mini .yumi-anim--shake  { animation: yumiMiniShake  0.45s ease forwards; }
+
+    #yumi-stage[data-state="thinking"] #yumi-aura,
+    #yumi-stage[data-state="searching"] #yumi-aura,
+    #yumi-stage[data-state="analyzing"] #yumi-aura,
+    #yumi-stage[data-state="comparing"] #yumi-aura {
+      opacity: 0.62;
+      filter: blur(68px);
+    }
+    #yumi-stage[data-state="searching"] #yumi-img,
+    #yumi-mini[data-state="searching"] img {
+      animation-name: yumiSearchSweep;
+      animation-duration: 1.9s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    #yumi-stage[data-state="analyzing"] #yumi-img,
+    #yumi-mini[data-state="analyzing"] img {
+      animation-name: yumiAnalyzeLean;
+      animation-duration: 2.1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    #yumi-stage[data-state="comparing"] #yumi-img,
+    #yumi-mini[data-state="comparing"] img {
+      animation-name: yumiCompareTilt;
+      animation-duration: 1.6s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    #yumi-stage[data-state="success"] #yumi-aura,
+    #yumi-stage[data-state="excited"] #yumi-aura {
+      opacity: 0.72;
+      filter: blur(74px);
+    }
+    #yumi-stage[data-state="success"] #yumi-img,
+    #yumi-stage[data-state="excited"] #yumi-img {
+      animation-name: yumiSuccessPop;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+    #yumi-mini[data-state="success"] img,
+    #yumi-mini[data-state="excited"] img {
+      animation-name: yumiMiniSuccessPop;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+    #yumi-stage[data-state="error"] #yumi-aura,
+    #yumi-stage[data-state="retry"] #yumi-aura {
+      opacity: 0.52;
+      filter: blur(58px);
+    }
+    #yumi-stage[data-state="error"] #yumi-img,
+    #yumi-stage[data-state="retry"] #yumi-img,
+    #yumi-mini[data-state="error"] img,
+    #yumi-mini[data-state="retry"] img {
+      filter: saturate(0.92) drop-shadow(0 10px 24px rgba(190, 24, 93, 0.18));
+    }
 
     @media (prefers-reduced-motion: reduce) {
       #yumi-img, #yumi-aura, #yumi-mini img, #yumi-mini-glow {
@@ -251,31 +380,62 @@
     setTimeout(() => tooltip.classList.remove('visible'), 2000);
   });
 
+  function getBaseState() {
+    return currentMode === 'hero' ? 'welcome' : 'idle';
+  }
+
+  function setTransientState(state, resetDelay = 0) {
+    setAvatar(state);
+    if (resetDelay > 0) scheduleReset(resetDelay);
+  }
+
   // ─── Смена аватара с crossfade ────────────────────────────
   function setAvatar(state) {
     if (state === currentState) return;
     currentState = state;
+    stage.dataset.state = state;
+    mini.dataset.state = state;
 
     const emotion = EMOTION_MAP[state] ?? EMOTION_MAP.idle;
     const newSrc  = BASE + emotion.img;
     const newAnim = 'yumi-anim--' + emotion.anim;
+    const nextHeroClass = `${newAnim} transitioning`;
+    const nextMiniClass = `${newAnim} transitioning`;
+    const currentHeroSrc = heroImg.getAttribute('src');
+    const currentMiniSrc = miniImg.getAttribute('src');
+    const heroAlreadyMatches = currentHeroSrc === newSrc;
+    const miniAlreadyMatches = currentMiniSrc === newSrc;
+
+    clearTimeout(heroSwapTimer);
+    clearTimeout(miniSwapTimer);
 
     // Hero
-    heroImg.classList.add('transitioning');
-    setTimeout(() => {
-      heroImg.src = newSrc;
-      heroImg.className = newAnim + ' transitioning';
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => heroImg.classList.remove('transitioning'));
-      });
-    }, 175);
+    if (heroAlreadyMatches) {
+      heroImg.className = newAnim;
+    } else {
+      heroImg.classList.add('transitioning');
+      heroSwapTimer = setTimeout(() => {
+        heroImg.src = newSrc;
+        heroImg.className = nextHeroClass;
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => heroImg.classList.remove('transitioning'));
+        });
+      }, 175);
+    }
 
     // Mini
-    miniImg.classList.add('transitioning');
-    setTimeout(() => {
-      miniImg.src = newSrc;
-      miniImg.classList.remove('transitioning');
-    }, 175);
+    if (miniAlreadyMatches) {
+      miniImg.className = newAnim;
+    } else {
+      miniImg.classList.add('transitioning');
+      miniSwapTimer = setTimeout(() => {
+        miniImg.src = newSrc;
+        miniImg.className = nextMiniClass;
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => miniImg.classList.remove('transitioning'));
+        });
+      }, 175);
+    }
 
     // Glow при активном состоянии
     const activeStates = ['thinking','searching','analyzing','comparing','error','retry'];
@@ -290,11 +450,13 @@
     if (newMode === 'mini') {
       stage.classList.add('hidden');
       mini.classList.add('visible');
-    } else {
-      stage.classList.remove('hidden');
-      mini.classList.remove('visible');
-      setAvatar('welcome');
+      setAvatar('idle');
+      return;
     }
+
+    stage.classList.remove('hidden');
+    mini.classList.remove('visible');
+    setAvatar('welcome');
   }
 
 
@@ -302,7 +464,7 @@
   function scheduleReset(delay = 2500) {
     clearTimeout(resetTimer);
     resetTimer = setTimeout(() => {
-      setAvatar(currentMode === 'hero' ? 'welcome' : 'idle');
+      setAvatar(getBaseState());
     }, delay);
   }
 
@@ -442,11 +604,13 @@
       es.addEventListener('message', (e) => {
         try {
           const data = JSON.parse(e.data);
-          const step = data.step ?? '';
-          const status = data.status ?? '';
+          const step = String(data.step ?? '').toLowerCase();
+          const detail = String(data.detail ?? '').toLowerCase();
+          const status = String(data.status ?? '').toLowerCase();
           if (step === 'started'   || status === 'processing') setAvatar('thinking');
           else if (step.includes('search'))                    setAvatar('searching');
-          else if (step.includes('analyz'))                    setAvatar('analyzing');
+          else if (step.includes('analyz') || detail.includes('analyz')) setAvatar('analyzing');
+          else if (step.includes('compar') || detail.includes('compar')) setAvatar('comparing');
           else if (step === 'completed' || status === 'done') { setAvatar('success'); scheduleReset(); }
           else if (status === 'failed'  || status === 'error') { setAvatar('error');  scheduleReset(); }
         } catch {}
@@ -461,14 +625,24 @@
   // ─── Typing detection ─────────────────────────────────────
   document.addEventListener('input', (e) => {
     if (e.target.tagName !== 'TEXTAREA' && e.target.tagName !== 'INPUT') return;
-    if (currentMode !== 'hero') return;
 
     if (e.target.value.trim().length > 0) {
+      lastTypedAt = Date.now();
       setAvatar('userTyping');
       clearTimeout(typingTimer);
-      typingTimer = setTimeout(() => setAvatar('welcome'), 3000);
+      typingTimer = setTimeout(() => setAvatar(getBaseState()), currentMode === 'hero' ? 3000 : 1400);
     } else {
-      setAvatar('welcome');
+      setAvatar(getBaseState());
+    }
+  }, true);
+
+  document.addEventListener('click', (e) => {
+    const target = e.target instanceof Element ? e.target : null;
+    if (!target) return;
+
+    const retryButton = target.closest('button');
+    if (retryButton && /повторить запрос/i.test(retryButton.textContent || '')) {
+      setTransientState('retry', 1200);
     }
   }, true);
 
@@ -495,11 +669,60 @@
     }
   }
 
+  function detectErrorState() {
+    const main = document.querySelector('main') || document.getElementById('root') || document.body;
+    if (!main) return false;
+
+    const errorText = Array.from(main.querySelectorAll('p, div, span')).some((node) => {
+      const text = (node.textContent || '').trim();
+      return text.includes('Не удалось выполнить запрос');
+    });
+
+    const retryButton = Array.from(main.querySelectorAll('button')).some((button) => {
+      return /повторить запрос/i.test(button.textContent || '');
+    });
+
+    return errorText || retryButton;
+  }
+
   // ─── Hero/Mini по наличию сообщений ──────────────────────
   function detectMode() {
     measureComposer();
-    // Кружок с мини-аватаром вверху убран — всегда оставляем hero внизу.
-    setMode('hero');
+    // Главная: `#/` → hero. Чат: `#/results` → mini.
+    const hash = String(window.location.hash ?? '');
+    const hashPath = (hash.startsWith('#') ? hash.slice(1) : hash).split('?')[0].split('#')[0];
+    const isResultsRoute =
+      hashPath === '/results' ||
+      hashPath.startsWith('/results/') ||
+      String(window.location.pathname ?? '') === '/results' ||
+      String(window.location.pathname ?? '').startsWith('/results/');
+
+    // В UI чаты живут в localStorage; это надёжнее, чем DOM (превью в сайдбаре может иметь похожие классы).
+    let hasActiveChatMessages = false;
+    try {
+      const raw = window.localStorage.getItem('browser-assistant-chats');
+      if (raw) {
+        const data = JSON.parse(raw);
+        const activeChatId = data?.activeChatId ?? null;
+        const chats = Array.isArray(data?.chats) ? data.chats : [];
+        const active = chats.find((c) => c?.id === activeChatId);
+        hasActiveChatMessages = Array.isArray(active?.messages) && active.messages.length > 0;
+      }
+    } catch {}
+
+    // fallback, если storage ещё пустой/сломался
+    if (!hasActiveChatMessages) {
+      const main = document.querySelector('main') || document.getElementById('root') || document.body;
+      hasActiveChatMessages = !!main.querySelector('.message-in, .message-out, .assistant-msg');
+    }
+
+    const isChatThread = isResultsRoute || hasActiveChatMessages;
+    setMode(isChatThread ? 'mini' : 'hero');
+
+    if (detectErrorState()) {
+      setAvatar('error');
+      clearTimeout(resetTimer);
+    }
   }
 
   // ─── Patch placeholder + скрыть плюс ─────────────────────
@@ -523,6 +746,8 @@
     const root = document.getElementById('root');
     if (!root) { setTimeout(init, 100); return; }
     observer.observe(root, { childList: true, subtree: true });
+    window.addEventListener('hashchange', detectMode);
+    window.addEventListener('popstate', detectMode);
     detectMode();
     patchInput();
     setAvatar('welcome');
