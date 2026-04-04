@@ -1,0 +1,31 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - navigation "navigation" [ref=e11]:
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - generic [ref=e14]: Main navigation menu closed
+            - button "Menu" [ref=e15] [cursor=pointer]:
+              - generic [ref=e16]: Menu
+              - img [ref=e17]
+      - generic [ref=e20]:
+        - heading "DuckDuckGo" [level=1] [ref=e21]
+        - heading "DuckDuckGo" [level=1] [ref=e22]
+        - img "DuckDuckGo Logo" [ref=e24]
+        - search "Searchbox" [ref=e26]:
+          - generic [ref=e28]:
+            - combobox "Search with DuckDuckGo" [active] [ref=e29]
+            - button "Search" [disabled] [ref=e31] [cursor=pointer]:
+              - img [ref=e32]
+        - generic [ref=e34]:
+          - generic [ref=e36]:
+            - img [ref=e37]
+            - generic [ref=e41]:
+              - paragraph [ref=e42]: Unexpected error. Please try again.
+              - paragraph [ref=e43]: If error persists, please email the code below to searcherror@duckduckgo.com
+              - paragraph [ref=e44]: "Error Code: d4cd0dabcf4caa22ad92fab40844c786"
+          - link "Download DuckDuckGo Browser" [ref=e46] [cursor=pointer]:
+            - /url: https://duckduckgo.com/windows?origin=funnel_marketing_searchresults__hero
+            - img [ref=e47]
+            - text: Download DuckDuckGo Browser
+  - alert [ref=e49]

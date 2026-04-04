@@ -715,117 +715,99 @@
     }
   });
 
-  // ─── Хранилище фейковых результатов для React ────────────
-  const fakeResults = {};
+  // ─── Конфигурация бэкендов ────────────────────────────────
+const GO_BACKEND = 'http://localhost:8080';
+const ML_SERVICE = 'http://localhost:8001';
 
-  // ─── Перехват fetch ───────────────────────────────────────
-  const origFetch = window.fetch.bind(window);
-  window.fetch = async function (...args) {
-    const url = typeof args[0] === 'string' ? args[0] : args[0]?.url ?? '';
-    const init = args[1] ?? {};
+// ─── Перехват fetch ───────────────────────────────────────
+const origFetch = window.fetch.bind(window);
 
-    // ── Перехват POST /api/query → редирект на /api/plan ──
+// Проверяем доступность Go-бэкенда один раз при загрузке
+let goBackendAvailable = false;
+origFetch(`${GO_BACKEND}/api/health`, { method: 'GET' })
+  .then(r => { goBackendAvailable = r.ok; })
+  .catch(() => { goBackendAvailable = false; });
+
+window.fetch = async function (...args) {   // ← эта строка пропала, верни её
+  const url = typeof args[0] === 'string' ? args[0] : args[0]?.url ?? '';
+  const init = args[1] ?? {};
+
+    // ── Перехват POST /api/query ──
     if ((url.includes('/api/query') || url.endsWith('/query')) &&
         (init.method ?? 'GET').toUpperCase() === 'POST') {
 
       setAvatar('thinking');
 
+      let prompt = '';
       try {
-        // Читаем промпт из тела запроса
-        let prompt = '';
+        const body = typeof init.body === 'string'
+          ? JSON.parse(init.body)
+          : init.body;
+        prompt = body?.query ?? body?.text ?? body?.prompt ?? '';
+      } catch {}
+
+      let requestId = 'local-' + Date.now();
+
+      // Если Go-бэкенд доступен — отправляем для персистенции
+      if (goBackendAvailable) {
         try {
-          const body = typeof init.body === 'string'
-            ? JSON.parse(init.body)
-            : init.body;
-          prompt = body?.query ?? body?.text ?? body?.prompt ?? '';
-        } catch {}
-
-        // Зовём /api/plan
-        const planResp = await origFetch('http://localhost:8001/api/plan', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ prompt }),
-        });
-
-        const planData = await planResp.json();
-        const actions = Array.isArray(planData) ? planData
-                      : Array.isArray(planData?.actions) ? planData.actions
-                      : [];
-
-        if (actions.length > 0) {
-          setAvatar('searching');
-          // Выполняем actions через background.js
-          chrome.runtime.sendMessage({ type: 'RUN_PLAN', actions }, (resp) => {
-            if (resp?.ok) { setAvatar('success'); scheduleReset(); }
-            else          { setAvatar('error');   scheduleReset(); }
+          const goResp = await origFetch(`${GO_BACKEND}/api/query`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query: prompt }),
           });
-        }
-
-        // Возвращаем фейковый request_id в React
-        const fakeId = 'plan-' + Date.now();
-        fakeResults[fakeId] = {
-          id: fakeId,
-          payload: {
-            status: 'completed',
-            trace: actions.map((a, i) => `Шаг ${i+1}: ${a.type}${a.url ? ' → ' + a.url : ''}`),
-            sources: actions.filter(a => a.url).map(a => a.url),
-            news: [],
-            item: null,
-          }
-        };
-
-        return new Response(JSON.stringify({ request_id: fakeId }), {
-          status: 200,
-          headers: { 'Content-Type': 'application/json' },
-        });
-
-      } catch (e) {
-        setAvatar('error');
-        scheduleReset();
-        return new Response(JSON.stringify({ request_id: 'plan-err' }), {
-          status: 200,
-          headers: { 'Content-Type': 'application/json' },
-        });
+          const goData = await goResp.json();
+          requestId = goData.request_id || requestId;
+        } catch {}
       }
-    }
 
-    // ── Перехват GET /api/result/:id для фейковых ID ──────
-    if (url.includes('/api/result/')) {
-      const id = url.split('/api/result/').pop();
-      if (fakeResults[id]) {
-        return new Response(JSON.stringify(fakeResults[id]), {
-          status: 200,
-          headers: { 'Content-Type': 'application/json' },
-        });
-      }
-    }
 
-    // ── /api/health → фейковый ok ─────────────────────────
-    if (url.includes('/api/health')) {
-      return new Response(JSON.stringify({ status: 'ok', time: new Date().toISOString() }), {
-        status: 200, headers: { 'Content-Type': 'application/json' },
+
+      return new Response(JSON.stringify({ request_id: requestId }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
       });
     }
 
-    // ── /api/history → пустой массив ──────────────────────
-    if (url.includes('/api/history')) {
-      return new Response(JSON.stringify([]), {
-        status: 200, headers: { 'Content-Type': 'application/json' },
-      });
+    // ── /api/result, /api/health, /api/history ─────────────
+    if (url.includes('/api/result/') || url.includes('/api/health') || url.includes('/api/history')) {
+      if (goBackendAvailable) {
+        const apiPath = url.substring(url.indexOf('/api/'));
+        return origFetch(`${GO_BACKEND}${apiPath}`, {
+          method: init.method ?? 'GET',
+          headers: init.headers,
+        });
+      }
+      // Fallback без Go-бэкенда
+      if (url.includes('/api/health')) {
+        return new Response(JSON.stringify({ status: 'ok', time: new Date().toISOString() }), {
+          status: 200, headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      if (url.includes('/api/history')) {
+        return new Response(JSON.stringify([]), {
+          status: 200, headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      if (url.includes('/api/result/')) {
+        return new Response(JSON.stringify({ status: 'pending', id: url.split('/').pop() }), {
+          status: 200, headers: { 'Content-Type': 'application/json' },
+        });
+      }
     }
 
     // ── Остальные запросы — без изменений ─────────────────
     return origFetch(...args);
   };
 
-  // ─── Перехват EventSource → SSE ──────────────────────────
+  // ─── Перехват EventSource → SSE (проксируем на Go-бэкенд) ─
   const OrigEventSource = window.EventSource;
   window.EventSource = function (url, opts) {
-    // Для фейковых plan-* ID — возвращаем закрытый EventSource сразу
     if (typeof url === 'string' && url.includes('/api/stream/')) {
       const id = url.split('/api/stream/').pop().split('?')[0];
-      if (id.startsWith('plan-')) {
-        // Имитируем completed через фейковый EventSource
+
+      // Для локальных ID (когда Go-бэкенд был недоступен) — фейковый SSE
+      if (id.startsWith('local-')) {
         const fake = new OrigEventSource('data:text/event-stream,', opts);
         setTimeout(() => {
           fake.dispatchEvent(new MessageEvent('message', {
@@ -835,8 +817,9 @@
         return fake;
       }
 
-      // Реальный SSE — слушаем события агента
-      const es = new OrigEventSource(url, opts);
+      // Реальный SSE через Go-бэкенд
+      const realUrl = `${GO_BACKEND}/api/stream/${id}`;
+      const es = new OrigEventSource(realUrl, opts);
       es.addEventListener('message', (e) => {
         try {
           const data = JSON.parse(e.data);

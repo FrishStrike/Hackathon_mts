@@ -1,7 +1,0 @@
-.env
-__pycache__/
-*.pyc
-*.pyo
-.playwright-mcp/
-node_modules/
-*.log

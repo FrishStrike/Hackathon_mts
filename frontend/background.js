@@ -1,4 +1,5 @@
 const DEFAULT_PLANNER_URL = "http://localhost:8001/api/plan";
+const DEFAULT_STEP_URL = "http://localhost:8001/api/step";
 
 let isRunning = false;
 let abortRequested = false;
@@ -15,12 +16,6 @@ const sendToPanel = async (msg) => {
 
 const log = (line) => sendToPanel({ type: "LOG", line });
 const setStatus = (kind, text) => sendToPanel({ type: "STATUS", kind, text });
-
-const getActiveTab = async () => {
-  const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
-  if (!tab?.id) throw new Error("Нет активной вкладки");
-  return tab;
-};
 
 const waitForTabComplete = async (tabId, timeoutMs = 30_000) => {
   const start = Date.now();
@@ -51,15 +46,143 @@ const runActionInTab = async (tabId, action) => {
   return resp;
 };
 
+const getPageText = async (tabId) => {
+  try {
+    const resp = await chrome.tabs.sendMessage(tabId, {
+      type: "RUN_ACTION",
+      action: { type: "extractText", selector: "body" }
+    });
+    return resp?.text?.slice(0, 3000) ?? "";
+  } catch {
+    return "";
+  }
+};
+
+const getInteractiveElements = async (tabId) => {
+  try {
+    const resp = await chrome.tabs.sendMessage(tabId, {
+      type: "RUN_ACTION",
+      action: { type: "extractInteractive" }
+    });
+    return resp?.text ?? "";
+  } catch {
+    return "";
+  }
+};
+
+const ensureContentScript = async (tabId) => {
+  try {
+    await chrome.scripting.executeScript({
+      target: { tabId },
+      files: ["contentScript.js"],
+    });
+  } catch {
+    // already injected or no access
+  }
+  await sleep(100);
+};
+
+// ─── Пошаговый агент (через /api/step + Gemini) ──────────────
+const executeAgentLoop = async (prompt) => {
+  isRunning = true;
+  abortRequested = false;
+  await setStatus("busy", "thinking…");
+
+  const history = [];
+  const MAX_STEPS = 10;
+
+  try {
+    // Создаём ОТДЕЛЬНУЮ вкладку для работы агента
+    const tab = await chrome.tabs.create({ url: "about:blank", active: true });
+    const tabId = tab.id;
+    await log(`CREATED TAB: ${tabId}`);
+
+    for (let i = 0; i < MAX_STEPS; i++) {
+      if (abortRequested) throw new Error("Stopped by user");
+
+      // Получаем актуальное состояние нашей вкладки
+      const currentTab = await chrome.tabs.get(tabId);
+      const currentUrl = currentTab.url || "";
+
+      // Инжектим content script после навигации
+      if (currentUrl.startsWith("http")) {
+        await ensureContentScript(tabId);
+      }
+
+      const pageText = currentUrl.startsWith("http") ? await getPageText(tabId) : "";
+      const interactive = currentUrl.startsWith("http") ? await getInteractiveElements(tabId) : "";
+
+      await log(`STEP ${i + 1}: url=${currentUrl.slice(0, 60)}...`);
+
+      const resp = await fetch(DEFAULT_STEP_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          prompt,
+          url: currentUrl,
+          page_text: pageText,
+          interactive_elements: interactive,
+          history,
+        }),
+      });
+
+      const action = await resp.json();
+      await log(`ACTION: ${JSON.stringify(action)}`);
+
+      if (action.type === "done") {
+        await setStatus("ok", "done");
+        await log(`ANSWER: ${action.answer}`);
+        break;
+      }
+
+      history.push(action);
+
+      if (action.type === "navigate") {
+        await chrome.tabs.update(tabId, { url: action.url });
+        try {
+          await waitForTabComplete(tabId, 15000);
+        } catch {
+          await log("WARN: page load timeout, continuing...");
+        }
+        await sleep(1000);
+        continue;
+      }
+
+      // click/type/scroll — нужен content script
+      if (currentUrl.startsWith("http")) {
+        await ensureContentScript(tabId);
+        try {
+          await runActionInTab(tabId, action);
+        } catch (e) {
+          await log(`WARN: action failed: ${e.message}`);
+        }
+      }
+      await sleep(300);
+    }
+
+    await setStatus("ok", "done");
+    await log("DONE");
+  } catch (e) {
+    await setStatus("err", "error");
+    await log(`ERROR: ${e.message}`);
+  } finally {
+    isRunning = false;
+    abortRequested = false;
+  }
+};
+
+// ─── Выполнение плана (массив действий) ──────────────────────
 const executePlan = async (actions) => {
   if (!Array.isArray(actions)) throw new Error("actions must be an array");
-  const tab = await getActiveTab();
+
+  // Создаём ОТДЕЛЬНУЮ вкладку
+  const tab = await chrome.tabs.create({ url: "about:blank", active: true });
   const tabId = tab.id;
 
   isRunning = true;
   abortRequested = false;
   await setStatus("busy", "running…");
-  await log(`ACTIVE TAB: ${tab.url ?? "(unknown)"}`);
+  await log(`CREATED TAB: ${tabId}`);
 
   try {
     for (let i = 0; i < actions.length; i += 1) {
@@ -72,12 +195,25 @@ const executePlan = async (actions) => {
         const url = String(action.url ?? "");
         if (!url) throw new Error("navigate.url is required");
         await chrome.tabs.update(tabId, { url });
-        await waitForTabComplete(tabId, action.timeoutMs ?? 30_000);
-        await sleep(150);
+        try {
+          await waitForTabComplete(tabId, action.timeoutMs ?? 30_000);
+        } catch {
+          await log("WARN: page load timeout, continuing...");
+        }
+        await sleep(500);
+        const currentTab = await chrome.tabs.get(tabId);
+        if (currentTab.url?.startsWith("http")) {
+          await ensureContentScript(tabId);
+        }
         continue;
       }
 
-      await runActionInTab(tabId, action);
+      await ensureContentScript(tabId);
+      try {
+        await runActionInTab(tabId, action);
+      } catch (e) {
+        await log(`WARN: action failed: ${e.message}`);
+      }
       await sleep(action.delayMs ?? 200);
     }
 
@@ -149,17 +285,8 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
           return;
         }
 
-        await setStatus("busy", "planning…");
-
-        let actions = null;
-        if (isJsonArray(prompt)) {
-          actions = JSON.parse(prompt);
-        } else {
-          actions = await planWithBackend(prompt);
-        }
-
-        await log(`PLANNED: ${actions.length} actions`);
-        executePlan(actions).catch((e) => {
+        // Используем пошаговый агент (через /api/step)
+        executeAgentLoop(prompt).catch((e) => {
           setStatus("err", "error");
           log(`ERROR: ${e.message}`);
         });
@@ -177,4 +304,3 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
 
   return true;
 });
-

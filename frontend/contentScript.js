@@ -125,6 +125,54 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
         return;
       }
 
+      if (type === "extractInteractive") {
+        const elements = [];
+        const seen = new Set();
+        const MAX_ELEMENTS = 40;
+
+        const buildSelector = (el) => {
+          if (el.id) return `#${CSS.escape(el.id)}`;
+          if (el.dataset?.testid) return `[data-testid="${el.dataset.testid}"]`;
+          if (el.name) return `${el.tagName.toLowerCase()}[name="${el.name}"]`;
+          if (el.getAttribute("aria-label")) return `${el.tagName.toLowerCase()}[aria-label="${el.getAttribute("aria-label")}"]`;
+          const tag = el.tagName.toLowerCase();
+          const cls = Array.from(el.classList).slice(0, 2).join(".");
+          if (cls) return `${tag}.${cls}`;
+          return tag;
+        };
+
+        const selectors = [
+          "a[href]", "button", "input:not([type=hidden])",
+          "textarea", "select", "[role=button]", "[role=link]", "[onclick]",
+        ];
+
+        for (const sel of selectors) {
+          if (elements.length >= MAX_ELEMENTS) break;
+          for (const el of document.querySelectorAll(sel)) {
+            if (elements.length >= MAX_ELEMENTS) break;
+            const rect = el.getBoundingClientRect();
+            if (rect.width === 0 || rect.height === 0) continue;
+            if (el.offsetParent === null && el.tagName !== "BODY") continue;
+
+            const text = (el.textContent || el.value || el.placeholder || el.alt || "").trim().slice(0, 60);
+            if (!text) continue;
+
+            const selector = buildSelector(el);
+            const key = `${selector}|${text}`;
+            if (seen.has(key)) continue;
+            seen.add(key);
+
+            const tag = el.tagName.toLowerCase();
+            const href = el.href ? ` href="${el.href.slice(0, 80)}"` : "";
+            const type_attr = el.type ? ` type="${el.type}"` : "";
+            elements.push(`[${tag}${type_attr}${href}] selector="${selector}" text="${text}"`);
+          }
+        }
+
+        sendResponse({ ok: true, text: elements.join("\n") });
+        return;
+      }
+
       sendResponse({ ok: false, error: `Unsupported action: ${type}` });
     } catch (e) {
       sendResponse({ ok: false, error: e.message });

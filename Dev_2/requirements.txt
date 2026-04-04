@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-httpx
-feedparser
-scikit-learn
-python-dateutil
-pydantic

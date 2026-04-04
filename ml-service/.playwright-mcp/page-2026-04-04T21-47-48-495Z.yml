@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Конфиденциальный поиск" [ref=e17]: Курс доллара к рублю
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - link "Защита. Конфиденциальность. Спокойствие." [ref=e24] [cursor=pointer]:
+            - /url: /compare-privacy
+          - button "Открыть меню" [ref=e25] [cursor=pointer]:
+            - generic [ref=e26]: Открыть меню
+            - img [ref=e27]
+      - navigation [ref=e33]:
+        - list [ref=e34]:
+          - listitem [ref=e35]:
+            - link "Все" [ref=e36] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&ia=web
+              - img [ref=e37]
+              - text: Все
+          - listitem [ref=e39]:
+            - link "Изображения" [ref=e40] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&ia=images&iax=images
+          - listitem [ref=e41]:
+            - link "Видео" [ref=e42] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&ia=videos&iax=videos
+          - listitem [ref=e43]:
+            - link "Новости" [ref=e44] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&ia=news&iar=news
+          - listitem [ref=e45]:
+            - link "Карты" [ref=e46] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&iaxm=maps
+          - listitem [ref=e47]:
+            - link "Покупки" [ref=e48] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&ia=shopping&iax=shopping
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Duck.ai" [ref=e52] [cursor=pointer]:
+              - /url: /?q=%D0%9A%D1%83%D1%80%D1%81+%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D0%B0+%D0%BA+%D1%80%D1%83%D0%B1%D0%BB%D1%8E&ia=chat
+              - img [ref=e53]
+              - text: Duck.ai
+          - listitem [ref=e56]:
+            - button "Настройки поиска ✀" [ref=e58] [cursor=pointer]:
+              - img [ref=e59]
+              - generic [ref=e61]: Настройки поиска
+              - generic [ref=e64]: ✀
+    - navigation [ref=e71]:
+      - generic [ref=e74] [cursor=pointer]:
+        - generic [ref=e82]: Защищено
+        - img [ref=e83]: ▼
+      - generic [ref=e87] [cursor=pointer]:
+        - generic [ref=e90]:
+          - switch "✓" [ref=e91]: ✓
+          - generic [ref=e93]: Нидерланды
+        - img [ref=e94]: ▼
+      - generic [ref=e98] [cursor=pointer]:
+        - generic [ref=e99]: "Безопасный поиск: умеренный"
+        - img [ref=e100]: ▼
+      - generic [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: За всё время
+        - img [ref=e106]: ▼
+    - list [ref=e109]:
+      - button "Закрыть меню" [ref=e110] [cursor=pointer]:
+        - generic [ref=e111]: Закрыть меню
+        - img [ref=e112]
+      - list [ref=e114]:
+        - listitem [ref=e115]: Поиск
+        - listitem [ref=e116]:
+          - link "Стартовая страница" [ref=e117] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e118]:
+          - link "Темы" [ref=e119] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e120]:
+          - link "Настройки" [ref=e121] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e122]:
+        - listitem [ref=e123]: Поделитесь отзывом
+        - listitem [ref=e124]:
+          - generic [ref=e127]:
+            - button "Positive feedback" [ref=e128] [cursor=pointer]:
+              - img [ref=e129]
+            - button "Negative feedback" [ref=e132] [cursor=pointer]:
+              - img [ref=e133]
+      - list [ref=e136]:
+        - listitem [ref=e137]: Загрузки
+        - listitem [ref=e138]:
+          - link "Браузер для iOS" [ref=e139] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e140]:
+          - link "Браузер для Android" [ref=e141] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e142]:
+          - link "Браузер для Mac" [ref=e143] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e144]:
+          - link "Браузер для Windows" [ref=e145] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e146]: Расширения для браузера
+      - list [ref=e147]:
+        - listitem [ref=e148]: DuckDuckGo также предлагает...
+        - listitem
+        - listitem [ref=e149]:
+          - link "Подписка DuckDuckGo" [ref=e150] [cursor=pointer]:
+            - /url: /pro?origin=funnel_pro_searchresults
+        - listitem [ref=e151]:
+          - link "Duck.ai" [ref=e152] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e153]:
+          - link "Защита электронной почты" [ref=e154] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e155]:
+          - link "Новостная рассылка" [ref=e156] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e157]:
+          - link "Блог" [ref=e158] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e159]:
+          - link "Подкаст" [ref=e160] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+      - list [ref=e161]:
+        - listitem [ref=e162]: Узнать Больше
+        - listitem [ref=e163]:
+          - link "Что нового" [ref=e164] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e165]:
+          - link "Сравнить уровни защиты" [ref=e166] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e167]:
+          - link "О нашем браузере" [ref=e168] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e169]:
+          - link "Несколько слов о DuckDuckGo" [ref=e170] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e171]:
+        - listitem [ref=e172]: Другие ресурсы
+        - listitem [ref=e173]:
+          - link "Помощь" [ref=e174] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e175]:
+          - link "Сообщество" [ref=e176] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e177]:
+          - link "Вакансии" [ref=e178] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e179]:
+          - link "Политика конфиденциальности" [ref=e180] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e181]:
+          - link "Условия предоставления услуг" [ref=e182] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e183]:
+          - link "Медиа-кит" [ref=e184] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e185]:
+          - link "Реклама в результатах поиска" [ref=e186] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e192]:
+    - img [ref=e193]
+    - generic [ref=e208]:
+      - heading "Наш браузер для Windows" [level=3] [ref=e209]
+      - paragraph [ref=e210]: Защита ваших данных при поиске и просмотре.
+    - link "Скачать" [ref=e211] [cursor=pointer]:
+      - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__footercard
+      - img [ref=e212]
+      - text: Скачать
+  - generic [ref=e216]:
+    - generic [ref=e217]: К сожалению, боты тоже используют DuckDuckGo.
+    - generic [ref=e218]: Выполните задание, чтобы подтвердить, что поисковый запрос поступил не от бота.
+    - generic [ref=e219]: "Выберите все клетки, где есть утка:"
+    - button "Подтвердить" [ref=e241] [cursor=pointer]
+  - button "Поделитесь отзывом" [ref=e245] [cursor=pointer]

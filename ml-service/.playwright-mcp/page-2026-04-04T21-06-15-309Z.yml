@@ -1,0 +1,434 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e14]:
+        - link [ref=e16] [cursor=pointer]:
+          - /url: /contactBR/
+        - link "Версия для слабовидящих" [ref=e18] [cursor=pointer]:
+          - /url: "#"
+        - link "EN" [ref=e21] [cursor=pointer]:
+          - /url: /Localization/SwitchLanguage?url=%2F&from=ru-RU&to=en-CB
+        - link "Поиск по сайту" [ref=e23] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e25]: Поиск по сайту
+    - generic [ref=e29]:
+      - link [ref=e33] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e36]:
+        - link [ref=e38] [cursor=pointer]:
+          - /url: /contactBR/
+        - link "Версия для слабовидящих" [ref=e40] [cursor=pointer]:
+          - /url: "#"
+        - link "EN" [ref=e43] [cursor=pointer]:
+          - /url: /Localization/SwitchLanguage?url=%2F&from=ru-RU&to=en-CB
+        - link "Поиск по сайту" [ref=e45] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e47]: Поиск по сайту
+    - navigation [ref=e48]:
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - link "О Банке России" [ref=e51] [cursor=pointer]:
+            - /url: /about_br/
+        - listitem [ref=e52]:
+          - link "Деятельность" [ref=e53] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e54]:
+          - link "Финансовые рынки" [ref=e55] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e56]:
+          - link "Сервисы" [ref=e57] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e58]:
+          - link "Осторожно, мошенники!" [ref=e59] [cursor=pointer]:
+            - /url: /beware/
+  - main [ref=e60]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e80]:
+            - generic [ref=e83]:
+              - link "№ 8 (2597) Вестник Банка России от 25 марта 2026 года Перейти":
+                - /url: /Queries/XsltBlock/File/131643/-1/2597
+                - generic: № 8 (2597)
+                - generic:
+                  - text: Вестник
+                  - text: Банка России
+                - generic: от 25 марта 2026 года
+                - generic:
+                  - generic: Перейти
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - text: Центральный банк
+                  - text: Российской Федерации
+                - generic [ref=e86]: Обеспечиваем ценовую и финансовую стабильность, создаем условия для устойчивого роста экономики
+              - link "Журнал «Деньги и кредит» № 1, Март 2026 Перейти":
+                - /url: https://rjmf.econs.online/2026/1/
+                - generic: Журнал
+                - generic: «Деньги и кредит»
+                - generic: № 1, Март 2026
+                - generic:
+                  - generic: Перейти
+              - link "№ 8 (2597) Вестник Банка России от 25 марта 2026 года Перейти":
+                - /url: /Queries/XsltBlock/File/131643/-1/2597
+                - generic: № 8 (2597)
+                - generic:
+                  - text: Вестник
+                  - text: Банка России
+                - generic: от 25 марта 2026 года
+                - generic:
+                  - generic: Перейти
+              - generic:
+                - generic:
+                  - text: Центральный банк
+                  - text: Российской Федерации
+                - generic: Обеспечиваем ценовую и финансовую стабильность, создаем условия для устойчивого роста экономики
+            - generic [ref=e89]:
+              - generic [ref=e90]: 1 / 3
+              - generic [ref=e91]:
+                - button "Previous slide" [ref=e92] [cursor=pointer]
+                - button "Next slide" [ref=e93] [cursor=pointer]
+          - generic [ref=e95]:
+            - tablist [ref=e97]:
+              - generic [ref=e98]:
+                - tab "Новости" [selected] [ref=e99] [cursor=pointer]
+                - tab "Новое на сайте" [ref=e100] [cursor=pointer]
+              - link "Все новости" [ref=e101] [cursor=pointer]:
+                - /url: /news/
+            - tabpanel "Новости" [ref=e102]:
+              - generic [ref=e104]:
+                - generic [ref=e106]:
+                  - textbox "Поиск новостей" [ref=e107]
+                  - img [ref=e109] [cursor=pointer]
+                - generic [ref=e111]:
+                  - generic [ref=e114]:
+                    - generic [ref=e115]: Выберите период
+                    - button "За все время" [ref=e116] [cursor=pointer]
+                  - generic [ref=e118]:
+                    - generic [ref=e119]: Выберите тип
+                    - button "Все" [ref=e120] [cursor=pointer]
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]:
+                      - generic [ref=e127]:
+                        - generic [ref=e128]: 03 апреля 2026
+                        - generic [ref=e129]: Новость
+                      - 'link "Рейтинги для ЦФА: решение Банка России" [ref=e131] [cursor=pointer]':
+                        - /url: /press/event/?id=28457
+                    - 'link "Рейтинги для ЦФА: решение Банка России" [ref=e132] [cursor=pointer]':
+                      - /url: /press/event/?id=28457
+                      - 'img "Рейтинги для ЦФА: решение Банка России" [ref=e133]'
+                  - generic [ref=e136]:
+                    - generic [ref=e137]:
+                      - generic [ref=e138]: 03 апреля 2026
+                      - generic [ref=e139]: Новость
+                    - link "«Кибербезопасность в финансах» и «Финополис» объединятся в один форум" [ref=e141] [cursor=pointer]:
+                      - /url: /press/event/?id=28456
+                  - generic [ref=e144]:
+                    - generic [ref=e145]:
+                      - generic [ref=e146]: 01 апреля 2026
+                      - generic [ref=e147]: Новость
+                    - link "Банк России начинает публиковать статистику по норме сбережений домашних хозяйств" [ref=e149] [cursor=pointer]:
+                      - /url: /press/event/?id=28451
+                  - generic [ref=e152]:
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: 01 апреля 2026
+                      - generic [ref=e155]: Пресс-релиз
+                    - link "Результаты мониторинга максимальных процентных ставок кредитных организаций" [ref=e157] [cursor=pointer]:
+                      - /url: /press/pr/?file=639106570368731156BANK_SECTOR.htm
+                  - generic [ref=e160]:
+                    - generic [ref=e161]:
+                      - generic [ref=e162]: 01 апреля 2026
+                      - generic [ref=e163]: Новость
+                    - link "Банк России публикует Резюме обсуждения ключевой ставки по итогам заседания 20 марта" [ref=e165] [cursor=pointer]:
+                      - /url: /press/event/?id=28450
+                  - generic [ref=e168]:
+                    - generic [ref=e169]:
+                      - generic [ref=e170]: 01 апреля 2026
+                      - generic [ref=e171]: Пресс-релиз
+                    - link "Банк России начинает публиковать вмененную ставку валютного свопа овернайт в юанях" [ref=e173] [cursor=pointer]:
+                      - /url: /press/pr/?file=639106459113348298DATABASES.htm
+                  - generic [ref=e176]:
+                    - generic [ref=e177]:
+                      - generic [ref=e178]: 01 апреля 2026
+                      - generic [ref=e179]: Новость
+                    - link "С 1 апреля 2026 года снижается максимальная переплата по кредитам и займам" [ref=e181] [cursor=pointer]:
+                      - /url: /press/event/?id=28447
+                  - generic [ref=e184]:
+                    - generic [ref=e185]:
+                      - generic [ref=e186]: 01 апреля 2026
+                      - generic [ref=e187]: Новость
+                    - link "Вступили в силу новые правила покупки товаров в рассрочку" [ref=e189] [cursor=pointer]:
+                      - /url: /press/event/?id=28446
+                  - generic [ref=e192]:
+                    - generic [ref=e193]:
+                      - generic [ref=e194]: 31 марта 2026
+                      - generic [ref=e195]: Новость
+                    - link "В 2025 году объем подозрительных операций сократился на 19%" [ref=e197] [cursor=pointer]:
+                      - /url: /press/event/?id=28444
+                  - generic [ref=e200]:
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: 31 марта 2026
+                      - generic [ref=e203]: Пресс-релиз
+                    - link "Состоялось заседание Национального финансового совета" [ref=e205] [cursor=pointer]:
+                      - /url: /press/pr/?file=639105685479915649TODAY.htm
+                - button "Загрузить еще" [ref=e206] [cursor=pointer]
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - generic [ref=e213]: Цель по инфляции
+            - generic [ref=e214]: 4,0%
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - generic [ref=e218]: Инфляция
+              - link "февраль 2026" [ref=e220] [cursor=pointer]:
+                - /url: /hd_base/infl/
+            - generic [ref=e221]: 5,9%
+          - generic [ref=e222]:
+            - generic [ref=e223]:
+              - link "Ключевая ставка" [ref=e225] [cursor=pointer]:
+                - /url: /hd_base/KeyRate/
+              - link "с 23.03.2026" [ref=e227] [cursor=pointer]:
+                - /url: /press/keypr/
+            - generic [ref=e228]: 15,00%
+            - generic [ref=e229]:
+              - link "Следующее заседание Совета директоров по ключевой ставке" [ref=e230] [cursor=pointer]:
+                - /url: /dkp/cal_mp/
+              - generic [ref=e231]: 24.04.2026
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - link "Ставка RUONIA" [ref=e235] [cursor=pointer]:
+                - /url: /hd_base/ruonia/dynamics/
+              - generic [ref=e236]: 02.04.2026
+            - generic [ref=e237]: 14,91%
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]:
+                - link "Курсы валют" [ref=e242] [cursor=pointer]:
+                  - /url: /currency_base/
+                - link "03.04.2026" [ref=e244] [cursor=pointer]:
+                  - /url: /currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=03.04.2026
+                - link "04.04.2026" [ref=e246] [cursor=pointer]:
+                  - /url: /currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To=04.04.2026
+              - generic [ref=e247] [cursor=pointer]:
+                - generic [ref=e248]:
+                  - text: CNY,
+                  - generic [ref=e249]: 1¥
+                - generic [ref=e250]: 11,6278 ₽
+                - generic [ref=e251]: 11,5743 ₽
+                - generic [ref=e252]:
+                  - generic [ref=e253]:
+                    - button [ref=e254]
+                    - generic [ref=e255]: 31.03.2026 - 04.04.2026
+                    - button [ref=e256]
+                  - table [ref=e257]:
+                    - row "31.03 11,7439 ₽ +0,0138 ₽" [ref=e258]:
+                      - cell "31.03" [ref=e259]
+                      - cell "11,7439 ₽" [ref=e260]
+                      - cell "+0,0138 ₽" [ref=e261]
+                    - row "01.04 11,7804 ₽ +0,0365 ₽" [ref=e262]:
+                      - cell "01.04" [ref=e263]
+                      - cell "11,7804 ₽" [ref=e264]
+                      - cell "+0,0365 ₽" [ref=e265]
+                    - row "02.04 11,7070 ₽ -0,0734 ₽" [ref=e266]:
+                      - cell "02.04" [ref=e267]
+                      - cell "11,7070 ₽" [ref=e268]
+                      - cell "-0,0734 ₽" [ref=e269]
+                    - row "03.04 11,6278 ₽ -0,0792 ₽" [ref=e270]:
+                      - cell "03.04" [ref=e271]
+                      - cell "11,6278 ₽" [ref=e272]
+                      - cell "-0,0792 ₽" [ref=e273]
+                    - row "04.04 11,5743 ₽ -0,0535 ₽" [ref=e274]:
+                      - cell "04.04" [ref=e275]
+                      - cell "11,5743 ₽" [ref=e276]
+                      - cell "-0,0535 ₽" [ref=e277]
+                  - generic [ref=e278]: Официальный курс Банка России
+              - generic [ref=e279] [cursor=pointer]:
+                - generic [ref=e280]:
+                  - text: USD,
+                  - generic [ref=e281]: 1$
+                - generic [ref=e282]: 80,3332 ₽
+                - generic [ref=e283]: 79,7293 ₽
+                - generic [ref=e285]: Официальный курс Банка России
+              - generic [ref=e286] [cursor=pointer]:
+                - generic [ref=e287]:
+                  - text: EUR,
+                  - generic [ref=e288]: 1€
+                - generic [ref=e289]: 92,7326 ₽
+                - generic [ref=e290]: 92,1915 ₽
+                - generic [ref=e291]:
+                  - generic [ref=e292]:
+                    - button [ref=e293]
+                    - generic [ref=e294]: 31.03.2026 - 04.04.2026
+                    - button [ref=e295]
+                  - table [ref=e296]:
+                    - row "31.03 93,4369 ₽ +0,0122 ₽" [ref=e297]:
+                      - cell "31.03" [ref=e298]
+                      - cell "93,4369 ₽" [ref=e299]
+                      - cell "+0,0122 ₽" [ref=e300]
+                    - row "01.04 93,2739 ₽ -0,1630 ₽" [ref=e301]:
+                      - cell "01.04" [ref=e302]
+                      - cell "93,2739 ₽" [ref=e303]
+                      - cell "-0,1630 ₽" [ref=e304]
+                    - row "02.04 93,4443 ₽ +0,1704 ₽" [ref=e305]:
+                      - cell "02.04" [ref=e306]
+                      - cell "93,4443 ₽" [ref=e307]
+                      - cell "+0,1704 ₽" [ref=e308]
+                    - row "03.04 92,7326 ₽ -0,7117 ₽" [ref=e309]:
+                      - cell "03.04" [ref=e310]
+                      - cell "92,7326 ₽" [ref=e311]
+                      - cell "-0,7117 ₽" [ref=e312]
+                    - row "04.04 92,1915 ₽ -0,5411 ₽" [ref=e313]:
+                      - cell "04.04" [ref=e314]
+                      - cell "92,1915 ₽" [ref=e315]
+                      - cell "-0,5411 ₽" [ref=e316]
+                  - generic [ref=e317]: Официальный курс Банка России
+            - link "Все показатели" [ref=e318] [cursor=pointer]:
+              - /url: /key-indicators/
+          - generic [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]: Важное
+              - link "Издания Банка России Издания Банка России" [ref=e322] [cursor=pointer]:
+                - /url: /about_br/publ/
+                - img "Издания Банка России" [ref=e323]
+                - generic [ref=e324]:
+                  - text: Издания
+                  - text: Банка России
+              - link "График публикаций График публикаций" [ref=e325] [cursor=pointer]:
+                - /url: /calendar/
+                - img "График публикаций" [ref=e326]
+                - generic [ref=e327]:
+                  - text: График
+                  - text: публикаций
+              - link "Статистика Статистика" [ref=e328] [cursor=pointer]:
+                - /url: /statistics/
+                - img "Статистика" [ref=e329]
+                - generic [ref=e330]: Статистика
+              - link "Параметры операций Банка России Параметры операций Банка России" [ref=e331] [cursor=pointer]:
+                - /url: /params/
+                - img "Параметры операций Банка России" [ref=e332]
+                - generic [ref=e333]:
+                  - text: Параметры операций
+                  - text: Банка России
+            - generic [ref=e334]:
+              - generic [ref=e335]: Проекты Банка России
+              - link "Финансовая культура Просветительский проект ЦБ о бережном отношении к финансам" [ref=e336] [cursor=pointer]:
+                - /url: https://fincult.info/
+                - img "Финансовая культура" [ref=e337]
+                - generic [ref=e338]: Просветительский проект ЦБ о бережном отношении к финансам
+              - link "Экономический разговор Популярно о научных исследованиях по экономике и финансам" [ref=e339] [cursor=pointer]:
+                - /url: https://econs.online/
+                - img "Экономический разговор" [ref=e340]
+                - generic [ref=e341]: Популярно о научных исследованиях по экономике и финансам
+              - link "Научный журнал Деньги и кредит О монетарной политике, финансах и банковской деятельности" [ref=e342] [cursor=pointer]:
+                - /url: https://rjmf.econs.online/
+                - img "Научный журнал Деньги и кредит" [ref=e343]
+                - generic [ref=e344]: О монетарной политике, финансах и банковской деятельности
+              - link "Мобильное приложение ЦБ онлайн Цифровой помощник для тех, кто пользуется финуслугами" [ref=e345] [cursor=pointer]:
+                - /url: /reception/online_app/
+                - img "Мобильное приложение ЦБ онлайн" [ref=e346]
+                - generic [ref=e347]: Цифровой помощник для тех, кто пользуется финуслугами
+              - link "Музей Банка России Запись на экскурсии и уникальные материалы по истории денег" [ref=e348] [cursor=pointer]:
+                - /url: https://museum.cbr.ru/
+                - img "Музей Банка России" [ref=e349]
+                - generic [ref=e350]: Запись на экскурсии и уникальные материалы по истории денег
+              - link "Библиотека Банка России Электронный каталог экономических и финансовых изданий" [ref=e351] [cursor=pointer]:
+                - /url: https://library.cbr.ru/
+                - img "Библиотека Банка России" [ref=e352]
+                - generic [ref=e353]: Электронный каталог экономических и финансовых изданий
+              - link "Мониторинг предприятий банка России Данные опросов об экономической активности предприятий" [ref=e354] [cursor=pointer]:
+                - /url: /dkp/mp/
+                - img "Мониторинг предприятий банка России" [ref=e355]
+                - generic [ref=e356]: Данные опросов об экономической активности предприятий
+      - generic [ref=e357]:
+        - generic [ref=e358]:
+          - generic [ref=e359]:
+            - generic [ref=e360]: Как защититься от мошенников
+            - generic [ref=e361]: Мы объясняем, как действуют злоумышленники, раскрываем схемы обмана и даем рекомендации, как не попасть на их уловки
+          - link "Защититься" [ref=e363] [cursor=pointer]:
+            - /url: /beware/
+            - button "Защититься" [ref=e364]
+        - img "Баннер про защиту от мошейничества" [ref=e366]
+  - contentinfo [ref=e367]:
+    - generic [ref=e368]:
+      - generic [ref=e370]:
+        - generic [ref=e371]:
+          - link [ref=e372] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e374] [cursor=pointer]: Наверх
+        - generic [ref=e376]:
+          - generic [ref=e377]: 107016, Москва, ул. Неглинная, д. 12, к. В, Банк России
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - link "300" [ref=e380] [cursor=pointer]:
+                - /url: tel:300
+              - generic [ref=e381]: (круглосуточно, бесплатно для звонков с мобильных телефонов)
+            - generic [ref=e382]:
+              - link "8 800 300-30-00" [ref=e383] [cursor=pointer]:
+                - /url: tel:88003003000
+              - generic [ref=e384]: (круглосуточно, бесплатно для звонков из регионов России)
+            - generic [ref=e385]:
+              - link "+7 499 300-30-00" [ref=e386] [cursor=pointer]:
+                - /url: tel:+74993003000
+              - generic [ref=e387]: (круглосуточно, в соответствии с тарифами вашего оператора)
+        - generic [ref=e388]:
+          - generic [ref=e389]:
+            - link "Личный кабинет участника информационного обмена" [ref=e391] [cursor=pointer]:
+              - /url: /lk_uio/
+            - link "Отношения с инвесторами" [ref=e393] [cursor=pointer]:
+              - /url: /about_br/irp/
+            - link "Перечень инсайдерской информации Банка России" [ref=e395] [cursor=pointer]:
+              - /url: /rbr/list_inside/
+            - link "Официальное опубликование нормативных актов Банка России" [ref=e397] [cursor=pointer]:
+              - /url: /analytics/na_vr/
+            - link "Проекты нормативных актов Банка России" [ref=e399] [cursor=pointer]:
+              - /url: /project_na/
+            - link "Перечень нерабочих праздничных дней и перенесенных выходных дней" [ref=e401] [cursor=pointer]:
+              - /url: /other/holidays/
+          - generic [ref=e402]:
+            - link [ref=e403] [cursor=pointer]:
+              - /url: https://vk.com/cbr_official
+            - link [ref=e404] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/BankofRussia
+            - link "Telegram" [ref=e405] [cursor=pointer]:
+              - /url: https://t.me/centralbank_russia
+            - link "Яндекс Дзен" [ref=e406] [cursor=pointer]:
+              - /url: https://dzen.ru/cbr
+            - link "Одноклассники" [ref=e407] [cursor=pointer]:
+              - /url: https://ok.ru/group/68858679787580
+            - link "RUTUBE" [ref=e408] [cursor=pointer]:
+              - /url: https://rutube.ru/channel/23873201/
+            - link "Макс" [ref=e409] [cursor=pointer]:
+              - /url: https://max.ru/cbr_official
+        - generic [ref=e410]:
+          - generic [ref=e411]:
+            - link "О сайте" [ref=e413] [cursor=pointer]:
+              - /url: /about/
+            - link "Контакты" [ref=e415] [cursor=pointer]:
+              - /url: /contacts/
+            - link "Противодействие коррупции" [ref=e417] [cursor=pointer]:
+              - /url: /about_br/anticor/
+            - link "Технические ресурсы" [ref=e419] [cursor=pointer]:
+              - /url: /development/
+          - link "Версия для слабовидящих" [ref=e420] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e422]: Версия для слабовидящих
+      - generic [ref=e424]:
+        - generic [ref=e425]: © Банк России, 2000–2026.
+        - generic [ref=e426]:
+          - text: Дизайн сайта —
+          - link [ref=e427] [cursor=pointer]:
+            - /url: https://aic.ru
+            - img [ref=e428]
+  - generic [ref=e429]:
+    - generic [ref=e430]: На сайте Банка России используются файлы cookie
+    - generic [ref=e431]:
+      - text: Оставаясь на
+      - link "www.cbr.ru" [ref=e432] [cursor=pointer]:
+        - /url: /
+      - text: ", вы принимаете"
+      - link "пользовательское соглашение" [ref=e433] [cursor=pointer]:
+        - /url: /user_agreement/
+    - button "Подтвердить" [ref=e434] [cursor=pointer]
+  - status [ref=e435]
