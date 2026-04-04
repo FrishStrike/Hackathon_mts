@@ -188,3 +188,51 @@ async def process(req: MLRequest):
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
+class PlanRequest(BaseModel):
+    prompt: str
+
+@app.post("/api/plan")
+async def plan(req: PlanRequest):
+    client = OpenAI(
+        api_key=os.getenv("QWEN_API_KEY"),
+        base_url="https://api.zveno.ai/v1",
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model="qwen/qwen3-30b-a3b-instruct-2507",
+            messages=[
+                {"role": "system", "content": """You are a browser automation planner.
+Convert the user's request into a JSON array of browser actions for a Chrome extension to execute.
+
+Available action types:
+- {"type": "navigate", "url": "https://..."}
+- {"type": "click", "selector": "css_selector"}
+- {"type": "type", "selector": "css_selector", "text": "text to type", "clear": true}
+- {"type": "scroll", "deltaY": 800}
+- {"type": "waitFor", "selector": "css_selector", "timeoutMs": 5000}
+
+Rules:
+- Return ONLY a valid JSON array, no explanation, no markdown, no text before or after
+- Use simple, reliable CSS selectors
+- Always add waitFor after navigate to wait for page load
+- For searches use the site's own search, not DuckDuckGo"""},
+                {"role": "user", "content": req.prompt}
+            ],
+            max_tokens=2048,
+        )
+
+        content = response.choices[0].message.content
+        content = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL).strip()
+        content = re.sub(r'```json|```', '', content).strip()
+
+        try:
+            actions = json.loads(content)
+        except json.JSONDecodeError:
+            actions = json.loads(repair_json(content))
+
+        return {"actions": actions}
+
+    except Exception as e:
+        return {"actions": [], "error": str(e)}
