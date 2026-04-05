@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к содержанию" [ref=e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "Сайт" [ref=e6]:
+        - generic "Главное меню" [ref=e7]:
+          - button "Главное меню" [ref=e8] [cursor=pointer]
+          - generic [ref=e11]: Главное меню
+      - link "Википедия свободная энциклопедия" [ref=e12] [cursor=pointer]:
+        - /url: /wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0
+        - img [ref=e13]
+        - generic [ref=e14]:
+          - img "Википедия" [ref=e15]
+          - img "свободная энциклопедия" [ref=e16]
+    - generic [ref=e17]:
+      - search [ref=e18]:
+        - generic [ref=e21]:
+          - searchbox "Искать в Википедии" [ref=e24]
+          - button "Найти" [ref=e26]
+      - navigation "Персональные инструменты" [ref=e27]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Пожертвовать" [ref=e33] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=ru.wikipedia.org&uselang=ru
+          - listitem [ref=e34]:
+            - link "Создать учётную запись" [ref=e35] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F+%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F+%D0%B3%D0%BE%D1%80%D0%B0+%D0%BC%D0%B8%D1%80%D0%B0
+          - listitem [ref=e36]:
+            - link "Войти" [ref=e37] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&returnto=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F+%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F+%D0%B3%D0%BE%D1%80%D0%B0+%D0%BC%D0%B8%D1%80%D0%B0
+  - generic [ref=e39]:
+    - main [ref=e43]:
+      - generic [ref=e44]:
+        - heading "Самая высокая гора мира" [level=1] [ref=e45]:
+          - generic [ref=e46]: Самая высокая гора мира
+        - generic [ref=e47]:
+          - button "Данная статья существует только на этом языке. Добавьте статью для других языков" [ref=e48] [cursor=pointer]
+          - generic [ref=e51]: Добавить языки
+      - generic [ref=e53]:
+        - navigation "Пространства имён" [ref=e55]:
+          - generic [ref=e56]:
+            - generic:
+              - list:
+                - listitem [ref=e57]:
+                  - link "Статья" [ref=e58] [cursor=pointer]:
+                    - /url: /w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit&redlink=1
+                    - generic [ref=e59]: Статья
+                - listitem [ref=e60]:
+                  - link "Обсуждение" [ref=e61] [cursor=pointer]:
+                    - /url: /w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit&redlink=1
+                    - generic [ref=e62]: Обсуждение
+        - generic [ref=e63]:
+          - navigation "Просмотры" [ref=e64]:
+            - generic [ref=e65]:
+              - generic:
+                - list:
+                  - listitem [ref=e66]:
+                    - link "Создать" [ref=e67] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&veaction=edit
+                      - generic [ref=e68]: Создать
+                  - listitem [ref=e69]:
+                    - link "Создать код" [ref=e70] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit
+                      - generic [ref=e71]: Создать код
+          - navigation "Инструменты для страниц" [ref=e72]:
+            - generic [ref=e73]:
+              - button "Инструменты" [ref=e74] [cursor=pointer]
+              - generic [ref=e76] [cursor=pointer]: Инструменты
+      - navigation "Внешний вид" [ref=e79]:
+        - generic [ref=e82]:
+          - generic [ref=e83]: Внешний вид
+          - button "скрыть" [ref=e84] [cursor=pointer]
+      - generic "Самая высокая гора мира" [ref=e85]:
+        - generic [ref=e87]: Материал из Википедии — свободной энциклопедии
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - figure [ref=e91]
+            - paragraph [ref=e93]: В Википедии нет статьи с таким названием.
+            - generic [ref=e96]:
+              - textbox "Искать существующую статью, вводя полное название" [ref=e98]:
+                - /placeholder: ""
+                - text: Самая высокая гора мира
+              - button "Искать статью" [ref=e99]
+            - paragraph [ref=e100]: "Вы также можете:"
+            - list [ref=e101]:
+              - listitem [ref=e102]:
+                - link "найти страницы, ссылающиеся на «Самая высокая гора мира»" [ref=e103] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0
+                - text: ;
+              - listitem [ref=e104]:
+                - link "найти страницы, начинающиеся с «Самая высокая гора мира»" [ref=e105] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A3%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%BF%D0%BE_%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%83_%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0
+                - text: ;
+              - listitem [ref=e106]:
+                - link "найти записи журналов для «Самая высокая гора мира»" [ref=e107] [cursor=pointer]:
+                  - /url: https://ru.wikipedia.org/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%96%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D1%8B&page=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0
+                - text: .
+          - generic [ref=e108]:
+            - text: Вы также можете
+            - link "создать такую страницу" [ref=e110] [cursor=pointer]:
+              - /url: https://ru.wikipedia.org/w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit
+            - text: ", помочь в этом может"
+            - link "руководство для быстрого старта" [ref=e111] [cursor=pointer]:
+              - /url: /wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B0%D1%88%D0%B0_%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F
+            - text: .
+    - contentinfo [ref=e113]:
+      - list
+      - list:
+        - listitem [ref=e114]:
+          - link "Политика конфиденциальности" [ref=e115] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru
+        - listitem [ref=e116]:
+          - link "Описание Википедии" [ref=e117] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5
+        - listitem [ref=e118]:
+          - link "Отказ от ответственности" [ref=e119] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8
+        - listitem [ref=e120]:
+          - link "Свяжитесь с нами" [ref=e121] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/wiki/Википедия:Контакты
+        - listitem [ref=e122]:
+          - link "Контакты по вопросам права и безопасности" [ref=e123] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=e124]:
+          - link "Кодекс поведения" [ref=e125] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru
+        - listitem [ref=e126]:
+          - link "Разработчики" [ref=e127] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=e128]:
+          - link "Статистика" [ref=e129] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/ru.wikipedia.org
+        - listitem [ref=e130]:
+          - link "Заявление о куки" [ref=e131] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=e132]:
+          - link "Мобильная версия" [ref=e133] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&mobileaction=toggle_view_mobile
+      - list [ref=e134]:
+        - listitem [ref=e135]:
+          - link "Wikimedia Foundation" [ref=e136] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=e138]
+        - listitem [ref=e139]:
+          - link "Powered by MediaWiki" [ref=e140] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=e142]
+  - generic [ref=e143]:
+    - list

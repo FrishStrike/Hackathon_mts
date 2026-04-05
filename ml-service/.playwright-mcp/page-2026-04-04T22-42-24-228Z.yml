@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Перейти к контенту" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Отзыв о доступности
+    - generic [ref=e9]:
+      - link "Вернуться к Поиску Bing" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Поиск" [ref=e15] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e16]: курс рубля к долару
+        - button "Поиск с использованием изображения" [ref=e19] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e21]:
+      - button "Microsoft Rewards"
+      - link "Войти" [ref=e22] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e23]
+    - navigation "Фильтр поиска" [ref=e24]:
+      - list [ref=e25]:
+        - listitem [ref=e26]:
+          - link "Все" [ref=e27] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e28]:
+          - link "Поиск" [ref=e29] [cursor=pointer]:
+            - /url: /copilotsearch?q=%d0%ba%d1%83%d1%80%d1%81+%d1%80%d1%83%d0%b1%d0%bb%d1%8f+%d0%ba+%d0%b4%d0%be%d0%bb%d0%b0%d1%80%d1%83&FORM=CSSCOP
+            - img [ref=e30]
+            - text: Поиск
+        - listitem [ref=e32]:
+          - link "Изображения" [ref=e33] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=9455409292006f60b14dfa42317b30ef65a129ea148874d76fc7f1b699a1fa51JmltdHM9MTc3NTI2MDgwMA&ptn=3&ver=2&hsh=4&fclid=1ddf9c36-93a1-69a8-16c0-8b0792e86878&u=a1L2ltYWdlcy9zZWFyY2g_cT0lZDAlYmElZDElODMlZDElODAlZDElODErJWQxJTgwJWQxJTgzJWQwJWIxJWQwJWJiJWQxJThmKyVkMCViYSslZDAlYjQlZDAlYmUlZDAlYmIlZDAlYjAlZDElODAlZDElODMmRk9STT1IRFJTQzI&ntb=1
+        - listitem [ref=e34]:
+          - link "Видео" [ref=e35] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=95e796ed0438cedcc147173028b7afc9714be1414517e7133c93b9c1c6b21733JmltdHM9MTc3NTI2MDgwMA&ptn=3&ver=2&hsh=4&fclid=1ddf9c36-93a1-69a8-16c0-8b0792e86878&u=a1L3ZpZGVvcy9zZWFyY2g_cT0lZDAlYmElZDElODMlZDElODAlZDElODErJWQxJTgwJWQxJTgzJWQwJWIxJWQwJWJiJWQxJThmKyVkMCViYSslZDAlYjQlZDAlYmUlZDAlYmIlZDAlYjAlZDElODAlZDElODMmRk9STT1IRFJTQzM&ntb=1
+        - listitem [ref=e36]:
+          - link "Карты" [ref=e37] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=700a75df17bd104719e8242a243c748d16b7678c18184eab07cc4a3d7e024e1cJmltdHM9MTc3NTI2MDgwMA&ptn=3&ver=2&hsh=4&fclid=1ddf9c36-93a1-69a8-16c0-8b0792e86878&u=a1L21hcHM_cT0lZDAlYmElZDElODMlZDElODAlZDElODErJWQxJTgwJWQxJTgzJWQwJWIxJWQwJWJiJWQxJThmKyVkMCViYSslZDAlYjQlZDAlYmUlZDAlYmIlZDAlYjAlZDElODAlZDElODMmRk9STT1IRFJTQzQ&ntb=1
+        - listitem [ref=e38]:
+          - link "Новости" [ref=e39] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=9e72371c7527db95fb7b02b1058a11e952a7e9c289e8fefde69729b5bdbccb24JmltdHM9MTc3NTI2MDgwMA&ptn=3&ver=2&hsh=4&fclid=1ddf9c36-93a1-69a8-16c0-8b0792e86878&u=a1L25ld3Mvc2VhcmNoP3E9JWQwJWJhJWQxJTgzJWQxJTgwJWQxJTgxKyVkMSU4MCVkMSU4MyVkMCViMSVkMCViYiVkMSU4ZislZDAlYmErJWQwJWI0JWQwJWJlJWQwJWJiJWQwJWIwJWQxJTgwJWQxJTgzJkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e40]:
+          - button "Еще" [ref=e41] [cursor=pointer]:
+            - img [ref=e43]
+            - text: Еще
+  - contentinfo [ref=e45]:
+    - generic [ref=e46]:
+      - list:
+        - listitem [ref=e47]:
+          - link "Конфиденциальность" [ref=e48] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=097799c6131a1986482c120eb91a18025a555915f71826ad2d7d0eba1a9bacc8JmltdHM9MTc3NTI2MDgwMA&ptn=3&ver=2&hsh=4&fclid=1ddf9c36-93a1-69a8-16c0-8b0792e86878&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e49]:
+          - link "Условия" [ref=e50] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=ed9b2b529b7ced86a017e35fb69cc68f05c949410881720f6d5a3aa790a8b3dfJmltdHM9MTc3NTI2MDgwMA&ptn=3&ver=2&hsh=4&fclid=1ddf9c36-93a1-69a8-16c0-8b0792e86878&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

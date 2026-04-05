@@ -1,0 +1,668 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner:
+      - link "Skip to content" [ref=e3] [cursor=pointer]:
+        - /url: "#content"
+    - generic [ref=e6]:
+      - generic [ref=e9]: В настоящий момент товары недоступны для заказа на samsung.com/ru
+      - button "Закрыть" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: Закрыть
+        - img [ref=e12]
+    - complementary [ref=e14]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: Выберите свое местоположение и язык.
+        - generic [ref=e18]:
+          - 'button "Россия / Русский: Выберите свое местоположение и язык." [ref=e21] [cursor=pointer]':
+            - generic [ref=e22]: Россия
+            - img [ref=e23]
+          - button "Продолжить" [ref=e26] [cursor=pointer]
+        - button "Закрыть" [ref=e27] [cursor=pointer]:
+          - generic [ref=e28]: Закрыть
+          - img [ref=e29]
+    - navigation "main navigation" [ref=e31]:
+      - generic [ref=e33]:
+        - link "Samsung" [ref=e35] [cursor=pointer]:
+          - /url: /ru/
+          - img [ref=e36]
+        - generic [ref=e40]:
+          - menubar "main menu" [ref=e41]:
+            - listitem [ref=e42]:
+              - generic [ref=e43]:
+                - menuitem "Рекомендовано" [ref=e44] [cursor=pointer]
+                - menuitem "Рекомендовано":
+                  - generic: Рекомендовано
+            - listitem [ref=e45]:
+              - generic [ref=e46]:
+                - menuitem "Мобильные" [ref=e47] [cursor=pointer]
+                - menuitem "Мобильные":
+                  - generic: Мобильные
+            - listitem [ref=e48]:
+              - generic [ref=e49]:
+                - menuitem "ТВ и Аудио" [ref=e50] [cursor=pointer]
+                - menuitem "ТВ и Аудио":
+                  - generic: ТВ и Аудио
+            - listitem [ref=e51]:
+              - generic [ref=e52]:
+                - menuitem "Бытовая техника" [ref=e53] [cursor=pointer]
+                - menuitem "Бытовая техника":
+                  - generic: Бытовая техника
+            - listitem [ref=e54]:
+              - generic [ref=e55]:
+                - menuitem "Мониторы" [ref=e56] [cursor=pointer]
+                - menuitem "Мониторы":
+                  - generic: Мониторы
+            - listitem [ref=e57]:
+              - menuitem "Носимые устройства" [ref=e59] [cursor=pointer]
+            - listitem [ref=e60]:
+              - generic [ref=e61]:
+                - menuitem "Аксессуары" [ref=e62] [cursor=pointer]
+                - menuitem "Аксессуары":
+                  - generic: Аксессуары
+          - menubar "main menu" [ref=e63]:
+            - listitem [ref=e64]:
+              - menuitem "Поддержка" [ref=e66] [cursor=pointer]
+            - listitem [ref=e67]:
+              - menuitem "Бизнес. Открыть в новом окне" [ref=e69] [cursor=pointer]: Бизнес
+          - generic [ref=e70]:
+            - button "Поиск" [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]: Поиск
+              - img [ref=e73]
+              - generic [ref=e75]: Поиск
+            - button "Manage Account" [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: Вход/Регистрация
+              - img [ref=e79]
+    - main [ref=e81]:
+      - generic [ref=e83]:
+        - heading "Мониторы" [level=1] [ref=e86]
+        - generic [ref=e90]:
+          - list [ref=e92]:
+            - listitem "Игровые мониторы Odyssey" [ref=e93]:
+              - link "Odyssey Игровые мониторы Odyssey" [ref=e94] [cursor=pointer]:
+                - /url: /ru/monitors/gaming/
+                - img "Odyssey" [ref=e97]
+                - paragraph [ref=e99]: Игровые мониторы Odyssey
+            - listitem "Высокого разрешения ViewFinity" [ref=e100]:
+              - link "ViewFinity Высокого разрешения ViewFinity" [ref=e101] [cursor=pointer]:
+                - /url: /ru/monitors/all-monitors/?viewfinity
+                - img "ViewFinity" [ref=e104]
+                - paragraph [ref=e106]: Высокого разрешения ViewFinity
+            - listitem "Smart дисплеи" [ref=e107]:
+              - link "Smart дисплеи Smart мониторы" [ref=e108] [cursor=pointer]:
+                - /url: /ru/monitors/smart/
+                - img "Smart дисплеи" [ref=e111]
+                - paragraph [ref=e113]: Smart мониторы
+            - listitem "Ультраширокие мониторы" [ref=e114]:
+              - link "Ультраширокие мониторы Ультраширокие" [ref=e115] [cursor=pointer]:
+                - /url: /ru/monitors/ultra-wide/
+                - img "Ультраширокие мониторы" [ref=e118]
+                - paragraph [ref=e120]: Ультраширокие
+            - listitem "Изогнутые мониторы" [ref=e121]:
+              - link "Изогнутые Изогнутые" [ref=e122] [cursor=pointer]:
+                - /url: /ru/monitors/curved/
+                - img "Изогнутые" [ref=e125]
+                - paragraph [ref=e127]: Изогнутые
+            - listitem "4K UHD мониторы" [ref=e128]:
+              - link "4K UHD 4K UHD" [ref=e129] [cursor=pointer]:
+                - /url: /ru/monitors/uhd/
+                - img "4K UHD" [ref=e132]
+                - paragraph [ref=e134]: 4K UHD
+            - listitem [ref=e135]:
+              - link [ref=e136] [cursor=pointer]:
+                - /url: /ru/monitors/full-hd/
+                - img [ref=e139]
+                - paragraph [ref=e141]: FHD
+          - generic [ref=e146]:
+            - button "Предыдущий prev" [disabled]:
+              - generic: Предыдущий
+              - img
+              - text: prev
+            - button "Далее next" [ref=e147] [cursor=pointer]:
+              - generic [ref=e148]: Далее
+              - img [ref=e149]
+              - text: next
+      - generic [ref=e154]:
+        - generic [ref=e157]:
+          - heading "Найдите свой идеальный монитор" [level=2] [ref=e158]: Найдите свой идеальный монитор
+          - paragraph [ref=e159]: Познакомьтесь с широким выбором инновационных мониторов Samsung
+        - list [ref=e165]:
+          - listitem [ref=e166]:
+            - link "Игровые Odyssey Гейминг на сверхскоростях" [ref=e167] [cursor=pointer]:
+              - /url: "#gaming"
+              - generic:
+                - generic [ref=e170]: Игровые Odyssey
+                - generic [ref=e172]: Гейминг на сверхскоростях
+              - img "Ультраширокий изогнутый игровой монитор с игрой на экране и изображение обратной стороны монитора" [ref=e175]
+          - listitem [ref=e176]:
+            - link "ViewFinity с высоким разрешением Чёткое изображение и высочайшая производительность ViewFinity с высоким разрешением" [ref=e177] [cursor=pointer]:
+              - /url: "#viewfinity"
+              - generic:
+                - generic [ref=e180]: Чёткость и качество изображения
+                - generic [ref=e182]: Чёткое изображение и высочайшая производительность
+              - img "Ультраширокий изогнутый монитор с чертежами автомобиля на экране, белый монитор с программой для проектирования на экране и повернутый монитор с документом на экране." [ref=e185]
+          - listitem [ref=e186]:
+            - link "Smart дисплей Монитор и ТВ в одном устройстве Smart дисплей" [ref=e187] [cursor=pointer]:
+              - /url: "#smart"
+              - generic:
+                - generic [ref=e190]: Smart дисплей
+                - generic [ref=e192]: Монитор и ТВ в одном устройстве
+              - img "Черный и белый Smart дисплеи" [ref=e195]
+        - heading "Подберите монитор для ваших задач" [level=2] [ref=e199]
+        - generic [ref=e203]:
+          - generic [ref=e205]:
+            - generic [ref=e206]:
+              - heading "Ультраширокие" [level=3] [ref=e209]: Ультраширокие
+              - link "Узнать больше Ультраширокий монитор Поиск продуктов" [ref=e211] [cursor=pointer]:
+                - /url: /ru/monitors/ultra-wide/
+                - text: Узнать больше
+            - link "Узнать больше Ультраширокий монитор Поиск продуктов" [ref=e212]
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - heading "Изогнутые" [level=3] [ref=e219]: Изогнутые
+              - link "Узнать больше Изогнутый монитор Поиск продуктов" [ref=e221] [cursor=pointer]:
+                - /url: /ru/monitors/curved/
+                - text: Узнать больше
+            - link "Узнать больше Изогнутый монитор Поиск продуктов" [ref=e222]
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - heading "4K UHD" [level=3] [ref=e229]
+              - link "Узнать больше Монитор 4K UHD Поиск продуктов" [ref=e231] [cursor=pointer]:
+                - /url: /ru/monitors/uhd/
+                - text: Узнать больше
+            - link "Узнать больше Монитор 4K UHD Поиск продуктов" [ref=e232]
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - heading "1080P Full HD" [level=3] [ref=e239]
+              - link "Узнать больше Монитор Full HD Поиск продуктов" [ref=e241] [cursor=pointer]:
+                - /url: /ru/monitors/full-hd/
+                - text: Узнать больше
+            - link "Узнать больше Монитор Full HD Поиск продуктов" [ref=e242]
+        - heading "Выберите подходящий размер монитора" [level=2] [ref=e247]: Выберите подходящий размер монитора
+        - generic [ref=e251]:
+          - generic [ref=e254]:
+            - heading "24”–25”" [level=3] [ref=e257]: 24”–25”
+            - 'link "Узнать больше Фильтр: монитор с диагональю от 24 до 25 дюймов Поиск продуктов" [ref=e259] [cursor=pointer]':
+              - /url: /ru/monitors/24-inch/?25
+              - text: Узнать больше
+          - generic [ref=e264]:
+            - heading "27”–28”" [level=3] [ref=e267]: 27”–28”
+            - 'link "Узнать больше Фильтр: монитор с диагональю от 27 до 28 дюймов Поиск продуктов" [ref=e269] [cursor=pointer]':
+              - /url: /ru/monitors/27-inch/?28
+              - text: Узнать больше
+          - generic [ref=e274]:
+            - heading "32”–34”" [level=3] [ref=e277]: 32”–34”
+            - 'link "Узнать больше Фильтр: монитор с диагональю от 32 до 34 дюймов Поиск продуктов" [ref=e279] [cursor=pointer]':
+              - /url: /ru/monitors/32-inch/?34
+              - text: Узнать больше
+          - generic [ref=e283]:
+            - generic [ref=e284]:
+              - heading "43” и больше" [level=3] [ref=e287]: 43” и больше
+              - 'link "Узнать больше Фильтр: монитор с диагональю от 43 дюймов Поиск продуктов" [ref=e289] [cursor=pointer]':
+                - /url: /ru/monitors/43-inch/?49+55+57
+                - text: Узнать больше
+            - 'link "Узнать больше Фильтр: монитор с диагональю от 43 дюймов Поиск продуктов" [ref=e290]'
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - heading "Игровые Odyssey" [level=2] [ref=e296]: Игровые Odyssey
+            - paragraph [ref=e297]: Невероятный экран. Невероятная игра
+            - generic [ref=e298]:
+              - link "Узнать больше Игровые мониторы Odyssey Маркетинговая страница" [ref=e299] [cursor=pointer]:
+                - /url: /ru/monitors/odyssey/
+                - text: Узнать больше
+              - link "Купить Игровые мониторы Odyssey Поиск продуктов" [ref=e300] [cursor=pointer]:
+                - /url: /ru/monitors/gaming/
+                - text: Смотреть все
+          - figure [ref=e301]
+        - generic [ref=e305]:
+          - heading "Передовые технологии отображения" [level=3] [ref=e311]: Передовые технологии отображения
+          - heading "Высокая частота обновления, низкое время отклика" [level=3] [ref=e319]:
+            - text: Высокая частота обновления,
+            - text: низкое время отклика
+          - heading "Созданы для любых игровых потребностей" [level=3] [ref=e327]: Созданы для любых игровых потребностей
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - heading "ViewFinity с высоким разрешением" [level=2] [ref=e334]: ViewFinity с высоким разрешением
+            - paragraph [ref=e335]: Откройте новые горизонты творчества
+            - generic [ref=e336]:
+              - link "Узнать больше Мониторы ViewFinity с высоким разрешением Страница MKT" [ref=e337] [cursor=pointer]:
+                - /url: /ru/monitors/high-resolution-monitor/
+                - text: Узнать больше
+              - link "Купить Мониторы ViewFinity с высоким разрешением Поиск продуктов" [ref=e338] [cursor=pointer]:
+                - /url: /ru/monitors/all-monitors/?viewfinity
+                - text: Смотреть все
+          - figure [ref=e339]
+        - generic [ref=e343]:
+          - heading "Потрясающее качество изображения" [level=3] [ref=e349]: Потрясающее качество изображения
+          - heading "Широкий выбор моделей для профессионалов" [level=3] [ref=e357]: Широкий выбор моделей для профессионалов
+          - heading "Эргономичный дизайн" [level=3] [ref=e365]: Эргономичный дизайн
+        - generic [ref=e370]:
+          - generic [ref=e371]:
+            - heading "Smart дисплей" [level=2] [ref=e372]: Smart дисплей
+            - paragraph [ref=e373]: Смотрите, играйте, работайте стильно
+            - generic [ref=e374]:
+              - 'link "Страница подробных сведений о продукте: смарт-дисплей M80D" [ref=e375] [cursor=pointer]':
+                - /url: /ru/monitors/smart-monitor/
+                - text: Узнать больше
+              - link "Купить Smart дисплей Поиск продуктов" [ref=e376] [cursor=pointer]:
+                - /url: /ru/monitors/smart/
+                - text: Смотреть все
+          - figure [ref=e377]
+        - generic [ref=e381]:
+          - heading "Приложения Smart TV" [level=3] [ref=e387]: Приложения Smart TV
+          - heading "Умное рабочее пространство" [level=3] [ref=e395]: Умное рабочее пространство
+          - heading "Центр управления умным домом" [level=3] [ref=e403]: Центр управления умным домом
+        - heading "Часто задаваемые вопросы" [level=2] [ref=e409]: Часто задаваемые вопросы
+        - list [ref=e412]:
+          - listitem [ref=e413]:
+            - heading "Для чего нужны мониторы и какие они бывают?" [level=3] [ref=e414]:
+              - button "Для чего нужны мониторы и какие они бывают?" [expanded] [ref=e415] [cursor=pointer]:
+                - generic [ref=e416]: Для чего нужны мониторы и какие они бывают?
+                - img [ref=e418]
+            - generic [ref=e421]:
+              - paragraph [ref=e422]:
+                - text: Мониторы отображают визуальную часть работы компьютера, повышая удобство работы с ним. Выбор типа монитора зависит от ваших потребностей.
+                - strong [ref=e423]:
+                  - link "Игровые мониторы" [ref=e425] [cursor=pointer]:
+                    - /url: https://www.samsung.com/ru/monitors/gaming/
+                - text: ". Эти мониторы были разработаны специально для геймеров: высокая частота обновления (144 Гц, 165 Гц, 240 Гц и т. д.) обеспечивает плавность изображения, минимальное время отклика* (1 мс, 0,03 мс и т. д.) сокращает задержку пикселей на смену цветов. Такие технологии, как G-Sync и FreeSync, устраняют разрывы и прерывания изображения."
+                - strong [ref=e426]:
+                  - link "Ультраширокие мониторы" [ref=e428] [cursor=pointer]:
+                    - /url: https://www.samsung.com/ru/monitors/ultra-wide/
+                - text: . Благодаря более широкому соотношению сторон (21:9 или 32:9), ультраширокие мониторы обеспечивают больше полезного пространства экрана для многозадачной работы, игр и просмотра фильмов, создавая эффект погружения.
+                - strong [ref=e429]:
+                  - link "Изогнутые мониторы" [ref=e431] [cursor=pointer]:
+                    - /url: https://www.samsung.com/ru/monitors/curved/
+                - text: . Изогнутые мониторы обеспечивают естественный эффект просмотра изображения, снижают нагрузку на глаза и обеспечивают эффект погружения в происходящее на экране. Такие мониторы идеальны для игр, просмотра фильмов и выполнения рабочих задач, поскольку изгиб экрана полностью соответствует полю зрения глаз человека.
+                - strong [ref=e432]:
+                  - link "Мониторы с высоким разрешением" [ref=e434] [cursor=pointer]:
+                    - /url: https://www.samsung.com/ru/monitors/all-monitors/?viewfinity
+                - text: . Мониторы с разрешением 4K и 5K UHD обеспечивают четкое детализированное изображение, особенно важное для графического дизайна, видеомонтажа и обработки фотографий.
+                - strong [ref=e435]:
+                  - link "Smart дисплей" [ref=e437] [cursor=pointer]:
+                    - /url: https://www.samsung.com/ru/monitors/smart/
+                - text: . Предлагает расширенные функции, например подключение к Интернету, встроенную поддержку стриминговых сервисов, поддержку голосового управления и интеграцию с Интернетом вещей для удобства использования и повышенной производительности**.
+              - text: "*Время отклика зависит от модели и способа измерения."
+              - text: "**Для доступа ко всем функциям Smart-хаба необходима учетная запись Samsung."
+          - listitem [ref=e438]:
+            - heading "Как измеряется размер монитора и какой размер мне подойдет?" [level=3] [ref=e439]:
+              - button "Как измеряется размер монитора и какой размер мне подойдет?" [ref=e440] [cursor=pointer]:
+                - generic [ref=e441]: Как измеряется размер монитора и какой размер мне подойдет?
+                - img [ref=e443]
+          - listitem [ref=e445]:
+            - heading "Что такое разрешение экрана и каким оно должно быть?" [level=3] [ref=e446]:
+              - button "Что такое разрешение экрана и каким оно должно быть?" [ref=e447] [cursor=pointer]:
+                - generic [ref=e448]: Что такое разрешение экрана и каким оно должно быть?
+                - img [ref=e450]
+          - listitem [ref=e452]:
+            - heading "Есть ли у мониторов встроенные динамики?" [level=3] [ref=e453]:
+              - button "Есть ли у мониторов встроенные динамики?" [ref=e454] [cursor=pointer]:
+                - generic [ref=e455]: Есть ли у мониторов встроенные динамики?
+                - img [ref=e457]
+          - listitem [ref=e459]:
+            - heading "Что такое частота обновления монитора и сколько герц она должна составлять?" [level=3] [ref=e460]:
+              - button "Что такое частота обновления монитора и сколько герц она должна составлять?" [ref=e461] [cursor=pointer]:
+                - generic [ref=e462]: Что такое частота обновления монитора и сколько герц она должна составлять?
+                - img [ref=e464]
+          - listitem [ref=e466]:
+            - heading "Изогнутые мониторы лучше плоских?" [level=3] [ref=e467]:
+              - button "Изогнутые мониторы лучше плоских?" [ref=e468] [cursor=pointer]:
+                - generic [ref=e469]: Изогнутые мониторы лучше плоских?
+                - img [ref=e471]
+          - listitem [ref=e473]:
+            - heading "В чём разница между мониторами с матрицами IPS и VA и какой из них лучше выбрать?" [level=3] [ref=e474]:
+              - button "В чём разница между мониторами с матрицами IPS и VA и какой из них лучше выбрать?" [ref=e475] [cursor=pointer]:
+                - generic [ref=e476]: В чём разница между мониторами с матрицами IPS и VA и какой из них лучше выбрать?
+                - img [ref=e478]
+          - listitem [ref=e480]:
+            - heading "Что значит HDR в мониторе и какие у него преимущества?" [level=3] [ref=e481]:
+              - button "Что значит HDR в мониторе и какие у него преимущества?" [ref=e482] [cursor=pointer]:
+                - generic [ref=e483]: Что значит HDR в мониторе и какие у него преимущества?
+                - img [ref=e485]
+          - listitem [ref=e487]:
+            - heading "Можно ли подключиться через порт USB-C к монитору и зачем он нужен?" [level=3] [ref=e488]:
+              - button "Можно ли подключиться через порт USB-C к монитору и зачем он нужен?" [ref=e489] [cursor=pointer]:
+                - generic [ref=e490]: Можно ли подключиться через порт USB-C к монитору и зачем он нужен?
+                - img [ref=e492]
+        - paragraph [ref=e500]: "*Функции и характеристики могут различаться в зависимости от модели."
+        - navigation "Breadcrumb" [ref=e501]:
+          - list [ref=e503]:
+            - listitem [ref=e504]:
+              - link "Home" [ref=e505] [cursor=pointer]:
+                - /url: /ru/
+                - generic [ref=e506]: Home
+              - img [ref=e507]
+            - listitem [ref=e509]:
+              - strong [ref=e510]: Мониторы
+    - contentinfo [ref=e511]:
+      - generic [ref=e512]:
+        - generic [ref=e513]:
+          - paragraph [ref=e514]: Footer Navigation
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - paragraph [ref=e517]: Важное
+              - list [ref=e519]:
+                - listitem [ref=e520]:
+                  - link "Рекомендовано Рекомендовано" [ref=e521] [cursor=pointer]:
+                    - /url: /ru/hero-products/
+                    - text: Рекомендовано
+                - listitem [ref=e522]:
+                  - link "Откройте для себя AI Откройте для себя AI" [ref=e523] [cursor=pointer]:
+                    - /url: /ru/ai-products/
+                    - text: Откройте для себя AI
+                - listitem [ref=e524]:
+                  - link "SmartThings SmartThings" [ref=e525] [cursor=pointer]:
+                    - /url: /ru/smartthings/
+                    - text: SmartThings
+                - listitem [ref=e526]:
+                  - link "Программа Samsung Care+ Программа Samsung Care+" [ref=e527] [cursor=pointer]:
+                    - /url: /ru/samsung-care-plus/
+                    - text: Программа Samsung Care+
+                - listitem [ref=e528]:
+                  - link "Живые страницы Живые страницы" [ref=e529] [cursor=pointer]:
+                    - /url: https://www.samsung.com/ru/inrussia/live-pages/
+                    - text: Живые страницы
+                - listitem [ref=e530]:
+                  - link "Аллея звезд Galaxy" [ref=e531] [cursor=pointer]:
+                    - /url: /ru/galaxy-hall-of-fame/
+                - listitem [ref=e532]:
+                  - link "Рецепты для техники Samsung" [ref=e533] [cursor=pointer]:
+                    - /url: /ru/cooking-appliances/recipes/
+                - listitem [ref=e534]:
+                  - link "История ТВ бренда №1 История ТВ бренда №1" [ref=e535] [cursor=pointer]:
+                    - /url: /ru/tv-hall-of-innovation/
+                    - text: История ТВ бренда №1
+            - generic [ref=e536]:
+              - paragraph [ref=e537]: Explore
+              - list [ref=e539]:
+                - listitem [ref=e540]:
+                  - link "Все статьи Explore Все статьи Explore" [ref=e541] [cursor=pointer]:
+                    - /url: /ru/explore/
+                    - text: Все статьи Explore
+                - listitem [ref=e542]:
+                  - 'link "#ВместеЭтоВозможно #ВместеЭтоВозможно" [ref=e543] [cursor=pointer]':
+                    - /url: /ru/explore/brand/
+                    - text: "#ВместеЭтоВозможно"
+                - listitem [ref=e544]:
+                  - link "Где кнопка Где кнопка" [ref=e545] [cursor=pointer]:
+                    - /url: /ru/explore/life-hacks/
+                    - text: Где кнопка
+                - listitem [ref=e546]:
+                  - link "Перезагрузка Перезагрузка" [ref=e547] [cursor=pointer]:
+                    - /url: /ru/explore/entertainment/
+                    - text: Перезагрузка
+                - listitem [ref=e548]:
+                  - link "Датчик уюта Датчик уюта" [ref=e549] [cursor=pointer]:
+                    - /url: /ru/explore/interior/
+                    - text: Датчик уюта
+                - listitem [ref=e550]:
+                  - link "В фокусе В фокусе" [ref=e551] [cursor=pointer]:
+                    - /url: /ru/explore/photography/
+                    - text: В фокусе
+                - listitem [ref=e552]:
+                  - link "Технологии заботы Технологии заботы" [ref=e553] [cursor=pointer]:
+                    - /url: /ru/explore/wellbeing/
+                    - text: Технологии заботы
+                - listitem [ref=e554]:
+                  - link "Важный ингредиент Важный ингредиент" [ref=e555] [cursor=pointer]:
+                    - /url: /ru/explore/food-home/
+                    - text: Важный ингредиент
+          - generic [ref=e557]:
+            - paragraph [ref=e558]: Продукты
+            - list [ref=e560]:
+              - listitem [ref=e561]:
+                - link "Смартфоны Galaxy Смартфоны Galaxy" [ref=e562] [cursor=pointer]:
+                  - /url: /ru/smartphones/all-smartphones/
+                  - text: Смартфоны Galaxy
+              - listitem [ref=e563]:
+                - link "Планшеты Galaxy Планшеты Galaxy" [ref=e564] [cursor=pointer]:
+                  - /url: /ru/tablets/all-tablets/
+                  - text: Планшеты Galaxy
+              - listitem [ref=e565]:
+                - link "Galaxy Watch Galaxy Watch" [ref=e566] [cursor=pointer]:
+                  - /url: /ru/watches/all-watches/
+                  - text: Galaxy Watch
+              - listitem [ref=e567]:
+                - link "Наушники Galaxy Buds Наушники Galaxy Buds" [ref=e568] [cursor=pointer]:
+                  - /url: /ru/audio-sound/all-audio-sound/
+                  - text: Наушники Galaxy Buds
+              - listitem [ref=e569]:
+                - link "ТВ ТВ" [ref=e570] [cursor=pointer]:
+                  - /url: /ru/tvs/all-tvs/
+                  - text: ТВ
+              - listitem [ref=e571]:
+                - link "Проекторы Проекторы" [ref=e572] [cursor=pointer]:
+                  - /url: /ru/projectors/all-projectors/
+                  - text: Проекторы
+              - listitem [ref=e573]:
+                - link "Аудио Аудио" [ref=e574] [cursor=pointer]:
+                  - /url: /ru/audio-devices/all-audio-devices/
+                  - text: Аудио
+              - listitem [ref=e575]:
+                - link "Холодильники Холодильники" [ref=e576] [cursor=pointer]:
+                  - /url: /ru/refrigerators/all-refrigerators/
+                  - text: Холодильники
+              - listitem [ref=e577]:
+                - link "Посудомоечные машины Посудомоечные машины" [ref=e578] [cursor=pointer]:
+                  - /url: /ru/dishwashers/all-dishwashers/
+                  - text: Посудомоечные машины
+              - listitem [ref=e579]:
+                - link "Стиральные и сушильные машины Стиральные и сушильные машины" [ref=e580] [cursor=pointer]:
+                  - /url: /ru/washers-and-dryers/all-washers-and-dryers/
+                  - text: Стиральные и сушильные машины
+              - listitem [ref=e581]:
+                - link "Пылесосы Пылесосы" [ref=e582] [cursor=pointer]:
+                  - /url: /ru/vacuum-cleaners/all-vacuum-cleaners/
+                  - text: Пылесосы
+              - listitem [ref=e583]:
+                - link "Мониторы Мониторы" [ref=e584] [cursor=pointer]:
+                  - /url: /ru/monitors/all-monitors/
+                  - text: Мониторы
+              - listitem [ref=e585]:
+                - link "Память и накопители Память и накопители" [ref=e586] [cursor=pointer]:
+                  - /url: /ru/memory-storage/all-memory-storage/
+                  - text: Память и накопители
+              - listitem [ref=e587]:
+                - link "Аксессуары Аксессуары" [ref=e588] [cursor=pointer]:
+                  - /url: /ru/accessories/
+                  - text: Аксессуары
+              - listitem [ref=e589]:
+                - link "One UI One UI" [ref=e590] [cursor=pointer]:
+                  - /url: /ru/one-ui/
+                  - text: One UI
+          - generic [ref=e592]:
+            - paragraph [ref=e593]: Поддержка
+            - list [ref=e595]:
+              - listitem [ref=e596]:
+                - link "Справка и поддержка Поддержка" [ref=e597] [cursor=pointer]:
+                  - /url: /ru/support/
+                  - text: Справка и поддержка
+              - listitem [ref=e598]:
+                - link "Инструкции, драйверы и ПО Инструкции, дайверы и ПО" [ref=e599] [cursor=pointer]:
+                  - /url: /ru/support/user-manuals-and-guide/
+                  - text: Инструкции, драйверы и ПО
+              - listitem [ref=e600]:
+                - link "Помощь для мобильных устройств Помощь для мобильных устройств" [ref=e601] [cursor=pointer]:
+                  - /url: /ru/aisearch/?searchvalue=mobile#support
+                  - text: Помощь для мобильных устройств
+              - listitem [ref=e602]:
+                - link "Сервисные центры Сервисные центры" [ref=e603] [cursor=pointer]:
+                  - /url: /ru/support/servicelocation/
+                  - text: Сервисные центры
+              - listitem [ref=e604]:
+                - link "Мобильный сервисный центр Мобильный сервисный центр" [ref=e605] [cursor=pointer]:
+                  - /url: /ru/support/repair-van/
+                  - text: Мобильный сервисный центр
+              - listitem [ref=e606]:
+                - link "Информация о гарантии Информация о гарантии" [ref=e607] [cursor=pointer]:
+                  - /url: /ru/support/warranty/
+                  - text: Информация о гарантии
+              - listitem [ref=e608]:
+                - link "Негарантийный ремонт Негарантийный ремонт" [ref=e609] [cursor=pointer]:
+                  - /url: /ru/support/non-warranty-repairs/
+                  - text: Негарантийный ремонт
+              - listitem [ref=e610]:
+                - link "Проверить статус обращения Проверить статус обращения" [ref=e611] [cursor=pointer]:
+                  - /url: /ru/support/your-service/track-repair/
+                  - text: Проверить статус обращения
+              - listitem [ref=e612]:
+                - link "Чат с экспертом Чат с экспертом" [ref=e613] [cursor=pointer]:
+                  - /url: /ru/support/chat/
+                  - text: Чат с экспертом
+              - listitem [ref=e614]:
+                - link "Связаться с нами Связаться с нами" [ref=e615] [cursor=pointer]:
+                  - /url: /ru/support/contact/
+                  - text: Связаться с нами
+              - listitem [ref=e616]:
+                - link "Техническая поддержка онлайн Техническая поддержка онлайн" [ref=e617] [cursor=pointer]:
+                  - /url: /ru/support/contact/#onlinesupport
+                  - text: Техническая поддержка онлайн
+              - listitem [ref=e618]:
+                - link "Письмо президенту Письмо президенту" [ref=e619] [cursor=pointer]:
+                  - /url: /ru/support/contact/email-the-ceo/
+                  - text: Письмо президенту
+          - generic [ref=e621]:
+            - paragraph [ref=e622]: Личный кабинет
+            - list [ref=e624]:
+              - listitem [ref=e625]:
+                - link "Единая учетная запись Единая учетная запись" [ref=e626] [cursor=pointer]:
+                  - /url: /ru/why-samsung-account/
+                  - text: Единая учетная запись
+              - listitem [ref=e627]:
+                - link "Samsung Members Samsung Members" [ref=e628] [cursor=pointer]:
+                  - /url: /ru/apps/samsung-members/
+                  - text: Samsung Members
+              - listitem [ref=e629]:
+                - link "Моя страница Моя страница" [ref=e630] [cursor=pointer]:
+                  - /url: /ru/mypage/
+                  - text: Моя страница
+              - listitem [ref=e631]:
+                - link "Преимущества личного кабинета" [ref=e632] [cursor=pointer]:
+                  - /url: /ru/account/
+          - generic [ref=e633]:
+            - generic [ref=e634]:
+              - paragraph [ref=e635]: Принципы
+              - list [ref=e637]:
+                - listitem [ref=e638]:
+                  - link "Окружающая среда Окружающая среда" [ref=e639] [cursor=pointer]:
+                    - /url: /ru/sustainability/environment/
+                    - text: Окружающая среда
+                - listitem [ref=e640]:
+                  - link "Конфиденциальность и защита данных Конфиденциальность и защита данных" [ref=e641] [cursor=pointer]:
+                    - /url: /ru/sustainability/security-and-privacy/
+                    - text: Конфиденциальность и защита данных
+                - listitem [ref=e642]:
+                  - link "Специальные возможности Специальные возможности" [ref=e643] [cursor=pointer]:
+                    - /url: /ru/sustainability/accessibility/overview/
+                    - text: Специальные возможности
+                - listitem [ref=e644]:
+                  - link "Инклюзивность на рабочих местах Инклюзивность на рабочих местах" [ref=e645] [cursor=pointer]:
+                    - /url: /ru/sustainability/inclusive-workplace/
+                    - text: Инклюзивность на рабочих местах
+                - listitem [ref=e646]:
+                  - 'link "Корпоративное устойчивое развитие Корпоративное устойчивое развитие : Открыть в новом окне" [ref=e647] [cursor=pointer]':
+                    - /url: https://www.samsung.com/global/sustainability/
+                    - text: Корпоративное устойчивое развитие
+                    - img [ref=e648]
+                - listitem [ref=e650]:
+                  - 'link "Корпоративная социальная ответственность Корпоративная социальная ответственность : Открыть в новом окне" [ref=e651] [cursor=pointer]':
+                    - /url: https://www.innovationcampus.ru/
+                    - text: Корпоративная социальная ответственность
+                    - img [ref=e652]
+            - generic [ref=e654]:
+              - paragraph [ref=e655]: О компании
+              - list [ref=e657]:
+                - listitem [ref=e658]:
+                  - link "Информация о компании Информация о компании" [ref=e659] [cursor=pointer]:
+                    - /url: /ru/about-us/company-info/
+                    - text: Информация о компании
+                - listitem [ref=e660]:
+                  - link "Направления бизнеса Направления бизнеса" [ref=e661] [cursor=pointer]:
+                    - /url: /ru/about-us/business-area/
+                    - text: Направления бизнеса
+                - listitem [ref=e662]:
+                  - link "Фирменный стиль Фирменный стиль" [ref=e663] [cursor=pointer]:
+                    - /url: /ru/about-us/brand-identity/
+                    - text: Фирменный стиль
+                - listitem [ref=e664]:
+                  - link "Карьера Карьера" [ref=e665] [cursor=pointer]:
+                    - /url: /ru/about-us/careers/
+                    - text: Карьера
+                - listitem [ref=e666]:
+                  - 'link "Отношения с инвесторами Отношения с инвесторами : Открыть в новом окне" [ref=e667] [cursor=pointer]':
+                    - /url: https://www.samsung.com/global/ir/
+                    - text: Отношения с инвесторами
+                    - img [ref=e668]
+                - listitem [ref=e670]:
+                  - 'link "Новости компании Новости компании : Открыть в новом окне" [ref=e671] [cursor=pointer]':
+                    - /url: https://news.samsung.com/ru/
+                    - text: Новости компании
+                    - img [ref=e672]
+                - listitem [ref=e674]:
+                  - link "Этика Этика" [ref=e675] [cursor=pointer]:
+                    - /url: /ru/about-us/ethics/
+                    - text: Этика
+                - listitem [ref=e676]:
+                  - 'link "Дизайн Samsung Дизайн Samsung : Открыть в новом окне" [ref=e677] [cursor=pointer]':
+                    - /url: https://design.samsung.com/global/index.html
+                    - text: Дизайн Samsung
+                    - img [ref=e678]
+                - listitem [ref=e680]:
+                  - link "Корпоративные проекты в России Корпоративные проекты в России" [ref=e681] [cursor=pointer]:
+                    - /url: /ru/inrussia/
+                    - text: Корпоративные проекты в России
+        - generic [ref=e682]:
+          - paragraph [ref=e685]: © 1995-2026 Samsung. Все права защищены.
+          - generic [ref=e686]:
+            - link "Выберите ваш регион или язык." [ref=e688] [cursor=pointer]:
+              - /url: /ru/function/ipredirection/ipredirectionLocalList/
+              - text: Россия/Русский
+            - list [ref=e690]:
+              - listitem [ref=e691]:
+                - link "Открыть в новом окне" [ref=e692] [cursor=pointer]:
+                  - /url: https://images.samsung.com/is/content/samsung/assets/ru/privacy/SERC_Personal_Data_policy.pdf
+                  - text: Персональные данные
+              - listitem [ref=e693]:
+                - link "Конфиденциальность" [ref=e694] [cursor=pointer]:
+                  - /url: /ru/info/privacy/
+              - listitem [ref=e695]:
+                - link "Декларация" [ref=e696] [cursor=pointer]:
+                  - /url: /ru/info/legal/
+              - listitem [ref=e697]:
+                - link "Карта сайта" [ref=e698] [cursor=pointer]:
+                  - /url: /ru/info/sitemap/
+            - generic [ref=e699]:
+              - generic [ref=e700]: ХОТИТЕ ОСТАВАТЬСЯ В КУРСЕ НОВИНОК?
+              - list [ref=e701]:
+                - listitem [ref=e702]:
+                  - link "Открыть в новом окне" [ref=e703] [cursor=pointer]:
+                    - /url: https://t.me/SamsungRussia
+                    - img [ref=e704]
+                - listitem [ref=e706]:
+                  - link "Открыть в новом окне" [ref=e707] [cursor=pointer]:
+                    - /url: //vk.com/samsung
+                    - img [ref=e708]
+                - listitem [ref=e710]:
+                  - link "Открыть в новом окне" [ref=e711] [cursor=pointer]:
+                    - /url: //ok.ru/samsung
+                    - img [ref=e712]
+                - listitem [ref=e714]:
+                  - 'link "Дзен : Открыть в новом окне" [ref=e715] [cursor=pointer]':
+                    - /url: //dzen.ru/samsungrussia
+                    - img [ref=e716]
+                - listitem [ref=e718]:
+                  - link "Открыть в новом окне" [ref=e719] [cursor=pointer]:
+                    - /url: //www.youtube.com/c/samsungrussia/
+                    - img [ref=e720]
+  - generic [ref=e723] [cursor=pointer]:
+    - generic [ref=e724]:
+      - img "Чат с экспертом Samsung" [ref=e725]
+      - img "Чат с экспертом Samsung"
+    - generic [ref=e726]:
+      - text: Задайте нам
+      - text: вопрос в чате!
+  - generic [ref=e728]:
+    - generic [ref=e729]:
+      - text: На этом сайте используются
+      - link "файлы cookie" [ref=e730] [cursor=pointer]:
+        - /url: //www.samsung.com/ru/info/privacy/
+      - text: .
+    - button "Понятно" [ref=e732] [cursor=pointer]

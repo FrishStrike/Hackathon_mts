@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e13]:
+        - link [ref=e15] [cursor=pointer]:
+          - /url: "#"
+        - link "EN" [ref=e18] [cursor=pointer]:
+          - /url: /Localization/SwitchLanguage?url=%2Ferror%2F404&from=ru-RU&to=en-CB
+    - generic [ref=e22]:
+      - link [ref=e25] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e28]:
+        - link [ref=e30] [cursor=pointer]:
+          - /url: "#"
+        - link "EN" [ref=e33] [cursor=pointer]:
+          - /url: /Localization/SwitchLanguage?url=%2Ferror%2F404&from=ru-RU&to=en-CB
+  - main [ref=e34]:
+    - generic [ref=e37]:
+      - heading "404" [level=1] [ref=e39]
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Неправильно набран адрес, или такой страницы на сайте Банка России больше не существует.
+        - paragraph [ref=e42]:
+          - text: Можно перейти на
+          - link "главную страницу" [ref=e43] [cursor=pointer]:
+            - /url: /
+          - text: ", открыть"
+          - link "карту сайта" [ref=e44] [cursor=pointer]:
+            - /url: /sitemap/
+          - text: или воспользоваться
+          - link "поиском" [ref=e45] [cursor=pointer]:
+            - /url: /search/
+          - text: .
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: Sorry, the page you were looking for has either moved or is no longer available.
+        - paragraph [ref=e48]:
+          - text: You can go to
+          - link "the main page" [ref=e49] [cursor=pointer]:
+            - /url: /eng/
+          - text: ", open"
+          - link "the sitemap" [ref=e50] [cursor=pointer]:
+            - /url: /eng/sitemap/
+          - text: or use
+          - link "the search" [ref=e51] [cursor=pointer]:
+            - /url: /eng/search/
+          - text: .
+  - contentinfo [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e56]:
+        - link [ref=e57] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e59] [cursor=pointer]: Наверх
+      - generic [ref=e62]:
+        - generic [ref=e63]: © Банк России, 2000–2026.
+        - generic [ref=e64]:
+          - text: Дизайн сайта —
+          - link [ref=e65] [cursor=pointer]:
+            - /url: https://aic.ru
+            - img [ref=e66]
+  - generic [ref=e67]:
+    - generic [ref=e68]: На сайте Банка России используются файлы cookie
+    - generic [ref=e69]:
+      - text: Оставаясь на
+      - link "www.cbr.ru" [ref=e70] [cursor=pointer]:
+        - /url: /
+      - text: ", вы принимаете"
+      - link "пользовательское соглашение" [ref=e71] [cursor=pointer]:
+        - /url: /user_agreement/
+    - button "Подтвердить" [ref=e72] [cursor=pointer]
+  - status [ref=e73]

@@ -1,0 +1,24 @@
+- banner [ref=e2]:
+  - button "Перейти к контенту" [ref=e3] [cursor=pointer]:
+    - generic [ref=e5]: Перейти к контенту
+  - button "Отзыв о доступности" [ref=e6] [cursor=pointer]:
+    - generic [ref=e8]: Отзыв о доступности
+  - generic [ref=e9]:
+    - link "Вернуться к Поиску Bing" [ref=e10] [cursor=pointer]:
+      - /url: /?FORM=Z9FD1
+      - heading "Вернуться к Поиску Bing" [level=1] [ref=e11]
+    - search [ref=e12]:
+      - button "Поиск" [ref=e15] [cursor=pointer]
+      - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e16]: самая высокая гора мира
+      - button "Поиск с использованием изображения" [ref=e19] [cursor=pointer]
+  - complementary "Награды и предпочтения учетной записи" [ref=e21]:
+    - button "Microsoft Rewards" [ref=e22] [cursor=pointer]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: Rewards
+        - img [ref=e27]
+    - link "Войти" [ref=e39] [cursor=pointer]:
+      - /url: javascript:void(0)
+      - generic "Войти" [ref=e40]
+  - generic [ref=e41]:
+    - generic [ref=e42]: Последний шаг
+    - generic [ref=e43]: Чтобы продолжить, решите испытание ниже

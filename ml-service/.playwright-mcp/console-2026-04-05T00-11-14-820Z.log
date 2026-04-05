@@ -1,0 +1,6 @@
+[     196ms] [ERROR] Failed to load resource: the server responded with a status of 498 () @ https://www.wildberries.ru/:0
+[    1028ms] [ERROR] Failed to load resource: the server responded with a status of 498 () @ https://www.wildberries.ru/__wbaas/challenges/antibot/api/v1/create-token:0
+[    1717ms] [ERROR] Failed to load resource: the server responded with a status of 498 () @ https://www.wildberries.ru/__wbaas/challenges/antibot/api/v1/create-token:0
+[    3182ms] [ERROR] Failed to load resource: the server responded with a status of 498 () @ https://www.wildberries.ru/:0
+[    4011ms] [ERROR] Failed to load resource: the server responded with a status of 498 () @ https://www.wildberries.ru/__wbaas/challenges/antibot/api/v1/create-token:0
+[    4711ms] [ERROR] Failed to load resource: the server responded with a status of 498 () @ https://www.wildberries.ru/__wbaas/challenges/antibot/api/v1/create-token:0

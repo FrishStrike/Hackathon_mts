@@ -1,0 +1,530 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - dialog:
+      - generic [ref=e2]:
+        - generic [ref=e3]:
+          - paragraph
+        - generic [ref=e5]:
+          - generic [ref=e6]:
+            - generic [ref=e7]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+            - generic [ref=e8]:
+              - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+              - link "Заявление о конфиденциальности" [ref=e9] [cursor=pointer]:
+                - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+          - generic [ref=e10]:
+            - link "Принимаю" [ref=e12] [cursor=pointer]:
+              - /url: "javascript: void(0)"
+            - link "Отклонить" [ref=e14] [cursor=pointer]:
+              - /url: "javascript: void(0)"
+            - link "Дополнительные параметры" [ref=e15] [cursor=pointer]:
+              - /url: "javascript: void(0)"
+  - generic [ref=e17]:
+    - main [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - heading "Изображение логотипа Microsoft" [level=1] [ref=e33]:
+            - img "Изображение логотипа Microsoft" [ref=e34] [cursor=pointer]:
+              - img [ref=e35]
+          - navigation [ref=e42]:
+            - menubar [ref=e43]:
+              - menuitem "Copilot" [ref=e44] [cursor=pointer]:
+                - link "Copilot" [ref=e45]:
+                  - /url: /chat?FORM=hpcodx&intent=bing
+                  - generic [ref=e47]: Copilot
+              - menuitem "Изображения" [ref=e48] [cursor=pointer]:
+                - link "Изображения" [ref=e49]:
+                  - /url: /images?FORM=Z9LH
+              - menuitem "Видео" [ref=e50] [cursor=pointer]:
+                - link "Видео" [ref=e51]:
+                  - /url: /videos?FORM=Z9LH1
+              - menuitem "Покупки" [ref=e52] [cursor=pointer]:
+                - link "Покупки" [ref=e53]:
+                  - /url: /shop?FORM=Z9LHS4
+              - menuitem "Карты" [ref=e54] [cursor=pointer]:
+                - link "Карты" [ref=e55]:
+                  - /url: /maps?FORM=Z9LH2
+              - menuitem "Новости" [ref=e56] [cursor=pointer]:
+                - link "Новости" [ref=e57]:
+                  - /url: /news/search?q=%d0%93%d0%bb%d0%b0%d0%b2%d0%bd%d1%8b%d0%b5+%d0%bd%d0%be%d0%b2%d0%be%d1%81%d1%82%d0%b8&nvaug=%5bNewsVertical+Category%3d%22rt_MaxClass%22%5d&FORM=Z9LH3
+              - menuitem ". . . Еще" [ref=e58] [cursor=pointer]:
+                - text: . . .
+                - button "Еще" [ref=e59]
+        - complementary "Награды и предпочтения учетной записи" [ref=e62]:
+          - link "Войти Войти" [ref=e63] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=e64]: Войти
+            - generic "Войти" [ref=e65]
+          - button "Microsoft Rewards" [ref=e66] [cursor=pointer]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: Rewards
+              - img [ref=e71]
+          - button "Настройки и быстрые ссылки" [ref=e76] [cursor=pointer]
+      - generic [ref=e77]:
+        - search [ref=e78]:
+          - img [ref=e80] [cursor=pointer]
+          - combobox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e84]
+          - button "Очистить" [ref=e86]:
+            - img [ref=e87]
+          - link "Открыть Copilot" [ref=e89] [cursor=pointer]:
+            - /url: /chat?FORM=hpcodx&intent=bing
+          - group "Языки:" [ref=e93]:
+            - generic [ref=e94]: "Языки:"
+            - link "Finnish" [ref=e95] [cursor=pointer]:
+              - /url: /?setlang=fi&cc=fi&cc=FI
+              - text: suomi
+            - link "Swedish" [ref=e96] [cursor=pointer]:
+              - /url: /?setlang=sv&cc=fi&cc=FI
+              - text: Svenska
+            - link "English" [ref=e97] [cursor=pointer]:
+              - /url: /?setlang=en&cc=fi&cc=FI
+        - generic [ref=e100]:
+          - link "Создатель изображений" [ref=e101] [cursor=pointer]:
+            - /url: /images/create?bicsource=hp&FORM=bicbhp
+            - generic [ref=e103]: Создатель изображений
+          - link "Создатель видео" [ref=e104] [cursor=pointer]:
+            - /url: /images/create?ctype=video&bicsource=hp&FORM=bvcbhp
+            - generic [ref=e106]: Создатель видео
+    - generic [ref=e109]:
+      - generic [ref=e111]:
+        - generic:
+          - 'heading "Изображение дня: Black grouse males facing off on a lekking site, Estonia" [level=3]':
+            - 'link "Изображение дня: Black grouse males facing off on a lekking site, Estonia"':
+              - /url: /search?q=Black+grouse&form=hpcapt&filters=HpDate:"20260404_0700"+mgzv3configlist:"BingQA_Encyclopedia_Layout"
+              - text: Black grouse males facing off on a lekking site, Estonia
+          - generic:
+            - generic: © Sven Zacek/Nature Picture Library
+            - list:
+              - listitem:
+                - button "Загрузите это изображение. Использовать его можно только как обои."
+        - generic [ref=e112]:
+          - link "Info" [ref=e114] [cursor=pointer]:
+            - /url: /search?q=Black+grouse&form=hpcapt&filters=HpDate:"20260404_0700"+mgzv3configlist:"BingQA_Encyclopedia_Layout"
+            - img [ref=e116]
+            - heading "Info" [level=2] [ref=e119]
+          - generic [ref=e120] [cursor=pointer]:
+            - status [ref=e121]
+            - button "Предыдущее изображение" [ref=e122]
+            - button "Следующее изображение" [disabled] [ref=e124]
+      - button "Обратная связь" [ref=e126] [cursor=pointer]:
+        - img [ref=e127]
+        - generic: Обратная связь
+      - generic [ref=e129]:
+        - region "Популярное на Bing" [ref=e130]:
+          - generic:
+            - status [ref=e131]
+            - button "Toggle feed area position" [expanded] [ref=e132] [cursor=pointer]
+            - button "Предыдущие новости" [disabled]
+            - button "Другие новости" [ref=e134] [cursor=pointer]
+          - list [ref=e136]:
+            - listitem [ref=e137]:
+              - list [ref=e138]:
+                - listitem [ref=e139] [cursor=pointer]:
+                  - link "Kalle Rovanperä päätti sitten hankkia melkoisen menopelin – \"Harvoin enää näkee\" © Sporttiuutiset" [ref=e140]:
+                    - /url: /search?q=Kalle+Rovanper%c3%a4+p%c3%a4%c3%a4tti+sitten+hankkia+melkoisen+menopelin+%e2%80%93+%22Harvoin+en%c3%a4%c3%a4+n%c3%a4kee%22&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_8AB162D3649D946D87458B9308009164%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%220%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e141]:
+                      - heading "Kalle Rovanperä päätti sitten hankkia melkoisen menopelin – \"Harvoin enää näkee\"" [level=2] [ref=e142]:
+                        - generic [ref=e143]: Kalle Rovanperä päätti sitten hankkia melkoisen menopelin – "Harvoin enää näkee"
+                      - img "© Sporttiuutiset" [ref=e144]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/kalle-rovanperä-päätti-sitten-hankkia-melkoisen-menopelin-harvoin-enää-näkee/ar-AA208GRI?ocid=TobArticle
+                        - img [ref=e145]
+                - listitem [ref=e148] [cursor=pointer]:
+                  - 'link "Kaleva: Suuri suomalainen hiihtomies menehtyi kävelylenkillä © Sporttiuutiset" [ref=e149]':
+                    - /url: /search?q=Kaleva%3a+Suuri+suomalainen+hiihtomies+menehtyi+k%c3%a4velylenkill%c3%a4&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_44BA853896999C1E75CBC50AB7E6D3F6%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%221%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e150]:
+                      - 'heading "Kaleva: Suuri suomalainen hiihtomies menehtyi kävelylenkillä" [level=2] [ref=e151]':
+                        - generic [ref=e152]: "Kaleva: Suuri suomalainen hiihtomies menehtyi kävelylenkillä"
+                      - img "© Sporttiuutiset" [ref=e153]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/kaleva-suuri-suomalainen-hiihtomies-menehtyi-kävelylenkillä/ar-AA208Vka?ocid=TobArticle
+                        - img [ref=e154]
+                - listitem [ref=e157] [cursor=pointer]:
+                  - link "Törkyhuudot ylittivät rajan – tv-asiantuntijaan kohdistunut käytös pakotti kovaan ratkaisuun © Leijonauutiset.fi" [ref=e158]:
+                    - /url: /search?q=T%c3%b6rkyhuudot+ylittiv%c3%a4t+rajan+%e2%80%93+tv-asiantuntijaan+kohdistunut+k%c3%a4yt%c3%b6s+pakotti+kovaan+ratkaisuun&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_D61639823F5779D56AF011EA97C3B9FA%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%222%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e159]:
+                      - heading "Törkyhuudot ylittivät rajan – tv-asiantuntijaan kohdistunut käytös pakotti kovaan ratkaisuun" [level=2] [ref=e160]:
+                        - generic [ref=e161]: Törkyhuudot ylittivät rajan – tv-asiantuntijaan kohdistunut käytös pakotti kovaan ratkaisuun
+                      - img "© Leijonauutiset.fi" [ref=e162]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/törkyhuudot-ylittivät-rajan-tv-asiantuntijaan-kohdistunut-käytös-pakotti-kovaan-ratkaisuun/ar-AA209xR0?ocid=TobArticle
+                        - img [ref=e163]
+                - listitem [ref=e166] [cursor=pointer]:
+                  - link "36-vuotias Kei Nishikori päättää uransa viimeisen turnauksen jälkeen Floridassa © Tennis Temple" [ref=e167]:
+                    - /url: /search?q=36-vuotias+Kei+Nishikori+p%c3%a4%c3%a4tt%c3%a4%c3%a4+uransa+viimeisen+turnauksen+j%c3%a4lkeen+Floridassa&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_BC09B1556B4BDBD89372F01DB5A3AC82%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%223%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e168]:
+                      - heading "36-vuotias Kei Nishikori päättää uransa viimeisen turnauksen jälkeen Floridassa" [level=2] [ref=e169]:
+                        - generic [ref=e170]: 36-vuotias Kei Nishikori päättää uransa viimeisen turnauksen jälkeen Floridassa
+                      - img "© Tennis Temple" [ref=e171]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/36-vuotias-kei-nishikori-päättää-uransa-viimeisen-turnauksen-jälkeen-floridassa/ar-AA20a8rx?ocid=TobArticle
+                        - img [ref=e172]
+                - listitem [ref=e175] [cursor=pointer]:
+                  - 'link "Wawrinka: \"Se olisi taianomaista\" – unelmoi Alcaraz-kohtaamisesta Monte Carlossa © Tennis Temple" [ref=e176]':
+                    - /url: /search?q=Wawrinka%3a+%22Se+olisi+taianomaista%22+%e2%80%93+unelmoi+Alcaraz-kohtaamisesta+Monte+Carlossa&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_389A6A2606E4218E90A5D4954DB2E16C%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%224%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e177]:
+                      - 'heading "Wawrinka: \"Se olisi taianomaista\" – unelmoi Alcaraz-kohtaamisesta Monte Carlossa" [level=2] [ref=e178]':
+                        - generic [ref=e179]: "Wawrinka: \"Se olisi taianomaista\" – unelmoi Alcaraz-kohtaamisesta Monte Carlossa"
+                      - img "© Tennis Temple" [ref=e180]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/wawrinka-se-olisi-taianomaista-unelmoi-alcaraz-kohtaamisesta-monte-carlossa/ar-AA2094Qg?ocid=TobArticle
+                        - img [ref=e181]
+                - listitem [ref=e184] [cursor=pointer]:
+                  - 'link "Video: Nadal nappaa mailan Swiatekin katseen alla! © Tennis Temple" [ref=e185]':
+                    - /url: /search?q=Video%3a+Nadal+nappaa+mailan+Swiatekin+katseen+alla!&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_1E42664A9B3797EE14FF23A9A9AB8F72%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%225%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e186]:
+                      - 'heading "Video: Nadal nappaa mailan Swiatekin katseen alla!" [level=2] [ref=e187]':
+                        - generic [ref=e188]: "Video: Nadal nappaa mailan Swiatekin katseen alla!"
+                      - img "© Tennis Temple" [ref=e189]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/video-nadal-nappaa-mailan-swiatekin-katseen-alla/ar-AA209gD8?ocid=TobArticle
+                        - img [ref=e190]
+                - listitem [ref=e193] [cursor=pointer]:
+                  - 'link "Argentiinalaiset valtaavat ATP-semifinaalit: 10 pelaajaa top 100:aan maanantaina © Tennis Temple" [ref=e194]':
+                    - /url: /search?q=Argentiinalaiset+valtaavat+ATP-semifinaalit%3a+10+pelaajaa+top+100%3aaan+maanantaina&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_A7D4A5C9B982D1BE03F3B1FB74DF0580%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%226%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e195]:
+                      - 'heading "Argentiinalaiset valtaavat ATP-semifinaalit: 10 pelaajaa top 100:aan maanantaina" [level=2] [ref=e196]':
+                        - generic [ref=e197]: "Argentiinalaiset valtaavat ATP-semifinaalit: 10 pelaajaa top 100:aan maanantaina"
+                      - img "© Tennis Temple" [ref=e198]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/argentiinalaiset-valtaavat-atp-semifinaalit-10-pelaajaa-top-100-aan-maanantaina/ar-AA208yLK?ocid=TobArticle
+                        - img [ref=e199]
+                - listitem [ref=e202] [cursor=pointer]:
+                  - link "Raju syytös Barcelonasta – \"Idiootti pilasi kaiken\" ja jätti pysyvän jäljen © Futisuutiset.fi" [ref=e203]:
+                    - /url: /search?q=Raju+syyt%c3%b6s+Barcelonasta+%e2%80%93+%22Idiootti+pilasi+kaiken%22+ja+j%c3%a4tti+pysyv%c3%a4n+j%c3%a4ljen&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_D8ABEBC55C3274ED3A48789A615BB347%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%227%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e204]:
+                      - heading "Raju syytös Barcelonasta – \"Idiootti pilasi kaiken\" ja jätti pysyvän jäljen" [level=2] [ref=e205]:
+                        - generic [ref=e206]: Raju syytös Barcelonasta – "Idiootti pilasi kaiken" ja jätti pysyvän jäljen
+                      - img "© Futisuutiset.fi" [ref=e207]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/raju-syytös-barcelonasta-idiootti-pilasi-kaiken-ja-jätti-pysyvän-jäljen/ar-AA209qhD?ocid=TobArticle
+                        - img [ref=e208]
+                - listitem [ref=e211] [cursor=pointer]:
+                  - 'link "”Parempi välttää tennispelaaja-tyttöystävä”: Stefanos Tsitsipas herättää muistoja suhteestaan Paula Badosan kanssa © Tennis Temple" [ref=e212]':
+                    - /url: /search?q=%e2%80%9dParempi+v%c3%a4ltt%c3%a4%c3%a4+tennispelaaja-tytt%c3%b6yst%c3%a4v%c3%a4%e2%80%9d%3a+Stefanos+Tsitsipas+her%c3%a4tt%c3%a4%c3%a4+muistoja+suhteestaan+Paula+Badosan+kanssa&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_028B865EB9E82F9A0BB6B74670FC617A%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%228%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e213]:
+                      - 'heading "”Parempi välttää tennispelaaja-tyttöystävä”: Stefanos Tsitsipas herättää muistoja suhteestaan Paula Badosan kanssa" [level=2] [ref=e214]':
+                        - generic [ref=e215]: "”Parempi välttää tennispelaaja-tyttöystävä”: Stefanos Tsitsipas herättää muistoja suhteestaan Paula Badosan kanssa"
+                      - img "© Tennis Temple" [ref=e216]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/parempi-välttää-tennispelaaja-tyttöystävä-stefanos-tsitsipas-herättää-muistoja-suhteestaan-paula-badosan-kanssa/ar-AA208HqP?ocid=TobArticle
+                        - img [ref=e217]
+                - listitem [ref=e220] [cursor=pointer]:
+                  - 'link "Andreeva vahvistaa osallistumisensa Linzin WTA 500 -turnaukseen: venäläinen kilpailee Itävallassa ensi viikolla © Tennis Temple" [ref=e221]':
+                    - /url: /search?q=Andreeva+vahvistaa+osallistumisensa+Linzin+WTA+500+-turnaukseen%3a+ven%c3%a4l%c3%a4inen+kilpailee+It%c3%a4vallassa+ensi+viikolla&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_B7D7F853A6FC8B238EAF71B610C6588E%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%229%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e222]:
+                      - 'heading "Andreeva vahvistaa osallistumisensa Linzin WTA 500 -turnaukseen: venäläinen kilpailee Itävallassa ensi viikolla" [level=2] [ref=e223]':
+                        - generic [ref=e224]: "Andreeva vahvistaa osallistumisensa Linzin WTA 500 -turnaukseen: venäläinen kilpailee Itävallassa ensi viikolla"
+                      - img "© Tennis Temple" [ref=e225]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/andreeva-vahvistaa-osallistumisensa-linzin-wta-500-turnaukseen-venäläinen-kilpailee-itävallassa-ensi-viikolla/ar-AA208iV1?ocid=TobArticle
+                        - img [ref=e226]
+                - listitem [ref=e229] [cursor=pointer]:
+                  - 'link "Se ei koskaan etene liian nopeasti: 17-vuotias Moïse Kouamé omaksuu salamannopean nousunsa ennen Monte-Carloa © Tennis Temple" [ref=e230]':
+                    - /url: /search?q=Se+ei+koskaan+etene+liian+nopeasti%3a+17-vuotias+Mo%c3%afse+Kouam%c3%a9+omaksuu+salamannopean+nousunsa+ennen+Monte-Carloa&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_68F8E3C823427CCBBAC87919A43DDD9B%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2210%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e231]:
+                      - 'heading "Se ei koskaan etene liian nopeasti: 17-vuotias Moïse Kouamé omaksuu salamannopean nousunsa ennen Monte-Carloa" [level=2] [ref=e232]':
+                        - generic [ref=e233]: "Se ei koskaan etene liian nopeasti: 17-vuotias Moïse Kouamé omaksuu salamannopean nousunsa ennen Monte-Carloa"
+                      - img "© Tennis Temple" [ref=e234]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/se-ei-koskaan-etene-liian-nopeasti-17-vuotias-moïse-kouamé-omaksuu-salamannopean-nousunsa-ennen-monte-carloa/ar-AA208OMw?ocid=TobArticle
+                        - img [ref=e235]
+                - listitem [ref=e238] [cursor=pointer]:
+                  - 'link "Viraali hetki Marrakechissa: Darderi joi kahvia kesken ATP-puolifinaalin © Tennis Temple" [ref=e239]':
+                    - /url: /search?q=Viraali+hetki+Marrakechissa%3a+Darderi+joi+kahvia+kesken+ATP-puolifinaalin&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_E44808E23857FF2340A444439278E3FE%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2211%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e240]:
+                      - 'heading "Viraali hetki Marrakechissa: Darderi joi kahvia kesken ATP-puolifinaalin" [level=2] [ref=e241]':
+                        - generic [ref=e242]: "Viraali hetki Marrakechissa: Darderi joi kahvia kesken ATP-puolifinaalin"
+                      - img "© Tennis Temple" [ref=e243]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/viraali-hetki-marrakechissa-darderi-joi-kahvia-kesken-atp-puolifinaalin/ar-AA209sIV?ocid=TobArticle
+                        - img [ref=e244]
+                - listitem [ref=e247] [cursor=pointer]:
+                  - 'link "Gaël Monfils Monte-Carlossa: 21 vuoden tarina, viimeinen jännitys © Tennis Temple" [ref=e248]':
+                    - /url: /search?q=Ga%c3%abl+Monfils+Monte-Carlossa%3a+21+vuoden+tarina%2c+viimeinen+j%c3%a4nnitys&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_8522008D0FCC8296E89CF55624152BBD%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2212%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e249]:
+                      - 'heading "Gaël Monfils Monte-Carlossa: 21 vuoden tarina, viimeinen jännitys" [level=2] [ref=e250]':
+                        - generic [ref=e251]: "Gaël Monfils Monte-Carlossa: 21 vuoden tarina, viimeinen jännitys"
+                      - img "© Tennis Temple" [ref=e252]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/gaël-monfils-monte-carlossa-21-vuoden-tarina-viimeinen-jännitys/ar-AA208RE9?ocid=TobArticle
+                        - img [ref=e253]
+                - listitem [ref=e256] [cursor=pointer]:
+                  - link "Ketjureaktio käynnistyi kulisseissa – Tappara-valmentajan siirto sysäsi SHL-seuran isoon ratkaisuun © Leijonauutiset.fi" [ref=e257]:
+                    - /url: /search?q=Ketjureaktio+k%c3%a4ynnistyi+kulisseissa+%e2%80%93+Tappara-valmentajan+siirto+sys%c3%a4si+SHL-seuran+isoon+ratkaisuun&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_E3F6C917CDF294D66502AD40FF0AF66C%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2213%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e258]:
+                      - heading "Ketjureaktio käynnistyi kulisseissa – Tappara-valmentajan siirto sysäsi SHL-seuran isoon ratkaisuun" [level=2] [ref=e259]:
+                        - generic [ref=e260]: Ketjureaktio käynnistyi kulisseissa – Tappara-valmentajan siirto sysäsi SHL-seuran isoon ratkaisuun
+                      - img "© Leijonauutiset.fi" [ref=e261]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/ketjureaktio-käynnistyi-kulisseissa-tappara-valmentajan-siirto-sysäsi-shl-seuran-isoon-ratkaisuun/ar-AA209V5G?ocid=TobArticle
+                        - img [ref=e262]
+                - listitem [ref=e265] [cursor=pointer]:
+                  - link "Taistelu pudotuspelipaikoista tiivistyy – Philadelphialle jättimäinen voitto © Kiekkouutiset.fi" [ref=e266]:
+                    - /url: /search?q=Taistelu+pudotuspelipaikoista+tiivistyy+%e2%80%93+Philadelphialle+j%c3%a4ttim%c3%a4inen+voitto&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_75318BB0C38643A0D9BC22D11D03F530%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2214%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e267]:
+                      - heading "Taistelu pudotuspelipaikoista tiivistyy – Philadelphialle jättimäinen voitto" [level=2] [ref=e268]:
+                        - generic [ref=e269]: Taistelu pudotuspelipaikoista tiivistyy – Philadelphialle jättimäinen voitto
+                      - img "© Kiekkouutiset.fi" [ref=e270]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/taistelu-pudotuspelipaikoista-tiivistyy-philadelphialle-jättimäinen-voitto/ar-AA208wE3?ocid=TobArticle
+                        - img [ref=e271]
+                - listitem [ref=e274] [cursor=pointer]:
+                  - link "Sisäänrakennettu Chromecast-tuki saapuu Samsungin televisioihin - myös vanhempiin malleihin © AfterDawn" [ref=e275]:
+                    - /url: /search?q=Sis%c3%a4%c3%a4nrakennettu+Chromecast-tuki+saapuu+Samsungin+televisioihin+-+my%c3%b6s+vanhempiin+malleihin&efirst=0&ecount=50&filters=tnTID%3a%22TOBP2_843942F727ABB703E2D4B0604AA545C6%22+tnVersion%3a%2225a7e6a1-fad2-4cda-ab82-dc71528bd405%22+Segment%3a%22popularnow.carousel%22+tnCol%3a%2215%22+tnOrder%3a%2237883679-6d5d-47dd-80da-f380aa126d88%22&form=HPNN01
+                    - generic [ref=e276]:
+                      - heading "Sisäänrakennettu Chromecast-tuki saapuu Samsungin televisioihin - myös vanhempiin malleihin" [level=2] [ref=e277]:
+                        - generic [ref=e278]: Sisäänrakennettu Chromecast-tuki saapuu Samsungin televisioihin - myös vanhempiin malleihin
+                      - img "© AfterDawn" [ref=e279]
+                      - link "Прочитать статью":
+                        - /url: https://www.msn.com/fi-fi/uutiset/other/sisäänrakennettu-chromecast-tuki-saapuu-samsungin-televisioihin-myös-vanhempiin-malleihin/ar-AA208vqB?ocid=TobArticle
+                        - img [ref=e280]
+        - complementary [ref=e283]:
+          - generic [ref=e285]:
+            - generic [ref=e286]: НАЙТИ
+            - main [ref=e293]:
+              - generic [ref=e296]:
+                - generic [ref=e299]:
+                  - tablist [ref=e301]:
+                    - tab [selected] [ref=e302] [cursor=pointer]
+                    - tab [ref=e304] [cursor=pointer]
+                    - tab [ref=e306] [cursor=pointer]
+                    - tab [ref=e308] [cursor=pointer]
+                    - tab [ref=e310] [cursor=pointer]
+                    - tab [ref=e312] [cursor=pointer]
+                    - tab [ref=e314] [cursor=pointer]
+                    - tab [ref=e316] [cursor=pointer]
+                    - tab [ref=e318] [cursor=pointer]
+                    - tab [ref=e320] [cursor=pointer]
+                    - tab [ref=e322] [cursor=pointer]
+                    - tab [ref=e324] [cursor=pointer]
+                    - tab [ref=e326] [cursor=pointer]
+                  - button [ref=e330]
+                  - button [ref=e333]
+                  - article "Lohduton paljastus Suvi Minkkisestä – \"Se särki sydämeni\"" [ref=e334] [cursor=pointer]:
+                    - generic [ref=e336]:
+                      - img [ref=e337]
+                      - generic [ref=e338]:
+                        - generic [ref=e339]:
+                          - generic [ref=e340]:
+                            - img [ref=e341]
+                            - generic [ref=e342]: Sporttiuutiset
+                            - generic [ref=e343]: ·
+                            - generic [ref=e344]: 14 t
+                          - link "Lohduton paljastus Suvi Minkkisestä – \"Se särki sydämeni\", Sporttiuutiset" [ref=e345]:
+                            - /url: https://www.msn.com/fi-fi/uutiset/other/lohduton-paljastus-suvi-minkkisest%C3%A4-se-s%C3%A4rki-syd%C3%A4meni/ar-AA207XW3
+                            - text: Lohduton paljastus Suvi Minkkisestä – "Se särki sydämeni"
+                        - generic "Lohduton paljastus Suvi Minkkisestä – \"Se särki sydämeni\"" [ref=e349]:
+                          - generic [ref=e352]:
+                            - button "5 Tykkää" [ref=e353]:
+                              - generic [ref=e354]:
+                                - img [ref=e355]
+                                - generic [ref=e357]: "5"
+                            - button "En tykkää" [ref=e358]:
+                              - img [ref=e360]
+                      - generic [ref=e362]:
+                        - button "Piilota tämä juttu" [ref=e363]:
+                          - img [ref=e364]
+                          - text: Piilota tämä juttu
+                        - button "Näytä enemmän" [ref=e365]:
+                          - img [ref=e366]
+                - article "Uudet kuvat Lola Odusogan kasvoista järkyttävät" [ref=e367] [cursor=pointer]:
+                  - generic [ref=e369]:
+                    - img [ref=e370]
+                    - generic [ref=e371]:
+                      - generic [ref=e372]:
+                        - generic [ref=e373]:
+                          - img [ref=e374]
+                          - generic [ref=e375]: Viihteen maailma
+                          - generic [ref=e376]: ·
+                          - generic [ref=e377]: 17 t
+                        - link "Uudet kuvat Lola Odusogan kasvoista järkyttävät, Viihteen maailma" [ref=e378]:
+                          - /url: https://www.msn.com/fi-fi/viihde/julkkikset/uudet-kuvat-lola-odusogan-kasvoista-j%C3%A4rkytt%C3%A4v%C3%A4t/ar-AA207I0T
+                          - text: Uudet kuvat Lola Odusogan kasvoista järkyttävät
+                      - generic "Uudet kuvat Lola Odusogan kasvoista järkyttävät" [ref=e382]:
+                        - generic [ref=e385]:
+                          - button "3 Tykkää" [ref=e386]:
+                            - generic [ref=e387]:
+                              - img [ref=e388]
+                              - generic [ref=e390]: "3"
+                          - button "En tykkää" [ref=e391]:
+                            - img [ref=e393]
+                    - generic [ref=e395]:
+                      - button "Piilota tämä juttu" [ref=e396]:
+                        - img [ref=e397]
+                        - text: Piilota tämä juttu
+                      - button "Näytä enemmän" [ref=e398]:
+                        - img [ref=e399]
+                - article [ref=e400] [cursor=pointer]
+                - article [ref=e402] [cursor=pointer]:
+                  - generic [ref=e407]:
+                    - generic [ref=e409]:
+                      - heading "Pääaiheet" [level=2] [ref=e412]
+                      - button "Lisää vaihtoehtoja" [ref=e414]
+                    - list [ref=e417]:
+                      - listitem "Iranista laukaistu ohjuksia jälleen kohti Israelia, Teheranissa kuultu räjähdyksiä" [ref=e418]:
+                        - generic [ref=e419]:
+                          - generic [ref=e420]:
+                            - img [ref=e421]
+                            - generic [ref=e422]:
+                              - generic: STT ·13 t
+                          - generic [ref=e423]: Iranista laukaistu ohjuksia jälleen kohti Israelia, Teheranissa kuultu räjähdyksiä
+                      - listitem "Iran onnistui pudottamaan toisen amerikkalaiskoneen – lentäjä pelastautui heittoistuimella" [ref=e424]:
+                        - generic [ref=e425]:
+                          - generic [ref=e426]:
+                            - img [ref=e427]
+                            - generic [ref=e428]:
+                              - generic: Päivän Lehti ·16 t
+                          - generic [ref=e429]: Iran onnistui pudottamaan toisen amerikkalaiskoneen – lentäjä pelastautui heittoistuimella
+                      - 'listitem "Velkakuri taas tauolle? Taloustieteilijältä raju ryöpytys: ”Paluuta ei ole”" [ref=e430]':
+                        - generic [ref=e431]:
+                          - generic [ref=e432]:
+                            - img [ref=e433]
+                            - generic [ref=e434]:
+                              - generic: Uusi Suomi ·14 t
+                          - generic [ref=e435]: "Velkakuri taas tauolle? Taloustieteilijältä raju ryöpytys: ”Paluuta ei ole”"
+                    - generic [ref=e438]:
+                      - generic "Edellinen" [ref=e439]:
+                        - button "Edellinen" [ref=e440]
+                      - tablist [ref=e442]:
+                        - tab "tab-0" [selected] [ref=e443]
+                        - tab "tab-1" [ref=e445]
+                        - tab "tab-2" [ref=e447]
+                      - generic "Seuraava" [ref=e449]:
+                        - button "Seuraava" [ref=e450]
+                - article "SM-liigavalmentaja käyttäytyy kuin Vilma Nissinen" [ref=e452] [cursor=pointer]:
+                  - generic [ref=e454]:
+                    - img [ref=e455]
+                    - generic [ref=e456]:
+                      - generic [ref=e457]:
+                        - generic [ref=e458]:
+                          - img [ref=e459]
+                          - generic [ref=e460]: Atleetti.fi
+                          - generic [ref=e461]: ·
+                          - generic [ref=e462]: 10 t
+                        - link "SM-liigavalmentaja käyttäytyy kuin Vilma Nissinen, Atleetti.fi" [ref=e463]:
+                          - /url: https://www.msn.com/fi-fi/uutiset/other/sm-liigavalmentaja-k%C3%A4ytt%C3%A4ytyy-kuin-vilma-nissinen/ar-AA208XrN
+                          - text: SM-liigavalmentaja käyttäytyy kuin Vilma Nissinen
+                      - generic "SM-liigavalmentaja käyttäytyy kuin Vilma Nissinen" [ref=e467]:
+                        - generic [ref=e470]:
+                          - button "2 Tykkää" [ref=e471]:
+                            - generic [ref=e472]:
+                              - img [ref=e473]
+                              - generic [ref=e475]: "2"
+                          - button "En tykkää" [ref=e476]:
+                            - img [ref=e478]
+                    - generic [ref=e480]:
+                      - button "Piilota tämä juttu" [ref=e481]:
+                        - img [ref=e482]
+                        - text: Piilota tämä juttu
+                      - button "Näytä enemmän" [ref=e483]:
+                        - img [ref=e484]
+                - 'article "Ranska kielsi nikotiinipussit – Ruotsi reagoi heti: \"Hyökkäys\"" [ref=e485] [cursor=pointer]':
+                  - generic [ref=e487]:
+                    - img [ref=e488]
+                    - generic [ref=e489]:
+                      - generic [ref=e490]:
+                        - generic [ref=e491]:
+                          - img [ref=e492]
+                          - generic [ref=e493]: Uusi Suomi
+                          - generic [ref=e494]: ·
+                          - generic [ref=e495]: 11 t
+                        - 'link "Ranska kielsi nikotiinipussit – Ruotsi reagoi heti: \"Hyökkäys\", Uusi Suomi" [ref=e496]':
+                          - /url: https://www.msn.com/fi-fi/uutiset/other/ranska-kielsi-nikotiinipussit-ruotsi-reagoi-heti-hy%C3%B6kk%C3%A4ys/ar-AA20896g
+                          - text: "Ranska kielsi nikotiinipussit – Ruotsi reagoi heti: \"Hyökkäys\""
+                      - 'generic "Ranska kielsi nikotiinipussit – Ruotsi reagoi heti: \"Hyökkäys\"" [ref=e500]':
+                        - generic [ref=e503]:
+                          - button "4 Tykkää" [ref=e504]:
+                            - generic [ref=e505]:
+                              - img [ref=e506]
+                              - generic [ref=e508]: "4"
+                          - button "En tykkää" [ref=e509]:
+                            - img [ref=e511]
+                    - generic [ref=e513]:
+                      - button "Piilota tämä juttu" [ref=e514]:
+                        - img [ref=e515]
+                        - text: Piilota tämä juttu
+                      - button "Näytä enemmän" [ref=e516]:
+                        - img [ref=e517]
+                - article "Tunteita ja tuoksuja -näyttelijä Dolores Freeman on kuollut" [ref=e518] [cursor=pointer]:
+                  - generic [ref=e520]:
+                    - img [ref=e521]
+                    - generic [ref=e522]:
+                      - generic [ref=e523]:
+                        - generic [ref=e524]:
+                          - img [ref=e525]
+                          - generic [ref=e526]: Episodi
+                          - generic [ref=e527]: ·
+                          - generic [ref=e528]: 12 t
+                        - link "Tunteita ja tuoksuja -näyttelijä Dolores Freeman on kuollut, Episodi" [ref=e529]:
+                          - /url: https://www.msn.com/fi-fi/viihde/tv-ja-elokuvat/tunteita-ja-tuoksuja-n%C3%A4yttelij%C3%A4-dolores-freeman-on-kuollut/ar-AA208CEj
+                          - text: Tunteita ja tuoksuja -näyttelijä Dolores Freeman on kuollut
+                      - generic "Tunteita ja tuoksuja -näyttelijä Dolores Freeman on kuollut" [ref=e533]:
+                        - generic [ref=e536]:
+                          - button "3 Tykkää" [ref=e537]:
+                            - generic [ref=e538]:
+                              - img [ref=e539]
+                              - generic [ref=e541]: "3"
+                          - button "En tykkää" [ref=e542]:
+                            - img [ref=e544]
+                    - generic [ref=e546]:
+                      - button "Piilota tämä juttu" [ref=e547]:
+                        - img [ref=e548]
+                        - text: Piilota tämä juttu
+                      - button "Näytä enemmän" [ref=e549]:
+                        - img [ref=e550]
+                - article "Miksi millenniaalit ovat historian rikkain sukupolvi" [ref=e551] [cursor=pointer]:
+                  - generic [ref=e553]:
+                    - img [ref=e554]
+                    - generic [ref=e555]:
+                      - generic [ref=e556]:
+                        - generic [ref=e557]:
+                          - img [ref=e558]
+                          - generic [ref=e559]: StarsInsider
+                          - generic [ref=e560]: ·
+                          - generic [ref=e561]: 2 v
+                        - link "Miksi millenniaalit ovat historian rikkain sukupolvi, StarsInsider" [ref=e562]:
+                          - /url: https://www.msn.com/fi-fi/uutiset/other/miksi-millenniaalit-ovat-historian-rikkain-sukupolvi/ss-BB1jp3mE
+                          - text: Miksi millenniaalit ovat historian rikkain sukupolvi
+                      - generic "Miksi millenniaalit ovat historian rikkain sukupolvi" [ref=e566]:
+                        - generic [ref=e569]:
+                          - button "11 Tykkää" [ref=e570]:
+                            - generic [ref=e571]:
+                              - img [ref=e572]
+                              - generic [ref=e574]: "11"
+                          - button "En tykkää" [ref=e575]:
+                            - img [ref=e577]
+                    - generic [ref=e579]:
+                      - button "Piilota tämä juttu" [ref=e580]:
+                        - img [ref=e581]
+                        - text: Piilota tämä juttu
+                      - button "Näytä enemmän" [ref=e582]:
+                        - img [ref=e583]
+                - article [ref=e584] [cursor=pointer]
+      - contentinfo:
+        - generic [ref=e587]:
+          - generic [ref=e588]: © Майкрософт (Microsoft), 2026
+          - list [ref=e589]:
+            - listitem [ref=e590]:
+              - link "Конфиденциальность и файлы cookie" [ref=e591] [cursor=pointer]:
+                - /url: //go.microsoft.com/fwlink/?LinkId=521839
+            - listitem [ref=e592]:
+              - link "Юридическая информация" [ref=e593] [cursor=pointer]:
+                - /url: //go.microsoft.com/fwlink/?LinkID=246338
+            - listitem [ref=e594]:
+              - link "Реклама" [ref=e595] [cursor=pointer]:
+                - /url: //go.microsoft.com/fwlink/?linkid=868923
+            - listitem [ref=e596]:
+              - link "Сведения о рекламе" [ref=e597] [cursor=pointer]:
+                - /url: //go.microsoft.com/fwlink/?LinkID=286759
+            - listitem [ref=e598]:
+              - link "Справка" [ref=e599] [cursor=pointer]:
+                - /url: //support.microsoft.com/topic/82d20721-2d6f-4012-a13d-d1910ccf203f
+            - listitem [ref=e600]:
+              - link "Обратная связь" [ref=e601] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e602]:
+              - link "Директива ЕС о защите данных" [ref=e603] [cursor=pointer]:
+                - /url: http://help.bing.microsoft.com/#apex/18/ru/10017/0
+            - listitem [ref=e604]:
+              - generic [ref=e605]: Управление настройками файлов cookie
+  - dialog "Quick Search"

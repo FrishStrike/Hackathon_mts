@@ -2,7 +2,7 @@
 (function () {
   // Если скрипт инжектится повторно (роутинг/перезагрузка виджета) — чистим прошлую инстанцию,
   // чтобы Юми не "дублировалась".
-  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip', 'yumi-floaters'];
+  const existingIds = ['yumi-style', 'yumi-stage', 'yumi-mini', 'yumi-tooltip', 'yumi-floaters', 'yumi-browser-preview'];
   for (const id of existingIds) {
     const el = document.getElementById(id);
     if (el) el.remove();
@@ -481,6 +481,66 @@
         transition: none !important;
       }
     }
+
+    /* ── Browser Preview Panel ── */
+    #yumi-browser-preview {
+      display: none;
+      position: fixed;
+      bottom: 200px;
+      left: 12px;
+      width: 260px;
+      flex-direction: column;
+      background: rgba(12, 16, 10, 0.93);
+      border: 1px solid rgba(143,189,101,0.35);
+      border-radius: 14px;
+      overflow: hidden;
+      z-index: 9998;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(143,189,101,0.1);
+      backdrop-filter: blur(14px);
+      animation: yumiPreviewIn 0.25s ease-out;
+    }
+    #yumi-browser-preview.visible { display: flex; }
+    @keyframes yumiPreviewIn {
+      from { opacity: 0; transform: translateY(8px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    #yumi-browser-preview-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      font-size: 10px;
+      font-family: 'DM Mono', monospace;
+      color: rgba(143,189,101,0.9);
+      background: rgba(143,189,101,0.07);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      user-select: none;
+    }
+    #yumi-browser-preview-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #8fbd65;
+      animation: yumiPulse 1.2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    #yumi-browser-preview-img {
+      width: 100%;
+      display: block;
+      height: 160px;
+      object-fit: cover;
+      object-position: top center;
+      background: #0c100a;
+    }
+    #yumi-browser-preview-label {
+      padding: 5px 10px 6px;
+      font-size: 9.5px;
+      font-family: 'DM Mono', monospace;
+      color: rgba(255,255,255,0.38);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
   `;
   document.head.appendChild(style);
 
@@ -573,6 +633,40 @@
   const tooltip = document.createElement('div');
   tooltip.id = 'yumi-tooltip';
   document.body.appendChild(tooltip);
+
+  // ─── Browser Preview Panel ────────────────────────────────
+  const browserPreview = document.createElement('div');
+  browserPreview.id = 'yumi-browser-preview';
+  browserPreview.innerHTML = `
+    <div id="yumi-browser-preview-header">
+      <span id="yumi-browser-preview-dot"></span>
+      <span>Браузер агента</span>
+    </div>
+    <img id="yumi-browser-preview-img" src="" alt="" />
+    <div id="yumi-browser-preview-label">—</div>
+  `;
+  document.body.appendChild(browserPreview);
+
+  let previewHideTimer = null;
+
+  function showScreenshot(imgDataUrl, label) {
+    const imgEl   = document.getElementById('yumi-browser-preview-img');
+    const labelEl = document.getElementById('yumi-browser-preview-label');
+    if (!imgEl) return;
+    imgEl.src = imgDataUrl;
+    if (labelEl) labelEl.textContent = label || '—';
+    browserPreview.classList.add('visible');
+    clearTimeout(previewHideTimer);
+  }
+
+  function hidePreview(delay = 0) {
+    clearTimeout(previewHideTimer);
+    if (delay > 0) {
+      previewHideTimer = setTimeout(() => browserPreview.classList.remove('visible'), delay);
+    } else {
+      browserPreview.classList.remove('visible');
+    }
+  }
 
   mini.addEventListener('click', () => {
     tooltip.textContent = `state: ${currentState}`;
@@ -716,23 +810,16 @@
   });
 
   // ─── Конфигурация бэкендов ────────────────────────────────
-const GO_BACKEND = 'http://localhost:8080';
-const ML_SERVICE = 'http://localhost:8001';
+  const ML_SERVICE = 'http://localhost:8001';
 
-// ─── Перехват fetch ───────────────────────────────────────
-const origFetch = window.fetch.bind(window);
+  // ─── Перехват fetch ───────────────────────────────────────
+  const origFetch = window.fetch.bind(window);
 
-// Проверяем доступность Go-бэкенда один раз при загрузке
-let goBackendAvailable = false;
-origFetch(`${GO_BACKEND}/api/health`, { method: 'GET' })
-  .then(r => { goBackendAvailable = r.ok; })
-  .catch(() => { goBackendAvailable = false; });
+  window.fetch = async function (...args) {
+    const url = typeof args[0] === 'string' ? args[0] : args[0]?.url ?? '';
+    const init = args[1] ?? {};
 
-window.fetch = async function (...args) {   // ← эта строка пропала, верни её
-  const url = typeof args[0] === 'string' ? args[0] : args[0]?.url ?? '';
-  const init = args[1] ?? {};
-
-    // ── Перехват POST /api/query ──
+    // ── Перехват POST /api/query → ML Service ──
     if ((url.includes('/api/query') || url.endsWith('/query')) &&
         (init.method ?? 'GET').toUpperCase() === 'POST') {
 
@@ -746,50 +833,45 @@ window.fetch = async function (...args) {   // ← эта строка проп�
         prompt = body?.query ?? body?.text ?? body?.prompt ?? '';
       } catch {}
 
-      let requestId = 'local-' + Date.now();
-
-      // Если Go-бэкенд доступен — отправляем для персистенции
-      if (goBackendAvailable) {
-        try {
-          const goResp = await origFetch(`${GO_BACKEND}/api/query`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ query: prompt }),
-          });
-          const goData = await goResp.json();
-          requestId = goData.request_id || requestId;
-        } catch {}
+      try {
+        const mlResp = await origFetch(`${ML_SERVICE}/api/query`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: prompt }),
+        });
+        const mlData = await mlResp.json();
+        return new Response(JSON.stringify(mlData), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      } catch {
+        // Fallback: возвращаем локальный ID если ML недоступен
+        return new Response(JSON.stringify({ request_id: 'local-' + Date.now(), status: 'processing' }), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
       }
-
-
-
-      return new Response(JSON.stringify({ request_id: requestId }), {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' },
-      });
     }
 
-    // ── /api/result, /api/health, /api/history ─────────────
+    // ── /api/result, /api/health, /api/history → ML Service ──
     if (url.includes('/api/result/') || url.includes('/api/health') || url.includes('/api/history')) {
-      if (goBackendAvailable) {
-        const apiPath = url.substring(url.indexOf('/api/'));
-        return origFetch(`${GO_BACKEND}${apiPath}`, {
+      const apiPath = url.substring(url.indexOf('/api/'));
+      try {
+        return origFetch(`${ML_SERVICE}${apiPath}`, {
           method: init.method ?? 'GET',
           headers: init.headers,
         });
-      }
-      // Fallback без Go-бэкенда
-      if (url.includes('/api/health')) {
-        return new Response(JSON.stringify({ status: 'ok', time: new Date().toISOString() }), {
-          status: 200, headers: { 'Content-Type': 'application/json' },
-        });
-      }
-      if (url.includes('/api/history')) {
-        return new Response(JSON.stringify([]), {
-          status: 200, headers: { 'Content-Type': 'application/json' },
-        });
-      }
-      if (url.includes('/api/result/')) {
+      } catch {
+        if (url.includes('/api/health')) {
+          return new Response(JSON.stringify({ status: 'ok', time: new Date().toISOString() }), {
+            status: 200, headers: { 'Content-Type': 'application/json' },
+          });
+        }
+        if (url.includes('/api/history')) {
+          return new Response(JSON.stringify([]), {
+            status: 200, headers: { 'Content-Type': 'application/json' },
+          });
+        }
         return new Response(JSON.stringify({ status: 'pending', id: url.split('/').pop() }), {
           status: 200, headers: { 'Content-Type': 'application/json' },
         });
@@ -800,13 +882,13 @@ window.fetch = async function (...args) {   // ← эта строка проп�
     return origFetch(...args);
   };
 
-  // ─── Перехват EventSource → SSE (проксируем на Go-бэкенд) ─
+  // ─── Перехват EventSource → SSE напрямую на ML Service ────
   const OrigEventSource = window.EventSource;
   window.EventSource = function (url, opts) {
     if (typeof url === 'string' && url.includes('/api/stream/')) {
       const id = url.split('/api/stream/').pop().split('?')[0];
 
-      // Для локальных ID (когда Go-бэкенд был недоступен) — фейковый SSE
+      // Fallback для local-ID когда ML недоступен
       if (id.startsWith('local-')) {
         const fake = new OrigEventSource('data:text/event-stream,', opts);
         setTimeout(() => {
@@ -817,21 +899,36 @@ window.fetch = async function (...args) {   // ← эта строка проп�
         return fake;
       }
 
-      // Реальный SSE через Go-бэкенд
-      const realUrl = `${GO_BACKEND}/api/stream/${id}`;
+      // Реальный SSE напрямую через ML Service
+      const realUrl = `${ML_SERVICE}/api/stream/${id}`;
       const es = new OrigEventSource(realUrl, opts);
       es.addEventListener('message', (e) => {
         try {
           const data = JSON.parse(e.data);
-          const step = String(data.step ?? '').toLowerCase();
-          const detail = String(data.detail ?? '').toLowerCase();
+          const step   = String(data.step   ?? '').toLowerCase();
           const status = String(data.status ?? '').toLowerCase();
-          if (step === 'started'   || status === 'processing') setAvatar('thinking');
-          else if (step.includes('search'))                    setAvatar('searching');
-          else if (step.includes('analyz') || detail.includes('analyz')) setAvatar('analyzing');
-          else if (step.includes('compar') || detail.includes('compar')) setAvatar('comparing');
-          else if (step === 'completed' || status === 'done') { setAvatar('success'); scheduleReset(); }
-          else if (status === 'failed'  || status === 'error') { setAvatar('error');  scheduleReset(); }
+
+          // ── Живой скриншот браузера агента ──
+          if (status === 'screenshot' && data.img) {
+            showScreenshot(data.img, data.detail || '');
+            setAvatar('searching');
+            return;
+          }
+
+          if      (status === 'processing' && step === 'search')       setAvatar('searching');
+          else if (status === 'processing' && step.includes('analyz')) setAvatar('analyzing');
+          else if (status === 'processing' && step.includes('compar')) setAvatar('comparing');
+          else if (status === 'processing')                            setAvatar('thinking');
+          else if (step === 'completed' || status === 'done')  {
+            setAvatar('success');
+            scheduleReset();
+            hidePreview(3000); // прячем превью через 3 сек после ответа
+          }
+          else if (status === 'failed' || status === 'error') {
+            setAvatar('error');
+            scheduleReset();
+            hidePreview(2000);
+          }
         } catch {}
       });
       return es;

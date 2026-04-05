@@ -1,0 +1,10 @@
+[    1074ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0:0
+[    1368ms] [WARNING] This page is using the deprecated ResourceLoader module "mediawiki.legacy.messageBox".
+[1.43] The use of the `interface-message-box` feature with SkinModule is deprecated in favor of CodexModule. Please remove this feature.More information can be found at [[mw:Manual:ResourceLoaderSkinModule]].  @ https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0:621
+[   15571ms] [WARNING] This page is using the deprecated ResourceLoader module "mediawiki.ui.button".
+[1.41] Please use Codex. See migration guidelines: https://www.mediawiki.org/wiki/Codex/Migrating_from_MediaWiki_UI @ https://ru.wikipedia.org/w/load.php?lang=ru&modules=startup&only=scripts&raw=1&skin=vector-2022:11
+[   16041ms] [WARNING] This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use Codex instead. @ https://ru.wikipedia.org/w/load.php?lang=ru&modules=startup&only=scripts&raw=1&skin=vector-2022:11
+[   16303ms] [WARNING] This page is using the deprecated ResourceLoader module "moment".
+[1.44] Use mediawiki.DateFormatter or native Intl function instead. See https://phabricator.wikimedia.org/T146798 @ https://ru.wikipedia.org/w/load.php?lang=ru&modules=startup&only=scripts&raw=1&skin=vector-2022:11
+[   16651ms] [WARNING] wikipage.content hook should not be fired on unattached content @ https://ru.wikipedia.org/w/load.php?lang=ru&modules=mediawiki.page.ready&skin=vector-2022&version=16u4a:1

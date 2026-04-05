@@ -1,0 +1,465 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e7]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e14]:
+        - link [ref=e16] [cursor=pointer]:
+          - /url: /contactBR/
+        - link "Версия для слабовидящих" [ref=e18] [cursor=pointer]:
+          - /url: "#"
+        - link "EN" [ref=e21] [cursor=pointer]:
+          - /url: /Localization/SwitchLanguage?url=%2Fcurrency_base%2Fdaily%2F&from=ru-RU&to=en-CB
+        - link "Поиск по сайту" [ref=e23] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e25]: Поиск по сайту
+    - generic [ref=e29]:
+      - link [ref=e33] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e36]:
+        - link [ref=e38] [cursor=pointer]:
+          - /url: /contactBR/
+        - link "Версия для слабовидящих" [ref=e40] [cursor=pointer]:
+          - /url: "#"
+        - link "EN" [ref=e43] [cursor=pointer]:
+          - /url: /Localization/SwitchLanguage?url=%2Fcurrency_base%2Fdaily%2F&from=ru-RU&to=en-CB
+        - link "Поиск по сайту" [ref=e45] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e47]: Поиск по сайту
+  - main [ref=e48]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - link [ref=e54] [cursor=pointer]:
+          - /url: /
+        - link "Базы данных" [ref=e56] [cursor=pointer]:
+          - /url: /hd_base/
+        - link "База данных по курсам валют" [ref=e58] [cursor=pointer]:
+          - /url: /currency_base/
+      - heading "Официальные курсы валют на заданную дату, устанавливаемые ежедневно" [level=1] [ref=e59]
+      - button "04.04.2026" [ref=e67] [cursor=pointer]
+      - heading "Центральный банк Российской Федерации установил с 04.04.2026 следующие курсы иностранных валют к рублю Российской Федерации без обязательств Банка России покупать или продавать указанные валюты по данному курсу" [level=2] [ref=e68]
+      - table [ref=e71]:
+        - rowgroup [ref=e72]:
+          - row "Цифр. код Букв. код Единиц Валюта Курс" [ref=e73]:
+            - columnheader "Цифр. код" [ref=e74]
+            - columnheader "Букв. код" [ref=e75]
+            - columnheader "Единиц" [ref=e76]
+            - columnheader "Валюта" [ref=e77]
+            - columnheader "Курс" [ref=e78]
+          - row "036 AUD 1 Австралийский доллар 54,8458" [ref=e79]:
+            - cell "036" [ref=e80]
+            - cell "AUD" [ref=e81]
+            - cell "1" [ref=e82]
+            - cell "Австралийский доллар" [ref=e83]
+            - cell "54,8458" [ref=e84]
+          - row "944 AZN 1 Азербайджанский манат 46,8996" [ref=e85]:
+            - cell "944" [ref=e86]
+            - cell "AZN" [ref=e87]
+            - cell "1" [ref=e88]
+            - cell "Азербайджанский манат" [ref=e89]
+            - cell "46,8996" [ref=e90]
+          - row "012 DZD 100 Алжирских динаров 59,9926" [ref=e91]:
+            - cell "012" [ref=e92]
+            - cell "DZD" [ref=e93]
+            - cell "100" [ref=e94]
+            - cell "Алжирских динаров" [ref=e95]
+            - cell "59,9926" [ref=e96]
+          - row "051 AMD 100 Армянских драмов 21,1495" [ref=e97]:
+            - cell "051" [ref=e98]
+            - cell "AMD" [ref=e99]
+            - cell "100" [ref=e100]
+            - cell "Армянских драмов" [ref=e101]
+            - cell "21,1495" [ref=e102]
+          - row "764 THB 10 Батов 24,4239" [ref=e103]:
+            - cell "764" [ref=e104]
+            - cell "THB" [ref=e105]
+            - cell "10" [ref=e106]
+            - cell "Батов" [ref=e107]
+            - cell "24,4239" [ref=e108]
+          - row "048 BHD 1 Бахрейнский динар 212,0002" [ref=e109]:
+            - cell "048" [ref=e110]
+            - cell "BHD" [ref=e111]
+            - cell "1" [ref=e112]
+            - cell "Бахрейнский динар" [ref=e113]
+            - cell "212,0002" [ref=e114]
+          - row "933 BYN 1 Белорусский рубль 27,1521" [ref=e115]:
+            - cell "933" [ref=e116]
+            - cell "BYN" [ref=e117]
+            - cell "1" [ref=e118]
+            - cell "Белорусский рубль" [ref=e119]
+            - cell "27,1521" [ref=e120]
+          - row "068 BOB 1 Боливиано 11,5382" [ref=e121]:
+            - cell "068" [ref=e122]
+            - cell "BOB" [ref=e123]
+            - cell "1" [ref=e124]
+            - cell "Боливиано" [ref=e125]
+            - cell "11,5382" [ref=e126]
+          - row "986 BRL 1 Бразильский реал 15,4359" [ref=e127]:
+            - cell "986" [ref=e128]
+            - cell "BRL" [ref=e129]
+            - cell "1" [ref=e130]
+            - cell "Бразильский реал" [ref=e131]
+            - cell "15,4359" [ref=e132]
+          - row "410 KRW 1000 Вон 52,4949" [ref=e133]:
+            - cell "410" [ref=e134]
+            - cell "KRW" [ref=e135]
+            - cell "1000" [ref=e136]
+            - cell "Вон" [ref=e137]
+            - cell "52,4949" [ref=e138]
+          - row "344 HKD 1 Гонконгский доллар 10,1897" [ref=e139]:
+            - cell "344" [ref=e140]
+            - cell "HKD" [ref=e141]
+            - cell "1" [ref=e142]
+            - cell "Гонконгский доллар" [ref=e143]
+            - cell "10,1897" [ref=e144]
+          - row "980 UAH 10 Гривен 18,2635" [ref=e145]:
+            - cell "980" [ref=e146]
+            - cell "UAH" [ref=e147]
+            - cell "10" [ref=e148]
+            - cell "Гривен" [ref=e149]
+            - cell "18,2635" [ref=e150]
+          - row "208 DKK 1 Датская крона 12,3821" [ref=e151]:
+            - cell "208" [ref=e152]
+            - cell "DKK" [ref=e153]
+            - cell "1" [ref=e154]
+            - cell "Датская крона" [ref=e155]
+            - cell "12,3821" [ref=e156]
+          - row "784 AED 1 Дирхам ОАЭ 21,7098" [ref=e157]:
+            - cell "784" [ref=e158]
+            - cell "AED" [ref=e159]
+            - cell "1" [ref=e160]
+            - cell "Дирхам ОАЭ" [ref=e161]
+            - cell "21,7098" [ref=e162]
+          - row "840 USD 1 Доллар США 79,7293" [ref=e163]:
+            - cell "840" [ref=e164]
+            - cell "USD" [ref=e165]
+            - cell "1" [ref=e166]
+            - cell "Доллар США" [ref=e167]
+            - cell "79,7293" [ref=e168]
+          - row "704 VND 10000 Донгов 31,7558" [ref=e169]:
+            - cell "704" [ref=e170]
+            - cell "VND" [ref=e171]
+            - cell "10000" [ref=e172]
+            - cell "Донгов" [ref=e173]
+            - cell "31,7558" [ref=e174]
+          - row "978 EUR 1 Евро 92,1915" [ref=e175]:
+            - cell "978" [ref=e176]
+            - cell "EUR" [ref=e177]
+            - cell "1" [ref=e178]
+            - cell "Евро" [ref=e179]
+            - cell "92,1915" [ref=e180]
+          - row "818 EGP 10 Египетских фунтов 14,6651" [ref=e181]:
+            - cell "818" [ref=e182]
+            - cell "EGP" [ref=e183]
+            - cell "10" [ref=e184]
+            - cell "Египетских фунтов" [ref=e185]
+            - cell "14,6651" [ref=e186]
+          - row "985 PLN 1 Злотый 21,5147" [ref=e187]:
+            - cell "985" [ref=e188]
+            - cell "PLN" [ref=e189]
+            - cell "1" [ref=e190]
+            - cell "Злотый" [ref=e191]
+            - cell "21,5147" [ref=e192]
+          - row "392 JPY 100 Иен 49,9463" [ref=e193]:
+            - cell "392" [ref=e194]
+            - cell "JPY" [ref=e195]
+            - cell "100" [ref=e196]
+            - cell "Иен" [ref=e197]
+            - cell "49,9463" [ref=e198]
+          - row "356 INR 100 Индийских рупий 85,5384" [ref=e199]:
+            - cell "356" [ref=e200]
+            - cell "INR" [ref=e201]
+            - cell "100" [ref=e202]
+            - cell "Индийских рупий" [ref=e203]
+            - cell "85,5384" [ref=e204]
+          - row "364 IRR 1000000 Иранских риалов 58,8139" [ref=e205]:
+            - cell "364" [ref=e206]
+            - cell "IRR" [ref=e207]
+            - cell "1000000" [ref=e208]
+            - cell "Иранских риалов" [ref=e209]
+            - cell "58,8139" [ref=e210]
+          - row "124 CAD 1 Канадский доллар 57,2850" [ref=e211]:
+            - cell "124" [ref=e212]
+            - cell "CAD" [ref=e213]
+            - cell "1" [ref=e214]
+            - cell "Канадский доллар" [ref=e215]
+            - cell "57,2850" [ref=e216]
+          - row "634 QAR 1 Катарский риал 21,9037" [ref=e217]:
+            - cell "634" [ref=e218]
+            - cell "QAR" [ref=e219]
+            - cell "1" [ref=e220]
+            - cell "Катарский риал" [ref=e221]
+            - cell "21,9037" [ref=e222]
+          - row "192 CUP 10 Кубинских песо 33,2205" [ref=e223]:
+            - cell "192" [ref=e224]
+            - cell "CUP" [ref=e225]
+            - cell "10" [ref=e226]
+            - cell "Кубинских песо" [ref=e227]
+            - cell "33,2205" [ref=e228]
+          - row "104 MMK 1000 Кьятов 37,9663" [ref=e229]:
+            - cell "104" [ref=e230]
+            - cell "MMK" [ref=e231]
+            - cell "1000" [ref=e232]
+            - cell "Кьятов" [ref=e233]
+            - cell "37,9663" [ref=e234]
+          - row "981 GEL 1 Лари 29,5414" [ref=e235]:
+            - cell "981" [ref=e236]
+            - cell "GEL" [ref=e237]
+            - cell "1" [ref=e238]
+            - cell "Лари" [ref=e239]
+            - cell "29,5414" [ref=e240]
+          - row "498 MDL 10 Молдавских леев 45,2493" [ref=e241]:
+            - cell "498" [ref=e242]
+            - cell "MDL" [ref=e243]
+            - cell "10" [ref=e244]
+            - cell "Молдавских леев" [ref=e245]
+            - cell "45,2493" [ref=e246]
+          - row "566 NGN 1000 Найр 57,7416" [ref=e247]:
+            - cell "566" [ref=e248]
+            - cell "NGN" [ref=e249]
+            - cell "1000" [ref=e250]
+            - cell "Найр" [ref=e251]
+            - cell "57,7416" [ref=e252]
+          - row "554 NZD 1 Новозеландский доллар 45,8922" [ref=e253]:
+            - cell "554" [ref=e254]
+            - cell "NZD" [ref=e255]
+            - cell "1" [ref=e256]
+            - cell "Новозеландский доллар" [ref=e257]
+            - cell "45,8922" [ref=e258]
+          - row "934 TMT 1 Новый туркменский манат 22,7798" [ref=e259]:
+            - cell "934" [ref=e260]
+            - cell "TMT" [ref=e261]
+            - cell "1" [ref=e262]
+            - cell "Новый туркменский манат" [ref=e263]
+            - cell "22,7798" [ref=e264]
+          - row "578 NOK 10 Норвежских крон 82,5535" [ref=e265]:
+            - cell "578" [ref=e266]
+            - cell "NOK" [ref=e267]
+            - cell "10" [ref=e268]
+            - cell "Норвежских крон" [ref=e269]
+            - cell "82,5535" [ref=e270]
+          - row "512 OMR 1 Оманский риал 207,3584" [ref=e271]:
+            - cell "512" [ref=e272]
+            - cell "OMR" [ref=e273]
+            - cell "1" [ref=e274]
+            - cell "Оманский риал" [ref=e275]
+            - cell "207,3584" [ref=e276]
+          - row "946 RON 1 Румынский лей 18,0510" [ref=e277]:
+            - cell "946" [ref=e278]
+            - cell "RON" [ref=e279]
+            - cell "1" [ref=e280]
+            - cell "Румынский лей" [ref=e281]
+            - cell "18,0510" [ref=e282]
+          - row "360 IDR 10000 Рупий 46,8941" [ref=e283]:
+            - cell "360" [ref=e284]
+            - cell "IDR" [ref=e285]
+            - cell "10000" [ref=e286]
+            - cell "Рупий" [ref=e287]
+            - cell "46,8941" [ref=e288]
+          - row "710 ZAR 10 Рэндов 47,0072" [ref=e289]:
+            - cell "710" [ref=e290]
+            - cell "ZAR" [ref=e291]
+            - cell "10" [ref=e292]
+            - cell "Рэндов" [ref=e293]
+            - cell "47,0072" [ref=e294]
+          - row "682 SAR 1 Саудовский риял 21,2611" [ref=e295]:
+            - cell "682" [ref=e296]
+            - cell "SAR" [ref=e297]
+            - cell "1" [ref=e298]
+            - cell "Саудовский риял" [ref=e299]
+            - cell "21,2611" [ref=e300]
+          - row "960 XDR 1 СДР (специальные права заимствования) 108,3178" [ref=e301]:
+            - cell "960" [ref=e302]
+            - cell "XDR" [ref=e303]
+            - cell "1" [ref=e304]
+            - cell "СДР (специальные права заимствования)" [ref=e305]
+            - cell "108,3178" [ref=e306]
+          - row "941 RSD 100 Сербских динаров 78,3607" [ref=e307]:
+            - cell "941" [ref=e308]
+            - cell "RSD" [ref=e309]
+            - cell "100" [ref=e310]
+            - cell "Сербских динаров" [ref=e311]
+            - cell "78,3607" [ref=e312]
+          - row "702 SGD 1 Сингапурский доллар 61,9401" [ref=e313]:
+            - cell "702" [ref=e314]
+            - cell "SGD" [ref=e315]
+            - cell "1" [ref=e316]
+            - cell "Сингапурский доллар" [ref=e317]
+            - cell "61,9401" [ref=e318]
+          - row "417 KGS 100 Сомов 91,1713" [ref=e319]:
+            - cell "417" [ref=e320]
+            - cell "KGS" [ref=e321]
+            - cell "100" [ref=e322]
+            - cell "Сомов" [ref=e323]
+            - cell "91,1713" [ref=e324]
+          - row "972 TJS 10 Сомони 83,2786" [ref=e325]:
+            - cell "972" [ref=e326]
+            - cell "TJS" [ref=e327]
+            - cell "10" [ref=e328]
+            - cell "Сомони" [ref=e329]
+            - cell "83,2786" [ref=e330]
+          - row "050 BDT 100 Так 64,8885" [ref=e331]:
+            - cell "050" [ref=e332]
+            - cell "BDT" [ref=e333]
+            - cell "100" [ref=e334]
+            - cell "Так" [ref=e335]
+            - cell "64,8885" [ref=e336]
+          - row "398 KZT 100 Тенге 16,8807" [ref=e337]:
+            - cell "398" [ref=e338]
+            - cell "KZT" [ref=e339]
+            - cell "100" [ref=e340]
+            - cell "Тенге" [ref=e341]
+            - cell "16,8807" [ref=e342]
+          - row "496 MNT 1000 Тугриков 22,3229" [ref=e343]:
+            - cell "496" [ref=e344]
+            - cell "MNT" [ref=e345]
+            - cell "1000" [ref=e346]
+            - cell "Тугриков" [ref=e347]
+            - cell "22,3229" [ref=e348]
+          - row "949 TRY 10 Турецких лир 17,9346" [ref=e349]:
+            - cell "949" [ref=e350]
+            - cell "TRY" [ref=e351]
+            - cell "10" [ref=e352]
+            - cell "Турецких лир" [ref=e353]
+            - cell "17,9346" [ref=e354]
+          - row "860 UZS 10000 Узбекских сумов 65,5094" [ref=e355]:
+            - cell "860" [ref=e356]
+            - cell "UZS" [ref=e357]
+            - cell "10000" [ref=e358]
+            - cell "Узбекских сумов" [ref=e359]
+            - cell "65,5094" [ref=e360]
+          - row "348 HUF 100 Форинтов 23,9542" [ref=e361]:
+            - cell "348" [ref=e362]
+            - cell "HUF" [ref=e363]
+            - cell "100" [ref=e364]
+            - cell "Форинтов" [ref=e365]
+            - cell "23,9542" [ref=e366]
+          - row "826 GBP 1 Фунт стерлингов 106,3110" [ref=e367]:
+            - cell "826" [ref=e368]
+            - cell "GBP" [ref=e369]
+            - cell "1" [ref=e370]
+            - cell "Фунт стерлингов" [ref=e371]
+            - cell "106,3110" [ref=e372]
+          - row "203 CZK 10 Чешских крон 37,4474" [ref=e373]:
+            - cell "203" [ref=e374]
+            - cell "CZK" [ref=e375]
+            - cell "10" [ref=e376]
+            - cell "Чешских крон" [ref=e377]
+            - cell "37,4474" [ref=e378]
+          - row "752 SEK 10 Шведских крон 83,9313" [ref=e379]:
+            - cell "752" [ref=e380]
+            - cell "SEK" [ref=e381]
+            - cell "10" [ref=e382]
+            - cell "Шведских крон" [ref=e383]
+            - cell "83,9313" [ref=e384]
+          - row "756 CHF 1 Швейцарский франк 99,7115" [ref=e385]:
+            - cell "756" [ref=e386]
+            - cell "CHF" [ref=e387]
+            - cell "1" [ref=e388]
+            - cell "Швейцарский франк" [ref=e389]
+            - cell "99,7115" [ref=e390]
+          - row "230 ETB 100 Эфиопских быров 50,9188" [ref=e391]:
+            - cell "230" [ref=e392]
+            - cell "ETB" [ref=e393]
+            - cell "100" [ref=e394]
+            - cell "Эфиопских быров" [ref=e395]
+            - cell "50,9188" [ref=e396]
+          - row "156 CNY 1 Юань 11,5743" [ref=e397]:
+            - cell "156" [ref=e398]
+            - cell "CNY" [ref=e399]
+            - cell "1" [ref=e400]
+            - cell "Юань" [ref=e401]
+            - cell "11,5743" [ref=e402]
+      - generic [ref=e403]:
+        - link "Сохранить в PDF" [ref=e404] [cursor=pointer]:
+          - /url: /Content/SaveToPdf/Page?url=%2Fcurrency_base%2Fdaily%2F
+        - button "Копировать ссылку" [ref=e407] [cursor=pointer]
+      - generic [ref=e408]:
+        - generic [ref=e410]:
+          - text: Страница была полезной?
+          - generic [ref=e411]:
+            - button "Да" [ref=e412] [cursor=pointer]: Да
+            - button "Нет" [ref=e414] [cursor=pointer]: Нет
+        - generic [ref=e416]: "Последнее обновление страницы: 03.04.2026"
+  - contentinfo [ref=e417]:
+    - generic [ref=e418]:
+      - generic [ref=e420]:
+        - generic [ref=e421]:
+          - link [ref=e422] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e424] [cursor=pointer]: Наверх
+        - generic [ref=e426]:
+          - generic [ref=e427]: 107016, Москва, ул. Неглинная, д. 12, к. В, Банк России
+          - generic [ref=e428]:
+            - generic [ref=e429]:
+              - link "300" [ref=e430] [cursor=pointer]:
+                - /url: tel:300
+              - generic [ref=e431]: (круглосуточно, бесплатно для звонков с мобильных телефонов)
+            - generic [ref=e432]:
+              - link "8 800 300-30-00" [ref=e433] [cursor=pointer]:
+                - /url: tel:88003003000
+              - generic [ref=e434]: (круглосуточно, бесплатно для звонков из регионов России)
+            - generic [ref=e435]:
+              - link "+7 499 300-30-00" [ref=e436] [cursor=pointer]:
+                - /url: tel:+74993003000
+              - generic [ref=e437]: (круглосуточно, в соответствии с тарифами вашего оператора)
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - link "Личный кабинет участника информационного обмена" [ref=e441] [cursor=pointer]:
+              - /url: /lk_uio/
+            - link "Отношения с инвесторами" [ref=e443] [cursor=pointer]:
+              - /url: /about_br/irp/
+            - link "Перечень инсайдерской информации Банка России" [ref=e445] [cursor=pointer]:
+              - /url: /rbr/list_inside/
+            - link "Официальное опубликование нормативных актов Банка России" [ref=e447] [cursor=pointer]:
+              - /url: /analytics/na_vr/
+            - link "Проекты нормативных актов Банка России" [ref=e449] [cursor=pointer]:
+              - /url: /project_na/
+            - link "Перечень нерабочих праздничных дней и перенесенных выходных дней" [ref=e451] [cursor=pointer]:
+              - /url: /other/holidays/
+          - generic [ref=e452]:
+            - link [ref=e453] [cursor=pointer]:
+              - /url: https://vk.com/cbr_official
+            - link [ref=e454] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/BankofRussia
+            - link "Telegram" [ref=e455] [cursor=pointer]:
+              - /url: https://t.me/centralbank_russia
+            - link "Яндекс Дзен" [ref=e456] [cursor=pointer]:
+              - /url: https://dzen.ru/cbr
+            - link "Одноклассники" [ref=e457] [cursor=pointer]:
+              - /url: https://ok.ru/group/68858679787580
+            - link "RUTUBE" [ref=e458] [cursor=pointer]:
+              - /url: https://rutube.ru/channel/23873201/
+            - link "Макс" [ref=e459] [cursor=pointer]:
+              - /url: https://max.ru/cbr_official
+        - generic [ref=e460]:
+          - generic [ref=e461]:
+            - link "О сайте" [ref=e463] [cursor=pointer]:
+              - /url: /about/
+            - link "Контакты" [ref=e465] [cursor=pointer]:
+              - /url: /contacts/
+            - link "Противодействие коррупции" [ref=e467] [cursor=pointer]:
+              - /url: /about_br/anticor/
+            - link "Технические ресурсы" [ref=e469] [cursor=pointer]:
+              - /url: /development/
+          - link "Версия для слабовидящих" [ref=e470] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e472]: Версия для слабовидящих
+      - generic [ref=e474]:
+        - generic [ref=e475]: © Банк России, 2000–2026.
+        - generic [ref=e476]:
+          - text: Дизайн сайта —
+          - link [ref=e477] [cursor=pointer]:
+            - /url: https://aic.ru
+            - img [ref=e478]
+  - generic [ref=e479]:
+    - generic [ref=e480]: На сайте Банка России используются файлы cookie
+    - generic [ref=e481]:
+      - text: Оставаясь на
+      - link "www.cbr.ru" [ref=e482] [cursor=pointer]:
+        - /url: /
+      - text: ", вы принимаете"
+      - link "пользовательское соглашение" [ref=e483] [cursor=pointer]:
+        - /url: /user_agreement/
+    - button "Подтвердить" [ref=e484] [cursor=pointer]
+  - status [ref=e485]

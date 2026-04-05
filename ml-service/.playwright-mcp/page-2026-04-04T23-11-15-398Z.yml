@@ -1,0 +1,2426 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к содержанию" [ref=e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "Сайт" [ref=e6]:
+        - generic "Главное меню" [ref=e7]:
+          - button "Главное меню" [ref=e8] [cursor=pointer]
+          - generic [ref=e11]: Главное меню
+      - link "Википедия свободная энциклопедия" [ref=e12] [cursor=pointer]:
+        - /url: /wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0
+        - img [ref=e13]
+        - generic [ref=e14]:
+          - img "Википедия" [ref=e15]
+          - img "свободная энциклопедия" [ref=e16]
+    - generic [ref=e17]:
+      - search [ref=e18]:
+        - generic [ref=e21]:
+          - searchbox "Искать в Википедии" [ref=e24]
+          - button "Найти" [ref=e26]
+      - navigation "Персональные инструменты" [ref=e27]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Пожертвовать" [ref=e33] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=ru.wikipedia.org&uselang=ru
+          - listitem [ref=e34]:
+            - link "Создать учётную запись" [ref=e35] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+          - listitem [ref=e36]:
+            - link "Войти" [ref=e37] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&returnto=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+  - generic [ref=e39]:
+    - navigation "Содержание" [ref=e43]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - heading "Содержание" [level=2] [ref=e47]
+          - button "скрыть" [ref=e48] [cursor=pointer]
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Начало" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]: Начало
+          - listitem [ref=e53]:
+            - link "Особенности строения" [ref=e54] [cursor=pointer]:
+              - /url: "#Особенности_строения"
+              - generic [ref=e55]: Особенности строения
+            - list
+          - listitem [ref=e56]:
+            - link "Происхождение" [ref=e57] [cursor=pointer]:
+              - /url: "#Происхождение"
+              - generic [ref=e58]: Происхождение
+            - list
+          - listitem [ref=e59]:
+            - link "Классификация" [ref=e60] [cursor=pointer]:
+              - /url: "#Классификация"
+              - generic [ref=e61]: Классификация
+            - list
+          - listitem [ref=e62]:
+            - link "Хронограмма" [ref=e63] [cursor=pointer]:
+              - /url: "#Хронограмма"
+              - generic [ref=e64]: Хронограмма
+            - list
+          - listitem [ref=e65]:
+            - link "Подтипы" [ref=e66] [cursor=pointer]:
+              - /url: "#Подтипы"
+              - generic [ref=e67]: Подтипы
+            - button "Отобразить/Скрыть подраздел Подтипы" [expanded] [ref=e68]:
+              - generic [ref=e70]: Отобразить/Скрыть подраздел Подтипы
+            - list [ref=e71]:
+              - listitem [ref=e72]:
+                - link "Бесчерепные" [ref=e73] [cursor=pointer]:
+                  - /url: "#Бесчерепные"
+                  - generic [ref=e74]: Бесчерепные
+                - list
+              - listitem [ref=e75]:
+                - link "Оболочники" [ref=e76] [cursor=pointer]:
+                  - /url: "#Оболочники"
+                  - generic [ref=e77]: Оболочники
+                - list
+              - listitem [ref=e78]:
+                - link "Позвоночные" [ref=e79] [cursor=pointer]:
+                  - /url: "#Позвоночные"
+                  - generic [ref=e80]: Позвоночные
+                - list
+          - listitem [ref=e81]:
+            - link "Ближайшие родственники" [ref=e82] [cursor=pointer]:
+              - /url: "#Ближайшие_родственники"
+              - generic [ref=e83]: Ближайшие родственники
+            - button "Отобразить/Скрыть подраздел Ближайшие родственники" [expanded] [ref=e84]:
+              - generic [ref=e86]: Отобразить/Скрыть подраздел Ближайшие родственники
+            - list [ref=e87]:
+              - listitem [ref=e88]:
+                - link "Полухордовые" [ref=e89] [cursor=pointer]:
+                  - /url: "#Полухордовые"
+                  - generic [ref=e90]: Полухордовые
+                - list
+              - listitem [ref=e91]:
+                - link "Иглокожие" [ref=e92] [cursor=pointer]:
+                  - /url: "#Иглокожие"
+                  - generic [ref=e93]: Иглокожие
+                - list
+          - listitem [ref=e94]:
+            - link "См. также" [ref=e95] [cursor=pointer]:
+              - /url: "#См._также"
+              - generic [ref=e96]: См. также
+            - list
+          - listitem [ref=e97]:
+            - link "Примечания" [ref=e98] [cursor=pointer]:
+              - /url: "#Примечания"
+              - generic [ref=e99]: Примечания
+            - list
+          - listitem [ref=e100]:
+            - link "Литература" [ref=e101] [cursor=pointer]:
+              - /url: "#Литература"
+              - generic [ref=e102]: Литература
+            - list
+    - main [ref=e104]:
+      - generic [ref=e105]:
+        - heading "Хордовые" [level=1] [ref=e106]
+        - generic [ref=e107]:
+          - button "Перейти к статье на другом языке. Доступно на 154 языках" [ref=e108] [cursor=pointer]
+          - generic [ref=e111]: 154 языка
+      - generic [ref=e113]:
+        - navigation "Пространства имён" [ref=e115]:
+          - generic [ref=e116]:
+            - generic:
+              - list:
+                - listitem [ref=e117]:
+                  - link "Статья" [ref=e118] [cursor=pointer]:
+                    - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                    - generic [ref=e119]: Статья
+                - listitem [ref=e120]:
+                  - link "Обсуждение" [ref=e121] [cursor=pointer]:
+                    - /url: /wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                    - generic [ref=e122]: Обсуждение
+        - generic [ref=e123]:
+          - navigation "Просмотры" [ref=e124]:
+            - generic [ref=e125]:
+              - generic:
+                - list:
+                  - listitem [ref=e126]:
+                    - link "Читать" [ref=e127] [cursor=pointer]:
+                      - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                      - generic [ref=e128]: Читать
+                  - listitem [ref=e129]:
+                    - link "Править" [ref=e130] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit
+                      - generic [ref=e131]: Править
+                  - listitem [ref=e132]:
+                    - link "Править код" [ref=e133] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit
+                      - generic [ref=e134]: Править код
+                  - listitem [ref=e135]:
+                    - link "История" [ref=e136] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=history
+                      - generic [ref=e137]: История
+          - navigation "Инструменты для страниц" [ref=e138]:
+            - generic [ref=e139]:
+              - button "Инструменты" [ref=e140] [cursor=pointer]
+              - generic [ref=e142] [cursor=pointer]: Инструменты
+      - navigation "Внешний вид" [ref=e145]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: Внешний вид
+            - button "скрыть" [ref=e150] [cursor=pointer]
+          - generic [ref=e151]:
+            - generic [ref=e152]: Текст
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - generic [ref=e157]:
+                  - generic [ref=e158]:
+                    - radio "Мелкий" [ref=e159]
+                    - generic [ref=e162]: Мелкий
+                  - generic [ref=e163]:
+                    - radio "Стандартный" [checked] [ref=e164]
+                    - generic [ref=e167]: Стандартный
+                  - generic [ref=e168]:
+                    - radio "Крупный" [ref=e169]
+                    - generic [ref=e172]: Крупный
+          - generic [ref=e173]:
+            - generic [ref=e174]: Ширина
+            - list [ref=e176]:
+              - listitem [ref=e177]:
+                - generic [ref=e179]:
+                  - generic [ref=e180]:
+                    - radio "Стандартно" [checked] [ref=e181]
+                    - generic [ref=e184]: Стандартно
+                  - generic [ref=e185]:
+                    - radio "Широко" [ref=e186]
+                    - generic [ref=e189]: Широко
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - text: Цвет
+              - generic [ref=e192]: (бета)
+            - list [ref=e194]:
+              - listitem [ref=e195]:
+                - generic [ref=e197]:
+                  - generic [ref=e198]:
+                    - radio "Автоматически" [ref=e199]
+                    - generic [ref=e202]: Автоматически
+                  - generic [ref=e203]:
+                    - radio "Светлая" [checked] [ref=e204]
+                    - generic [ref=e207]: Светлая
+                  - generic [ref=e208]:
+                    - radio "Тёмная" [ref=e209]
+                    - generic [ref=e212]: Тёмная
+      - generic "Хордовые" [ref=e213]:
+        - generic [ref=e214]:
+          - generic [ref=e216]:
+            - text: "["
+            - link "править код" [ref=e217] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=0&summary=/*%20Преамбула%20*/%20
+            - text: "]"
+          - generic [ref=e218]: Материал из Википедии — свободной энциклопедии
+        - generic [ref=e221]:
+          - text: (перенаправлено с «
+          - link "Chordata" [ref=e222] [cursor=pointer]:
+            - /url: /w/index.php?title=Chordata&redirect=no
+          - text: »)
+        - generic [ref=e224]:
+          - table [ref=e225]:
+            - rowgroup [ref=e226]:
+              - row "Хордовые" [ref=e227]:
+                - columnheader "Хордовые" [ref=e228]
+              - 'row "Сверху: европейский ланцетник (бесчерепные), Polycarpa aurata (оболочники); Снизу: тигровая акула, тигр (позвоночные) Сверху: европейский ланцетник (бесчерепные), Polycarpa aurata (оболочники); Снизу: тигровая акула, тигр (позвоночные)" [ref=e229]':
+                - 'cell "Сверху: европейский ланцетник (бесчерепные), Polycarpa aurata (оболочники); Снизу: тигровая акула, тигр (позвоночные) Сверху: европейский ланцетник (бесчерепные), Polycarpa aurata (оболочники); Снизу: тигровая акула, тигр (позвоночные)" [ref=e230]':
+                  - generic [ref=e231]:
+                    - 'link "Сверху: европейский ланцетник (бесчерепные), Polycarpa aurata (оболочники); Снизу: тигровая акула, тигр (позвоночные)" [ref=e233] [cursor=pointer]':
+                      - /url: https://commons.wikimedia.org/wiki/File:Chordata.png?uselang=ru
+                      - 'img "Сверху: европейский ланцетник (бесчерепные), Polycarpa aurata (оболочники); Снизу: тигровая акула, тигр (позвоночные)" [ref=e234]'
+                    - generic [ref=e235]:
+                      - paragraph [ref=e236]:
+                        - text: "Сверху:"
+                        - link "европейский ланцетник" [ref=e237] [cursor=pointer]:
+                          - /url: /wiki/%D0%95%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B0%D0%BD%D1%86%D0%B5%D1%82%D0%BD%D0%B8%D0%BA
+                        - text: (
+                        - link "бесчерепные" [ref=e238] [cursor=pointer]:
+                          - /url: /wiki/%D0%91%D0%B5%D1%81%D1%87%D0%B5%D1%80%D0%B5%D0%BF%D0%BD%D1%8B%D0%B5
+                        - text: ),
+                        - link "Polycarpa aurata" [ref=e240] [cursor=pointer]:
+                          - /url: /wiki/Polycarpa_aurata
+                        - text: (
+                        - link "оболочники" [ref=e241] [cursor=pointer]:
+                          - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+                        - text: );
+                      - text: "Снизу:"
+                      - link "тигровая акула" [ref=e242] [cursor=pointer]:
+                        - /url: /wiki/%D0%A2%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B0%D0%BA%D1%83%D0%BB%D0%B0
+                      - text: ","
+                      - link "тигр" [ref=e243] [cursor=pointer]:
+                        - /url: /wiki/%D0%A2%D0%B8%D0%B3%D1%80
+                      - text: (
+                      - link "позвоночные" [ref=e244] [cursor=pointer]:
+                        - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+                      - text: )
+              - row "Научная классификация" [ref=e245]:
+                - columnheader "Научная классификация" [ref=e246]:
+                  - link "Научная классификация" [ref=e247] [cursor=pointer]:
+                    - /url: /wiki/%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0
+              - 'row "[подробно] Домен: Эукариоты Царство: Животные Тип: Хордовые" [ref=e248]':
+                - 'cell "[подробно] Домен: Эукариоты Царство: Животные Тип: Хордовые" [ref=e249]':
+                  - generic [ref=e250]:
+                    - button "[подробно]" [ref=e251] [cursor=pointer]
+                    - generic [ref=e252]:
+                      - generic [ref=e253]: "Домен:"
+                      - link "Эукариоты" [ref=e255] [cursor=pointer]:
+                        - /url: /wiki/Eukaryota
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: "Царство:"
+                      - link "Животные" [ref=e259] [cursor=pointer]:
+                        - /url: /wiki/Animalia
+                    - generic [ref=e260]:
+                      - generic [ref=e261]: "Тип:"
+                      - generic [ref=e262]: Хордовые
+              - row "Международное научное название" [ref=e263]:
+                - columnheader "Международное научное название" [ref=e264]
+              - row "Chordata Haeckel, 1874[1][2]" [ref=e265]:
+                - cell "Chordata Haeckel, 1874[1][2]" [ref=e266]:
+                  - text: Chordata
+                  - generic [ref=e267]:
+                    - link "Haeckel" [ref=e268] [cursor=pointer]:
+                      - /url: /wiki/%D0%93%D0%B5%D0%BA%D0%BA%D0%B5%D0%BB%D1%8C,_%D0%AD%D1%80%D0%BD%D1%81%D1%82_%D0%93%D0%B5%D0%BD%D1%80%D0%B8%D1%85
+                    - text: ","
+                    - link "1874" [ref=e269] [cursor=pointer]:
+                      - /url: /wiki/1874_%D0%B3%D0%BE%D0%B4_%D0%B2_%D0%BD%D0%B0%D1%83%D0%BA%D0%B5
+                    - superscript [ref=e270]:
+                      - link "[1]" [ref=e271] [cursor=pointer]:
+                        - /url: "#cite_note-1"
+                    - superscript [ref=e272]:
+                      - link "[2]" [ref=e273] [cursor=pointer]:
+                        - /url: "#cite_note-2"
+              - row "Логотип Викивидов Систематика в Викивидах Логотип Викисклада Изображения на Викискладе ITIS 158852 NCBI 7711 EOL 694 FW 273393" [ref=e274]:
+                - cell "Логотип Викивидов Систематика в Викивидах Логотип Викисклада Изображения на Викискладе ITIS 158852 NCBI 7711 EOL 694 FW 273393" [ref=e275]:
+                  - link "Логотип Викивидов" [ref=e277] [cursor=pointer]:
+                    - /url: https://species.wikimedia.org/wiki/Chordata?uselang=ru
+                    - img "Логотип Викивидов" [ref=e278]
+                  - link "Систематика в Викивидах" [ref=e279] [cursor=pointer]:
+                    - /url: https://species.wikimedia.org/wiki/Chordata?uselang=ru
+                    - text: Систематика
+                    - text: в Викивидах
+                  - link "Логотип Викисклада" [ref=e281] [cursor=pointer]:
+                    - /url: https://commons.wikimedia.org/wiki/Category:Chordata
+                    - img "Логотип Викисклада" [ref=e282]
+                  - link "Изображения на Викискладе" [ref=e283] [cursor=pointer]:
+                    - /url: https://commons.wikimedia.org/wiki/Category:Chordata
+                    - text: Изображения
+                    - text: на Викискладе
+                  - table [ref=e284]:
+                    - rowgroup [ref=e285]:
+                      - row "ITIS 158852" [ref=e286]:
+                        - rowheader "ITIS" [ref=e287]:
+                          - link "ITIS" [ref=e288] [cursor=pointer]:
+                            - /url: /wiki/%D0%9E%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D0%B0%D1%8F_%D1%82%D0%B0%D0%BA%D1%81%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0
+                        - cell "158852" [ref=e289]:
+                          - link "158852" [ref=e292] [cursor=pointer]:
+                            - /url: https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=158852
+                      - row "NCBI 7711" [ref=e293]:
+                        - rowheader "NCBI" [ref=e294]:
+                          - link "NCBI" [ref=e295] [cursor=pointer]:
+                            - /url: /wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%86%D0%B5%D0%BD%D1%82%D1%80_%D0%B1%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8
+                        - cell "7711" [ref=e296]:
+                          - link "7711" [ref=e299] [cursor=pointer]:
+                            - /url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=7711
+                      - row "EOL 694" [ref=e300]:
+                        - rowheader "EOL" [ref=e301]:
+                          - link "EOL" [ref=e302] [cursor=pointer]:
+                            - /url: /wiki/%D0%AD%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F_%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8
+                        - cell "694" [ref=e303]:
+                          - link "694" [ref=e306] [cursor=pointer]:
+                            - /url: https://eol.org/pages/694
+                      - row "FW 273393" [ref=e307]:
+                        - rowheader "FW" [ref=e308]:
+                          - link "FW" [ref=e309] [cursor=pointer]:
+                            - /url: /wiki/Fossilworks
+                        - cell "273393" [ref=e310]:
+                          - link "273393" [ref=e313] [cursor=pointer]:
+                            - /url: https://web.archive.org/web/0/http://www.fossilworks.org/cgi-bin/bridge.pl?a=taxonInfo&taxon_no=273393
+          - paragraph [ref=e314]:
+            - text: Хо́рдовые
+            - generic [ref=e315]:
+              - text: (
+              - link "лат." [ref=e316] [cursor=pointer]:
+                - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+              - text: Chordata)
+            - text: —
+            - link "тип" [ref=e317] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%B8%D0%BF_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - link "вторичноротых животных" [ref=e318] [cursor=pointer]:
+              - /url: /wiki/%D0%92%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+            - text: ", для которых характерно наличие"
+            - link "энтодермального" [ref=e319] [cursor=pointer]:
+              - /url: /wiki/%D0%AD%D0%BD%D1%82%D0%BE%D0%B4%D0%B5%D1%80%D0%BC%D0%B0
+            - text: осевого
+            - link "скелета" [ref=e320] [cursor=pointer]:
+              - /url: /wiki/%D0%A1%D0%BA%D0%B5%D0%BB%D0%B5%D1%82
+            - text: в виде
+            - link "хорды" [ref=e321] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%B0_(%D0%B7%D0%BE%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - text: ", которая у высших форм заменяется"
+            - link "позвоночником" [ref=e322] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D0%BA
+            - text: . По степени развития
+            - link "нервной системы" [ref=e323] [cursor=pointer]:
+              - /url: /wiki/%D0%9D%D0%B5%D1%80%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0
+            - text: тип хордовых занимает высшее место среди всех животных. В мире известно более 60 000 видов хордовых.
+          - paragraph [ref=e324]:
+            - text: По определению Cameron, 2020, хордовые — крупнейшая
+            - link "кроновая группа" [ref=e325] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D1%80%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0
+            - text: ", включающая"
+            - link "морскую миногу" [ref=e326] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%B8%D0%BD%D0%BE%D0%B3%D0%B0
+            - text: (Petromyzon marinus), но не
+            - link "пурпурного стронгилоцентротуса" [ref=e327] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D1%83%D1%80%D0%BF%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BD%D0%B3%D0%B8%D0%BB%D0%BE%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D1%82%D1%83%D1%81
+            - text: (Strongylocentrotus purpuratus)
+            - superscript [ref=e328]:
+              - link "[3]" [ref=e329] [cursor=pointer]:
+                - /url: "#cite_note-3"
+            - text: . Понятие хордовые объединяет
+            - link "позвоночных" [ref=e330] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: и некоторых
+            - link "беспозвоночных" [ref=e331] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: ", имеющих, по крайней мере в некоторый период их жизненного цикла,"
+            - link "хорду" [ref=e332] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%B0_(%D0%B7%D0%BE%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - text: ","
+            - link "полый спинной нервный тяж" [ref=e333] [cursor=pointer]:
+              - /url: /wiki/%D0%9D%D0%B5%D1%80%D0%B2%D0%BD%D0%B0%D1%8F_%D1%82%D1%80%D1%83%D0%B1%D0%BA%D0%B0
+            - text: ","
+            - link "жаберные щели" [ref=e334] [cursor=pointer]:
+              - /url: /wiki/%D0%96%D0%B0%D0%B1%D1%80%D1%8B
+            - text: ","
+            - link "эндостиль" [ref=e335] [cursor=pointer]:
+              - /url: /wiki/%D0%AD%D0%BD%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%BB%D1%8C
+            - text: "и хвост, располагающийся позади смещённого на вентральную сторону тела анального отверстия. Тип хордовых делится на три подтипа:"
+            - link "бесчерепных" [ref=e336] [cursor=pointer]:
+              - /url: /wiki/Acrania
+            - text: ","
+            - link "оболочников" [ref=e337] [cursor=pointer]:
+              - /url: /wiki/Tunicata
+            - text: ","
+            - link "позвоночных" [ref=e338] [cursor=pointer]:
+              - /url: /wiki/Vertebrata
+            - text: . Ранее в качестве четвёртого подтипа рассматривались
+            - link "полухордовые" [ref=e339] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%BB%D1%83%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+            - text: ", которые теперь вынесены в классификации в отдельную группу."
+          - generic [ref=e340]:
+            - heading "Особенности строения" [level=2] [ref=e341]: Особенности строения
+            - generic [ref=e342]:
+              - text: "["
+              - link "править" [ref=e343] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=1
+              - text: "|"
+              - link "править код" [ref=e344] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=1
+              - text: "]"
+          - figure "Схема строения обобщённого хордового животного, показывающая его основные особенности" [ref=e345]:
+            - link [ref=e346] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:General_chordate_morphology.svg?uselang=ru
+              - img [ref=e347]
+            - generic [ref=e348]: Схема строения обобщённого хордового животного, показывающая его основные особенности
+          - paragraph [ref=e349]:
+            - text: Хордовые — тип животных, характеризующихся
+            - link "билатеральной симметрией" [ref=e350] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B8%D0%BB%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F
+            - text: "и наличием, по крайней мере, на определённых стадиях развития следующих признаков:"
+          - list [ref=e351]:
+            - listitem [ref=e352]:
+              - link "Хорда" [ref=e353] [cursor=pointer]:
+                - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%B0_(%D0%B7%D0%BE%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+              - text: ", представляющая собой эластичный стержень, образующийся путём выпячивания спинной стороны кишечной трубки. У большинства"
+              - link "позвоночных" [ref=e354] [cursor=pointer]:
+                - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+              - text: хорда в ходе
+              - link "эмбрионального развития" [ref=e355] [cursor=pointer]:
+                - /url: /wiki/%D0%AD%D0%BC%D0%B1%D1%80%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5
+              - text: полностью или частично замещается хрящевой и костной тканью, образующей
+              - link "позвоночник" [ref=e356] [cursor=pointer]:
+                - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D0%BA
+              - text: .
+            - listitem [ref=e357]:
+              - link "Нервная трубка" [ref=e358] [cursor=pointer]:
+                - /url: /wiki/%D0%9D%D0%B5%D1%80%D0%B2%D0%BD%D0%B0%D1%8F_%D1%82%D1%80%D1%83%D0%B1%D0%BA%D0%B0
+              - text: ", расположенная дорсально. У позвоночных развивается в"
+              - link "спинной мозг" [ref=e359] [cursor=pointer]:
+                - /url: /wiki/%D0%A1%D0%BF%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BC%D0%BE%D0%B7%D0%B3
+              - text: и
+              - link "головной мозг" [ref=e360] [cursor=pointer]:
+                - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9_%D0%BC%D0%BE%D0%B7%D0%B3
+              - text: .
+            - listitem [ref=e361]:
+              - link "Жаберные щели" [ref=e362] [cursor=pointer]:
+                - /url: /wiki/%D0%96%D0%B0%D0%B1%D1%80%D1%8B
+              - text: — парные отверстия в
+              - link "глотке" [ref=e363] [cursor=pointer]:
+                - /url: /wiki/%D0%93%D0%BB%D0%BE%D1%82%D0%BA%D0%B0
+              - text: . У низших хордовых участвуют в фильтрации воды для питания. У наземных позвоночных жаберные щели закладываются в раннем
+              - link "эмбриогенезе" [ref=e364] [cursor=pointer]:
+                - /url: /wiki/%D0%AD%D0%BC%D0%B1%D1%80%D0%B8%D0%BE%D0%B3%D0%B5%D0%BD%D0%B5%D0%B7
+              - text: в виде жаберных мешочков.
+            - listitem [ref=e365]:
+              - link "Мышечный хвост" [ref=e366] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%9C%D1%8B%D1%88%D0%B5%D1%87%D0%BD%D1%8B%D0%B9_%D1%85%D0%B2%D0%BE%D1%81%D1%82&action=edit&redlink=1
+              - text: — постанальный отдел тела, расположенный каудальнее смещённого на брюшную сторону тела
+              - link "ануса" [ref=e367] [cursor=pointer]:
+                - /url: /wiki/%D0%90%D0%BD%D1%83%D1%81
+              - text: (в него заходят хорда и нервная трубка, но не заходит кишечник).
+            - listitem [ref=e368]:
+              - link "Эндостиль" [ref=e369] [cursor=pointer]:
+                - /url: /wiki/%D0%AD%D0%BD%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%BB%D1%8C
+              - text: — желобок на вентральной стороне глотки. У низших хордовых-
+              - link "фильтраторов" [ref=e370] [cursor=pointer]:
+                - /url: /wiki/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
+              - text: в нём производится слизь, помогающая собирать частицы пищи и доставлять их в пищевод. Также в нём накапливается
+              - link "иод" [ref=e371] [cursor=pointer]:
+                - /url: /wiki/%D0%98%D0%BE%D0%B4
+              - text: и, вероятно, он является предшественником
+              - link "щитовидной железы" [ref=e372] [cursor=pointer]:
+                - /url: /wiki/%D0%A9%D0%B8%D1%82%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D0%B0%D1%8F_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%B0
+              - text: позвоночных. Как таковой, эндостиль у позвоночных есть только у
+              - link "пескоройки" [ref=e373] [cursor=pointer]:
+                - /url: /wiki/%D0%9F%D0%B5%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D0%B9%D0%BA%D0%B0
+              - text: .
+          - generic [ref=e374]:
+            - heading "Происхождение" [level=2] [ref=e375]: Происхождение
+            - generic [ref=e376]:
+              - text: "["
+              - link "править" [ref=e377] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=2
+              - text: "|"
+              - link "править код" [ref=e378] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=2
+              - text: "]"
+          - paragraph [ref=e379]:
+            - text: В настоящее время достигнуто согласие, что хордовые —
+            - link "монофилетическая" [ref=e380] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D0%BD%D0%BE%D1%84%D0%B8%D0%BB%D0%B8%D1%8F
+            - text: группа (являются потомками одного общего предка, который сам был хордовым), а ближайшими родственниками
+            - link "позвоночных" [ref=e381] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - generic [ref=e382]:
+              - text: (
+              - link "лат." [ref=e383] [cursor=pointer]:
+                - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+              - text: Vertebrata)
+            - text: являются
+            - link "оболочники" [ref=e384] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+            - generic [ref=e385]:
+              - text: (
+              - link "лат." [ref=e386] [cursor=pointer]:
+                - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+              - text: Tunicata)
+            - superscript [ref=e387]:
+              - link "[4]" [ref=e388] [cursor=pointer]:
+                - /url: "#cite_note-Markov_2008-4"
+            - superscript [ref=e389]:
+              - link "[5]" [ref=e390] [cursor=pointer]:
+                - /url: "#cite_note-Yastrebov_2015-5"
+            - text: . Поскольку окаменелости ранних хордовых плохо сохранились, выяснить родственные связи представителей типа можно только с помощью
+            - link "молекулярной филогенетики" [ref=e391] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0
+            - text: .
+          - paragraph [ref=e392]:
+            - link "Билатеральные" [ref=e393] [cursor=pointer]:
+              - /url: /wiki/Bilateria
+            - text: животные делятся на две большие группы —
+            - link "первичноротые" [ref=e394] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+            - text: и
+            - link "вторичноротые" [ref=e395] [cursor=pointer]:
+              - /url: /wiki/%D0%92%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+            - text: . Хордовые относятся ко вторичноротым. Весьма вероятно, что ископаемое
+            - link "кимберелла" [ref=e396] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%B8%D0%BC%D0%B1%D0%B5%D1%80%D0%B5%D0%BB%D0%BB%D0%B0
+            - text: ", жившая 555 млн лет назад, принадлежала к первичноротым"
+            - superscript [ref=e397]:
+              - link "[6]" [ref=e398] [cursor=pointer]:
+                - /url: "#cite_note-6"
+            - text: . Жившая 549—543 млн лет назад в
+            - link "эдиакарии" [ref=e399] [cursor=pointer]:
+              - /url: /wiki/%D0%AD%D0%B4%D0%B8%D0%B0%D0%BA%D0%B0%D1%80%D0%B8%D0%B9
+            - link "эрниетта" [ref=e400] [cursor=pointer]:
+              - /url: /wiki/%D0%AD%D1%80%D0%BD%D0%B8%D0%B5%D1%82%D1%82%D0%B0
+            - text: была уже явно вторичноротым животным
+            - superscript [ref=e401]:
+              - link "[7]" [ref=e402] [cursor=pointer]:
+                - /url: "#cite_note-7"
+            - text: . Таким образом, первичноротые и вторичноротые должны были разделиться до времени существования этих животных, то есть до начала
+            - link "кембрийского периода" [ref=e403] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%B5%D0%BC%D0%B1%D1%80%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B5%D1%80%D0%B8%D0%BE%D0%B4
+            - superscript [ref=e404]:
+              - link "[8]" [ref=e405] [cursor=pointer]:
+                - /url: "#cite_note-8"
+            - text: .
+          - paragraph [ref=e406]:
+            - text: Первые известные ископаемые двух близких к хордовым групп —
+            - link "иглокожих" [ref=e407] [cursor=pointer]:
+              - /url: /wiki/%D0%98%D0%B3%D0%BB%D0%BE%D0%BA%D0%BE%D0%B6%D0%B8%D0%B5
+            - text: и
+            - link "полухордовых" [ref=e408] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%BB%D1%83%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+            - text: — обнаруживаются с раннего и среднего кембрия соответственно
+            - superscript [ref=e409]:
+              - link "[9]" [ref=e410] [cursor=pointer]:
+                - /url: "#cite_note-9"
+            - superscript [ref=e411]:
+              - link "[10]" [ref=e412] [cursor=pointer]:
+                - /url: "#cite_note-10"
+            - text: . Кроме того, известно ископаемое
+            - link "чэнцзянской биоты" [ref=e413] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%B0%D0%BE%D1%82%D1%8F%D0%BD%D1%8C%D1%88%D0%B0%D0%BD%D1%8C%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%BB%D0%B0%D0%BD%D1%86%D1%8B
+            - link "Yunnanozoon" [ref=e415] [cursor=pointer]:
+              - /url: /wiki/Yunnanozoon
+            - text: ", принадлежность которого к полухордовым или хордовым не определена"
+            - superscript [ref=e416]:
+              - link "[11]" [ref=e417] [cursor=pointer]:
+                - /url: "#cite_note-11"
+            - superscript [ref=e418]:
+              - link "[12]" [ref=e419] [cursor=pointer]:
+                - /url: "#cite_note-Chen-12"
+            - text: . Другое ископаемое, относящееся к той же биоте,
+            - link "Haikouella lanceolata" [ref=e421] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D0%B0%D0%B9%D0%BA%D0%BE%D1%83%D1%8D%D0%BB%D0%BB%D0%B0
+            - text: явно является хордовым и, возможно, позвоночным. У него обнаружены признаки сердца, артерий, нервной трубки и мозга, хвоста, жаберных лепестков, возможно, глаз, но в то же время вокруг ротового отверстия есть щупальца
+            - superscript [ref=e422]:
+              - link "[12]" [ref=e423] [cursor=pointer]:
+                - /url: "#cite_note-Chen-12"
+            - text: .
+            - link "Haikouichthys" [ref=e425] [cursor=pointer]:
+              - /url: /wiki/Haikouichthys
+            - text: и
+            - link "Myllokunmingia" [ref=e427] [cursor=pointer]:
+              - /url: /wiki/Myllokunmingia
+            - text: ", также из чэнцзянской фауны, и"
+            - link "пикайя" [ref=e428] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%B8%D0%BA%D0%B0%D0%B9%D1%8F
+            - text: из
+            - link "сланцев Бёрджес" [ref=e429] [cursor=pointer]:
+              - /url: /wiki/%D0%A4%D0%B0%D1%83%D0%BD%D0%B0_%D1%81%D0%BB%D0%B0%D0%BD%D1%86%D0%B5%D0%B2_%D0%91%D1%91%D1%80%D0%B4%D0%B6%D0%B5%D1%81
+            - text: относятся к примитивным позвоночным
+            - superscript [ref=e430]:
+              - link "[13]" [ref=e431] [cursor=pointer]:
+                - /url: "#cite_note-13"
+            - superscript [ref=e432]:
+              - link "[14]" [ref=e433] [cursor=pointer]:
+                - /url: "#cite_note-14"
+            - text: . Ископаемые ранних хордовых весьма редки, поскольку у них не было твёрдых частей тела.
+          - paragraph [ref=e434]:
+            - text: Исследования родственных отношений хордовых начались с 90-х годов XIX века. Они основывались на анатомических, эмбриологических и палеонтологических данных и приводили к разным
+            - link "филогенетическим деревьям" [ref=e435] [cursor=pointer]:
+              - /url: /wiki/%D0%A4%D0%B8%D0%BB%D0%BE%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE
+            - text: . Некоторое время ближайшими современными родственниками хордовых считали полухордовых
+            - superscript [ref=e436]:
+              - link "[15]" [ref=e437] [cursor=pointer]:
+                - /url: "#cite_note-15"
+            - text: ", но позже ими оказалась группа, состоящая из полухордовых и иглокожих ("
+            - link "Ambulacraria" [ref=e438] [cursor=pointer]:
+              - /url: /wiki/Ambulacraria
+            - text: )
+            - superscript [ref=e439]:
+              - link "[16]" [ref=e440] [cursor=pointer]:
+                - /url: "#cite_note-Edgecombe_2011-16"
+            - text: .
+          - paragraph [ref=e441]:
+            - text: Время разделения эволюционных линий хордовых и Ambulacraria на основании метода
+            - link "молекулярных часов" [ref=e442] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B
+            - text: было оценено в 896 млн лет назад
+            - superscript [ref=e443]:
+              - link "[17]" [ref=e444] [cursor=pointer]:
+                - /url: "#cite_note-Blair-17"
+            - text: .
+          - paragraph [ref=e445]:
+            - text: Ниже приведена
+            - link "кладограмма" [ref=e446] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%BB%D0%B0%D0%B4%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0
+            - text: ", основанная на сравнении последовательностей"
+            - link "митохондриальных ДНК" [ref=e447] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%B8%D1%82%D0%BE%D1%85%D0%BE%D0%BD%D0%B4%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%94%D0%9D%D0%9A
+            - superscript [ref=e448]:
+              - link "[18]" [ref=e449] [cursor=pointer]:
+                - /url: "#cite_note-18"
+            - text: (положение Xenoturbellida по результатам некоторых других молекулярных исследований значительно отличается)
+            - superscript [ref=e450]:
+              - link "[19]" [ref=e451] [cursor=pointer]:
+                - /url: "#cite_note-Marletaz_2019-19"
+            - text: ":"
+          - table [ref=e453]:
+            - rowgroup [ref=e454]:
+              - row "⁠Deuterostomia ⁠(Вторичноротые) ⁠ Xenoturbellida ⁠ ⁠ ⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠ ⁠ ⁠ ⁠" [ref=e455]:
+                - cell "⁠Deuterostomia" [ref=e456]:
+                  - text: ⁠
+                  - link "Deuterostomia" [ref=e457] [cursor=pointer]:
+                    - /url: /wiki/Deuterostomia
+                - cell "⁠(Вторичноротые) ⁠ Xenoturbellida ⁠ ⁠ ⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠ ⁠ ⁠ ⁠" [ref=e458]:
+                  - table [ref=e460]:
+                    - rowgroup [ref=e461]:
+                      - row "⁠(Вторичноротые) ⁠ Xenoturbellida ⁠ ⁠ ⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠ ⁠ ⁠" [ref=e462]:
+                        - cell "⁠(Вторичноротые)" [ref=e463]:
+                          - text: ⁠(
+                          - link "Вторичноротые" [ref=e464] [cursor=pointer]:
+                            - /url: /wiki/%D0%92%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+                          - text: )
+                        - cell "⁠ Xenoturbellida ⁠ ⁠ ⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠ ⁠ ⁠" [ref=e465]:
+                          - table [ref=e467]:
+                            - rowgroup [ref=e468]:
+                              - row "⁠ Xenoturbellida" [ref=e469]:
+                                - cell "⁠" [ref=e470]
+                                - cell "Xenoturbellida" [ref=e471]:
+                                  - paragraph [ref=e472]:
+                                    - link "Xenoturbellida" [ref=e473] [cursor=pointer]:
+                                      - /url: /wiki/Xenoturbellida
+                              - row "⁠" [ref=e474]:
+                                - cell "⁠" [ref=e475]
+                              - row "⁠ ⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠ ⁠" [ref=e476]:
+                                - cell "⁠" [ref=e477]
+                                - cell "⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠ ⁠" [ref=e478]:
+                                  - table [ref=e480]:
+                                    - rowgroup [ref=e481]:
+                                      - row "⁠ ⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠" [ref=e482]:
+                                        - cell "⁠" [ref=e483]
+                                        - cell "⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠ ⁠ ⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠ ⁠" [ref=e484]:
+                                          - table [ref=e486]:
+                                            - rowgroup [ref=e487]:
+                                              - row "⁠Ambulacraria ⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠" [ref=e488]:
+                                                - cell "⁠Ambulacraria" [ref=e489]:
+                                                  - text: ⁠
+                                                  - link "Ambulacraria" [ref=e490] [cursor=pointer]:
+                                                    - /url: /wiki/Ambulacraria
+                                                - cell "⁠ Hemichordata (Полухордовые) ⁠ ⁠ Echinodermata (Иглокожие) ⁠" [ref=e491]:
+                                                  - table [ref=e493]:
+                                                    - rowgroup [ref=e494]:
+                                                      - row "⁠ Hemichordata (Полухордовые)" [ref=e495]:
+                                                        - cell "⁠" [ref=e496]
+                                                        - cell "Hemichordata (Полухордовые)" [ref=e497]:
+                                                          - paragraph [ref=e498]:
+                                                            - link "Hemichordata (Полухордовые)" [ref=e499] [cursor=pointer]:
+                                                              - /url: /wiki/%D0%9F%D0%BE%D0%BB%D1%83%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                                                            - link [ref=e501] [cursor=pointer]:
+                                                              - /url: https://commons.wikimedia.org/wiki/File:Saccoglossus_kowalevskii_by_Spengel_1893.png?uselang=ru
+                                                              - img [ref=e502]
+                                                      - row "⁠" [ref=e503]:
+                                                        - cell "⁠" [ref=e504]
+                                                      - row "⁠ Echinodermata (Иглокожие)" [ref=e505]:
+                                                        - cell "⁠" [ref=e506]
+                                                        - cell "Echinodermata (Иглокожие)" [ref=e507]:
+                                                          - paragraph [ref=e508]:
+                                                            - link "Echinodermata (Иглокожие)" [ref=e509] [cursor=pointer]:
+                                                              - /url: /wiki/%D0%98%D0%B3%D0%BB%D0%BE%D0%BA%D0%BE%D0%B6%D0%B8%D0%B5
+                                                            - link [ref=e511] [cursor=pointer]:
+                                                              - /url: https://commons.wikimedia.org/wiki/File:108-dorsal.jpg?uselang=ru
+                                                              - img [ref=e512]
+                                                      - row "⁠" [ref=e513]:
+                                                        - cell "⁠" [ref=e514]
+                                              - row "⁠" [ref=e515]:
+                                                - cell "⁠" [ref=e516]
+                                              - row "⁠Chordata (Хордовые) ⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠" [ref=e517]:
+                                                - cell "⁠Chordata (Хордовые)" [ref=e518]
+                                                - cell "⁠ Cephalochordata (Бесчерепные) ⁠ ⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠ ⁠" [ref=e519]:
+                                                  - table [ref=e521]:
+                                                    - rowgroup [ref=e522]:
+                                                      - row "⁠ Cephalochordata (Бесчерепные)" [ref=e523]:
+                                                        - cell "⁠" [ref=e524]
+                                                        - cell "Cephalochordata (Бесчерепные)" [ref=e525]:
+                                                          - paragraph [ref=e526]:
+                                                            - link "Cephalochordata (Бесчерепные)" [ref=e527] [cursor=pointer]:
+                                                              - /url: /wiki/%D0%91%D0%B5%D1%81%D1%87%D0%B5%D1%80%D0%B5%D0%BF%D0%BD%D1%8B%D0%B5
+                                                            - link [ref=e529] [cursor=pointer]:
+                                                              - /url: https://commons.wikimedia.org/wiki/File:Palaeobranchiostoma_hamatotergum_(flipped).png?uselang=ru
+                                                              - img [ref=e530]
+                                                      - row "⁠" [ref=e531]:
+                                                        - cell "⁠" [ref=e532]
+                                                      - row "⁠Olfactores ⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠" [ref=e533]:
+                                                        - cell "⁠Olfactores" [ref=e534]:
+                                                          - text: ⁠
+                                                          - link "Olfactores" [ref=e535] [cursor=pointer]:
+                                                            - /url: /wiki/Olfactores
+                                                        - cell "⁠ Tunicata (Urochordata, Оболочники) ⁠ ⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens ⁠" [ref=e536]:
+                                                          - table [ref=e538]:
+                                                            - rowgroup [ref=e539]:
+                                                              - row "⁠ Tunicata (Urochordata, Оболочники)" [ref=e540]:
+                                                                - cell "⁠" [ref=e541]
+                                                                - cell "Tunicata (Urochordata, Оболочники)" [ref=e542]:
+                                                                  - paragraph [ref=e543]:
+                                                                    - link "Tunicata (Urochordata, Оболочники)" [ref=e544] [cursor=pointer]:
+                                                                      - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+                                                                    - link [ref=e546] [cursor=pointer]:
+                                                                      - /url: https://commons.wikimedia.org/wiki/File:202210_Vase_tunicates.svg?uselang=ru
+                                                                      - img [ref=e547]
+                                                              - row "⁠" [ref=e548]:
+                                                                - cell "⁠" [ref=e549]
+                                                              - row "⁠ Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens" [ref=e550]:
+                                                                - cell "⁠" [ref=e551]
+                                                                - cell "Craniata (Черепные)Латимерия Банкиевский петух Homo sapiens" [ref=e552]:
+                                                                  - paragraph [ref=e553]:
+                                                                    - link "Craniata (Черепные)" [ref=e554] [cursor=pointer]:
+                                                                      - /url: /wiki/%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%BD%D1%8B%D0%B5
+                                                                    - link "Латимерия" [ref=e556] [cursor=pointer]:
+                                                                      - /url: https://commons.wikimedia.org/wiki/File:Coelacanth_model,_Devonian_-_Houston_Museum_of_Natural_Science_-_DSC01709_(white_background).png?uselang=ru
+                                                                      - img "Латимерия" [ref=e557]
+                                                                    - link "Банкиевский петух" [ref=e559] [cursor=pointer]:
+                                                                      - /url: https://commons.wikimedia.org/wiki/File:Red_jungle_fowl_white_background.png?uselang=ru
+                                                                      - img "Банкиевский петух" [ref=e560]
+                                                                    - link "Homo sapiens" [ref=e562] [cursor=pointer]:
+                                                                      - /url: https://commons.wikimedia.org/wiki/File:Bechuana_of_Distinction-1841_(white_background).jpg?uselang=ru
+                                                                      - img "Homo sapiens" [ref=e563]
+                                                              - row "⁠" [ref=e564]:
+                                                                - cell "⁠" [ref=e565]
+                                                      - row "⁠" [ref=e566]:
+                                                        - cell "⁠" [ref=e567]
+                                              - row "⁠" [ref=e568]:
+                                                - cell "⁠" [ref=e569]
+                                      - row "⁠" [ref=e570]:
+                                        - cell "⁠" [ref=e571]
+                              - row "⁠" [ref=e572]:
+                                - cell "⁠" [ref=e573]
+                      - row "⁠" [ref=e574]:
+                        - cell "⁠" [ref=e575]
+              - row "⁠" [ref=e576]:
+                - cell "⁠" [ref=e577]
+          - generic [ref=e578]:
+            - heading "Классификация" [level=2] [ref=e579]: Классификация
+            - generic [ref=e580]:
+              - text: "["
+              - link "править" [ref=e581] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=3
+              - text: "|"
+              - link "править код" [ref=e582] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=3
+              - text: "]"
+          - paragraph [ref=e583]:
+            - text: Обычно выделяют три подтипа хордовых (иногда четыре). Высшим подтипом являются
+            - link "позвоночные" [ref=e584] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: ", к которым принадлежит порядка 95 % всех видов хордовых. Из низших хордовых выделяют"
+            - link "бесчерепных" [ref=e585] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B5%D1%81%D1%87%D0%B5%D1%80%D0%B5%D0%BF%D0%BD%D1%8B%D0%B5
+            - text: и
+            - link "оболочников" [ref=e586] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+            - text: .
+          - paragraph [ref=e587]:
+            - text: Ниже перечислены три общепризнанных подтипа хордовых вместе с входящими в них классами и подклассами
+            - superscript [ref=e588]:
+              - link "[20]" [ref=e589] [cursor=pointer]:
+                - /url: "#cite_note-20"
+            - text: .
+          - paragraph [ref=e590]: Тип Хордовые (Chordata)
+          - list [ref=e591]:
+            - listitem [ref=e592]:
+              - text: Подтип
+              - link "Бесчерепные" [ref=e593] [cursor=pointer]:
+                - /url: /wiki/%D0%91%D0%B5%D1%81%D1%87%D0%B5%D1%80%D0%B5%D0%BF%D0%BD%D1%8B%D0%B5
+              - text: (Acraniata) или головохордовые (Cephalochordata)
+          - definition [ref=e595]:
+            - definition [ref=e597]:
+              - definition [ref=e599]:
+                - list [ref=e600]:
+                  - listitem [ref=e601]:
+                    - text: Класс
+                    - link "Ланцетники" [ref=e602] [cursor=pointer]:
+                      - /url: /wiki/Leptocardii
+                    - text: (Leptocardii)
+          - list [ref=e603]:
+            - listitem [ref=e604]:
+              - text: Подтип
+              - link "Оболочники" [ref=e605] [cursor=pointer]:
+                - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+              - text: (Tunicata) или личиночнохордовые (Urochordata)
+          - definition [ref=e607]:
+            - definition [ref=e609]:
+              - definition [ref=e611]:
+                - list [ref=e612]:
+                  - listitem [ref=e613]:
+                    - text: Класс
+                    - link "Аппендикулярии" [ref=e614] [cursor=pointer]:
+                      - /url: /wiki/%D0%90%D0%BF%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B8
+                    - text: (Appendicularia)
+                  - listitem [ref=e615]:
+                    - text: Класс
+                    - link "Асцидии" [ref=e616] [cursor=pointer]:
+                      - /url: /wiki/%D0%90%D1%81%D1%86%D0%B8%D0%B4%D0%B8%D0%B8
+                    - text: (Ascidiacea)
+                  - listitem [ref=e617]:
+                    - text: Класс
+                    - link "Сальпы" [ref=e618] [cursor=pointer]:
+                      - /url: /wiki/%D0%A1%D0%B0%D0%BB%D1%8C%D0%BF%D1%8B
+                    - text: "(Thaliacea):"
+                    - link "сальпиды" [ref=e619] [cursor=pointer]:
+                      - /url: /wiki/%D0%A1%D0%B0%D0%BB%D1%8C%D0%BF%D0%B8%D0%B4%D1%8B
+                    - text: ","
+                    - link "огнетелки" [ref=e620] [cursor=pointer]:
+                      - /url: /wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D1%82%D0%B5%D0%BB%D0%BA%D0%B8
+                    - text: и
+                    - link "бочёночники" [ref=e621] [cursor=pointer]:
+                      - /url: /wiki/%D0%91%D0%BE%D1%87%D1%91%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+          - list [ref=e622]:
+            - listitem [ref=e623]:
+              - text: Подтип
+              - link "Позвоночные" [ref=e624] [cursor=pointer]:
+                - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+              - text: (Vertebrata)
+          - definition [ref=e626]:
+            - definition [ref=e628]:
+              - definition [ref=e630]:
+                - list [ref=e631]:
+                  - listitem [ref=e632]:
+                    - generic "вымершая группа организмов" [ref=e634]:
+                      - img "вымершая группа организмов" [ref=e635]
+                    - text: Класс
+                    - link "Конодонты" [ref=e636] [cursor=pointer]:
+                      - /url: /wiki/%D0%9A%D0%BE%D0%BD%D0%BE%D0%B4%D0%BE%D0%BD%D1%82%D1%8B
+                    - text: (Conodonta)
+              - list [ref=e637]:
+                - listitem [ref=e638]:
+                  - text: Надкласс
+                  - link "Бесчелюстные" [ref=e639] [cursor=pointer]:
+                    - /url: /wiki/%D0%91%D0%B5%D1%81%D1%87%D0%B5%D0%BB%D1%8E%D1%81%D1%82%D0%BD%D1%8B%D0%B5
+                  - text: (Agnatha) —
+                  - link "парафилетическая группа" [ref=e640] [cursor=pointer]:
+                    - /url: /wiki/%D0%9F%D0%B0%D1%80%D0%B0%D1%84%D0%B8%D0%BB%D0%B8%D1%8F_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)
+              - definition [ref=e642]:
+                - list [ref=e643]:
+                  - listitem [ref=e644]:
+                    - generic "вымершая группа организмов" [ref=e646]:
+                      - img "вымершая группа организмов" [ref=e647]
+                    - text: Класс
+                    - link "Анаспиды" [ref=e648] [cursor=pointer]:
+                      - /url: /wiki/%D0%90%D0%BD%D0%B0%D1%81%D0%BF%D0%B8%D0%B4%D1%8B
+                    - text: ", или беспанцирные, или бесщитковые (Anaspida)"
+                  - listitem [ref=e649]:
+                    - generic "вымершая группа организмов" [ref=e651]:
+                      - img "вымершая группа организмов" [ref=e652]
+                    - text: Класс
+                    - link "Непарноноздрёвые" [ref=e653] [cursor=pointer]:
+                      - /url: /wiki/%D0%9D%D0%B5%D0%BF%D0%B0%D1%80%D0%BD%D0%BE%D0%BD%D0%BE%D0%B7%D0%B4%D1%80%D1%91%D0%B2%D1%8B%D0%B5
+                    - text: ", или цефаласпидоморфы (Cephalaspidomorphi)"
+                  - listitem [ref=e654]:
+                    - generic "вымершая группа организмов" [ref=e656]:
+                      - img "вымершая группа организмов" [ref=e657]
+                    - text: Класс
+                    - link "Парноноздрёвые" [ref=e658] [cursor=pointer]:
+                      - /url: /wiki/%D0%9F%D0%B0%D1%80%D0%BD%D0%BE%D0%BD%D0%BE%D0%B7%D0%B4%D1%80%D1%91%D0%B2%D1%8B%D0%B5
+                    - text: ", или птероспидоморфы (Pteraspidomorpha)"
+                  - listitem [ref=e659]:
+                    - generic "вымершая группа организмов" [ref=e661]:
+                      - img "вымершая группа организмов" [ref=e662]
+                    - text: Класс
+                    - link "Телодонты" [ref=e663] [cursor=pointer]:
+                      - /url: /wiki/%D0%A2%D0%B5%D0%BB%D0%BE%D0%B4%D0%BE%D0%BD%D1%82%D1%8B
+                    - text: (Thelodonti)
+                  - listitem [ref=e664]:
+                    - text: Класс
+                    - link "Миксины" [ref=e665] [cursor=pointer]:
+                      - /url: /wiki/%D0%9C%D0%B8%D0%BA%D1%81%D0%B8%D0%BD%D1%8B
+                    - text: (Myxini)
+                  - listitem [ref=e666]:
+                    - text: Класс
+                    - link "Миноги" [ref=e667] [cursor=pointer]:
+                      - /url: /wiki/%D0%9C%D0%B8%D0%BD%D0%BE%D0%B3%D0%B8
+                    - text: (Petromyzontida)
+            - list [ref=e668]:
+              - listitem [ref=e669]:
+                - text: Инфратип
+                - link "Челюстноротые" [ref=e670] [cursor=pointer]:
+                  - /url: /wiki/%D0%A7%D0%B5%D0%BB%D1%8E%D1%81%D1%82%D0%BD%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+                - text: (Gnathostomata)
+            - definition [ref=e672]:
+              - definition [ref=e674]:
+                - list [ref=e675]:
+                  - listitem [ref=e676]:
+                    - generic "вымершая группа организмов" [ref=e678]:
+                      - img "вымершая группа организмов" [ref=e679]
+                    - text: Класс
+                    - link "Плакодермы" [ref=e680] [cursor=pointer]:
+                      - /url: /wiki/%D0%9F%D0%BB%D0%B0%D0%BA%D0%BE%D0%B4%D0%B5%D1%80%D0%BC%D1%8B
+                    - text: или пластинокожие рыбы (Placodermi)
+                  - listitem [ref=e681]:
+                    - generic "вымершая группа организмов" [ref=e683]:
+                      - img "вымершая группа организмов" [ref=e684]
+                    - text: Класс
+                    - link "Акантоды" [ref=e685] [cursor=pointer]:
+                      - /url: /wiki/%D0%90%D0%BA%D0%B0%D0%BD%D1%82%D0%BE%D0%B4%D1%8B
+                    - text: или колючкозубые (Acanthodii)
+                  - listitem [ref=e686]:
+                    - text: Класс
+                    - link "Хрящевые рыбы" [ref=e687] [cursor=pointer]:
+                      - /url: /wiki/%D0%A5%D1%80%D1%8F%D1%89%D0%B5%D0%B2%D1%8B%D0%B5_%D1%80%D1%8B%D0%B1%D1%8B
+                    - text: (Chondrichthyes)
+                - definition [ref=e689]:
+                  - list [ref=e690]:
+                    - listitem [ref=e691]:
+                      - text: Подкласс
+                      - link "Пластиножаберные" [ref=e692] [cursor=pointer]:
+                        - /url: /wiki/%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%BE%D0%B6%D0%B0%D0%B1%D0%B5%D1%80%D0%BD%D1%8B%D0%B5
+                      - text: "(Elasmobranchii):"
+                      - link "акулы" [ref=e693] [cursor=pointer]:
+                        - /url: /wiki/%D0%90%D0%BA%D1%83%D0%BB%D1%8B
+                      - text: и
+                      - link "скаты" [ref=e694] [cursor=pointer]:
+                        - /url: /wiki/%D0%A1%D0%BA%D0%B0%D1%82%D1%8B
+                    - listitem [ref=e695]:
+                      - text: Подкласс
+                      - link "Цельноголовые" [ref=e696] [cursor=pointer]:
+                        - /url: /wiki/%D0%A6%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B%D0%B5
+                      - text: (Holocephali)
+              - list [ref=e697]:
+                - listitem [ref=e698]:
+                  - text: Группа
+                  - link "Костные рыбы" [ref=e699] [cursor=pointer]:
+                    - /url: /wiki/%D0%9A%D0%BE%D1%81%D1%82%D0%BD%D1%8B%D0%B5_%D1%80%D1%8B%D0%B1%D1%8B
+                  - text: (Osteichthyes)
+              - definition [ref=e701]:
+                - list [ref=e702]:
+                  - listitem [ref=e703]:
+                    - text: Класс
+                    - link "Лучепёрые рыбы" [ref=e704] [cursor=pointer]:
+                      - /url: /wiki/%D0%9B%D1%83%D1%87%D0%B5%D0%BF%D1%91%D1%80%D1%8B%D0%B5_%D1%80%D1%8B%D0%B1%D1%8B
+                    - text: (Actinopterygii)
+                  - listitem [ref=e705]:
+                    - text: Класс
+                    - link "Лопастеперые рыбы" [ref=e706] [cursor=pointer]:
+                      - /url: /wiki/%D0%9B%D0%BE%D0%BF%D0%B0%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D1%80%D1%8B%D0%B5_%D1%80%D1%8B%D0%B1%D1%8B
+                    - text: ", или мясистолопастные (Sarcopterygii) → Надкласс"
+                    - link "Четвероногие" [ref=e707] [cursor=pointer]:
+                      - /url: /wiki/%D0%A7%D0%B5%D1%82%D0%B2%D0%B5%D1%80%D0%BE%D0%BD%D0%BE%D0%B3%D0%B8%D0%B5
+                    - text: (Tetrapoda)
+              - list [ref=e708]:
+                - listitem [ref=e709]:
+                  - text: Надкласс
+                  - link "Четвероногие" [ref=e710] [cursor=pointer]:
+                    - /url: /wiki/%D0%A7%D0%B5%D1%82%D0%B2%D0%B5%D1%80%D0%BE%D0%BD%D0%BE%D0%B3%D0%B8%D0%B5
+                  - text: (Tetrapoda)
+              - definition [ref=e712]:
+                - list [ref=e713]:
+                  - listitem [ref=e714]:
+                    - text: Класс
+                    - link "Земноводные" [ref=e715] [cursor=pointer]:
+                      - /url: /wiki/%D0%97%D0%B5%D0%BC%D0%BD%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5
+                    - text: ", или амфибии (Amphibia) /"
+                    - link "Батрахоморфы" [ref=e716] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%91%D0%B0%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D1%8B&action=edit&redlink=1
+                    - text: (Batrachomorpha)
+                  - listitem [ref=e717]:
+                    - text: Класс
+                    - link "Завропсиды" [ref=e718] [cursor=pointer]:
+                      - /url: /wiki/%D0%97%D0%B0%D0%B2%D1%80%D0%BE%D0%BF%D1%81%D0%B8%D0%B4%D1%8B
+                    - text: (Sauropsida), традиционно —
+                    - link "Пресмыкающиеся" [ref=e719] [cursor=pointer]:
+                      - /url: /wiki/%D0%9F%D1%80%D0%B5%D1%81%D0%BC%D1%8B%D0%BA%D0%B0%D1%8E%D1%89%D0%B8%D0%B5%D1%81%D1%8F
+                    - text: ", или рептилии (Reptilia)"
+                - definition [ref=e721]:
+                  - list [ref=e722]:
+                    - listitem [ref=e723]:
+                      - generic "вымершая группа организмов" [ref=e725]:
+                        - img "вымершая группа организмов" [ref=e726]
+                      - text: Подкласс
+                      - link "Парарептилии" [ref=e727] [cursor=pointer]:
+                        - /url: /wiki/%D0%9F%D0%B0%D1%80%D0%B0%D1%80%D0%B5%D0%BF%D1%82%D0%B8%D0%BB%D0%B8%D0%B8
+                      - text: (Parareptilia)
+                    - listitem [ref=e728]:
+                      - text: Подкласс
+                      - link "Диапсиды" [ref=e729] [cursor=pointer]:
+                        - /url: /wiki/%D0%94%D0%B8%D0%B0%D0%BF%D1%81%D0%B8%D0%B4%D1%8B
+                      - text: (Diapsida) → Класс
+                      - link "Птицы" [ref=e730] [cursor=pointer]:
+                        - /url: /wiki/%D0%9F%D1%82%D0%B8%D1%86%D1%8B
+                      - text: (Aves)
+                - list [ref=e731]:
+                  - listitem [ref=e732]:
+                    - text: Класс
+                    - link "Синапсиды" [ref=e733] [cursor=pointer]:
+                      - /url: /wiki/%D0%A1%D0%B8%D0%BD%D0%B0%D0%BF%D1%81%D0%B8%D0%B4%D1%8B
+                    - text: (Synapsida) → Класс
+                    - link "Млекопитающие" [ref=e734] [cursor=pointer]:
+                      - /url: /wiki/%D0%9C%D0%BB%D0%B5%D0%BA%D0%BE%D0%BF%D0%B8%D1%82%D0%B0%D1%8E%D1%89%D0%B8%D0%B5
+                    - text: (Mammalia)
+          - paragraph [ref=e735]:
+            - text: Завропсиды (пресмыкающиеся и птицы) и синапсиды (млекопитающие и вымершие родственники) относятся к
+            - link "кладе" [ref=e736] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%BB%D0%B0%D0%B4%D0%B0
+            - link "амниот" [ref=e737] [cursor=pointer]:
+              - /url: /wiki/%D0%90%D0%BC%D0%BD%D0%B8%D0%BE%D1%82%D1%8B
+            - text: ", остальные классы позвоночных — к парафилетической группе"
+            - link "анамний" [ref=e738] [cursor=pointer]:
+              - /url: /wiki/%D0%90%D0%BD%D0%B0%D0%BC%D0%BD%D0%B8%D0%B8
+            - text: .
+          - paragraph [ref=e739]:
+            - text: Иногда отряды огнетелок, сальп и бочёночников повышают до классов в подтипе Tunicata. Также существует довольно много альтернативных классификаций позвоночных. Их наличие связано, в частности, с тем, что многие традиционно выделяемые группы позвоночных парафилетичны. Например, парафилетичны
+            - link "лопастепёрые" [ref=e740] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%BE%D0%BF%D0%B0%D1%81%D1%82%D0%B5%D0%BF%D1%91%D1%80%D1%8B%D0%B5
+            - text: (чтобы эта группа стала монофилетичной, в неё надо включить
+            - link "наземных позвоночных" [ref=e741] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%B5%D1%82%D1%80%D0%B0%D0%BF%D0%BE%D0%B4%D1%8B
+            - text: ) и рептилии (в них с позиций
+            - link "кладистической систематики" [ref=e742] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0
+            - text: следовало бы включить класс птиц).
+          - paragraph [ref=e743]:
+            - text: Очень часто используется несистемная группа
+            - link "беспозвоночные" [ref=e744] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: ", которая включает два подтипа хордовых ("
+            - link "головохордовые" [ref=e745] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+            - text: и
+            - link "оболочники" [ref=e746] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+            - text: ) и все остальные типы животных. Её использование подчёркивает важное значение, которое имеют
+            - link "позвоночные" [ref=e747] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: в животном мире и жизни человека.
+          - navigation "Классы хордовых (Chordata)" [ref=e748]:
+            - table [ref=e749]:
+              - rowgroup [ref=e750]:
+                - row "[показать] Перейти к шаблону «Хордовые» Классы хордовых (Chordata)" [ref=e751]:
+                  - columnheader "[показать] Перейти к шаблону «Хордовые» Классы хордовых (Chordata)" [ref=e752]:
+                    - button "[показать]" [ref=e753] [cursor=pointer]
+                    - link "Перейти к шаблону «Хордовые»" [ref=e756] [cursor=pointer]:
+                      - /url: /wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                      - img "Перейти к шаблону «Хордовые»" [ref=e757]
+                    - generic [ref=e758]: Классы хордовых (Chordata)
+                - row: · · · ·
+                - row
+                - row: · · · · · · · · · · ·
+                - row
+          - generic [ref=e759]:
+            - heading "Хронограмма" [level=2] [ref=e760]: Хронограмма
+            - generic [ref=e761]:
+              - text: "["
+              - link "править" [ref=e762] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=4
+              - text: "|"
+              - link "править код" [ref=e763] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=4
+              - text: "]"
+          - paragraph [ref=e764]: На рисунке показана хронограмма современных классов хордовых.
+          - paragraph [ref=e765]:
+            - text: При
+            - link "кладистическом подходе" [ref=e766] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0
+            - text: сопоставление иерархии таксономических групп с ветвями филогенетического дерева сталкивается с определёнными трудностями. Например, при этом подходе класс лопастепёрых рыб содержит 8 видов собственно рыб, а также всех наземных хордовых (четвероногих), поскольку они произошли от лопастепёрых рыб. Между тем, традиционно четвероногие делятся на классы земноводных, пресмыкающихся, птиц и млекопитающих, то есть в кладистической системе несколько традиционных классов оказываются подчинёнными другому классу.
+          - paragraph [ref=e767]: Не меньшие проблемы возникают в надклассе четвероногих. Невозможно выделить отдельную ветвь для рептилий, так как они не являются монофилетической группой (произошедшие от рептилий птицы традиционно выделяются в отдельный класс). В результате выделен класс завропсид, включающий в себя пресмыкающихся и птиц, а выделение птиц из завропсид показано тонкой линией. При этом нужно учитывать, что обозначенное на дереве число видов птиц входит в число видов завропсид.
+          - figure "Филогенетическое дерево современных классов хордовых. Классы обозначены чёрным цветом. Цифры в узлах дерева показывают ориентировочное время расхождения филогенетических групп (млн лет) по данным молекулярной филогенетики. Цифры после названий классов обозначают число известных видов. Все данные по http://www.onezoom.org/ на 19.02.2023" [ref=e768]:
+            - link [ref=e769] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:%D0%A4%D0%B8%D0%BB%D0%BE%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D1%85.svg?uselang=ru
+              - img [ref=e770]
+            - generic [ref=e771]:
+              - text: Филогенетическое дерево современных классов хордовых. Классы обозначены чёрным цветом. Цифры в узлах дерева показывают ориентировочное время расхождения филогенетических групп (млн лет) по данным молекулярной филогенетики. Цифры после названий классов обозначают число известных видов. Все данные по
+              - link "http://www.onezoom.org/" [ref=e772] [cursor=pointer]:
+                - /url: http://www.onezoom.org/
+              - text: на 19.02.2023
+          - generic [ref=e773]:
+            - heading "Подтипы" [level=2] [ref=e774]: Подтипы
+            - generic [ref=e775]:
+              - text: "["
+              - link "править" [ref=e776] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=5
+              - text: "|"
+              - link "править код" [ref=e777] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=5
+              - text: "]"
+          - generic [ref=e778]:
+            - heading "Бесчерепные" [level=3] [ref=e779]: Бесчерепные
+            - generic [ref=e780]:
+              - text: "["
+              - link "править" [ref=e781] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=6
+              - text: "|"
+              - link "править код" [ref=e782] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=6
+              - text: "]"
+          - figure "Головохордовое Branchiostoma lanceolatum" [ref=e783]:
+            - link [ref=e784] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Branchiostoma_lanceolatum.jpg?uselang=ru
+              - img [ref=e785]
+            - generic [ref=e786]:
+              - link "Головохордовое" [ref=e787] [cursor=pointer]:
+                - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+              - link "Branchiostoma lanceolatum" [ref=e789] [cursor=pointer]:
+                - /url: /wiki/Branchiostoma_lanceolatum
+          - note [ref=e790]:
+            - text: "Основная статья:"
+            - link "Головохордовые" [ref=e791] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+          - paragraph [ref=e792]:
+            - text: Бесчерепны́е (
+            - link "лат." [ref=e793] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Cephalochordata) или головохо́рдовые (
+            - link "лат." [ref=e794] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Acrania)
+            - superscript [ref=e795]:
+              - link "[21]" [ref=e796] [cursor=pointer]:
+                - /url: "#cite_note-БСЭ_1-21"
+            - text: — небольшие морские рыбообразные животные со всеми признаками, свойственными хордовым.
+            - link "Бесчерепные" [ref=e797] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+            - text: — подтип низших хордовых животных, в отличие от других хордовых (
+            - link "оболочников" [ref=e798] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+            - text: и
+            - link "позвоночных" [ref=e799] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: ), сохраняющий основные признаки типа (
+            - link "хорда" [ref=e800] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%B0_(%D0%B7%D0%BE%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - text: ","
+            - link "нервная трубка" [ref=e801] [cursor=pointer]:
+              - /url: /wiki/%D0%9D%D0%B5%D1%80%D0%B2%D0%BD%D0%B0%D1%8F_%D1%82%D1%80%D1%83%D0%B1%D0%BA%D0%B0
+            - text: и жаберные щели) в течение всей жизни.
+            - link "Головной мозг" [ref=e802] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9_%D0%BC%D0%BE%D0%B7%D0%B3
+            - text: отсутствует, органы чувств примитивны
+            - superscript [ref=e803]:
+              - link "[22]" [ref=e804] [cursor=pointer]:
+                - /url: "#cite_note-22"
+            - text: . Ведут придонный образ жизни, по характеру питания — роющие
+            - link "фильтраторы" [ref=e805] [cursor=pointer]:
+              - /url: /wiki/%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B
+            - superscript [ref=e806]:
+              - link "[23]" [ref=e807] [cursor=pointer]:
+                - /url: "#cite_note-Gee2008AmphioxusUnleashed-23"
+            - superscript [ref=e808]:
+              - link "[24]" [ref=e809] [cursor=pointer]:
+                - /url: "#cite_note-24"
+            - text: . Всего к бесчерепным относятся около 30
+            - link "видов" [ref=e810] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4
+            - text: ", составляющих один класс —"
+            - link "ланцетники" [ref=e811] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D0%BD%D1%86%D0%B5%D1%82%D0%BD%D0%B8%D0%BA%D0%B8
+            - text: .
+          - generic [ref=e812]:
+            - heading "Оболочники" [level=3] [ref=e813]: Оболочники
+            - generic [ref=e814]:
+              - text: "["
+              - link "править" [ref=e815] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=7
+              - text: "|"
+              - link "править код" [ref=e816] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=7
+              - text: "]"
+          - 'figure "Оболочники: асцидии" [ref=e817]':
+            - link [ref=e818] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:BU_Bio.jpg?uselang=ru
+              - img [ref=e819]
+            - generic [ref=e820]:
+              - link "Оболочники" [ref=e821] [cursor=pointer]:
+                - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+              - text: ":"
+              - link "асцидии" [ref=e822] [cursor=pointer]:
+                - /url: /wiki/%D0%90%D1%81%D1%86%D0%B8%D0%B4%D0%B8%D0%B8
+          - note [ref=e823]:
+            - text: "Основная статья:"
+            - link "Оболочники" [ref=e824] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+          - paragraph [ref=e825]:
+            - text: Оболо́чники (
+            - link "лат." [ref=e826] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Tunicata, Urochordata) — подтип хордовых
+            - link "животных" [ref=e827] [cursor=pointer]:
+              - /url: /wiki/%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5
+            - text: . Включают 5 классов —
+            - link "асцидий" [ref=e828] [cursor=pointer]:
+              - /url: /wiki/%D0%90%D1%81%D1%86%D0%B8%D0%B4%D0%B8%D0%B8
+            - text: ","
+            - link "аппендикулярий" [ref=e829] [cursor=pointer]:
+              - /url: /wiki/%D0%90%D0%BF%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B8
+            - text: ","
+            - link "сальп" [ref=e830] [cursor=pointer]:
+              - /url: /wiki/Salpida
+            - text: ","
+            - link "огнетелок" [ref=e831] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B3%D0%BD%D0%B5%D1%82%D0%B5%D0%BB%D0%BA%D0%B8
+            - text: и
+            - link "бочёночников" [ref=e832] [cursor=pointer]:
+              - /url: /wiki/Doliolida
+            - text: . По другой классификации последние 3 класса считаются
+            - link "отрядами" [ref=e833] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D1%82%D1%80%D1%8F%D0%B4_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - text: класса Thaliacea
+            - superscript [ref=e834]:
+              - link "[25]" [ref=e835] [cursor=pointer]:
+                - /url: "#cite_note-25"
+            - text: . Известно более 1 000 видов. Большинство из них имеют хорду только на личиночной стадии. Они распространены по всему миру и населяют морское дно.
+          - paragraph [ref=e836]: "Три крупных класса оболочников:"
+          - list [ref=e837]:
+            - listitem [ref=e838]:
+              - link "Асцидии" [ref=e839] [cursor=pointer]:
+                - /url: /wiki/%D0%90%D1%81%D1%86%D0%B8%D0%B4%D0%B8%D0%B8
+              - text: — низшие мягкотелые хордовые-фильтраторы, во взрослом состоянии ведущие сидячий образ жизни
+              - superscript [ref=e840]:
+                - link "[26]" [ref=e841] [cursor=pointer]:
+                  - /url: "#cite_note-Benton2002VertebratePalaeontologyP5-26"
+              - text: ;
+            - listitem [ref=e842]:
+              - link "аппендикулярии" [ref=e843] [cursor=pointer]:
+                - /url: /wiki/%D0%90%D0%BF%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%B8%D0%B8
+              - text: сохраняют личиночные черты, такие как хвост, на протяжении всей жизни. По этой причине долгое время рассматривались как личинки асцидий и сальп
+              - superscript [ref=e844]:
+                - link "[27]" [ref=e845] [cursor=pointer]:
+                  - /url: "#cite_note-27"
+              - text: . Из-за наличия длинных хвостов личинки оболочников называют
+              - link "лат." [ref=e846] [cursor=pointer]:
+                - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+              - text: urochordata
+              - superscript [ref=e847]:
+                - link "[26]" [ref=e848] [cursor=pointer]:
+                  - /url: "#cite_note-Benton2002VertebratePalaeontologyP5-26"
+              - text: ;
+            - listitem [ref=e849]:
+              - text: третья группа
+              - link "оболочников" [ref=e850] [cursor=pointer]:
+                - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+              - text: — свободноплавающие
+              - link "сальпы" [ref=e851] [cursor=pointer]:
+                - /url: /wiki/%D0%A1%D0%B0%D0%BB%D1%8C%D0%BF%D1%8B
+              - text: ", питаются"
+              - link "планктоном" [ref=e852] [cursor=pointer]:
+                - /url: /wiki/%D0%9F%D0%BB%D0%B0%D0%BD%D0%BA%D1%82%D0%BE%D0%BD
+              - text: . В их жизненном цикле известно два поколения — одиночное гермафродитное и почкующееся колониальное бесполое. У личинок этих животных есть все основные признаки хордовых, в том числе хорда и хвост. Они также оснащены рудиментарным мозгом и датчиками
+              - link "освещённости" [ref=e853] [cursor=pointer]:
+                - /url: /wiki/%D0%93%D0%BB%D0%B0%D0%B7%D0%BA%D0%B8_%D0%93%D0%B5%D1%81%D1%81%D0%B5
+              - text: и положения (крена)
+              - superscript [ref=e854]:
+                - link "[26]" [ref=e855] [cursor=pointer]:
+                  - /url: "#cite_note-Benton2002VertebratePalaeontologyP5-26"
+              - text: .
+          - generic [ref=e856]:
+            - heading "Позвоночные" [level=3] [ref=e857]: Позвоночные
+            - generic [ref=e858]:
+              - text: "["
+              - link "править" [ref=e859] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=8
+              - text: "|"
+              - link "править код" [ref=e860] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=8
+              - text: "]"
+          - figure "Прыжки гребнистых крокодилов — город Дарвин, Австралия" [ref=e861]:
+            - link [ref=e862] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Leistenkrokodil.jpg?uselang=ru
+              - img [ref=e863]
+            - generic [ref=e864]:
+              - text: Прыжки
+              - link "гребнистых крокодилов" [ref=e865] [cursor=pointer]:
+                - /url: /wiki/%D0%93%D1%80%D0%B5%D0%B1%D0%BD%D0%B8%D1%81%D1%82%D1%8B%D0%B9_%D0%BA%D1%80%D0%BE%D0%BA%D0%BE%D0%B4%D0%B8%D0%BB
+              - text: — город
+              - link "Дарвин" [ref=e866] [cursor=pointer]:
+                - /url: /wiki/%D0%94%D0%B0%D1%80%D0%B2%D0%B8%D0%BD_(%D0%B3%D0%BE%D1%80%D0%BE%D0%B4)
+              - text: ","
+              - link "Австралия" [ref=e867] [cursor=pointer]:
+                - /url: /wiki/%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F
+          - note [ref=e868]:
+            - text: "Основная статья:"
+            - link "Позвоночные" [ref=e869] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+          - paragraph [ref=e870]:
+            - text: Позвоно́чные (
+            - link "лат." [ref=e871] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Vertebrata) — высший подтип хордовых
+            - link "животных" [ref=e872] [cursor=pointer]:
+              - /url: /wiki/%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5
+            - text: . Доминирующая (наряду с
+            - link "насекомыми" [ref=e873] [cursor=pointer]:
+              - /url: /wiki/%D0%9D%D0%B0%D1%81%D0%B5%D0%BA%D0%BE%D0%BC%D1%8B%D0%B5
+            - text: ) на земле и в воздушной среде группа животных. Отличаются от других хордовых наличием обособленного
+            - link "черепа" [ref=e874] [cursor=pointer]:
+              - /url: /wiki/%D0%A7%D0%B5%D1%80%D0%B5%D0%BF
+            - text: и развитием
+            - link "головного мозга" [ref=e875] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9_%D0%BC%D0%BE%D0%B7%D0%B3
+            - text: и
+            - link "органов чувств" [ref=e876] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D1%8B_%D1%87%D1%83%D0%B2%D1%81%D1%82%D0%B2
+            - text: . Хорда у большинства представителей высших хордовых замещается на
+            - link "позвоночник" [ref=e877] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D0%B8%D0%BA
+            - superscript [ref=e878]:
+              - link "[28]" [ref=e879] [cursor=pointer]:
+                - /url: "#cite_note-UCMPMorphologyOfVertebrates-28"
+            - text: ", защищающий"
+            - link "спинной мозг" [ref=e880] [cursor=pointer]:
+              - /url: /wiki/%D0%A1%D0%BF%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BC%D0%BE%D0%B7%D0%B3
+            - text: и состоящий, как правило, из
+            - link "хрящевой" [ref=e881] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D1%80%D1%8F%D1%89
+            - text: и
+            - link "костной ткани" [ref=e882] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%BE%D1%81%D1%82%D1%8C
+            - text: .
+            - link "Эндостиль" [ref=e883] [cursor=pointer]:
+              - /url: /wiki/%D0%AD%D0%BD%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%BB%D1%8C
+            - text: ", как таковой, присутствует только у личинок"
+            - link "миног" [ref=e884] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%B8%D0%BD%D0%BE%D0%B3%D0%B8
+            - superscript [ref=e885]:
+              - link "[29]" [ref=e886] [cursor=pointer]:
+                - /url: "#cite_note-29"
+            - text: . По сравнению с низшими хордовыми —
+            - link "бесчерепными" [ref=e887] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+            - text: и
+            - link "оболочниками" [ref=e888] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8
+            - text: — они характеризуются значительно более высоким уровнем организации, что наглядно выражено как в их строении, так и в физиологических отправлениях. Среди позвоночных нет видов, ведущих сидячий (прикреплённый) образ жизни. Они перемещаются в широких пределах, активно разыскивая и захватывая пищу, находя для размножения особей другого пола, спасаясь от преследования врагов.
+          - paragraph [ref=e889]:
+            - text: У
+            - link "миног" [ref=e890] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%B8%D0%BD%D0%BE%D0%B3%D0%B8
+            - text: есть недоразвитый
+            - link "череп" [ref=e891] [cursor=pointer]:
+              - /url: /wiki/%D0%A7%D0%B5%D1%80%D0%B5%D0%BF
+            - text: и рудиментарные позвонки — следовательно, они могут рассматриваться как позвоночные
+            - superscript [ref=e892]:
+              - link "[30]" [ref=e893] [cursor=pointer]:
+                - /url: "#cite_note-30"
+            - text: .
+            - link "Миксиновые" [ref=e894] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%B8%D0%BA%D1%81%D0%B8%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5
+            - text: ", имеющие жаберный скелет, состоящий из небольшого числа хрящевых пластинок, рудиментарные позвонки, не всегда рассматриваются как истинные позвоночные"
+            - superscript [ref=e895]:
+              - link "[31]" [ref=e896] [cursor=pointer]:
+                - /url: "#cite_note-31"
+            - text: ", но"
+            - link "молекулярная филогенетика" [ref=e897] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%B0%D1%8F_%D1%84%D0%B8%D0%BB%D0%BE%D0%B3%D0%B5%D0%BD%D0%B5%D1%82%D0%B8%D0%BA%D0%B0
+            - text: показала, что это сестринская группа миног, образующая вместе с ними группу
+            - link "круглоротых" [ref=e898] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D1%80%D1%83%D0%B3%D0%BB%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+            - superscript [ref=e899]:
+              - link "[32]" [ref=e900] [cursor=pointer]:
+                - /url: "#cite_note-32"
+            - text: .
+          - generic [ref=e901]:
+            - heading "Ближайшие родственники" [level=2] [ref=e902]: Ближайшие родственники
+            - generic [ref=e903]:
+              - text: "["
+              - link "править" [ref=e904] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=9
+              - text: "|"
+              - link "править код" [ref=e905] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=9
+              - text: "]"
+          - generic [ref=e906]:
+            - heading "Полухордовые" [level=3] [ref=e907]: Полухордовые
+            - generic [ref=e908]:
+              - text: "["
+              - link "править" [ref=e909] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=10
+              - text: "|"
+              - link "править код" [ref=e910] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=10
+              - text: "]"
+          - figure "Полухордовое рода Saccoglossus" [ref=e911]:
+            - link [ref=e912] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Eichelwurm.jpg?uselang=ru
+              - img [ref=e913]
+            - generic [ref=e914]: Полухордовое рода Saccoglossus
+          - note [ref=e915]:
+            - text: "Основная статья:"
+            - link "Полухордовые" [ref=e916] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D0%BB%D1%83%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+          - paragraph [ref=e917]:
+            - text: Полухо́рдовые (
+            - link "лат." [ref=e918] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Hemichordata) — тип морских донных
+            - link "беспозвоночных" [ref=e919] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - text: из группы вторичноротых. Мягкотелые червеобразные животные. В мире известно 130 видов
+            - superscript [ref=e920]:
+              - link "[33]" [ref=e921] [cursor=pointer]:
+                - /url: "#cite_note-Tassia_2016-33"
+            - text: ", в России — 4 вида"
+            - superscript [ref=e922]:
+              - link "[34]" [ref=e923] [cursor=pointer]:
+                - /url: "#cite_note-zin-count-34"
+            - text: . Первоначально полухордовые считались подтипом или близкими родственниками хордовых, с которыми их объединяет наличие жаберных щелей, спинного нервного ствола и хордоподобного органа (стомохорда), представляющего собой вырост кишечника, поддерживающий хоботок. Однако стомохорд не
+            - link "гомологичен" [ref=e924] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BC%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - link "хорде" [ref=e925] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D0%BE%D1%80%D0%B4%D0%B0_(%D0%B7%D0%BE%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - text: ". Кроме того, в отличие от хордовых, у полухордовых тело чётко делится на 3 отдела: хоботок (у кишечнодышащих) или головной щит (у"
+            - link "перистожаберных" [ref=e926] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B6%D0%B0%D0%B1%D0%B5%D1%80%D0%BD%D1%8B%D0%B5
+            - text: "), воротник и туловище. Есть и ещё ряд отличий от хордовых: строение сердца, нервной системы и другие особенности внутренней организации, например, помимо спинного, у полухордовых есть и брюшной нервный тяж. Выделяют два класса:"
+            - link "кишечнодышащие" [ref=e927] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%B8%D1%88%D0%B5%D1%87%D0%BD%D0%BE%D0%B4%D1%8B%D1%88%D0%B0%D1%89%D0%B8%D0%B5
+            - text: (
+            - link "лат." [ref=e928] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Enteropneusta) — 108 современных видов — и
+            - link "перистожаберные" [ref=e929] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B6%D0%B0%D0%B1%D0%B5%D1%80%D0%BD%D1%8B%D0%B5
+            - text: (
+            - link "лат." [ref=e930] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Pterobranchia) — 22 современных вида
+            - superscript [ref=e931]:
+              - link "[33]" [ref=e932] [cursor=pointer]:
+                - /url: "#cite_note-Tassia_2016-33"
+            - text: . К последним принадлежат
+            - link "граптолиты" [ref=e933] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D1%80%D0%B0%D0%BF%D1%82%D0%BE%D0%BB%D0%B8%D1%82%D1%8B
+            - text: ", широко распространённые в"
+            - link "палеозое" [ref=e934] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%B0%D0%BB%D0%B5%D0%BE%D0%B7%D0%BE%D0%B9
+            - text: и ранее считавшиеся отдельным классом
+            - superscript [ref=e935]:
+              - link "[33]" [ref=e936] [cursor=pointer]:
+                - /url: "#cite_note-Tassia_2016-33"
+            - text: .
+          - paragraph [ref=e937]:
+            - text: Сходство
+            - link "личинок" [ref=e938] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B8%D1%87%D0%B8%D0%BD%D0%BA%D0%B0
+            - text: полухордовых (
+            - link "торнарии" [ref=e939] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%BE%D1%80%D0%BD%D0%B0%D1%80%D0%B8%D1%8F
+            - text: ) с личинками-
+            - link "бипиннариями" [ref=e940] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B8%D0%BF%D0%B8%D0%BD%D0%BD%D0%B0%D1%80%D0%B8%D1%8F
+            - link "иглокожих" [ref=e941] [cursor=pointer]:
+              - /url: /wiki/%D0%98%D0%B3%D0%BB%D0%BE%D0%BA%D0%BE%D0%B6%D0%B8%D0%B5
+            - text: позволило считать полухордовых промежуточным звеном между
+            - link "иглокожими" [ref=e942] [cursor=pointer]:
+              - /url: /wiki/%D0%98%D0%B3%D0%BB%D0%BE%D0%BA%D0%BE%D0%B6%D0%B8%D0%B5
+            - text: и хордовыми.
+          - generic [ref=e943]:
+            - heading "Иглокожие" [level=3] [ref=e944]: Иглокожие
+            - generic [ref=e945]:
+              - text: "["
+              - link "править" [ref=e946] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=11
+              - text: "|"
+              - link "править код" [ref=e947] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=11
+              - text: "]"
+          - 'figure "Иглокожие: морские звёзды" [ref=e948]':
+            - link [ref=e949] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Sandstar_300.jpg?uselang=ru
+              - img [ref=e950]
+            - generic [ref=e951]:
+              - link "Иглокожие" [ref=e952] [cursor=pointer]:
+                - /url: /wiki/%D0%98%D0%B3%D0%BB%D0%BE%D0%BA%D0%BE%D0%B6%D0%B8%D0%B5
+              - text: ":"
+              - link "морские звёзды" [ref=e953] [cursor=pointer]:
+                - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0
+          - note [ref=e954]:
+            - text: "Основная статья:"
+            - link "Иглокожие" [ref=e955] [cursor=pointer]:
+              - /url: /wiki/%D0%98%D0%B3%D0%BB%D0%BE%D0%BA%D0%BE%D0%B6%D0%B8%D0%B5
+          - paragraph [ref=e956]:
+            - text: Иглоко́жие (
+            - link "лат." [ref=e957] [cursor=pointer]:
+              - /url: /wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: Echinodermata) —
+            - link "тип" [ref=e958] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%B8%D0%BF_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)
+            - text: исключительно морских донных
+            - link "животных" [ref=e959] [cursor=pointer]:
+              - /url: /wiki/%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5
+            - text: ", большей частью свободноживущих, реже сидячих, встречающихся на любых глубинах"
+            - link "Мирового океана" [ref=e960] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D0%BA%D0%B5%D0%B0%D0%BD
+            - text: . Насчитывается около 7000 современных
+            - link "видов" [ref=e961] [cursor=pointer]:
+              - /url: /wiki/%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4
+            - text: (в России — 400)
+            - superscript [ref=e962]:
+              - link "[35]" [ref=e963] [cursor=pointer]:
+                - /url: "#cite_note-autogenerated1-35"
+            - text: . Наряду с хордовыми, иглокожие относятся к ветви
+            - link "вторичноротых животных" [ref=e964] [cursor=pointer]:
+              - /url: /wiki/%D0%92%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D1%80%D0%BE%D1%82%D1%8B%D0%B5
+            - text: (Deuterostomia). Современными представителями типа являются
+            - link "морские звёзды" [ref=e965] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D0%B7%D0%B2%D1%91%D0%B7%D0%B4%D1%8B
+            - text: ","
+            - link "морские ежи" [ref=e966] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D0%B5%D0%B6%D0%B8
+            - text: ","
+            - link "офиуры" [ref=e967] [cursor=pointer]:
+              - /url: /wiki/%D0%9E%D1%84%D0%B8%D1%83%D1%80%D1%8B
+            - text: (змеехвостки),
+            - link "голотурии" [ref=e968] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%BE%D0%BB%D0%BE%D1%82%D1%83%D1%80%D0%B8%D0%B8
+            - text: (морские огурцы) и
+            - link "морские лилии" [ref=e969] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D0%BB%D0%B8%D0%BB%D0%B8%D0%B8
+            - text: . В состав этого типа входят также приблизительно 13 000 вымерших видов, которые процветали в морях, начиная с раннего
+            - link "кембрия" [ref=e970] [cursor=pointer]:
+              - /url: /wiki/%D0%9A%D0%B5%D0%BC%D0%B1%D1%80%D0%B8%D0%B9
+            - text: .
+          - paragraph [ref=e971]: "Иглокожие отличаются от хордовых тремя признаками:"
+          - list [ref=e972]:
+            - listitem [ref=e973]:
+              - text: вместо двусторонней (
+              - link "билатеральной" [ref=e974] [cursor=pointer]:
+                - /url: /wiki/%D0%91%D0%B8%D0%BB%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F
+              - text: ) они обладают
+              - link "радиальной симметрией" [ref=e975] [cursor=pointer]:
+                - /url: /wiki/%D0%A0%D0%B0%D0%B4%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F
+              - text: ;
+            - listitem [ref=e976]: схема строения их тела напоминает кольцо (в виде колеса с трубами-ногами);
+            - listitem [ref=e977]:
+              - text: их тела поддерживает
+              - link "скелет" [ref=e978] [cursor=pointer]:
+                - /url: /wiki/%D0%A1%D0%BA%D0%B5%D0%BB%D0%B5%D1%82
+              - text: из
+              - link "кальцита" [ref=e979] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D0%BB%D1%8C%D1%86%D0%B8%D1%82
+              - text: ", материала, не встречающегося у хордовых."
+          - paragraph [ref=e980]:
+            - text: Несмотря на то, что тела иглокожих хорошо защищены от воздействия окружающей среды кальцинированной оболочкой (скелетом), снаружи они покрываются тонкой кожей. Ноги иглокожих окружены
+            - link "мышцами" [ref=e981] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D1%8B%D1%88%D1%86%D1%8B
+            - text: и выполняют функцию дыхания и питания — действуют как насосы, обеспечивая циркуляцию воды рядом с кровеносными сосудами, осуществляя
+            - link "газообмен" [ref=e982] [cursor=pointer]:
+              - /url: /wiki/%D0%93%D0%B0%D0%B7%D0%BE%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD
+            - text: и фильтрацию частиц пищи из воды. Видоизменённые ноги-перья несут и оборонительную функцию. Некоторые иглокожие, например
+            - link "морские лилии" [ref=e983] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BB%D0%B8%D0%BB%D0%B8%D1%8F
+            - text: ", живут оседло (прикреплены к скалам), и немногие из них способны очень медленно перемещаться. Другие иглокожие мобильны, например,"
+            - link "морские звёзды" [ref=e984] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B2%D0%B5%D0%B7%D0%B4%D0%B0
+            - text: ","
+            - link "морские ежи" [ref=e985] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D1%91%D0%B6
+            - text: и
+            - link "морские огурцы" [ref=e986] [cursor=pointer]:
+              - /url: /wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B3%D1%83%D1%80%D0%B5%D1%86
+            - superscript [ref=e987]:
+              - link "[36]" [ref=e988] [cursor=pointer]:
+                - /url: "#cite_note-CowenHistLifeEd3P412-36"
+            - text: .
+          - generic [ref=e989]:
+            - heading "См. также" [level=2] [ref=e990]: См. также
+            - generic [ref=e991]:
+              - text: "["
+              - link "править" [ref=e992] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=12
+              - text: "|"
+              - link "править код" [ref=e993] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=12
+              - text: "]"
+          - text: В
+          - link "Викисловаре" [ref=e996] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C
+          - text: есть статья «
+          - link "хордовый" [ref=e999] [cursor=pointer]:
+            - /url: https://ru.wiktionary.org/wiki/%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B9
+          - text: »
+          - list [ref=e1000]:
+            - listitem [ref=e1001]:
+              - link "Беспозвоночные" [ref=e1002] [cursor=pointer]:
+                - /url: /wiki/%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B5
+            - listitem [ref=e1003]:
+              - link "Полухордовые" [ref=e1004] [cursor=pointer]:
+                - /url: /wiki/%D0%9F%D0%BE%D0%BB%D1%83%D1%85%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+          - generic [ref=e1005]:
+            - heading "Примечания" [level=2] [ref=e1006]: Примечания
+            - generic [ref=e1007]:
+              - text: "["
+              - link "править" [ref=e1008] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=13
+              - text: "|"
+              - link "править код" [ref=e1009] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=13
+              - text: "]"
+          - link "↑ Показать компактно" [ref=e1011] [cursor=pointer]:
+            - /url: "javascript:"
+          - list [ref=e1014]:
+            - listitem [ref=e1015]:
+              - link "Обратно к тексту" [ref=e1017] [cursor=pointer]:
+                - /url: "#cite_ref-1"
+                - text: ↑
+              - generic [ref=e1019]:
+                - link "Haeckel E." [ref=e1021] [cursor=pointer]:
+                  - /url: /wiki/%D0%93%D0%B5%D0%BA%D0%BA%D0%B5%D0%BB%D1%8C,_%D0%AD%D1%80%D0%BD%D1%81%D1%82_%D0%93%D0%B5%D0%BD%D1%80%D0%B8%D1%85
+                - text: "Anthropogenie oder Entwicklungsgeschichte des Menschen (нем.). — Leipzig: Engelmann, 1874."
+            - listitem [ref=e1022]:
+              - link "Обратно к тексту" [ref=e1024] [cursor=pointer]:
+                - /url: "#cite_ref-2"
+                - text: ↑
+              - generic [ref=e1025]:
+                - generic [ref=e1026]:
+                  - text: Nielsen C. The authorship of higher chordate taxa (англ.) //
+                  - link "Zoologica Scripta" [ref=e1027] [cursor=pointer]:
+                    - /url: /wiki/Zoologica_Scripta
+                  - text: ": journal. — 2012. — Vol. 41, iss. 4. — P. 435—436. —"
+                  - link "ISSN" [ref=e1028] [cursor=pointer]:
+                    - /url: /wiki/%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B9_%D1%81%D0%B5%D1%80%D0%B8%D0%B9%D0%BD%D1%8B%D0%B9_%D0%BD%D0%BE%D0%BC%D0%B5%D1%80
+                  - link "1463-6409" [ref=e1029] [cursor=pointer]:
+                    - /url: //www.worldcat.org/search?fq=x0:jrnl&q=n2:1463-6409
+                  - text: . —
+                  - link "doi" [ref=e1030] [cursor=pointer]:
+                    - /url: /wiki/Doi
+                  - text: ":"
+                  - link "10.1111/j.1463-6409.2012.00536.x" [ref=e1031] [cursor=pointer]:
+                    - /url: https://dx.doi.org/10.1111%2Fj.1463-6409.2012.00536.x
+                  - text: .
+                - text: —
+                - generic [ref=e1032]:
+                  - link "S2CID" [ref=e1033] [cursor=pointer]:
+                    - /url: /wiki/S2CID
+                  - link "83266247" [ref=e1034] [cursor=pointer]:
+                    - /url: https://api.semanticscholar.org/CorpusID:83266247
+                - text: .
+            - listitem [ref=e1035]:
+              - link "Обратно к тексту" [ref=e1037] [cursor=pointer]:
+                - /url: "#cite_ref-3"
+                - text: ↑
+              - generic [ref=e1039]:
+                - generic [ref=e1040]: Chordata E. Haeckel 1874 [C. B. Cameron], converted clade name
+                - text: "// Phylonyms: A Companion to the PhyloCode (англ.) /"
+                - link "Kevin de Queiroz" [ref=e1042] [cursor=pointer]:
+                  - /url: /w/index.php?title=%D0%9A%D0%B5%D0%B9%D1%80%D0%BE%D1%88,_%D0%9A%D0%B5%D0%B2%D0%B8%D0%BD_%D0%B4%D0%B5&action=edit&redlink=1
+                - superscript [ref=e1043]:
+                  - link "[англ.]" [ref=e1044] [cursor=pointer]:
+                    - /url: https://en.wikipedia.org/wiki/Kevin_de_Queiroz
+                - text: ", Philip D. Cantino,"
+                - link "Jacques A. Gauthier" [ref=e1045] [cursor=pointer]:
+                  - /url: /wiki/%D0%93%D0%BE%D1%82%D1%8C%D0%B5,_%D0%96%D0%B0%D0%BA
+                - text: ". — Boca Raton:"
+                - link "Taylor & Francis Group" [ref=e1046] [cursor=pointer]:
+                  - /url: /wiki/Taylor_%26_Francis_Group
+                - text: ","
+                - link "CRC Press" [ref=e1047] [cursor=pointer]:
+                  - /url: /wiki/CRC_Press
+                - text: ", 2020. — P. 661. — 1352 p. —"
+                - link "ISBN 978-1-138-33293-5" [ref=e1048] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/9781138332935
+                - text: .
+            - listitem [ref=e1049]:
+              - link "Обратно к тексту" [ref=e1051] [cursor=pointer]:
+                - /url: "#cite_ref-Markov_2008_4-0"
+                - text: ↑
+              - generic [ref=e1053]:
+                - generic [ref=e1054]:
+                  - link "Марков А. В." [ref=e1055] [cursor=pointer]:
+                    - /url: /wiki/%D0%9C%D0%B0%D1%80%D0%BA%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87_(%D0%B1%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3)
+                  - text: .
+                - link "Геном ланцетника помог раскрыть секрет эволюционного успеха позвоночных" [ref=e1057] [cursor=pointer]:
+                  - /url: https://elementy.ru/novosti_nauki/430759/Genom_lantsetnika_pomog_raskryt_sekret_evolyutsionnogo_uspekha_pozvonochnykh
+                - text: .
+                - link "Элементы.ру" [ref=e1058] [cursor=pointer]:
+                  - /url: /wiki/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B.%D1%80%D1%83
+                - text: (23 июня 2008).
+                - link "Архивировано" [ref=e1059] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20190804103228/https://elementy.ru/novosti_nauki/430759/Genom_lantsetnika_pomog_raskryt_sekret_evolyutsionnogo_uspekha_pozvonochnykh
+                - text: 4 августа 2019 года.
+            - listitem [ref=e1060]:
+              - link "Обратно к тексту" [ref=e1062] [cursor=pointer]:
+                - /url: "#cite_ref-Yastrebov_2015_5-0"
+                - text: ↑
+              - generic [ref=e1064]:
+                - text: Ястребов С. А.
+                - link "Общий предок вторичноротых мог быть похож на хордовое" [ref=e1066] [cursor=pointer]:
+                  - /url: https://elementy.ru/novosti_nauki/432431/Obshchiy_predok_vtorichnorotykh_mog_byt_pokhozh_na_khordovoe?story=40
+                - text: .
+                - link "Элементы.ру" [ref=e1067] [cursor=pointer]:
+                  - /url: /wiki/%D0%AD%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B.%D1%80%D1%83
+                - text: (18 марта 2015).
+                - link "Архивировано" [ref=e1068] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20181204203509/http://elementy.ru/novosti_nauki/432431/Obshchiy_predok_vtorichnorotykh_mog_byt_pokhozh_na_khordovoe?story=40
+                - text: 4 декабря 2018 года.
+            - listitem [ref=e1069]:
+              - link "Обратно к тексту" [ref=e1071] [cursor=pointer]:
+                - /url: "#cite_ref-6"
+                - text: ↑
+              - generic [ref=e1073]:
+                - text: Fedonkin, M. A.; Simonetta, A; Ivantsov, A. Y.
+                - 'link "New data on Kimberella, the Vendian mollusc-like organism (White sea region, Russia): palaeoecological and evolutionary implications" [ref=e1074] [cursor=pointer]':
+                  - /url: http://www.geosci.monash.edu.au/precsite/docs/workshop/prato04/abstracts/fedonkin2.pdf
+                - text: ". — In: The Rise and Fall of the Ediacaran Biota : [англ.] / Vickers-Rich, Patricia; Komarower, Patricia // Geological Society. — London, 2007. — Vol. 286. — P. 157—179. — (Special publications). —"
+                - link "ISBN 9781862392335" [ref=e1075] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/9781862392335
+                - text: . —
+                - link "doi" [ref=e1076] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1144/SP286.12" [ref=e1077] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1144%2FSP286.12
+                - text: .
+            - listitem [ref=e1078]:
+              - link "Обратно к тексту" [ref=e1080] [cursor=pointer]:
+                - /url: "#cite_ref-7"
+                - text: ↑
+              - generic [ref=e1081]:
+                - text: "Dzik, J. (June 1999). «Organic membranous skeleton of the Precambrian metazoans from Namibia». Geology 27 (6): 519—522."
+                - link "doi" [ref=e1082] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1130/0091-7613(1999)027<0519:OMSOTP>2.3.CO;2" [ref=e1083] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1130%2F0091-7613%281999%29027%3C0519%3AOMSOTP%3E2.3.CO%3B2
+            - listitem [ref=e1084]:
+              - link "Обратно к тексту" [ref=e1086] [cursor=pointer]:
+                - /url: "#cite_ref-8"
+                - text: ↑
+              - generic [ref=e1087]:
+                - text: Erwin, Douglas H.; Eric H. Davidson (July 1, 2002). «
+                - link "The last common bilaterian ancestor" [ref=e1088] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20181024035144/http://dev.biologists.org/content/develop/129/13/3021.full.pdf
+                - text: "». Development 129 (13): 3021-3032"
+            - listitem [ref=e1089]:
+              - link "Обратно к тексту" [ref=e1091] [cursor=pointer]:
+                - /url: "#cite_ref-9"
+                - text: ↑
+              - generic [ref=e1092]:
+                - text: "Bengtson, S. (2004). Early skeletal fossils. In Lipps, J.H., and Waggoner, B.M.. «Neoproterozoic-Cambrian Biological Revolutions». Paleontological Society Papers 10: 67-78."
+                - link "doi" [ref=e1093] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1017/S1089332600002345" [ref=e1094] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1017%2FS1089332600002345
+                - text: .
+            - listitem [ref=e1095]:
+              - link "Обратно к тексту" [ref=e1097] [cursor=pointer]:
+                - /url: "#cite_ref-10"
+                - text: ↑
+              - generic [ref=e1098]:
+                - text: "Bengtson, S., and Urbanek, A. (1986). «Rhabdotubus, a Middle Cambrian rhabdopleurid hemichordate». Lethaia 19 (4): 293—308."
+                - link "doi" [ref=e1099] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1111/j.1502-3931.1986.tb00743.x" [ref=e1100] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1111%2Fj.1502-3931.1986.tb00743.x
+            - listitem [ref=e1101]:
+              - link "Обратно к тексту" [ref=e1103] [cursor=pointer]:
+                - /url: "#cite_ref-11"
+                - text: ↑
+              - generic [ref=e1104]:
+                - text: "Shu, D., Zhang, X. and Chen, L. (April 1996). «Reinterpretation of Yunnanozoon as the earliest known hemichordate». Nature 380 (6573): 428—430."
+                - link "doi" [ref=e1105] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1038/380428a0" [ref=e1106] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1038%2F380428a0
+                - text: .
+            - listitem [ref=e1107]:
+              - generic [ref=e1108]:
+                - text: ↑
+                - 'link "Перейти обратно: 1" [ref=e1109] [cursor=pointer]':
+                  - /url: "#cite_ref-Chen_12-0"
+                  - generic [ref=e1110]: "Перейти обратно:"
+                  - superscript [ref=e1111]:
+                    - generic [ref=e1112]: "1"
+                - link "2" [ref=e1113] [cursor=pointer]:
+                  - /url: "#cite_ref-Chen_12-1"
+                  - superscript [ref=e1114]:
+                    - generic [ref=e1115]: "2"
+              - generic [ref=e1116]:
+                - text: "Chen, J-Y., Hang, D-Y., and Li, C.W. (December 1999). «An early Cambrian craniate-like chordate». Nature 402 (6761): 518—522."
+                - link "doi" [ref=e1117] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1038/990080" [ref=e1118] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1038%2F990080
+                - text: .
+            - listitem [ref=e1119]:
+              - link "Обратно к тексту" [ref=e1121] [cursor=pointer]:
+                - /url: "#cite_ref-13"
+                - text: ↑
+              - generic [ref=e1122]:
+                - text: Shu, D-G., Conway Morris, S., and Zhang, X-L. (November 1999). «Lower Cambrian vertebrates from south China». Nature 402 (6757).
+                - link "doi" [ref=e1123] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1038/46965" [ref=e1124] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1038%2F46965
+                - text: .
+            - listitem [ref=e1125]:
+              - link "Обратно к тексту" [ref=e1127] [cursor=pointer]:
+                - /url: "#cite_ref-14"
+                - text: ↑
+              - generic [ref=e1128]:
+                - text: Shu, D-G., Conway Morris, S., and Zhang, X-L. (November 1996). «A Pikaia-like chordate from the Lower Cambrian of China». Nature 384 (6605).
+                - link "doi" [ref=e1129] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1038/384157a0" [ref=e1130] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1038%2F384157a0
+                - text: .
+            - listitem [ref=e1131]:
+              - link "Обратно к тексту" [ref=e1133] [cursor=pointer]:
+                - /url: "#cite_ref-15"
+                - text: ↑
+              - generic [ref=e1134]:
+                - text: "Ruppert, E. (2005). «Key characters uniting hemichordates and chordates: homologies or homoplasies?». Canadian Journal of Zoology 83: 8-23."
+                - link "doi" [ref=e1135] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1139/z04-158" [ref=e1136] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1139%2Fz04-158
+            - listitem [ref=e1137]:
+              - link "Обратно к тексту" [ref=e1139] [cursor=pointer]:
+                - /url: "#cite_ref-Edgecombe_2011_16-0"
+                - text: ↑
+              - generic [ref=e1141]:
+                - text: Edgecombe G. D., Giribet G., Dunn C. W. et al.
+                - 'link "Higher-level metazoan relationships: recent progress and remaining questions" [ref=e1142] [cursor=pointer]':
+                  - /url: http://dunnlab.org/assets/Edgecombe_etal_2011.pdf
+                - text: (англ.) // Organisms Diversity & Evolution. — 2011. — Vol. 11, no. 2. — P. 151—172. —
+                - link "doi" [ref=e1143] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1007/s13127-011-0044-4" [ref=e1144] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1007%2Fs13127-011-0044-4
+                - text: .
+                - link "Архивировано" [ref=e1145] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20190601060941/http://dunnlab.org/assets/Edgecombe_etal_2011.pdf
+                - text: 1 июня 2019 года.
+            - listitem [ref=e1146]:
+              - link "Обратно к тексту" [ref=e1148] [cursor=pointer]:
+                - /url: "#cite_ref-Blair_17-0"
+                - text: ↑
+              - generic [ref=e1149]:
+                - text: "Blair, J.E., and S. Blair Hedges, S.B. (2005). «Molecular Phylogeny and Divergence Times of Deuterostome Animals». Molecular Biology and Evolution 22 (11): 2275—2284."
+                - link "doi" [ref=e1150] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1093/molbev/msi225" [ref=e1151] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1093%2Fmolbev%2Fmsi225
+                - text: .
+            - listitem [ref=e1152]:
+              - link "Обратно к тексту" [ref=e1154] [cursor=pointer]:
+                - /url: "#cite_ref-18"
+                - text: ↑
+              - generic [ref=e1156]:
+                - text: "Perseke M, Hankeln T, Weich B, Fritzsch G, Stadler PF, Israelsson O, Bernhard D, Schlegel M. The mitochondrial DNA of Xenoturbella bocki: genomic architecture and phylogenetic analysis // Theory in Biosciences. — 2007. — Vol. 126, № 1. — P. 35-42. —"
+                - link "doi" [ref=e1157] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1007/s12064-007-0007-7" [ref=e1158] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1007%2Fs12064-007-0007-7
+                - text: . —
+                - link "PMID" [ref=e1159] [cursor=pointer]:
+                  - /url: /wiki/PMID
+                - link "18087755" [ref=e1160] [cursor=pointer]:
+                  - /url: http://www.ncbi.nlm.nih.gov/pubmed/18087755
+                - text: .
+            - listitem [ref=e1161]:
+              - link "Обратно к тексту" [ref=e1163] [cursor=pointer]:
+                - /url: "#cite_ref-Marletaz_2019_19-0"
+                - text: ↑
+              - generic [ref=e1165]:
+                - text: Marlétaz F., Peijnenburg K. T. C. A., Goto T., Satoh N., Rokhsar D. S. A new spiralian phylogeny places the enigmatic arrow worms among gnathiferans (англ.) //
+                - link "Current Biology" [ref=e1166] [cursor=pointer]:
+                  - /url: /wiki/Current_Biology
+                - text: . —
+                - link "Cell Press" [ref=e1167] [cursor=pointer]:
+                  - /url: /wiki/Cell_Press
+                - text: ", 2019. — Vol. 29, no. 2. —"
+                - link "doi" [ref=e1168] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1016/j.cub.2018.11.042" [ref=e1169] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1016%2Fj.cub.2018.11.042
+                - text: . —
+                - link "PMID" [ref=e1170] [cursor=pointer]:
+                  - /url: /wiki/PMID
+                - link "30639106" [ref=e1171] [cursor=pointer]:
+                  - /url: http://www.ncbi.nlm.nih.gov/pubmed/30639106
+                - text: .
+            - listitem [ref=e1172]:
+              - link "Обратно к тексту" [ref=e1174] [cursor=pointer]:
+                - /url: "#cite_ref-20"
+                - text: ↑
+              - generic [ref=e1176]:
+                - text: Benton M. J. Vertebrate Paleontology. — Blackwell Science Ltd, 2005. — 472 с. — P. 389—403. —
+                - link "ISBN 978-0-632-05637-8" [ref=e1177] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/9780632056378
+                - text: .
+            - listitem [ref=e1178]:
+              - link "Обратно к тексту" [ref=e1180] [cursor=pointer]:
+                - /url: "#cite_ref-БСЭ_1_21-0"
+                - text: ↑
+              - generic [ref=e1181]:
+                - text: Бесчерепные — статья из
+                - link "Большой советской энциклопедии" [ref=e1182] [cursor=pointer]:
+                  - /url: /wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D1%8D%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F
+                - text: .
+            - listitem [ref=e1183]:
+              - link "Обратно к тексту" [ref=e1185] [cursor=pointer]:
+                - /url: "#cite_ref-22"
+                - text: ↑
+              - generic [ref=e1187]:
+                - text: Benton, M.J.
+                - 'link "Vertebrate Palaeontology: Biology and Evolution" [ref=e1188] [cursor=pointer]':
+                  - /url: https://books.google.com/?id=PQuKO7xqjNQC&dq=vertebrate&printsec=frontcover
+                - text: (англ.). —
+                - link "Blackwell Publishing" [ref=e1189] [cursor=pointer]:
+                  - /url: /wiki/Wiley-Blackwell
+                - text: ", 2000. — P. 6. —"
+                - link "ISBN 0632056142" [ref=e1190] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/0632056142
+                - text: .
+            - listitem [ref=e1191]:
+              - link "Обратно к тексту" [ref=e1193] [cursor=pointer]:
+                - /url: "#cite_ref-Gee2008AmphioxusUnleashed_23-0"
+                - text: ↑
+              - generic [ref=e1195]:
+                - text: Gee, H.
+                - 'link "Evolutionary biology: The amphioxus unleashed" [ref=e1196] [cursor=pointer]':
+                  - /url: http://www.nature.com/nature/journal/v453/n7198/full/453999a.html
+                - text: (англ.) // Nature. — 2008. — June (vol. 453, no. 7198). — P. 999—1000. —
+                - link "doi" [ref=e1197] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1038/453999a" [ref=e1198] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1038%2F453999a
+                - text: . —
+                - link "Bibcode" [ref=e1199] [cursor=pointer]:
+                  - /url: /wiki/Bibcode_(%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80)
+                - text: ":"
+                - link "2008Natur.453..999G" [ref=e1200] [cursor=pointer]:
+                  - /url: https://ui.adsabs.harvard.edu/abs/2008Natur.453..999G
+                - text: . —
+                - link "PMID" [ref=e1201] [cursor=pointer]:
+                  - /url: /wiki/PMID
+                - link "18563145" [ref=e1202] [cursor=pointer]:
+                  - /url: http://www.ncbi.nlm.nih.gov/pubmed/18563145
+                - text: .
+            - listitem [ref=e1203]:
+              - link "Обратно к тексту" [ref=e1205] [cursor=pointer]:
+                - /url: "#cite_ref-24"
+                - text: ↑
+              - generic [ref=e1207]:
+                - link "Branchiostoma" [ref=e1209] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20100123224435/http://webs.lander.edu/rsfox/invertebrates/branchiostoma.html
+                - text: ". Lander University. Дата обращения: 23 сентября 2008. Архивировано из"
+                - link "оригинала" [ref=e1210] [cursor=pointer]:
+                  - /url: http://webs.lander.edu/rsfox/invertebrates/branchiostoma.html
+                - text: 23 января 2010 года.
+            - listitem [ref=e1211]:
+              - link "Обратно к тексту" [ref=e1213] [cursor=pointer]:
+                - /url: "#cite_ref-25"
+                - text: ↑
+              - generic [ref=e1215]:
+                - link "Thaliacea в European Register of Marine Species" [ref=e1217] [cursor=pointer]:
+                  - /url: http://www.marbef.org/data/aphia.php?p=taxdetails&id=22626
+                - text: ". Дата обращения: 2 апреля 2012."
+                - link "Архивировано" [ref=e1218] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20151106002129/http://www.marbef.org/data/aphia.php?p=taxdetails&id=22626
+                - text: 6 ноября 2015 года.
+            - listitem [ref=e1219]:
+              - generic [ref=e1220]:
+                - text: ↑
+                - 'link "Перейти обратно: 1" [ref=e1221] [cursor=pointer]':
+                  - /url: "#cite_ref-Benton2002VertebratePalaeontologyP5_26-0"
+                  - generic [ref=e1222]: "Перейти обратно:"
+                  - superscript [ref=e1223]:
+                    - generic [ref=e1224]: "1"
+                - link "2" [ref=e1225] [cursor=pointer]:
+                  - /url: "#cite_ref-Benton2002VertebratePalaeontologyP5_26-1"
+                  - superscript [ref=e1226]:
+                    - generic [ref=e1227]: "2"
+                - link "3" [ref=e1228] [cursor=pointer]:
+                  - /url: "#cite_ref-Benton2002VertebratePalaeontologyP5_26-2"
+                  - superscript [ref=e1229]:
+                    - generic [ref=e1230]: "3"
+              - generic [ref=e1232]:
+                - text: Benton, M.J.
+                - 'link "Vertebrate Palaeontology: Biology and Evolution" [ref=e1233] [cursor=pointer]':
+                  - /url: https://books.google.com/?id=PQuKO7xqjNQC&dq=vertebrate&printsec=frontcover
+                - text: (англ.). —
+                - link "Blackwell Publishing" [ref=e1234] [cursor=pointer]:
+                  - /url: /wiki/Wiley-Blackwell
+                - text: ", 2000. — P. 5. —"
+                - link "ISBN 0632056142" [ref=e1235] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/0632056142
+                - text: .
+            - listitem [ref=e1236]:
+              - link "Обратно к тексту" [ref=e1238] [cursor=pointer]:
+                - /url: "#cite_ref-27"
+                - text: ↑
+              - generic [ref=e1240]:
+                - link "Appendicularia" [ref=e1242] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20110320223518/http://www.environment.gov.au/biodiversity/abrs/publications/electronic-books/pubs/tunicates/05-appendicularia.pdf
+                - text: "(PDF). Australian Government Department of the Environment, Water, Heritage and the Arts. Дата обращения: 28 октября 2008. Архивировано из"
+                - link "оригинала" [ref=e1243] [cursor=pointer]:
+                  - /url: http://www.environment.gov.au/biodiversity/abrs/publications/electronic-books/pubs/tunicates/05-appendicularia.pdf
+                - text: 20 марта 2011 года.
+            - listitem [ref=e1244]:
+              - link "Обратно к тексту" [ref=e1246] [cursor=pointer]:
+                - /url: "#cite_ref-UCMPMorphologyOfVertebrates_28-0"
+                - text: ↑
+              - generic [ref=e1248]:
+                - link "Morphology of the Vertebrates" [ref=e1250] [cursor=pointer]:
+                  - /url: http://www.ucmp.berkeley.edu/vertebrates/vertmm.html
+                - text: ". University of California Museum of Paleontology. Дата обращения: 23 сентября 2008."
+                - link "Архивировано" [ref=e1251] [cursor=pointer]:
+                  - /url: https://www.webcitation.org/67ytwhRs8?url=http://www.ucmp.berkeley.edu/vertebrates/vertmm.html
+                - text: 27 мая 2012 года.
+            - listitem [ref=e1252]:
+              - link "Обратно к тексту" [ref=e1254] [cursor=pointer]:
+                - /url: "#cite_ref-29"
+                - text: ↑
+              - generic [ref=e1255]:
+                - text: Глотка — статья из
+                - link "Большой советской энциклопедии" [ref=e1256] [cursor=pointer]:
+                  - /url: /wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D1%8D%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F
+                - text: .
+            - listitem [ref=e1257]:
+              - link "Обратно к тексту" [ref=e1259] [cursor=pointer]:
+                - /url: "#cite_ref-30"
+                - text: ↑
+              - generic [ref=e1261]:
+                - link "Introduction to the Petromyzontiformes" [ref=e1263] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20180124115940/http://www.ucmp.berkeley.edu/vertebrates/basalfish/petro.html
+                - text: ". University of California Museum of Paleontology. Дата обращения: 28 октября 2008. Архивировано из"
+                - link "оригинала" [ref=e1264] [cursor=pointer]:
+                  - /url: http://www.ucmp.berkeley.edu/vertebrates/basalfish/petro.html
+                - text: 24 января 2018 года.
+            - listitem [ref=e1265]:
+              - link "Обратно к тексту" [ref=e1267] [cursor=pointer]:
+                - /url: "#cite_ref-31"
+                - text: ↑
+              - generic [ref=e1269]:
+                - link "Introduction to the Myxini" [ref=e1271] [cursor=pointer]:
+                  - /url: http://www.ucmp.berkeley.edu/vertebrates/basalfish/myxini.html
+                - text: ". University of California Museum of Paleontology. Дата обращения: 28 октября 2008."
+                - link "Архивировано" [ref=e1272] [cursor=pointer]:
+                  - /url: https://www.webcitation.org/67ytxkAGY?url=http://www.ucmp.berkeley.edu/vertebrates/basalfish/myxini.html
+                - text: 27 мая 2012 года.
+            - listitem [ref=e1273]:
+              - link "Обратно к тексту" [ref=e1275] [cursor=pointer]:
+                - /url: "#cite_ref-32"
+                - text: ↑
+              - generic [ref=e1277]:
+                - text: Shigehiro Kuraku, S., Hoshiyama, D., Katoh, K., Suga, H., and Miyata, T.
+                - link "Monophyly of Lampreys and Hagfishes Supported by Nuclear DNA-Coded Genes" [ref=e1278] [cursor=pointer]:
+                  - /url: https://archive.org/details/sim_journal-of-molecular-evolution_1999-12_49_6/page/729
+                - text: (англ.) // Journal of Molecular Evolution. — 1999. — December (vol. 49, no. 6). — P. 729—735. —
+                - link "doi" [ref=e1279] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1007/PL00006595" [ref=e1280] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1007%2FPL00006595
+                - text: . —
+                - link "PMID" [ref=e1281] [cursor=pointer]:
+                  - /url: /wiki/PMID
+                - link "10594174" [ref=e1282] [cursor=pointer]:
+                  - /url: http://www.ncbi.nlm.nih.gov/pubmed/10594174
+                - text: .
+            - listitem [ref=e1283]:
+              - generic [ref=e1284]:
+                - text: ↑
+                - 'link "Перейти обратно: 1" [ref=e1285] [cursor=pointer]':
+                  - /url: "#cite_ref-Tassia_2016_33-0"
+                  - generic [ref=e1286]: "Перейти обратно:"
+                  - superscript [ref=e1287]:
+                    - generic [ref=e1288]: "1"
+                - link "2" [ref=e1289] [cursor=pointer]:
+                  - /url: "#cite_ref-Tassia_2016_33-1"
+                  - superscript [ref=e1290]:
+                    - generic [ref=e1291]: "2"
+                - link "3" [ref=e1292] [cursor=pointer]:
+                  - /url: "#cite_ref-Tassia_2016_33-2"
+                  - superscript [ref=e1293]:
+                    - generic [ref=e1294]: "3"
+              - generic [ref=e1296]:
+                - text: Tassia M. G., Cannon J. T., Konikoff C. E. et al. The global diversity of Hemichordata (англ.) //
+                - link "PLOS One" [ref=e1297] [cursor=pointer]:
+                  - /url: /wiki/PLOS_One
+                - text: . —
+                - link "Public Library of Science" [ref=e1298] [cursor=pointer]:
+                  - /url: /wiki/Public_Library_of_Science
+                - text: ", 2016. — Vol. 11, no. 10. —"
+                - link "doi" [ref=e1299] [cursor=pointer]:
+                  - /url: /wiki/Doi
+                - text: ":"
+                - link "10.1371/journal.pone.0162564" [ref=e1300] [cursor=pointer]:
+                  - /url: https://dx.doi.org/10.1371%2Fjournal.pone.0162564
+                - text: . —
+                - link "PMID" [ref=e1301] [cursor=pointer]:
+                  - /url: /wiki/PMID
+                - link "27701429" [ref=e1302] [cursor=pointer]:
+                  - /url: http://www.ncbi.nlm.nih.gov/pubmed/27701429
+                - text: .
+            - listitem [ref=e1303]:
+              - link "Обратно к тексту" [ref=e1305] [cursor=pointer]:
+                - /url: "#cite_ref-zin-count_34-0"
+                - text: ↑
+              - generic [ref=e1306]:
+                - link "Данные о числе видов для России и всего мира" [ref=e1307] [cursor=pointer]:
+                  - /url: http://www.zin.ru/projects/zooint_r/zi2.htm
+                - link "Архивная копия" [ref=e1308] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20130521010253/http://www.zin.ru/projects/zooint_r/zi2.htm
+                - text: от 21 мая 2013 на
+                - link "Wayback Machine" [ref=e1309] [cursor=pointer]:
+                  - /url: /wiki/Wayback_Machine
+                - text: на сайте Зоологического института РАН
+            - listitem [ref=e1310]:
+              - link "Обратно к тексту" [ref=e1312] [cursor=pointer]:
+                - /url: "#cite_ref-autogenerated1_35-0"
+                - text: ↑
+              - generic [ref=e1314]:
+                - link "ZOOINT Part21" [ref=e1316] [cursor=pointer]:
+                  - /url: http://www.zin.ru/projects/zooint_r/zi2.htm
+                - text: ". Дата обращения: 13 июля 2009."
+                - link "Архивировано" [ref=e1317] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20130521010253/http://www.zin.ru/projects/zooint_r/zi2.htm
+                - text: 21 мая 2013 года.
+            - listitem [ref=e1318]:
+              - link "Обратно к тексту" [ref=e1320] [cursor=pointer]:
+                - /url: "#cite_ref-CowenHistLifeEd3P412_36-0"
+                - text: ↑
+              - generic [ref=e1322]:
+                - text: Cowen, R.
+                - link "History of Life" [ref=e1323] [cursor=pointer]:
+                  - /url: https://archive.org/details/historyoflife0000cowe_u5z0
+                - text: . — 3rd. —
+                - link "Blackwell Science" [ref=e1324] [cursor=pointer]:
+                  - /url: /wiki/Wiley-Blackwell
+                - text: ", 2000. — С."
+                - link "412" [ref=e1325] [cursor=pointer]:
+                  - /url: https://archive.org/details/historyoflife0000cowe_u5z0/page/412
+                - text: . —
+                - link "ISBN 063204444-6" [ref=e1326] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/0632044446
+                - text: .
+          - generic [ref=e1327]:
+            - heading "Литература" [level=2] [ref=e1328]: Литература
+            - generic [ref=e1329]:
+              - text: "["
+              - link "править" [ref=e1330] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&veaction=edit&section=14
+              - text: "|"
+              - link "править код" [ref=e1331] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&action=edit&section=14
+              - text: "]"
+          - list [ref=e1332]:
+            - listitem [ref=e1333]:
+              - generic [ref=e1334]:
+                - text: Н. Н. Гуртовой, Б. С. Матвеев, Ф. Я. Дзержинский.
+                - link "Практическая зоотомия позвоночных (низшие хордовые, бесчелюстные, рыбы)" [ref=e1335] [cursor=pointer]:
+                  - /url: http://lib.prometey.org/?id=14441&page=9
+                - text: ". — М.: Высшая школа, 1976. — С. 351."
+            - listitem [ref=e1336]:
+              - generic [ref=e1337]:
+                - link "Хордовые" [ref=e1338] [cursor=pointer]:
+                  - /url: https://books.google.com/books?id=Q8r7AgAAQBAJ&pg=PA692&dq=хордовые
+                - text: //
+                - link "Биологический энциклопедический словарь" [ref=e1339] [cursor=pointer]:
+                  - /url: /wiki/%D0%91%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%8D%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C
+                - text: / Гл. ред.
+                - link "М. С. Гиляров" [ref=e1340] [cursor=pointer]:
+                  - /url: /wiki/%D0%93%D0%B8%D0%BB%D1%8F%D1%80%D0%BE%D0%B2,_%D0%9C%D0%B5%D1%80%D0%BA%D1%83%D1%80%D0%B8%D0%B9_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B5%D0%B2%D0%B8%D1%87
+                - text: "; Редкол.:"
+                - link "А. А. Баев" [ref=e1341] [cursor=pointer]:
+                  - /url: /wiki/%D0%91%D0%B0%D0%B5%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87
+                - text: ","
+                - link "Г. Г. Винберг" [ref=e1342] [cursor=pointer]:
+                  - /url: /wiki/%D0%92%D0%B8%D0%BD%D0%B1%D0%B5%D1%80%D0%B3,_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%D0%B8%D1%87
+                - text: ","
+                - link "Г. А. Заварзин" [ref=e1343] [cursor=pointer]:
+                  - /url: /wiki/%D0%97%D0%B0%D0%B2%D0%B0%D1%80%D0%B7%D0%B8%D0%BD,_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87
+                - text: "и др. — М. :"
+                - link "Сов. энциклопедия" [ref=e1344] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D1%8D%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F
+                - text: ", 1986. — С. 692. — 831 с. — 100 000 экз."
+          - navigation "Ссылки на внешние ресурсы" [ref=e1345]:
+            - table [ref=e1346]:
+              - rowgroup [ref=e1347]:
+                - row
+                - row "Перейти к шаблону «Внешние ссылки» Перейти к элементу Викиданных Словари и энциклопедии Большая датская · Большая каталанская · Большая каталанская · Большая китайская · Большая норвежская · Большая российская (старая версия) · Большая советская (1 изд.) · Большая Южакова · Брокгауза и Ефрона · Britannica (онлайн) · Universalis" [ref=e1348]:
+                  - rowheader "Перейти к шаблону «Внешние ссылки» Перейти к элементу Викиданных Словари и энциклопедии" [ref=e1349]:
+                    - generic [ref=e1350]:
+                      - generic [ref=e1351]:
+                        - link "Перейти к шаблону «Внешние ссылки»" [ref=e1353] [cursor=pointer]:
+                          - /url: /wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8
+                          - img "Перейти к шаблону «Внешние ссылки»" [ref=e1354]
+                        - link "Перейти к элементу Викиданных" [ref=e1356] [cursor=pointer]:
+                          - /url: https://www.wikidata.org/wiki/Q10915#identifiers
+                          - img "Перейти к элементу Викиданных" [ref=e1357]
+                      - text: Словари и энциклопедии
+                  - cell "Большая датская · Большая каталанская · Большая каталанская · Большая китайская · Большая норвежская · Большая российская (старая версия) · Большая советская (1 изд.) · Большая Южакова · Брокгауза и Ефрона · Britannica (онлайн) · Universalis" [ref=e1358]:
+                    - list [ref=e1360]:
+                      - listitem [ref=e1361]:
+                        - link "Большая датская" [ref=e1362] [cursor=pointer]:
+                          - /url: https://wikidata-externalid-url.toolforge.org/?p=8313&url_prefix=https://denstoredanske.lex.dk/&id=chordater
+                        - text: ·
+                      - listitem [ref=e1363]:
+                        - link "Большая каталанская" [ref=e1364] [cursor=pointer]:
+                          - /url: https://www.enciclopedia.cat/ec-gec-0172121.xml
+                        - text: ·
+                      - listitem [ref=e1365]:
+                        - link "Большая каталанская" [ref=e1366] [cursor=pointer]:
+                          - /url: https://www.enciclopedia.cat/ec-gec-0094034.xml
+                        - text: ·
+                      - listitem [ref=e1367]:
+                        - link "Большая китайская" [ref=e1368] [cursor=pointer]:
+                          - /url: https://www.zgbk.com/ecph/words?SiteID=1&ID=213412
+                        - text: ·
+                      - listitem [ref=e1369]:
+                        - link "Большая норвежская" [ref=e1370] [cursor=pointer]:
+                          - /url: https://snl.no/ryggstrengdyr
+                        - text: ·
+                      - listitem [ref=e1371]:
+                        - link "Большая российская (старая версия)" [ref=e1372] [cursor=pointer]:
+                          - /url: https://web.archive.org/web/old.bigenc.ru/text/4697010
+                        - text: ·
+                      - listitem [ref=e1373]:
+                        - link "Большая советская (1 изд.)" [ref=e1374] [cursor=pointer]:
+                          - /url: https://ru.wikisource.org/wiki/%D0%91%D0%A1%D0%AD1/%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                        - text: ·
+                      - listitem [ref=e1375]:
+                        - link "Большая Южакова" [ref=e1376] [cursor=pointer]:
+                          - /url: https://ru.wikisource.org/wiki/%D0%91%D0%AD%D0%AE/%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                        - text: ·
+                      - listitem [ref=e1377]:
+                        - link "Брокгауза и Ефрона" [ref=e1378] [cursor=pointer]:
+                          - /url: https://ru.wikisource.org/wiki/%D0%AD%D0%A1%D0%91%D0%95/%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+                        - text: ·
+                      - listitem [ref=e1379]:
+                        - link "Britannica (онлайн)" [ref=e1380] [cursor=pointer]:
+                          - /url: https://www.britannica.com/animal/chordate
+                        - text: ·
+                      - listitem [ref=e1381]:
+                        - link "Universalis" [ref=e1382] [cursor=pointer]:
+                          - /url: https://www.universalis.fr/encyclopedie/cordes-chordes/
+                - row "Таксономия EOL · Fossilworks · GBIF · iNaturalist · NCBI · IRMNG · ITIS TSN · WoRMS" [ref=e1383]:
+                  - rowheader "Таксономия" [ref=e1384]
+                  - cell "EOL · Fossilworks · GBIF · iNaturalist · NCBI · IRMNG · ITIS TSN · WoRMS" [ref=e1385]:
+                    - list [ref=e1387]:
+                      - listitem [ref=e1388]:
+                        - link "EOL" [ref=e1389] [cursor=pointer]:
+                          - /url: https://eol.org/pages/694
+                        - text: ·
+                      - listitem [ref=e1390]:
+                        - link "Fossilworks" [ref=e1391] [cursor=pointer]:
+                          - /url: http://www.fossilworks.org/cgi-bin/bridge.pl?a=taxonInfo&taxon_no=273393
+                        - text: ·
+                      - listitem [ref=e1392]:
+                        - link "GBIF" [ref=e1393] [cursor=pointer]:
+                          - /url: https://www.gbif.org/species/44
+                        - text: ·
+                      - listitem [ref=e1394]:
+                        - link "iNaturalist" [ref=e1395] [cursor=pointer]:
+                          - /url: https://www.inaturalist.org/taxa/2
+                        - text: ·
+                      - listitem [ref=e1396]:
+                        - link "NCBI" [ref=e1397] [cursor=pointer]:
+                          - /url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=7711
+                        - text: ·
+                      - listitem [ref=e1398]:
+                        - link "IRMNG" [ref=e1399] [cursor=pointer]:
+                          - /url: https://www.irmng.org/aphia.php?p=taxdetails&id=148
+                        - text: ·
+                      - listitem [ref=e1400]:
+                        - link "ITIS TSN" [ref=e1401] [cursor=pointer]:
+                          - /url: https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=158852
+                        - text: ·
+                      - listitem [ref=e1402]:
+                        - link "WoRMS" [ref=e1403] [cursor=pointer]:
+                          - /url: https://www.marinespecies.org/aphia.php?p=taxdetails&id=1821
+                - row "[показать] В библиографических каталогах" [ref=e1404]:
+                  - cell "[показать] В библиографических каталогах" [ref=e1405]:
+                    - table [ref=e1406]:
+                      - rowgroup [ref=e1407]:
+                        - row "[показать] В библиографических каталогах" [ref=e1408]:
+                          - columnheader "[показать] В библиографических каталогах" [ref=e1409]:
+                            - button "[показать]" [ref=e1410] [cursor=pointer]
+                            - generic [ref=e1411]: В библиографических каталогах
+                        - row: · · · · ·
+          - navigation "Классификация животных" [ref=e1412]:
+            - table [ref=e1413]:
+              - rowgroup [ref=e1414]:
+                - row "[показать] Перейти к шаблону «Классификация животных» Классификация животных" [ref=e1415]:
+                  - columnheader "[показать] Перейти к шаблону «Классификация животных» Классификация животных" [ref=e1416]:
+                    - button "[показать]" [ref=e1417] [cursor=pointer]
+                    - link "Перейти к шаблону «Классификация животных»" [ref=e1420] [cursor=pointer]:
+                      - /url: /wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85
+                      - img "Перейти к шаблону «Классификация животных»" [ref=e1421]
+                    - generic [ref=e1422]:
+                      - text: Классификация
+                      - link "животных" [ref=e1423] [cursor=pointer]:
+                        - /url: /wiki/%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5
+                - row: · · ·
+                - row
+                - row: ·
+                - row: · ( · · · · ) ·
+                - row: ": · : ( · ) · ( · · · ) :"
+        - generic [ref=e1425]:
+          - link "Категории" [ref=e1426] [cursor=pointer]:
+            - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8
+          - text: ":"
+          - list [ref=e1427]:
+            - listitem [ref=e1428]:
+              - link "Животные по алфавиту" [ref=e1429] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83
+            - listitem [ref=e1430]:
+              - link "Хордовые" [ref=e1431] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5
+            - listitem [ref=e1432]:
+              - link "Типы животных" [ref=e1433] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A2%D0%B8%D0%BF%D1%8B_%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85
+    - contentinfo [ref=e1435]:
+      - list [ref=e1436]:
+        - listitem [ref=e1437]: Эта страница в последний раз была отредактирована 4 ноября 2025 года в 19:53.
+        - listitem [ref=e1438]:
+          - text: Текст доступен по
+          - link "лицензии Creative Commons «С указанием авторства — С сохранением условий» (CC BY-SA)" [ref=e1439] [cursor=pointer]:
+            - /url: //creativecommons.org/licenses/by-sa/4.0/deed.ru
+          - text: ; в отдельных случаях могут действовать дополнительные условия.
+          - generic [ref=e1440]:
+            - text: Подробнее см.
+            - link "Условия использования" [ref=e1441] [cursor=pointer]:
+              - /url: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ru
+            - text: .
+          - text: Wikipedia® — зарегистрированный товарный знак некоммерческой организации
+          - link "«Фонд Викимедиа» (Wikimedia Foundation, Inc.)" [ref=e1442] [cursor=pointer]:
+            - /url: https://wikimediafoundation.org/ru/
+      - list:
+        - listitem [ref=e1443]:
+          - link "Политика конфиденциальности" [ref=e1444] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru
+        - listitem [ref=e1445]:
+          - link "Описание Википедии" [ref=e1446] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5
+        - listitem [ref=e1447]:
+          - link "Отказ от ответственности" [ref=e1448] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8
+        - listitem [ref=e1449]:
+          - link "Свяжитесь с нами" [ref=e1450] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/wiki/Википедия:Контакты
+        - listitem [ref=e1451]:
+          - link "Контакты по вопросам права и безопасности" [ref=e1452] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=e1453]:
+          - link "Кодекс поведения" [ref=e1454] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru
+        - listitem [ref=e1455]:
+          - link "Разработчики" [ref=e1456] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=e1457]:
+          - link "Статистика" [ref=e1458] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/ru.wikipedia.org
+        - listitem [ref=e1459]:
+          - link "Заявление о куки" [ref=e1460] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=e1461]:
+          - link "Мобильная версия" [ref=e1462] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/w/index.php?title=%D0%A5%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5&mobileaction=toggle_view_mobile
+      - list [ref=e1463]:
+        - listitem [ref=e1464]:
+          - link "Wikimedia Foundation" [ref=e1465] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=e1467]
+        - listitem [ref=e1468]:
+          - link "Powered by MediaWiki" [ref=e1469] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=e1471]
+  - generic [ref=e1472]:
+    - list

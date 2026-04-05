@@ -1,0 +1,4 @@
+[    2990ms] [LOG] [pd-g-getstock-popup.op.js] isInAppWebViewSessionStorageValue =[null] @ https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-templates/page-pcd/compact.min.d10c320610e5a78a84229cc99238f88f.js:398
+[    5413ms] [LOG] directCallFlv2 : undefined @ :5
+[    5658ms] [LOG] sdk.uiStateStore.setOpened has been успешно перехвачен (universal v3). @ :453
+[    6848ms] [LOG] HeadlessChrome @ https://samsungrum.beusable.net/load/b170105e175055u968?url=https%3A%2F%2Fwww.samsung.com%2Fru%2Fmonitors%2F:0

@@ -1,0 +1,1125 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "Картинка баннера" [ref=e6]
+      - generic [ref=e8]:
+        - paragraph [ref=e10]: "Хватамба не за горами: товары с настоящими скидками с 6 апреля."
+        - paragraph [ref=e12]:
+          - link "Выбрать уже сейчас" [ref=e13] [cursor=pointer]:
+            - /url: https://avito.ru/all/sale?context=H4sIAAAAAAAA_0q0MrSqLraysFJKK8rPDUhMT1WyLrYyNLRSyk3MzItPSszLSy1Ssq4FBAAA__-0rffsKAAAAA&f=ASgBAgICAUSg2RLe~ZoD
+      - img [ref=e15]
+    - generic [ref=e18]:
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - button "Для бизнеса" [ref=e24] [cursor=pointer]:
+            - text: Для бизнеса
+            - img [ref=e26]
+        - listitem [ref=e27]:
+          - link "Карьера в Авито" [ref=e28] [cursor=pointer]:
+            - /url: //career.avito.com/?utm_source=avito.ru&utm_medium=referral&utm_campaign=test_placement_to_career&utm_content=top_vacancy
+        - listitem [ref=e29]:
+          - link "Помощь" [ref=e30] [cursor=pointer]:
+            - /url: //support.avito.ru
+        - listitem [ref=e31]:
+          - button "Ещё" [ref=e34] [cursor=pointer]:
+            - text: Ещё
+            - img [ref=e36]
+      - generic [ref=e37]:
+        - link "Избранное" [ref=e38] [cursor=pointer]:
+          - /url: /favorites
+          - generic [ref=e39]: Избранное
+          - img [ref=e40]
+        - link "Корзина" [ref=e41] [cursor=pointer]:
+          - /url: "#login?next=%2Forder%2Fcart"
+          - generic [ref=e42]: Корзина
+          - img [ref=e43]
+      - link "Вход и регистрация" [ref=e45] [cursor=pointer]:
+        - /url: "#login?authsrc=h"
+        - img [ref=e47]
+        - text: Вход и регистрация
+      - link "Разместить объявление" [ref=e49] [cursor=pointer]:
+        - /url: "#login?next=%2Fadditem&authsrc=ca"
+        - img [ref=e51]
+        - text: Разместить объявление
+    - generic [ref=e57]:
+      - generic [ref=e60]:
+        - link "Авито — сайт объявлений" [ref=e63] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e64]:
+            - img [ref=e65]
+            - img [ref=e70]
+        - generic [ref=e72]:
+          - button [ref=e76]:
+            - button [ref=e79] [cursor=pointer]:
+              - img [ref=e83]
+          - generic [ref=e84]:
+            - generic [ref=e88]:
+              - img [ref=e91]
+              - textbox [active] [ref=e95]:
+                - /placeholder: Поиск по объявлениям
+            - button "Найти" [ref=e97] [cursor=pointer]:
+              - paragraph [ref=e100]: Найти
+        - button "Во всех регионах" [ref=e104] [cursor=pointer]:
+          - img [ref=e106]
+          - paragraph [ref=e107]:
+            - generic [ref=e108]: Во всех регионах
+      - generic [ref=e109]:
+        - generic [ref=e115]:
+          - link "Авто" [ref=e116] [cursor=pointer]:
+            - /url: /all/transport
+            - article [ref=e118]:
+              - paragraph [ref=e119]: Авто
+            - img "Авто" [ref=e120]
+          - link "Недвижимость" [ref=e121] [cursor=pointer]:
+            - /url: /all/nedvizhimost
+            - article [ref=e123]:
+              - paragraph [ref=e124]: Недвижи- мость
+            - img "Недвижимость" [ref=e125]
+          - link "Работа" [ref=e126] [cursor=pointer]:
+            - /url: /all/vakansii
+            - article [ref=e128]:
+              - paragraph [ref=e129]: Работа
+            - img "Работа" [ref=e130]
+          - link "Одежда, обувь, аксессуары" [ref=e131] [cursor=pointer]:
+            - /url: /all/lichnye_veschi
+            - article [ref=e133]:
+              - paragraph [ref=e134]: Одежда, обувь, аксессуары
+            - img "Одежда, обувь, аксессуары" [ref=e135]
+          - link "Хобби и отдых" [ref=e136] [cursor=pointer]:
+            - /url: /all/hobbi_i_otdyh
+            - article [ref=e138]:
+              - paragraph [ref=e139]: Хобби и отдых
+            - img "Хобби и отдых" [ref=e140]
+          - link "Животные" [ref=e141] [cursor=pointer]:
+            - /url: /all/zhivotnye
+            - article [ref=e143]:
+              - paragraph [ref=e144]: Животные
+            - img "Животные" [ref=e145]
+          - link "Готовый бизнес и оборудование" [ref=e146] [cursor=pointer]:
+            - /url: /all/dlya_biznesa
+            - article [ref=e148]:
+              - paragraph [ref=e149]: Готовый бизнес и оборудование
+            - img "Готовый бизнес и оборудование" [ref=e150]
+          - link "Услуги" [ref=e151] [cursor=pointer]:
+            - /url: /all/predlozheniya_uslug
+            - article [ref=e153]:
+              - paragraph [ref=e154]: Услуги
+            - img "Услуги" [ref=e155]
+          - link "Электроника" [ref=e156] [cursor=pointer]:
+            - /url: /all/bytovaya_elektronika
+            - article [ref=e158]:
+              - paragraph [ref=e159]: Электро- ника
+            - img "Электроника" [ref=e160]
+          - link "Для дома и дачи" [ref=e161] [cursor=pointer]:
+            - /url: /all/dlya_doma_i_dachi
+            - article [ref=e163]:
+              - paragraph [ref=e164]: Для дома и дачи
+            - img "Для дома и дачи" [ref=e165]
+          - link "Запчасти" [ref=e166] [cursor=pointer]:
+            - /url: /all/zapchasti_i_aksessuary
+            - article [ref=e168]:
+              - paragraph [ref=e169]: Запчасти
+            - img "Запчасти" [ref=e170]
+          - link "Товары для детей" [ref=e171] [cursor=pointer]:
+            - /url: /all/tovary_dlya_detey_i_igrushki
+            - article [ref=e173]:
+              - paragraph [ref=e174]: Товары для детей
+            - img "Товары для детей" [ref=e175]
+          - link "Путешествия" [ref=e176] [cursor=pointer]:
+            - /url: /all/travel?context=H4sIAAAAAAAA_0q0MrSqLraysFJKK8rPDUhMT1WyLrYyNLBSKipNKspMTizJL1KyrgUEAAD__-WN5hwnAAAA&segment=travel
+            - article [ref=e178]:
+              - paragraph [ref=e179]: Жильё для путешествия
+            - img "Путешествия" [ref=e180]
+          - link "Красота и здоровье" [ref=e181] [cursor=pointer]:
+            - /url: /all/krasota_i_zdorove
+            - article [ref=e183]:
+              - paragraph [ref=e184]: Красота и здоровье
+            - img "Красота и здоровье" [ref=e185]
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - generic [ref=e190]:
+              - generic [ref=e197]:
+                - article [ref=e199]:
+                  - heading "Всё для бизнеса" [level=4] [ref=e200]
+                  - paragraph [ref=e201]: Миллионы предложений для разных задач в Авито Бизнес 360
+                - generic [ref=e203]:
+                  - link "Оборудование" [ref=e204] [cursor=pointer]:
+                    - /url: /all/business360/oborudovanie/-ASgBAgICAkTgkxPQ3I4DhuYUxN8M?f=ASgBAgICA0TgkxPQ3I4DhuYUxN8M1OcUAg
+                    - generic [ref=e205]:
+                      - img [ref=e207]
+                      - paragraph [ref=e208]: Оборудование
+                  - link "Помещения" [ref=e209] [cursor=pointer]:
+                    - /url: /all/business360/kommercheskaya_nedvizhimost/prodam-ASgBAgICAUSwCNJW
+                    - generic [ref=e210]:
+                      - img [ref=e212]
+                      - paragraph [ref=e213]: Помещения
+                  - link "Товары" [ref=e214] [cursor=pointer]:
+                    - /url: /all/business360/tovary_na_realizaciyu_optom/-ASgBAgICAkTgkxPQ3I4DhuYUuOYM?f=ASgBAgICA0TgkxPQ3I4DhuYUuOYM1OcUAg
+                    - generic [ref=e215]:
+                      - img [ref=e217]
+                      - paragraph [ref=e218]: Товары
+                  - link "Транспорт" [ref=e219] [cursor=pointer]:
+                    - /url: /all/business360/gruzoviki_i_spetstehnika
+                    - generic [ref=e220]:
+                      - img [ref=e222]
+                      - paragraph [ref=e223]: Транспорт
+                  - link "Услуги" [ref=e224] [cursor=pointer]:
+                    - /url: /all/business360/uslugi_dlya_biznesa/-ASgBAgICAkTgkxPQ3I4DhuYUiu4M?f=ASgBAgICBETgkxPQ3I4DhuYUiu4M1OcUAoCrFdaskgM
+                    - generic [ref=e225]:
+                      - img [ref=e227]
+                      - paragraph [ref=e228]: Услуги
+                  - link "Сотрудники" [ref=e229] [cursor=pointer]:
+                    - /url: /all/business360/rezume
+                    - generic [ref=e230]:
+                      - img [ref=e232]
+                      - paragraph [ref=e233]: Сотрудники
+                - link "Искать в Бизнес 360" [ref=e235] [cursor=pointer]:
+                  - /url: /all/business360
+                  - generic [ref=e236]:
+                    - img [ref=e239]
+                    - generic [ref=e240]: Искать в Бизнес 360
+              - generic [ref=e241]:
+                - heading "Сервисы и услуги Авито" [level=3] [ref=e242]
+                - list [ref=e243]:
+                  - listitem [ref=e244]:
+                    - link "Доставка Проверка при получении и возможность бесплатно вернуть товар" [ref=e245] [cursor=pointer]:
+                      - /url: /dostavka#buyer
+                      - heading "Доставка" [level=4] [ref=e246]
+                      - text: Проверка при получении и возможность бесплатно вернуть товар
+                  - listitem [ref=e247]:
+                    - 'link "Автотека Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах" [ref=e248] [cursor=pointer]':
+                      - /url: /autoteka
+                      - heading "Автотека" [level=4] [ref=e249]
+                      - text: "Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах"
+                  - listitem [ref=e250]:
+                    - link "Путешествия Выбор свободных дат в календаре и оплата онлайн для гарантии заселения" [ref=e251] [cursor=pointer]:
+                      - /url: /rossiya/kvartiry/sdam/posutochno
+                      - heading "Путешествия" [level=4] [ref=e252]
+                      - text: Выбор свободных дат в календаре и оплата онлайн для гарантии заселения
+                  - listitem [ref=e253]:
+                    - link "#яПомогаю Сохраняйте природу и помогайте людям вместе с нами" [ref=e254] [cursor=pointer]:
+                      - /url: /avito-care?from=mp_services
+                      - heading "#яПомогаю" [level=4] [ref=e255]
+                      - text: Сохраняйте природу и помогайте людям вместе с нами
+              - generic [ref=e256]:
+                - list [ref=e258]:
+                  - listitem [ref=e259]: © ООО «КЕХ еКоммерц» 2007–2026.
+                  - listitem [ref=e260]:
+                    - text: Авито использует
+                    - link "рекомендательные технологии" [ref=e261] [cursor=pointer]:
+                      - /url: /legal/rules/rec-technologies/
+                    - text: .
+                - list [ref=e263]:
+                  - listitem [ref=e264]:
+                    - paragraph [ref=e265]:
+                      - link "Правила Авито" [ref=e267] [cursor=pointer]:
+                        - /url: //www.avito.ru/legal/
+                  - listitem [ref=e268]:
+                    - paragraph [ref=e269]:
+                      - link "Реклама на сайте" [ref=e271] [cursor=pointer]:
+                        - /url: /ads?utm_source=avito&utm_medium=sidebar
+                  - listitem [ref=e272]:
+                    - paragraph [ref=e273]:
+                      - link "О компании" [ref=e275] [cursor=pointer]:
+                        - /url: /company
+                  - listitem [ref=e276]:
+                    - paragraph [ref=e277]:
+                      - link "Карьера в Авито" [ref=e279] [cursor=pointer]:
+                        - /url: //career.avito.com/?utm_source=avito.ru&utm_medium=referral&utm_campaign=test_placement_to_career&utm_content=sidebar_vacancy
+            - generic [ref=e285]:
+              - generic [ref=e287]:
+                - generic [ref=e290]:
+                  - img [ref=e292] [cursor=pointer]
+                  - img [ref=e294] [cursor=pointer]
+                - progressbar [ref=e295]
+              - paragraph [ref=e296] [cursor=pointer]: Реклама⋮
+              - link "Верните деньги через Т-Банк Оспорьте покупку или перевод в приложении Подробнее" [ref=e297] [cursor=pointer]:
+                - /url: https://eye.targetads.io/view/click?aviclid=c2aa39a1-bbab-46fb-8dd8-fb15a03fd44b&cn=23342&pid=12486&pl=63268
+                - generic [ref=e298]:
+                  - generic [ref=e300]:
+                    - img [ref=e303]
+                    - generic [ref=e306]:
+                      - heading "Верните деньги через Т-Банк" [level=5] [ref=e308]
+                      - paragraph [ref=e310]: Оспорьте покупку или перевод в приложении
+                  - button "Подробнее" [ref=e312]:
+                    - generic [ref=e314]: Подробнее
+          - generic [ref=e316]:
+            - generic [ref=e344] [cursor=pointer]: Реклама ⋮
+            - generic [ref=e347]:
+              - heading "Рекомендации для вас" [level=2] [ref=e350]
+              - generic [ref=e351]:
+                - generic [ref=e354]:
+                  - banner [ref=e355]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Сервиз чайный на 6 персон Сервиз чайный на 6 персон" [ref=e356] [cursor=pointer]:
+                      - /url: /voronezh/posuda_i_tovary_dlya_kuhni/serviz_chaynyy_na_6_person_8036955802?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e359]:
+                        - listitem [ref=e360]:
+                          - img "Сервиз чайный на 6 персон" [ref=e362]
+                        - listitem [ref=e363]:
+                          - img "Сервиз чайный на 6 персон" [ref=e365]
+                  - generic [ref=e366]:
+                    - generic [ref=e368]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e370] [cursor=pointer]:
+                        - img [ref=e371]
+                      - button [ref=e374] [cursor=pointer]:
+                        - img [ref=e375]
+                    - heading "Сервиз чайный на 6 персон" [level=2] [ref=e379]:
+                      - link "Сервиз чайный на 6 персон" [ref=e380] [cursor=pointer]:
+                        - /url: /voronezh/posuda_i_tovary_dlya_kuhni/serviz_chaynyy_na_6_person_8036955802?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e386]:
+                      - strong [ref=e387]: 2 500 ₽
+                - generic [ref=e390]:
+                  - banner [ref=e391]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Материнская msi am3+" [ref=e392] [cursor=pointer]:
+                      - /url: /omsk/tovary_dlya_kompyutera/materinskaya_msi_am3_8034276585?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e395]:
+                        - listitem:
+                          - img "Материнская msi am3+" [ref=e397]
+                  - generic [ref=e398]:
+                    - generic [ref=e400]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e402] [cursor=pointer]:
+                        - img [ref=e403]
+                      - button [ref=e406] [cursor=pointer]:
+                        - img [ref=e407]
+                    - heading "Материнская msi am3+" [level=2] [ref=e411]:
+                      - link "Материнская msi am3+" [ref=e412] [cursor=pointer]:
+                        - /url: /omsk/tovary_dlya_kompyutera/materinskaya_msi_am3_8034276585?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e418]:
+                      - strong [ref=e419]: 1 208 ₽
+                - generic [ref=e422]:
+                  - banner [ref=e423]:
+                    - link "Съедобные букеты/композиция из клубники Съедобные букеты/композиция из клубники Съедобные букеты/композиция из клубники Съедобные букеты/композиция из клубники Съедобные букеты/композиция из клубники Ещё 5 фото" [ref=e424] [cursor=pointer]:
+                      - /url: /moskva/produkty_pitaniya/sedobnye_buketykompozitsiya_iz_klubniki_8086754684?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e427]:
+                        - listitem [ref=e428]:
+                          - img "Съедобные букеты/композиция из клубники" [ref=e430]
+                        - listitem [ref=e431]:
+                          - img "Съедобные букеты/композиция из клубники" [ref=e433]
+                        - listitem [ref=e434]:
+                          - img "Съедобные букеты/композиция из клубники" [ref=e436]
+                        - listitem [ref=e437]:
+                          - img "Съедобные букеты/композиция из клубники" [ref=e439]
+                        - listitem [ref=e440]:
+                          - img "Съедобные букеты/композиция из клубники" [ref=e442]
+                          - generic [ref=e443]:
+                            - text: Ещё
+                            - text: 5 фото
+                  - generic [ref=e444]:
+                    - generic [ref=e446]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e448] [cursor=pointer]:
+                        - img [ref=e449]
+                      - button [ref=e452] [cursor=pointer]:
+                        - img [ref=e453]
+                    - heading "Съедобные букеты/композиция из клубники" [level=2] [ref=e457]:
+                      - link "Съедобные букеты/композиция из клубники" [ref=e458] [cursor=pointer]:
+                        - /url: /moskva/produkty_pitaniya/sedobnye_buketykompozitsiya_iz_klubniki_8086754684?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e464]:
+                      - strong [ref=e465]: 6 000 ₽
+                    - paragraph [ref=e467]:
+                      - generic [ref=e468]:
+                        - img [ref=e470]
+                        - text: Москва, Молодёжная
+                - generic [ref=e475]:
+                  - banner [ref=e476]:
+                    - link "Спининг Slew Dragon TL-450" [ref=e477] [cursor=pointer]:
+                      - /url: /kiselevsk/ohota_i_rybalka/spining_slew_dragon_tl-450_7993766090?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e480]:
+                        - listitem:
+                          - img "Спининг Slew Dragon TL-450" [ref=e482]
+                  - generic [ref=e483]:
+                    - generic [ref=e485]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e487] [cursor=pointer]:
+                        - img [ref=e488]
+                      - button [ref=e491] [cursor=pointer]:
+                        - img [ref=e492]
+                    - heading "Спининг Slew Dragon TL-450" [level=2] [ref=e496]:
+                      - link "Спининг Slew Dragon TL-450" [ref=e497] [cursor=pointer]:
+                        - /url: /kiselevsk/ohota_i_rybalka/spining_slew_dragon_tl-450_7993766090?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e503]:
+                      - strong [ref=e504]: 770 ₽
+                    - paragraph [ref=e506]:
+                      - generic [ref=e507]:
+                        - img [ref=e509]
+                        - text: Киселёвск
+                - generic [ref=e514]:
+                  - banner [ref=e515]:
+                    - link "Аккумуляторы 18 в, под формат Макита LTX иBL Аккумуляторы 18 в, под формат Макита LTX иBL Аккумуляторы 18 в, под формат Макита LTX иBL Аккумуляторы 18 в, под формат Макита LTX иBL Аккумуляторы 18 в, под формат Макита LTX иBL Ещё 2 фото" [ref=e516] [cursor=pointer]:
+                      - /url: /ramenskoe/orgtehnika_i_rashodniki/akkumulyatory_18_v_pod_format_makita_ltx_ibl_7255360085?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e519]:
+                        - listitem [ref=e520]:
+                          - img "Аккумуляторы 18 в, под формат Макита LTX иBL" [ref=e522]
+                        - listitem [ref=e523]:
+                          - img "Аккумуляторы 18 в, под формат Макита LTX иBL" [ref=e525]
+                        - listitem [ref=e526]:
+                          - img "Аккумуляторы 18 в, под формат Макита LTX иBL" [ref=e528]
+                        - listitem [ref=e529]:
+                          - img "Аккумуляторы 18 в, под формат Макита LTX иBL" [ref=e531]
+                        - listitem [ref=e532]:
+                          - img "Аккумуляторы 18 в, под формат Макита LTX иBL" [ref=e534]
+                          - generic [ref=e535]:
+                            - text: Ещё
+                            - text: 2 фото
+                  - generic [ref=e536]:
+                    - generic [ref=e538]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e540] [cursor=pointer]:
+                        - img [ref=e541]
+                      - button [ref=e544] [cursor=pointer]:
+                        - img [ref=e545]
+                    - heading "Аккумуляторы 18 в, под формат Макита LTX иBL" [level=2] [ref=e549]:
+                      - link "Аккумуляторы 18 в, под формат Макита LTX иBL" [ref=e550] [cursor=pointer]:
+                        - /url: /ramenskoe/orgtehnika_i_rashodniki/akkumulyatory_18_v_pod_format_makita_ltx_ibl_7255360085?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e556]:
+                      - strong [ref=e557]: 1 613 ₽
+                    - paragraph [ref=e559]:
+                      - generic [ref=e560]:
+                        - img [ref=e562]
+                        - text: д. Ворщиково
+                - generic [ref=e567]:
+                  - banner [ref=e568]:
+                    - link "Катер Williams Jet Tenders Turbojet 285 Катер Williams Jet Tenders Turbojet 285 Катер Williams Jet Tenders Turbojet 285 Катер Williams Jet Tenders Turbojet 285 Катер Williams Jet Tenders Turbojet 285 Ещё 6 фото" [ref=e569] [cursor=pointer]:
+                      - /url: /volgograd/vodnyy_transport/kater_williams_jet_tenders_turbojet_285_7994002681?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e572]:
+                        - listitem [ref=e573]:
+                          - img "Катер Williams Jet Tenders Turbojet 285" [ref=e575]
+                        - listitem [ref=e576]:
+                          - img "Катер Williams Jet Tenders Turbojet 285" [ref=e578]
+                        - listitem [ref=e579]:
+                          - img "Катер Williams Jet Tenders Turbojet 285" [ref=e581]
+                        - listitem [ref=e582]:
+                          - img "Катер Williams Jet Tenders Turbojet 285" [ref=e584]
+                        - listitem [ref=e585]:
+                          - img "Катер Williams Jet Tenders Turbojet 285" [ref=e587]
+                          - generic [ref=e588]:
+                            - text: Ещё
+                            - text: 6 фото
+                  - generic [ref=e589]:
+                    - generic [ref=e591]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e593] [cursor=pointer]:
+                        - img [ref=e594]
+                      - button [ref=e597] [cursor=pointer]:
+                        - img [ref=e598]
+                    - heading "Катер Williams Jet Tenders Turbojet 285" [level=2] [ref=e602]:
+                      - link "Катер Williams Jet Tenders Turbojet 285" [ref=e603] [cursor=pointer]:
+                        - /url: /volgograd/vodnyy_transport/kater_williams_jet_tenders_turbojet_285_7994002681?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e609]:
+                      - strong [ref=e610]: 2 900 000 ₽
+                    - paragraph [ref=e612]:
+                      - generic [ref=e613]:
+                        - img [ref=e615]
+                        - text: Волгоград, р-н Центральный
+                - generic [ref=e620]:
+                  - banner [ref=e621]:
+                    - link "Конский навоз,перегной" [ref=e622] [cursor=pointer]:
+                      - /url: /asha/rasteniya/konskiy_navozperegnoy_7994895684?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e625]:
+                        - listitem:
+                          - img "Конский навоз,перегной" [ref=e627]
+                  - generic [ref=e628]:
+                    - generic [ref=e630]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e632] [cursor=pointer]:
+                        - img [ref=e633]
+                      - button [ref=e636] [cursor=pointer]:
+                        - img [ref=e637]
+                    - heading "Конский навоз,перегной" [level=2] [ref=e641]:
+                      - link "Конский навоз,перегной" [ref=e642] [cursor=pointer]:
+                        - /url: /asha/rasteniya/konskiy_navozperegnoy_7994895684?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e648]:
+                      - strong [ref=e649]: 6 000 ₽
+                    - paragraph [ref=e651]:
+                      - generic [ref=e652]:
+                        - img [ref=e654]
+                        - text: Аша
+                - generic [ref=e659]:
+                  - banner [ref=e660]:
+                    - link "Декоративные кролики минилопы вислоухие Декоративные кролики минилопы вислоухие Декоративные кролики минилопы вислоухие Декоративные кролики минилопы вислоухие Декоративные кролики минилопы вислоухие" [ref=e661] [cursor=pointer]:
+                      - /url: /perm/drugie_zhivotnye/dekorativnye_kroliki_minilopy_vislouhie_7973986035?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e664]:
+                        - listitem [ref=e665]:
+                          - img "Декоративные кролики минилопы вислоухие" [ref=e667]
+                        - listitem [ref=e668]:
+                          - img "Декоративные кролики минилопы вислоухие" [ref=e670]
+                        - listitem [ref=e671]:
+                          - img "Декоративные кролики минилопы вислоухие" [ref=e673]
+                        - listitem [ref=e674]:
+                          - img "Декоративные кролики минилопы вислоухие" [ref=e676]
+                        - listitem [ref=e677]:
+                          - img "Декоративные кролики минилопы вислоухие" [ref=e679]
+                  - generic [ref=e680]:
+                    - generic [ref=e682]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e684] [cursor=pointer]:
+                        - img [ref=e685]
+                      - button [ref=e688] [cursor=pointer]:
+                        - img [ref=e689]
+                    - heading "Декоративные кролики минилопы вислоухие" [level=2] [ref=e693]:
+                      - link "Декоративные кролики минилопы вислоухие" [ref=e694] [cursor=pointer]:
+                        - /url: /perm/drugie_zhivotnye/dekorativnye_kroliki_minilopy_vislouhie_7973986035?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e700]:
+                      - strong [ref=e701]: 1 000 ₽
+                    - paragraph [ref=e703]:
+                      - generic [ref=e704]:
+                        - img [ref=e706]
+                        - text: Пермь, р-н Индустриальный
+                - generic [ref=e711]:
+                  - banner [ref=e712]:
+                    - link "Плавучая заправочная станция (пзс) Плавучая заправочная станция (пзс) Плавучая заправочная станция (пзс) Плавучая заправочная станция (пзс) Плавучая заправочная станция (пзс) Ещё 5 фото" [ref=e713] [cursor=pointer]:
+                      - /url: /cheboksary/vodnyy_transport/plavuchaya_zapravochnaya_stantsiya_pzs_7994592433?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e716]:
+                        - listitem [ref=e717]:
+                          - img "Плавучая заправочная станция (пзс)" [ref=e719]
+                        - listitem [ref=e720]:
+                          - img "Плавучая заправочная станция (пзс)" [ref=e722]
+                        - listitem [ref=e723]:
+                          - img "Плавучая заправочная станция (пзс)" [ref=e725]
+                        - listitem [ref=e726]:
+                          - img "Плавучая заправочная станция (пзс)" [ref=e728]
+                        - listitem [ref=e729]:
+                          - img "Плавучая заправочная станция (пзс)" [ref=e731]
+                          - generic [ref=e732]:
+                            - text: Ещё
+                            - text: 5 фото
+                  - generic [ref=e733]:
+                    - generic [ref=e735]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e737] [cursor=pointer]:
+                        - img [ref=e738]
+                      - button [ref=e741] [cursor=pointer]:
+                        - img [ref=e742]
+                    - heading "Плавучая заправочная станция (пзс)" [level=2] [ref=e746]:
+                      - link "Плавучая заправочная станция (пзс)" [ref=e747] [cursor=pointer]:
+                        - /url: /cheboksary/vodnyy_transport/plavuchaya_zapravochnaya_stantsiya_pzs_7994592433?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e753]:
+                      - strong [ref=e754]: 25 000 000 ₽
+                    - paragraph [ref=e756]:
+                      - generic [ref=e757]:
+                        - img [ref=e759]
+                        - text: Чебоксары, р-н Ленинский
+                - generic [ref=e764]:
+                  - banner [ref=e765]:
+                    - link "iPad pro 12.9 2021 iPad pro 12.9 2021 iPad pro 12.9 2021 iPad pro 12.9 2021" [ref=e766] [cursor=pointer]:
+                      - /url: /norilsk/planshety_i_elektronnye_knigi/ipad_pro_12.9_2021_7984666711?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e769]:
+                        - listitem [ref=e770]:
+                          - img "iPad pro 12.9 2021" [ref=e772]
+                        - listitem [ref=e773]:
+                          - img "iPad pro 12.9 2021" [ref=e775]
+                        - listitem [ref=e776]:
+                          - img "iPad pro 12.9 2021" [ref=e778]
+                        - listitem [ref=e779]:
+                          - img "iPad pro 12.9 2021" [ref=e781]
+                  - generic [ref=e782]:
+                    - generic [ref=e784]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e786] [cursor=pointer]:
+                        - img [ref=e787]
+                      - button [ref=e790] [cursor=pointer]:
+                        - img [ref=e791]
+                    - heading "iPad pro 12.9 2021" [level=2] [ref=e795]:
+                      - link "iPad pro 12.9 2021" [ref=e796] [cursor=pointer]:
+                        - /url: /norilsk/planshety_i_elektronnye_knigi/ipad_pro_12.9_2021_7984666711?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e802]:
+                      - strong [ref=e803]: 60 000 ₽
+                    - paragraph [ref=e805]:
+                      - generic [ref=e806]:
+                        - img [ref=e808]
+                        - text: Норильск
+                - generic [ref=e813]:
+                  - banner [ref=e814]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Телевизор manya 32 LED на запчасти, разбит экран Телевизор manya 32 LED на запчасти, разбит экран Телевизор manya 32 LED на запчасти, разбит экран" [ref=e815] [cursor=pointer]:
+                      - /url: /volgograd/audio_i_video/televizor_manya_32_led_na_zapchasti_razbit_ekran_7953302837?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e818]:
+                        - listitem [ref=e819]:
+                          - img "Телевизор manya 32 LED на запчасти, разбит экран" [ref=e821]
+                        - listitem [ref=e822]:
+                          - img "Телевизор manya 32 LED на запчасти, разбит экран" [ref=e824]
+                        - listitem [ref=e825]:
+                          - img "Телевизор manya 32 LED на запчасти, разбит экран" [ref=e827]
+                  - generic [ref=e828]:
+                    - generic [ref=e830]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e832] [cursor=pointer]:
+                        - img [ref=e833]
+                      - button [ref=e836] [cursor=pointer]:
+                        - img [ref=e837]
+                    - heading "Телевизор manya 32 LED на запчасти, разбит экран" [level=2] [ref=e841]:
+                      - link "Телевизор manya 32 LED на запчасти, разбит экран" [ref=e842] [cursor=pointer]:
+                        - /url: /volgograd/audio_i_video/televizor_manya_32_led_na_zapchasti_razbit_ekran_7953302837?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e848]:
+                      - strong [ref=e849]: 2 000 ₽
+                - generic [ref=e852]:
+                  - banner [ref=e853]:
+                    - link "Домашние куриные яйца, козье молоко Домашние куриные яйца, козье молоко Домашние куриные яйца, козье молоко Домашние куриные яйца, козье молоко Домашние куриные яйца, козье молоко" [ref=e854] [cursor=pointer]:
+                      - /url: /naberezhnye_chelny/produkty_pitaniya/domashnie_kurinye_yaytsa_koze_moloko_7989336347?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e857]:
+                        - listitem [ref=e858]:
+                          - img "Домашние куриные яйца, козье молоко" [ref=e860]
+                        - listitem [ref=e861]:
+                          - img "Домашние куриные яйца, козье молоко" [ref=e863]
+                        - listitem [ref=e864]:
+                          - img "Домашние куриные яйца, козье молоко" [ref=e866]
+                        - listitem [ref=e867]:
+                          - img "Домашние куриные яйца, козье молоко" [ref=e869]
+                        - listitem [ref=e870]:
+                          - img "Домашние куриные яйца, козье молоко" [ref=e872]
+                  - generic [ref=e873]:
+                    - generic [ref=e875]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e877] [cursor=pointer]:
+                        - img [ref=e878]
+                      - button [ref=e881] [cursor=pointer]:
+                        - img [ref=e882]
+                    - heading "Домашние куриные яйца, козье молоко" [level=2] [ref=e886]:
+                      - link "Домашние куриные яйца, козье молоко" [ref=e887] [cursor=pointer]:
+                        - /url: /naberezhnye_chelny/produkty_pitaniya/domashnie_kurinye_yaytsa_koze_moloko_7989336347?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e893]:
+                      - strong [ref=e894]: 130 ₽
+                    - paragraph [ref=e896]:
+                      - generic [ref=e897]:
+                        - img [ref=e899]
+                        - text: СНТ Отделочник
+                - generic [ref=e906]:
+                  - banner [ref=e907]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Системный блок" [ref=e908] [cursor=pointer]:
+                      - /url: /kazan/nastolnye_kompyutery/sistemnyy_blok_7989811362?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e911]:
+                        - listitem:
+                          - img "Системный блок" [ref=e913]
+                  - generic [ref=e914]:
+                    - generic [ref=e916]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e918] [cursor=pointer]:
+                        - img [ref=e919]
+                      - button [ref=e922] [cursor=pointer]:
+                        - img [ref=e923]
+                    - heading "Системный блок" [level=2] [ref=e927]:
+                      - link "Системный блок" [ref=e928] [cursor=pointer]:
+                        - /url: /kazan/nastolnye_kompyutery/sistemnyy_blok_7989811362?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e934]:
+                      - strong [ref=e935]: 16 300 ₽
+                - generic [ref=e938]:
+                  - banner [ref=e939]:
+                    - link "Вкусный сочный роголистник Вкусный сочный роголистник" [ref=e940] [cursor=pointer]:
+                      - /url: /moskva/akvarium/vkusnyy_sochnyy_rogolistnik_8051335521?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e943]:
+                        - listitem [ref=e944]:
+                          - img "Вкусный сочный роголистник" [ref=e946]
+                        - listitem [ref=e947]:
+                          - img "Вкусный сочный роголистник" [ref=e949]
+                  - generic [ref=e950]:
+                    - generic [ref=e952]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e954] [cursor=pointer]:
+                        - img [ref=e955]
+                      - button [ref=e958] [cursor=pointer]:
+                        - img [ref=e959]
+                    - heading "Вкусный сочный роголистник" [level=2] [ref=e963]:
+                      - link "Вкусный сочный роголистник" [ref=e964] [cursor=pointer]:
+                        - /url: /moskva/akvarium/vkusnyy_sochnyy_rogolistnik_8051335521?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e970]:
+                      - strong [ref=e971]: Бесплатно
+                    - paragraph [ref=e973]:
+                      - generic [ref=e974]:
+                        - img [ref=e976]
+                        - text: Москва, Новаторская
+                - generic [ref=e981]:
+                  - banner [ref=e982]:
+                    - link "Билеты в Цирк на Фонтанке 05.04 «Королевский цирк»" [ref=e983] [cursor=pointer]:
+                      - /url: /sankt-peterburg/bilety_i_puteshestviya/bilety_v_tsirk_na_fontanke_05.04_korolevskiy_tsirk_7948288582?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e986]:
+                        - listitem:
+                          - img "Билеты в Цирк на Фонтанке 05.04 «Королевский цирк»" [ref=e988]
+                  - generic [ref=e989]:
+                    - generic [ref=e991]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e993] [cursor=pointer]:
+                        - img [ref=e994]
+                      - button [ref=e997] [cursor=pointer]:
+                        - img [ref=e998]
+                    - heading "Билеты в Цирк на Фонтанке 05.04 «Королевский цирк»" [level=2] [ref=e1002]:
+                      - link "Билеты в Цирк на Фонтанке 05.04 «Королевский цирк»" [ref=e1003] [cursor=pointer]:
+                        - /url: /sankt-peterburg/bilety_i_puteshestviya/bilety_v_tsirk_na_fontanke_05.04_korolevskiy_tsirk_7948288582?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1009]:
+                      - strong [ref=e1010]: 1 699 ₽
+                    - paragraph [ref=e1012]:
+                      - generic [ref=e1013]:
+                        - img [ref=e1015]
+                        - text: Санкт-Петербург, Гостиный двор
+                - generic [ref=e1020]:
+                  - banner [ref=e1021]:
+                    - link "Припой Cu-Ag 5% rothenberger Припой Cu-Ag 5% rothenberger Припой Cu-Ag 5% rothenberger" [ref=e1022] [cursor=pointer]:
+                      - /url: /tula/remont_i_stroitelstvo/pripoy_cu-ag_5_rothenberger_7989135180?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1025]:
+                        - listitem [ref=e1026]:
+                          - img "Припой Cu-Ag 5% rothenberger" [ref=e1028]
+                        - listitem [ref=e1029]:
+                          - img "Припой Cu-Ag 5% rothenberger" [ref=e1031]
+                        - listitem [ref=e1032]:
+                          - img "Припой Cu-Ag 5% rothenberger" [ref=e1034]
+                  - generic [ref=e1035]:
+                    - generic [ref=e1037]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1039] [cursor=pointer]:
+                        - img [ref=e1040]
+                      - button [ref=e1043] [cursor=pointer]:
+                        - img [ref=e1044]
+                    - heading "Припой Cu-Ag 5% rothenberger" [level=2] [ref=e1048]:
+                      - link "Припой Cu-Ag 5% rothenberger" [ref=e1049] [cursor=pointer]:
+                        - /url: /tula/remont_i_stroitelstvo/pripoy_cu-ag_5_rothenberger_7989135180?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1055]:
+                      - strong [ref=e1056]: 5 500 ₽
+                    - paragraph [ref=e1058]:
+                      - generic [ref=e1059]:
+                        - img [ref=e1061]
+                        - text: Тула, р-н Центральный
+                - generic [ref=e1066]:
+                  - banner [ref=e1067]:
+                    - link "Бортовой грузовик BAW Tonik, 2010 Бортовой грузовик BAW Tonik, 2010 Бортовой грузовик BAW Tonik, 2010 Бортовой грузовик BAW Tonik, 2010 Бортовой грузовик BAW Tonik, 2010 Ещё 5 фото" [ref=e1068] [cursor=pointer]:
+                      - /url: /yartsevo/gruzoviki_i_spetstehnika/bortovoy_gruzovik_baw_tonik_2010_8002412064?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1071]:
+                        - listitem [ref=e1072]:
+                          - img "Бортовой грузовик BAW Tonik, 2010" [ref=e1074]
+                        - listitem [ref=e1075]:
+                          - img "Бортовой грузовик BAW Tonik, 2010" [ref=e1077]
+                        - listitem [ref=e1078]:
+                          - img "Бортовой грузовик BAW Tonik, 2010" [ref=e1080]
+                        - listitem [ref=e1081]:
+                          - img "Бортовой грузовик BAW Tonik, 2010" [ref=e1083]
+                        - listitem [ref=e1084]:
+                          - img "Бортовой грузовик BAW Tonik, 2010" [ref=e1086]
+                          - generic [ref=e1087]:
+                            - text: Ещё
+                            - text: 5 фото
+                  - generic [ref=e1088]:
+                    - generic [ref=e1090]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1092] [cursor=pointer]:
+                        - img [ref=e1093]
+                      - button [ref=e1096] [cursor=pointer]:
+                        - img [ref=e1097]
+                    - heading "Бортовой грузовик BAW Tonik, 2010" [level=2] [ref=e1101]:
+                      - link "Бортовой грузовик BAW Tonik, 2010" [ref=e1102] [cursor=pointer]:
+                        - /url: /yartsevo/gruzoviki_i_spetstehnika/bortovoy_gruzovik_baw_tonik_2010_8002412064?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1108]:
+                      - strong [ref=e1109]: 700 000 ₽
+                    - paragraph [ref=e1111]:
+                      - generic [ref=e1112]:
+                        - img [ref=e1114]
+                        - text: Ярцево
+                - generic [ref=e1119]:
+                  - banner [ref=e1120]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Объектив Helios 44m-4 Объектив Helios 44m-4" [ref=e1121] [cursor=pointer]:
+                      - /url: /uray/fototehnika/obektiv_helios_44m-4_8035592620?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1124]:
+                        - listitem [ref=e1125]:
+                          - img "Объектив Helios 44m-4" [ref=e1127]
+                        - listitem [ref=e1128]:
+                          - img "Объектив Helios 44m-4" [ref=e1130]
+                  - generic [ref=e1131]:
+                    - generic [ref=e1133]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1135] [cursor=pointer]:
+                        - img [ref=e1136]
+                      - button [ref=e1139] [cursor=pointer]:
+                        - img [ref=e1140]
+                    - heading "Объектив Helios 44m-4" [level=2] [ref=e1144]:
+                      - link "Объектив Helios 44m-4" [ref=e1145] [cursor=pointer]:
+                        - /url: /uray/fototehnika/obektiv_helios_44m-4_8035592620?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1151]:
+                      - strong [ref=e1152]: 2 200 ₽
+                - generic [ref=e1155]:
+                  - banner [ref=e1156]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Акустическая система c аккумулятором, микрофоном Акустическая система c аккумулятором, микрофоном Акустическая система c аккумулятором, микрофоном Акустическая система c аккумулятором, микрофоном" [ref=e1157] [cursor=pointer]:
+                      - /url: /ufa/muzykalnye_instrumenty/akusticheskaya_sistema_c_akkumulyatorom_mikrofonom_7958074007?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1160]:
+                        - listitem [ref=e1161]:
+                          - img "Акустическая система c аккумулятором, микрофоном" [ref=e1163]
+                        - listitem [ref=e1164]:
+                          - img "Акустическая система c аккумулятором, микрофоном" [ref=e1166]
+                        - listitem [ref=e1167]:
+                          - img "Акустическая система c аккумулятором, микрофоном" [ref=e1169]
+                        - listitem [ref=e1170]:
+                          - img "Акустическая система c аккумулятором, микрофоном" [ref=e1172]
+                  - generic [ref=e1173]:
+                    - generic [ref=e1175]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1177] [cursor=pointer]:
+                        - img [ref=e1178]
+                      - button [ref=e1181] [cursor=pointer]:
+                        - img [ref=e1182]
+                    - heading "Акустическая система c аккумулятором, микрофоном" [level=2] [ref=e1186]:
+                      - link "Акустическая система c аккумулятором, микрофоном" [ref=e1187] [cursor=pointer]:
+                        - /url: /ufa/muzykalnye_instrumenty/akusticheskaya_sistema_c_akkumulyatorom_mikrofonom_7958074007?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1193]:
+                      - strong [ref=e1194]: 14 000 ₽
+                - generic [ref=e1197]:
+                  - banner [ref=e1198]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Телевизор Philips 46pdl8908s/12 Телевизор Philips 46pdl8908s/12 Телевизор Philips 46pdl8908s/12 Телевизор Philips 46pdl8908s/12" [ref=e1199] [cursor=pointer]:
+                      - /url: /moskva/audio_i_video/televizor_philips_46pdl8908s12_7527266424?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1202]:
+                        - listitem [ref=e1203]:
+                          - img "Телевизор Philips 46pdl8908s/12" [ref=e1205]
+                        - listitem [ref=e1206]:
+                          - img "Телевизор Philips 46pdl8908s/12" [ref=e1208]
+                        - listitem [ref=e1209]:
+                          - img "Телевизор Philips 46pdl8908s/12" [ref=e1211]
+                        - listitem [ref=e1212]:
+                          - img "Телевизор Philips 46pdl8908s/12" [ref=e1214]
+                  - generic [ref=e1215]:
+                    - generic [ref=e1217]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1219] [cursor=pointer]:
+                        - img [ref=e1220]
+                      - button [ref=e1223] [cursor=pointer]:
+                        - img [ref=e1224]
+                    - heading "Телевизор Philips 46pdl8908s/12" [level=2] [ref=e1228]:
+                      - link "Телевизор Philips 46pdl8908s/12" [ref=e1229] [cursor=pointer]:
+                        - /url: /moskva/audio_i_video/televizor_philips_46pdl8908s12_7527266424?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - generic [ref=e1232]:
+                      - paragraph [ref=e1235]:
+                        - strong [ref=e1236]: 19 000 ₽
+                      - img [ref=e1237]
+                - generic [ref=e1241]:
+                  - banner [ref=e1242]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Детская кроватка с маятником Детская кроватка с маятником Детская кроватка с маятником" [ref=e1243] [cursor=pointer]:
+                      - /url: /petropavlovsk-kamchatskiy/tovary_dlya_detey_i_igrushki/detskaya_krovatka_s_mayatnikom_8025434485?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1246]:
+                        - listitem [ref=e1247]:
+                          - img "Детская кроватка с маятником" [ref=e1249]
+                        - listitem [ref=e1250]:
+                          - img "Детская кроватка с маятником" [ref=e1252]
+                        - listitem [ref=e1253]:
+                          - img "Детская кроватка с маятником" [ref=e1255]
+                  - generic [ref=e1256]:
+                    - generic [ref=e1258]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1260] [cursor=pointer]:
+                        - img [ref=e1261]
+                      - button [ref=e1264] [cursor=pointer]:
+                        - img [ref=e1265]
+                    - heading "Детская кроватка с маятником" [level=2] [ref=e1269]:
+                      - link "Детская кроватка с маятником" [ref=e1270] [cursor=pointer]:
+                        - /url: /petropavlovsk-kamchatskiy/tovary_dlya_detey_i_igrushki/detskaya_krovatka_s_mayatnikom_8025434485?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1276]:
+                      - strong [ref=e1277]: 2 500 ₽
+                - generic [ref=e1280]:
+                  - banner [ref=e1281]:
+                    - link "Подвесной светильник Loft It Tense" [ref=e1282] [cursor=pointer]:
+                      - /url: /kaliningrad/mebel_i_interer/podvesnoy_svetilnik_loft_it_tense_7996124734?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1285]:
+                        - listitem:
+                          - img "Подвесной светильник Loft It Tense" [ref=e1287]
+                  - generic [ref=e1288]:
+                    - generic [ref=e1290]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1292] [cursor=pointer]:
+                        - img [ref=e1293]
+                      - button [ref=e1296] [cursor=pointer]:
+                        - img [ref=e1297]
+                    - heading "Подвесной светильник Loft It Tense" [level=2] [ref=e1301]:
+                      - link "Подвесной светильник Loft It Tense" [ref=e1302] [cursor=pointer]:
+                        - /url: /kaliningrad/mebel_i_interer/podvesnoy_svetilnik_loft_it_tense_7996124734?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1308]:
+                      - strong [ref=e1309]: 16 000 ₽
+                    - paragraph [ref=e1311]:
+                      - generic [ref=e1312]:
+                        - img [ref=e1314]
+                        - text: Калининград, р-н Ленинградский
+                - generic [ref=e1319]:
+                  - banner [ref=e1320]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Игровая консоль портативная м 25 Игровая консоль портативная м 25" [ref=e1321] [cursor=pointer]:
+                      - /url: /agryz/igry_pristavki_i_programmy/igrovaya_konsol_portativnaya_m_25_7994951608?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1324]:
+                        - listitem [ref=e1325]:
+                          - img "Игровая консоль портативная м 25" [ref=e1327]
+                        - listitem [ref=e1328]:
+                          - img "Игровая консоль портативная м 25" [ref=e1330]
+                  - generic [ref=e1331]:
+                    - generic [ref=e1333]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1335] [cursor=pointer]:
+                        - img [ref=e1336]
+                      - button [ref=e1339] [cursor=pointer]:
+                        - img [ref=e1340]
+                    - heading "Игровая консоль портативная м 25" [level=2] [ref=e1344]:
+                      - link "Игровая консоль портативная м 25" [ref=e1345] [cursor=pointer]:
+                        - /url: /agryz/igry_pristavki_i_programmy/igrovaya_konsol_portativnaya_m_25_7994951608?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1351]:
+                      - strong [ref=e1352]: 8 000 ₽
+                - generic [ref=e1355]:
+                  - banner [ref=e1356]:
+                    - link "Лодка МНЕВ и К R310 Лодка МНЕВ и К R310" [ref=e1357] [cursor=pointer]:
+                      - /url: /nizhniy_novgorod/vodnyy_transport/lodka_mnev_i_k_r310_7912123360?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1360]:
+                        - listitem [ref=e1361]:
+                          - img "Лодка МНЕВ и К R310" [ref=e1363]
+                        - listitem [ref=e1364]:
+                          - img "Лодка МНЕВ и К R310" [ref=e1366]
+                  - generic [ref=e1367]:
+                    - generic [ref=e1369]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1371] [cursor=pointer]:
+                        - img [ref=e1372]
+                      - button [ref=e1375] [cursor=pointer]:
+                        - img [ref=e1376]
+                    - heading "Лодка МНЕВ и К R310" [level=2] [ref=e1380]:
+                      - link "Лодка МНЕВ и К R310" [ref=e1381] [cursor=pointer]:
+                        - /url: /nizhniy_novgorod/vodnyy_transport/lodka_mnev_i_k_r310_7912123360?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1387]:
+                      - strong [ref=e1388]: 800 000 ₽
+                    - paragraph [ref=e1390]:
+                      - generic [ref=e1391]:
+                        - img [ref=e1393]
+                        - text: Нижний Новгород, Горьковская
+                - generic [ref=e1402]:
+                  - banner [ref=e1403]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Сковорода вок tefal, 28 см Сковорода вок tefal, 28 см Сковорода вок tefal, 28 см Сковорода вок tefal, 28 см Сковорода вок tefal, 28 см Ещё 3 фото" [ref=e1404] [cursor=pointer]:
+                      - /url: /ekaterinburg/posuda_i_tovary_dlya_kuhni/skovoroda_vok_tefal_28_sm_8034397084?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1407]:
+                        - listitem [ref=e1408]:
+                          - img "Сковорода вок tefal, 28 см" [ref=e1410]
+                        - listitem [ref=e1411]:
+                          - img "Сковорода вок tefal, 28 см" [ref=e1413]
+                        - listitem [ref=e1414]:
+                          - img "Сковорода вок tefal, 28 см" [ref=e1416]
+                        - listitem [ref=e1417]:
+                          - img "Сковорода вок tefal, 28 см" [ref=e1419]
+                        - listitem [ref=e1420]:
+                          - img "Сковорода вок tefal, 28 см" [ref=e1422]
+                          - generic [ref=e1423]:
+                            - text: Ещё
+                            - text: 3 фото
+                  - generic [ref=e1424]:
+                    - generic [ref=e1426]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1428] [cursor=pointer]:
+                        - img [ref=e1429]
+                      - button [ref=e1432] [cursor=pointer]:
+                        - img [ref=e1433]
+                    - heading "Сковорода вок tefal, 28 см" [level=2] [ref=e1437]:
+                      - link "Сковорода вок tefal, 28 см" [ref=e1438] [cursor=pointer]:
+                        - /url: /ekaterinburg/posuda_i_tovary_dlya_kuhni/skovoroda_vok_tefal_28_sm_8034397084?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1444]:
+                      - strong [ref=e1445]: 1 499 ₽
+                - generic [ref=e1448]:
+                  - banner [ref=e1449]:
+                    - link "Велосипед Premium 29'' Велосипед Premium 29'' Велосипед Premium 29'' Велосипед Premium 29'' Велосипед Premium 29'' Ещё 5 фото" [ref=e1450] [cursor=pointer]:
+                      - /url: /moskva/velosipedy/velosiped_premium_29_7659774346?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1453]:
+                        - listitem [ref=e1454]:
+                          - img "Велосипед Premium 29''" [ref=e1456]
+                        - listitem [ref=e1457]:
+                          - img "Велосипед Premium 29''" [ref=e1459]
+                        - listitem [ref=e1460]:
+                          - img "Велосипед Premium 29''" [ref=e1462]
+                        - listitem [ref=e1463]:
+                          - img "Велосипед Premium 29''" [ref=e1465]
+                        - listitem [ref=e1466]:
+                          - img "Велосипед Premium 29''" [ref=e1468]
+                          - generic [ref=e1469]:
+                            - text: Ещё
+                            - text: 5 фото
+                  - generic [ref=e1470]:
+                    - generic [ref=e1472]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1474] [cursor=pointer]:
+                        - img [ref=e1475]
+                      - button [ref=e1478] [cursor=pointer]:
+                        - img [ref=e1479]
+                    - heading "Велосипед Premium 29''" [level=2] [ref=e1483]:
+                      - link "Велосипед Premium 29''" [ref=e1484] [cursor=pointer]:
+                        - /url: /moskva/velosipedy/velosiped_premium_29_7659774346?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1490]:
+                      - strong [ref=e1491]: 19 900 ₽
+                    - paragraph [ref=e1493]:
+                      - generic [ref=e1494]:
+                        - img [ref=e1496]
+                        - text: Москва, Нагорная
+                - generic [ref=e1501]:
+                  - banner [ref=e1502]:
+                    - link "Золотое Золотое Золотое Золотое Золотое Ещё 23 фото" [ref=e1503] [cursor=pointer]:
+                      - /url: /krasnoarmejsk/realty_rent/zolotoe_7880305115?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1506]:
+                        - listitem [ref=e1507]:
+                          - img "Золотое" [ref=e1509]
+                        - listitem [ref=e1510]:
+                          - img "Золотое" [ref=e1512]
+                        - listitem [ref=e1513]:
+                          - img "Золотое" [ref=e1515]
+                        - listitem [ref=e1516]:
+                          - img "Золотое" [ref=e1518]
+                        - listitem [ref=e1519]:
+                          - img "Золотое" [ref=e1521]
+                          - generic [ref=e1522]:
+                            - text: Ещё
+                            - text: 23 фото
+                  - generic [ref=e1523]:
+                    - generic [ref=e1525]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1527] [cursor=pointer]:
+                        - img [ref=e1528]
+                      - button [ref=e1531] [cursor=pointer]:
+                        - img [ref=e1532]
+                    - heading "Золотое" [level=2] [ref=e1536]:
+                      - link "Золотое" [ref=e1537] [cursor=pointer]:
+                        - /url: /krasnoarmejsk/realty_rent/zolotoe_7880305115?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1543]:
+                      - strong [ref=e1544]: Цена не указана
+                    - paragraph [ref=e1546]:
+                      - generic [ref=e1547]:
+                        - img [ref=e1549]
+                        - text: с. Золотое
+                - generic [ref=e1554]:
+                  - banner [ref=e1555]:
+                    - link "Готовый бизнес в Иркутске" [ref=e1556] [cursor=pointer]:
+                      - /url: /irkutsk/gotoviy_biznes/gotovyy_biznes_v_irkutske_7975777624?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1559]:
+                        - listitem:
+                          - img "Готовый бизнес в Иркутске" [ref=e1561]
+                  - generic [ref=e1562]:
+                    - generic [ref=e1564]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1566] [cursor=pointer]:
+                        - img [ref=e1567]
+                      - button [ref=e1570] [cursor=pointer]:
+                        - img [ref=e1571]
+                    - heading "Готовый бизнес в Иркутске" [level=2] [ref=e1575]:
+                      - link "Готовый бизнес в Иркутске" [ref=e1576] [cursor=pointer]:
+                        - /url: /irkutsk/gotoviy_biznes/gotovyy_biznes_v_irkutske_7975777624?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1582]:
+                      - strong [ref=e1583]: 20 000 ₽
+                    - paragraph [ref=e1585]:
+                      - generic [ref=e1586]:
+                        - img [ref=e1588]
+                        - text: Иркутск, р-н Октябрьский
+                - generic [ref=e1597]:
+                  - banner [ref=e1598]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                    - link "Psp vita" [ref=e1599] [cursor=pointer]:
+                      - /url: /moskva/igry_pristavki_i_programmy/psp_vita_8010362209?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                      - list [ref=e1602]:
+                        - listitem:
+                          - img "Psp vita" [ref=e1604]
+                  - generic [ref=e1605]:
+                    - generic [ref=e1607]:
+                      - generic "Добавить в избранное и в сравнение" [ref=e1609] [cursor=pointer]:
+                        - img [ref=e1610]
+                      - button [ref=e1613] [cursor=pointer]:
+                        - img [ref=e1614]
+                    - heading "Psp vita" [level=2] [ref=e1618]:
+                      - link "Psp vita" [ref=e1619] [cursor=pointer]:
+                        - /url: /moskva/igry_pristavki_i_programmy/psp_vita_8010362209?context=H4sIAAAAAAAA_wEmANn_YToxOntzOjE6IngiO3M6MTY6Imd4UjB1RHFCQ2k1b3lUYkEiO30XSMcMJgAAAA
+                    - paragraph [ref=e1625]:
+                      - strong [ref=e1626]: 12 967 ₽
+    - generic [ref=e1631]:
+      - generic [ref=e1633]:
+        - link "Помощь" [ref=e1634] [cursor=pointer]:
+          - /url: https://support.avito.ru
+        - link "Безопасность" [ref=e1635] [cursor=pointer]:
+          - /url: https://www.avito.ru/safety
+        - link "Реклама на сайте" [ref=e1636] [cursor=pointer]:
+          - /url: /ads?utm_source=avito&utm_medium=footer
+        - link "О компании" [ref=e1637] [cursor=pointer]:
+          - /url: /company
+        - link "Карьера" [ref=e1638] [cursor=pointer]:
+          - /url: /company/job
+        - link "Авито Журнал" [ref=e1639] [cursor=pointer]:
+          - /url: /journal/articles
+        - link "Блог" [ref=e1640] [cursor=pointer]:
+          - /url: /blog
+        - link "#яПомогаю" [ref=e1641] [cursor=pointer]:
+          - /url: /avito-care/crisis-help?from=footer
+        - link "Приложение" [ref=e1642] [cursor=pointer]:
+          - /url: https://www.avito.ru/journal/tools/app
+        - link "Займы онлайн" [ref=e1643] [cursor=pointer]:
+          - /url: "https://www.avito.ru/finance/zaimy "
+        - link "Карта сайта" [ref=e1644] [cursor=pointer]:
+          - /url: /links
+        - link "Свежие объявления" [ref=e1645] [cursor=pointer]:
+          - /url: /links/items
+      - paragraph [ref=e1647]:
+        - text: Авито —
+        - link "сайт объявлений России" [ref=e1648] [cursor=pointer]:
+          - /url: /rossiya
+        - text: . © ООО «КЕХ еКоммерц» 2007–2026.
+        - link "Правила Авито" [ref=e1649] [cursor=pointer]:
+          - /url: https://www.avito.ru/legal/
+        - text: .
+        - link "Политика конфиденциальности" [ref=e1650] [cursor=pointer]:
+          - /url: https://www.avito.ru/safety/personal/company
+        - text: . Оплачивая услуги на Авито, вы принимаете
+        - link "оферту" [ref=e1651] [cursor=pointer]:
+          - /url: https://support.avito.ru/articles/200026938
+        - text: .
+        - text: Авито использует
+        - link "рекомендательные технологии" [ref=e1652] [cursor=pointer]:
+          - /url: https://www.avito.ru/legal/rules/rec-technologies/
+        - text: .
+      - generic [ref=e1654]:
+        - link [ref=e1656] [cursor=pointer]:
+          - /url: https://vk.com/avito
+          - img [ref=e1659]
+        - link [ref=e1661] [cursor=pointer]:
+          - /url: https://ok.ru/avito
+          - img [ref=e1664]
+        - link [ref=e1666] [cursor=pointer]:
+          - /url: https://t.me/+mdSS8SofnB9mYmIy
+          - img [ref=e1669]
+        - link [ref=e1671] [cursor=pointer]:
+          - /url: https://rutube.ru/channel/24896637
+          - img [ref=e1674]
+        - link [ref=e1676] [cursor=pointer]:
+          - /url: https://max.ru/avito
+          - img [ref=e1679]
+  - generic:
+    - status [ref=e1680]:
+      - status [ref=e1682]:
+        - generic [ref=e1683]:
+          - article [ref=e1685]:
+            - paragraph [ref=e1686]:
+              - generic [ref=e1687]:
+                - text: Пользуясь сайтом, вы принимаете
+                - link "политику куки." [ref=e1688] [cursor=pointer]:
+                  - /url: /legal/rules/cookies
+                - text: Так Авито становится удобнее 🍪
+          - button "Хорошо" [ref=e1690] [cursor=pointer]:
+            - generic [ref=e1692]: Хорошо
+    - tooltip "Мы не смогли определить ваш город Изменить Оставить так" [ref=e1695]:
+      - text: Мы не смогли определить ваш город
+      - generic [ref=e1696]:
+        - button "Изменить" [ref=e1697] [cursor=pointer]:
+          - generic [ref=e1699]: Изменить
+        - button "Оставить так" [ref=e1700] [cursor=pointer]:
+          - generic [ref=e1702]: Оставить так

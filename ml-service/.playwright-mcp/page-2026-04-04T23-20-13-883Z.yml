@@ -1,0 +1,165 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к содержанию" [ref=e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "Сайт" [ref=e6]:
+        - generic "Главное меню" [ref=e7]:
+          - button "Главное меню" [ref=e8] [cursor=pointer]
+          - generic [ref=e11]: Главное меню
+      - link "Википедия свободная энциклопедия" [ref=e12] [cursor=pointer]:
+        - /url: /wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0
+        - img [ref=e13]
+        - generic [ref=e14]:
+          - img "Википедия" [ref=e15]
+          - img "свободная энциклопедия" [ref=e16]
+    - generic [ref=e17]:
+      - search [ref=e18]:
+        - generic [ref=e21]:
+          - searchbox "Искать в Википедии" [ref=e24]
+          - button "Найти" [ref=e26]
+      - navigation "Персональные инструменты" [ref=e27]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Пожертвовать" [ref=e33] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=ru.wikipedia.org&uselang=ru
+          - listitem [ref=e34]:
+            - link "Создать учётную запись" [ref=e35] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F+%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F+%D0%B3%D0%BE%D1%80%D0%B0+%D0%BC%D0%B8%D1%80%D0%B0&returntoquery=action%3Dedit%26redlink%3D1
+          - listitem [ref=e36]:
+            - link "Войти" [ref=e37] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&returnto=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F+%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F+%D0%B3%D0%BE%D1%80%D0%B0+%D0%BC%D0%B8%D1%80%D0%B0&returntoquery=action%3Dedit%26redlink%3D1
+  - generic [ref=e39]:
+    - main [ref=e43]:
+      - generic [ref=e44]:
+        - 'heading "Создание: Самая высокая гора мира" [level=1] [ref=e45]'
+        - generic [ref=e46]:
+          - button "Данная статья существует только на этом языке. Добавьте статью для других языков" [ref=e47] [cursor=pointer]
+          - generic [ref=e50]: Добавить языки
+      - generic [ref=e52]:
+        - navigation "Пространства имён" [ref=e54]:
+          - generic [ref=e55]:
+            - generic:
+              - list:
+                - listitem [ref=e56]:
+                  - link "Статья" [ref=e57] [cursor=pointer]:
+                    - /url: /w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit&redlink=1
+                    - generic [ref=e58]: Статья
+                - listitem [ref=e59]:
+                  - link "Обсуждение" [ref=e60] [cursor=pointer]:
+                    - /url: /w/index.php?title=%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit&redlink=1
+                    - generic [ref=e61]: Обсуждение
+        - generic [ref=e62]:
+          - navigation "Просмотры" [ref=e63]:
+            - generic [ref=e64]:
+              - generic:
+                - list:
+                  - listitem [ref=e65]:
+                    - link "Создать" [ref=e66] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&veaction=edit
+                      - generic [ref=e67]: Создать
+                  - listitem [ref=e68]:
+                    - link "Создать код" [ref=e69] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit
+                      - generic [ref=e70]: Создать код
+          - navigation "Инструменты для страниц" [ref=e71]:
+            - generic [ref=e72]:
+              - button "Инструменты" [ref=e73] [cursor=pointer]
+              - generic [ref=e75] [cursor=pointer]: Инструменты
+      - navigation "Внешний вид" [ref=e78]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Внешний вид
+            - button "скрыть" [ref=e83] [cursor=pointer]
+          - generic [ref=e84]:
+            - generic [ref=e85]: Текст
+            - list [ref=e87]:
+              - listitem [ref=e88]:
+                - generic [ref=e90]:
+                  - generic [ref=e91]:
+                    - radio "Мелкий" [ref=e92]
+                    - generic [ref=e95]: Мелкий
+                  - generic [ref=e96]:
+                    - radio "Стандартный" [checked] [ref=e97]
+                    - generic [ref=e100]: Стандартный
+                  - generic [ref=e101]:
+                    - radio "Крупный" [ref=e102]
+                    - generic [ref=e105]: Крупный
+          - generic [ref=e106]:
+            - generic [ref=e107]: Ширина
+            - list [ref=e109]:
+              - listitem [ref=e110]:
+                - generic [ref=e112]:
+                  - generic [ref=e113]:
+                    - radio "Стандартно" [checked] [ref=e114]
+                    - generic [ref=e117]: Стандартно
+                  - generic [ref=e118]:
+                    - radio "Широко" [ref=e119]
+                    - generic [ref=e122]: Широко
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - text: Цвет
+              - generic [ref=e125]: (бета)
+            - list [ref=e127]:
+              - listitem [ref=e128]:
+                - generic [ref=e130]:
+                  - generic [ref=e131]:
+                    - radio "Автоматически" [ref=e132]
+                    - generic [ref=e135]: Автоматически
+                  - generic [ref=e136]:
+                    - radio "Светлая" [checked] [ref=e137]
+                    - generic [ref=e140]: Светлая
+                  - generic [ref=e141]:
+                    - radio "Тёмная" [ref=e142]
+                    - generic [ref=e145]: Тёмная
+      - 'generic "Создание: Самая высокая гора мира" [ref=e146]':
+        - generic:
+          - paragraph:
+            - text: Редактор сейчас загрузится. Если через несколько секунд вы будете по-прежнему видеть это сообщение,
+            - link "обновите страницу":
+              - /url: https://ru.wikipedia.org/w/index.php?action=edit&redlink=1&title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&venoscript=1
+            - text: .
+    - contentinfo [ref=e153]:
+      - list
+      - list:
+        - listitem [ref=e154]:
+          - link "Политика конфиденциальности" [ref=e155] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru
+        - listitem [ref=e156]:
+          - link "Описание Википедии" [ref=e157] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5
+        - listitem [ref=e158]:
+          - link "Отказ от ответственности" [ref=e159] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8
+        - listitem [ref=e160]:
+          - link "Свяжитесь с нами" [ref=e161] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/wiki/Википедия:Контакты
+        - listitem [ref=e162]:
+          - link "Контакты по вопросам права и безопасности" [ref=e163] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=e164]:
+          - link "Кодекс поведения" [ref=e165] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru
+        - listitem [ref=e166]:
+          - link "Разработчики" [ref=e167] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=e168]:
+          - link "Статистика" [ref=e169] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/ru.wikipedia.org
+        - listitem [ref=e170]:
+          - link "Заявление о куки" [ref=e171] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=e172]:
+          - link "Мобильная версия" [ref=e173] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/w/index.php?title=%D0%A1%D0%B0%D0%BC%D0%B0%D1%8F_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%B0%D1%8F_%D0%B3%D0%BE%D1%80%D0%B0_%D0%BC%D0%B8%D1%80%D0%B0&action=edit&redlink=1&mobileaction=toggle_view_mobile
+      - list [ref=e174]:
+        - listitem [ref=e175]:
+          - link "Wikimedia Foundation" [ref=e176] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=e178]
+        - listitem [ref=e179]:
+          - link "Powered by MediaWiki" [ref=e180] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=e182]
+  - generic [ref=e183]:
+    - list

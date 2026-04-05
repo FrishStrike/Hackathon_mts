@@ -1,0 +1,1251 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к содержанию" [ref=e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "Сайт" [ref=e6]:
+        - generic "Главное меню" [ref=e7]:
+          - button "Главное меню" [ref=e8] [cursor=pointer]
+          - generic [ref=e11]: Главное меню
+      - link "Википедия свободная энциклопедия" [ref=e12] [cursor=pointer]:
+        - /url: /wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0
+        - img [ref=e13]
+        - generic [ref=e14]:
+          - img "Википедия" [ref=e15]
+          - img "свободная энциклопедия" [ref=e16]
+    - generic [ref=e17]:
+      - search [ref=e18]:
+        - generic [ref=e21]:
+          - searchbox "Искать в Википедии" [ref=e24]
+          - button "Найти" [ref=e26]
+      - navigation "Персональные инструменты" [ref=e27]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Пожертвовать" [ref=e33] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=ru.wikipedia.org&uselang=ru
+          - listitem [ref=e34]:
+            - link "Создать учётную запись" [ref=e35] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&returnto=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80
+          - listitem [ref=e36]:
+            - link "Войти" [ref=e37] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&returnto=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80
+  - generic [ref=e39]:
+    - navigation "Содержание" [ref=e43]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - heading "Содержание" [level=2] [ref=e47]
+          - button "скрыть" [ref=e48] [cursor=pointer]
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Начало" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e52]: Начало
+          - listitem [ref=e53]:
+            - link "Устройство" [ref=e54] [cursor=pointer]:
+              - /url: "#Устройство"
+              - generic [ref=e55]: Устройство
+            - list
+          - listitem [ref=e56]:
+            - link "Характеристика" [ref=e57] [cursor=pointer]:
+              - /url: "#Характеристика"
+              - generic [ref=e58]: Характеристика
+            - button "Отобразить/Скрыть подраздел Характеристика" [expanded] [ref=e59]:
+              - generic [ref=e61]: Отобразить/Скрыть подраздел Характеристика
+            - list [ref=e62]:
+              - listitem [ref=e63]:
+                - link "Тостеры с верхней загрузкой" [ref=e64] [cursor=pointer]:
+                  - /url: "#Тостеры_с_верхней_загрузкой"
+                  - generic [ref=e65]: Тостеры с верхней загрузкой
+                - list
+              - listitem [ref=e66]:
+                - link "Тостерные печи" [ref=e67] [cursor=pointer]:
+                  - /url: "#Тостерные_печи"
+                  - generic [ref=e68]: Тостерные печи
+                - list
+              - listitem [ref=e69]:
+                - link "Конвейерные тостеры" [ref=e70] [cursor=pointer]:
+                  - /url: "#Конвейерные_тостеры"
+                  - generic [ref=e71]: Конвейерные тостеры
+                - list
+          - listitem [ref=e72]:
+            - link "История" [ref=e73] [cursor=pointer]:
+              - /url: "#История"
+              - generic [ref=e74]: История
+            - button "Отобразить/Скрыть подраздел История" [expanded] [ref=e75]:
+              - generic [ref=e77]: Отобразить/Скрыть подраздел История
+            - list [ref=e78]:
+              - listitem [ref=e79]:
+                - link "Развитие нагревающих элементов" [ref=e80] [cursor=pointer]:
+                  - /url: "#Развитие_нагревающих_элементов"
+                  - generic [ref=e81]: Развитие нагревающих элементов
+                - list
+              - listitem [ref=e82]:
+                - link "Обжарка с двух сторон и автоматическое извлечение тостов" [ref=e83] [cursor=pointer]:
+                  - /url: "#Обжарка_с_двух_сторон_и_автоматическое_извлечение_тостов"
+                  - generic [ref=e84]: Обжарка с двух сторон и автоматическое извлечение тостов
+                - list
+          - listitem [ref=e85]:
+            - link "Опасности" [ref=e86] [cursor=pointer]:
+              - /url: "#Опасности"
+              - generic [ref=e87]: Опасности
+            - list
+          - listitem [ref=e88]:
+            - link "Разработки" [ref=e89] [cursor=pointer]:
+              - /url: "#Разработки"
+              - generic [ref=e90]: Разработки
+            - list
+          - listitem [ref=e91]:
+            - link "В культуре" [ref=e92] [cursor=pointer]:
+              - /url: "#В_культуре"
+              - generic [ref=e93]: В культуре
+            - list
+          - listitem [ref=e94]:
+            - link "См. также" [ref=e95] [cursor=pointer]:
+              - /url: "#См._также"
+              - generic [ref=e96]: См. также
+            - list
+          - listitem [ref=e97]:
+            - link "Примечания" [ref=e98] [cursor=pointer]:
+              - /url: "#Примечания"
+              - generic [ref=e99]: Примечания
+            - list
+          - listitem [ref=e100]:
+            - link "Литература" [ref=e101] [cursor=pointer]:
+              - /url: "#Литература"
+              - generic [ref=e102]: Литература
+            - list
+          - listitem [ref=e103]:
+            - link "Ссылки" [ref=e104] [cursor=pointer]:
+              - /url: "#Ссылки"
+              - generic [ref=e105]: Ссылки
+            - list
+    - main [ref=e107]:
+      - generic [ref=e108]:
+        - heading "Тостер" [level=1] [ref=e109]
+        - generic [ref=e110]:
+          - button "Перейти к статье на другом языке. Доступно на 54 языках" [ref=e111] [cursor=pointer]
+          - generic [ref=e114]: 54 языка
+      - generic [ref=e116]:
+        - navigation "Пространства имён" [ref=e118]:
+          - generic [ref=e119]:
+            - generic:
+              - list:
+                - listitem [ref=e120]:
+                  - link "Статья" [ref=e121] [cursor=pointer]:
+                    - /url: /wiki/%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80
+                    - generic [ref=e122]: Статья
+                - listitem [ref=e123]:
+                  - link "Обсуждение" [ref=e124] [cursor=pointer]:
+                    - /url: /wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80
+                    - generic [ref=e125]: Обсуждение
+        - generic [ref=e126]:
+          - navigation "Просмотры" [ref=e127]:
+            - generic [ref=e128]:
+              - generic:
+                - list:
+                  - listitem [ref=e129]:
+                    - link "Читать" [ref=e130] [cursor=pointer]:
+                      - /url: /wiki/%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80
+                      - generic [ref=e131]: Читать
+                  - listitem [ref=e132]:
+                    - link "Править" [ref=e133] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit
+                      - generic [ref=e134]: Править
+                  - listitem [ref=e135]:
+                    - link "Править код" [ref=e136] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit
+                      - generic [ref=e137]: Править код
+                  - listitem [ref=e138]:
+                    - link "История" [ref=e139] [cursor=pointer]:
+                      - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=history
+                      - generic [ref=e140]: История
+          - navigation "Инструменты для страниц" [ref=e141]:
+            - generic [ref=e142]:
+              - button "Инструменты" [ref=e143] [cursor=pointer]
+              - generic [ref=e145] [cursor=pointer]: Инструменты
+      - navigation "Внешний вид" [ref=e148]:
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - generic [ref=e152]: Внешний вид
+            - button "скрыть" [ref=e153] [cursor=pointer]
+          - generic [ref=e154]:
+            - generic [ref=e155]: Текст
+            - list [ref=e157]:
+              - listitem [ref=e158]:
+                - generic [ref=e160]:
+                  - generic [ref=e161]:
+                    - radio "Мелкий" [ref=e162]
+                    - generic [ref=e165]: Мелкий
+                  - generic [ref=e166]:
+                    - radio "Стандартный" [checked] [ref=e167]
+                    - generic [ref=e170]: Стандартный
+                  - generic [ref=e171]:
+                    - radio "Крупный" [ref=e172]
+                    - generic [ref=e175]: Крупный
+          - generic [ref=e176]:
+            - generic [ref=e177]: Ширина
+            - list [ref=e179]:
+              - listitem [ref=e180]:
+                - generic [ref=e182]:
+                  - generic [ref=e183]:
+                    - radio "Стандартно" [checked] [ref=e184]
+                    - generic [ref=e187]: Стандартно
+                  - generic [ref=e188]:
+                    - radio "Широко" [ref=e189]
+                    - generic [ref=e192]: Широко
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - text: Цвет
+              - generic [ref=e195]: (бета)
+            - list [ref=e197]:
+              - listitem [ref=e198]:
+                - generic [ref=e200]:
+                  - generic [ref=e201]:
+                    - radio "Автоматически" [ref=e202]
+                    - generic [ref=e205]: Автоматически
+                  - generic [ref=e206]:
+                    - radio "Светлая" [checked] [ref=e207]
+                    - generic [ref=e210]: Светлая
+                  - generic [ref=e211]:
+                    - radio "Тёмная" [ref=e212]
+                    - generic [ref=e215]: Тёмная
+      - generic "Тостер" [ref=e216]:
+        - generic [ref=e217]:
+          - generic [ref=e219]:
+            - text: "["
+            - link "править код" [ref=e220] [cursor=pointer]:
+              - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=0&summary=/*%20Преамбула%20*/%20
+            - text: "]"
+          - generic [ref=e221]: Материал из Википедии — свободной энциклопедии
+        - generic [ref=e223]:
+          - figure "Современный тостер" [ref=e224]:
+            - link [ref=e225] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Consumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff?uselang=ru
+              - img [ref=e226]
+            - generic [ref=e227]: Современный тостер
+          - figure "Тостеры производства СССР. Слева — minutele, Вилюнюсский завод электросварочного оборудования В центре — Сейм-1, Курское производственное объединение «Электроаппарат» Справа — ЭТЦ 0,8/220, Производственное объединение им. В. И. Ленина г. Бельцы." [ref=e228]:
+            - link [ref=e229] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%B5%D1%80%D1%8B.jpg?uselang=ru
+              - img [ref=e230]
+            - generic [ref=e231]: Тостеры производства СССР. Слева — minutele, Вилюнюсский завод электросварочного оборудования В центре — Сейм-1, Курское производственное объединение «Электроаппарат» Справа — ЭТЦ 0,8/220, Производственное объединение им. В. И. Ленина г. Бельцы.
+          - paragraph [ref=e232]:
+            - text: То́стер (
+            - link "англ." [ref=e233] [cursor=pointer]:
+              - /url: /wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA
+            - text: toaster) — устройство с питанием от электросети, предназначенное для быстрого поджаривания плоских кусков
+            - link "хлеба" [ref=e234] [cursor=pointer]:
+              - /url: /wiki/%D0%A5%D0%BB%D0%B5%D0%B1
+            - text: (
+            - link "тостов" [ref=e235] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D1%85%D0%BB%D0%B5%D0%B1
+            - text: ).
+          - generic [ref=e236]:
+            - heading "Устройство" [level=2] [ref=e237]: Устройство
+            - generic [ref=e238]:
+              - text: "["
+              - link "править" [ref=e239] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=1
+              - text: "|"
+              - link "править код" [ref=e240] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=1
+              - text: "]"
+          - paragraph [ref=e241]:
+            - text: В зависимости от определённой модели, тостер может быть рассчитан на поджаривание 2 или 4 кусочков хлеба (так называемых «то́стов»). У всех тостеров имеются нагревательные элементы и регулируемый
+            - link "термостат" [ref=e242] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%B5%D1%80%D0%BC%D0%BE%D1%81%D1%82%D0%B0%D1%82
+            - text: ", с помощью которого есть возможность выбрать необходимый режим для приготовления более или менее поджаренных тостов и скорость приготовления. Термостат рассчитан на 6-11 позиций регулировки"
+            - link "температуры" [ref=e243] [cursor=pointer]:
+              - /url: /wiki/%D0%A2%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0
+            - text: . В некоторые тостеры ставят плавную регулировку температуры. Современный тостер имеет электронное управление, которое производит контроль времени поджаривания ломтей хлеба в зависимости от выбранной пользователем температуры.
+          - figure "Тосты" [ref=e244]:
+            - link [ref=e245] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Toast-3.jpg?uselang=ru
+              - img [ref=e246]
+            - generic [ref=e247]: Тосты
+          - generic [ref=e248]:
+            - heading "Характеристика" [level=2] [ref=e249]: Характеристика
+            - generic [ref=e250]:
+              - text: "["
+              - link "править" [ref=e251] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=2
+              - text: "|"
+              - link "править код" [ref=e252] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=2
+              - text: "]"
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "Мощность" [ref=e255] [cursor=pointer]:
+                - /url: /wiki/%D0%9C%D0%BE%D1%89%D0%BD%D0%BE%D1%81%D1%82%D1%8C
+              - text: ", Вт — количество потребляемой энергии."
+            - listitem [ref=e256]: Количество отделений — у тостеров может быть 1, 2 или 4 отделения для тостов.
+            - listitem [ref=e257]: Количество тостов — наибольшее количество ломтей хлеба, которое может вместить тостер за один раз.
+            - listitem [ref=e258]: Электронное управление — в зависимости от необходимой температуры электроника определяет время и степень обжаривания ломтей хлеба. По окончании этого времени тостер автоматически выключается и подаётся предупреждающий сигнал.
+            - listitem [ref=e259]: Регулируемый термостат — позволяет выбирать и поддерживать тот температурный режим, который является необходимым для приготовления более или менее поджаренных тостов.
+          - generic [ref=e260]:
+            - heading "Тостеры с верхней загрузкой" [level=3] [ref=e261]: Тостеры с верхней загрузкой
+            - generic [ref=e262]:
+              - text: "["
+              - link "править" [ref=e263] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=3
+              - text: "|"
+              - link "править код" [ref=e264] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=3
+              - text: "]"
+          - figure "Классический хромированный электротостер с двумя отсеками загрузки" [ref=e265]:
+            - link [ref=e266] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Toaster.jpg?uselang=ru
+              - img [ref=e267]
+            - generic [ref=e268]: Классический хромированный электротостер с двумя отсеками загрузки
+          - figure "Свечение нагревательных элементов современного тостера с двумя отсеками загрузки." [ref=e269]:
+            - link [ref=e270] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Toaster_Filaments.JPG?uselang=ru
+              - img [ref=e271]
+            - generic [ref=e272]: Свечение нагревательных элементов современного тостера с двумя отсеками загрузки.
+          - paragraph [ref=e273]: Тостеры с верхней загрузкой и выбросом тостов (pop-up toasters) обычно имеют два отсека сверху для загрузки ломтиков хлеба. Когда в отсеки тостера загружен хлеб, рычагом сбоку тостера опускается лоток с хлебом вниз, и тостер начинает работу. Когда заданный цикл приготовления тостов закончен, тостер отключается и лоток с хлебом выталкивает тосты вверх, иногда чересчур энергично. Нагревательные элементы в таких тостерах обычно ориентированы вертикально, параллельно ломтикам хлеба.
+          - paragraph [ref=e274]: В первых моделях тостеров время приготовления задавалось таймером, что приводило к неравномерной обжарке тостов — первый тост был недожаренным, так как таймер не учитывал, что тостер ещё не прогрет, когда второй тост начинал приготовление в уже теплом тостере. Начиная с 1930-х контроль времени приготовления переложили на терморегулятор, (обычно биметаллическая пластинка рядом с тостом), который контролировал степень приготовления и как только температура достигала заданную — отключал тостер.
+          - paragraph [ref=e275]:
+            - text: Среди тостеров с верхней загрузкой модели с двумя отсеками более востребованы, чем модели с четырьмя отсеками.
+            - superscript [ref=e276]:
+              - link "[1]" [ref=e277] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+            - text: Внешний вид таких тостеров простирается от классических округлых хромированных форм до пластиковых тостеров необычных форм.
+            - superscript [ref=e278]:
+              - link "[1]" [ref=e279] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+            - text: Реклама и цена тостера не является показателем или гарантией качества приготовления тостов.
+            - superscript [ref=e280]:
+              - link "[1]" [ref=e281] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+            - text: Типичный современный тостер с верхней загрузкой на два отсека имеет мощность от 600 до 1200 Ватт.
+            - superscript [ref=e282]:
+              - link "[2]" [ref=e283] [cursor=pointer]:
+                - /url: "#cite_note-2"
+          - paragraph [ref=e284]:
+            - text: В 2012 в США типовая цена среднего тостера была 15 $.
+            - superscript [ref=e285]:
+              - link "[1]" [ref=e286] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+          - generic [ref=e287]:
+            - heading "Тостерные печи" [level=3] [ref=e288]: Тостерные печи
+            - generic [ref=e289]:
+              - text: "["
+              - link "править" [ref=e290] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=4
+              - text: "|"
+              - link "править код" [ref=e291] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=4
+              - text: "]"
+          - figure "Тостерная печь (Япония)" [ref=e292]:
+            - link [ref=e293] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Zojirushi_toaster_oven_ET-TB15_2.jpg?uselang=ru
+              - img [ref=e294]
+            - generic [ref=e295]: Тостерная печь (Япония)
+          - paragraph [ref=e296]:
+            - text: Тостерная печь — это небольшая электропечь с дверцей, вынимаемым поддоном для укладки тостов. Тосты укладываются в держатель горизонтально. Когда приготовление тостов завершено, печь отключается. Дверца, как правило, должна быть открыта вручную. Тостерные печи крупнее тостеров с верхней загрузкой, но могут выполнять все те же функции, что и обычные электропечи, с поправкой на небольшой размер. Тостерные печи позволяют приготовить тосты с начинкой на тосте, например с сыром или чесноком. Так как нагревательный элемент в печи расположен дальше от тоста, это увеличивает время приготовления (4-6 минут против 2-3 у тостеров с верхней загрузкой) и подсушивает хлеб сильнее.
+            - superscript [ref=e297]:
+              - link "[1]" [ref=e298] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+            - text: Так как тост лежит на решетке, она оставляет непрожареный след с одной из сторон.
+            - superscript [ref=e299]:
+              - link "[1]" [ref=e300] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+            - text: Результаты потребительского тестирования не показали, что качество приготовленных тостов в конвекционных тостерных печах выше, чем в обычных тостерных печах.
+            - superscript [ref=e301]:
+              - link "[1]" [ref=e302] [cursor=pointer]:
+                - /url: "#cite_note-Consumer_Reports_Nov_2012-1"
+          - paragraph [ref=e303]: В 2017 в США типичная цена тостерной печи была 30-240 $.
+          - generic [ref=e304]:
+            - heading "Конвейерные тостеры" [level=3] [ref=e305]: Конвейерные тостеры
+            - generic [ref=e306]:
+              - text: "["
+              - link "править" [ref=e307] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=5
+              - text: "|"
+              - link "править код" [ref=e308] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=5
+              - text: "]"
+          - figure "Конвейерный тостер производит несколько сотен тостов в час" [ref=e309]:
+            - link [ref=e310] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Conveyor_toaster.jpg?uselang=ru
+              - img [ref=e311]
+            - generic [ref=e312]: Конвейерный тостер производит несколько сотен тостов в час
+          - paragraph [ref=e313]:
+            - text: Конвейерные тосты предназначены для предприятий общественного питания (кафе, рестораны, столовые) и способны производить несколько сотен тостов в час.
+            - superscript [ref=e314]:
+              - link "[3]" [ref=e315] [cursor=pointer]:
+                - /url: "#cite_note-3"
+          - generic [ref=e316]:
+            - heading "История" [level=2] [ref=e317]: История
+            - generic [ref=e318]:
+              - text: "["
+              - link "править" [ref=e319] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=6
+              - text: "|"
+              - link "править код" [ref=e320] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=6
+              - text: "]"
+          - figure "Тостер до использования электричества" [ref=e321]:
+            - link [ref=e322] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Br%C3%B6drost_-_Hallwylska_museet_-_86976.tif?uselang=ru
+              - img [ref=e323]
+            - generic [ref=e324]: Тостер до использования электричества
+          - figure "Тостер General Electric Model D-12 toaster, 1910-е годы" [ref=e325]:
+            - link [ref=e326] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:General_Electric_Model_D-12_toaster,_1910s.jpg?uselang=ru
+              - img [ref=e327]
+            - generic [ref=e328]: Тостер General Electric Model D-12 toaster, 1910-е годы
+          - paragraph [ref=e329]:
+            - text: До появления электротостеров хлеб для тостов поджаривался зажатым в металлической сетке
+            - superscript [ref=e330]:
+              - link "[4]" [ref=e331] [cursor=pointer]:
+                - /url: "#cite_note-4"
+            - text: на огне или в кухонной печи. Кухонная утварь для поджаривания хлеба стала появляться в XIX веке, включая декоративные элементы из кованого железа.
+            - superscript [ref=e332]:
+              - link "[5]" [ref=e333] [cursor=pointer]:
+                - /url: "#cite_note-5"
+          - generic [ref=e334]:
+            - heading "Развитие нагревающих элементов" [level=3] [ref=e335]: Развитие нагревающих элементов
+            - generic [ref=e336]:
+              - text: "["
+              - link "править" [ref=e337] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=7
+              - text: "|"
+              - link "править код" [ref=e338] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=7
+              - text: "]"
+          - paragraph [ref=e339]: Основной технической проблемой был поиск материала электрического нагревателя, который бы выдерживал периодический нагрев до красно-оранжевого каления и при этом не перегорал и не становился бы слишком хрупким. Похожая проблема была решена ранее разработчиками ламп накаливания, но их работа облегчалась тем, что лампа имеет колбу, свободную от воздуха, что невозможно сделать в тостере.
+          - paragraph [ref=e340]: Ранние попытки изготовления электротостеров были неудачными — стальные нагреватели перегорали, плавились и были пожароопасны. Кроме того, электричество было не так распространено и его подача не отличалась стабильностью.
+          - paragraph [ref=e341]:
+            - text: Проблему с нагревательными элементами решил молодой инженер Альберт Марш (Albert Marsh), который изобрел сплав никеля и хрома —
+            - link "нихром" [ref=e342] [cursor=pointer]:
+              - /url: /wiki/%D0%9D%D0%B8%D1%85%D1%80%D0%BE%D0%BC
+            - text: ", пригодный для изготовления долговечных нагревателей."
+            - superscript [ref=e343]:
+              - link "[6]" [ref=e344] [cursor=pointer]:
+                - /url: "#cite_note-US_Patent_811859-6"
+            - superscript [ref=e345]:
+              - link "[7]" [ref=e346] [cursor=pointer]:
+                - /url: "#cite_note-Toaster_Museum-7"
+            - superscript [ref=e347]:
+              - link "[8]" [ref=e348] [cursor=pointer]:
+                - /url: "#cite_note-George_2003-8"
+            - superscript [ref=e349]:
+              - link "[9]" [ref=e350] [cursor=pointer]:
+                - /url: "#cite_note-Clark-9"
+          - paragraph [ref=e351]:
+            - text: Первый патент США на электротостер был получен Джорджем Шнайдером (George Schneider) из American Electrical Heater Company of Detroit в сотрудничестве с Маршем.
+            - superscript [ref=e352]:
+              - link "[7]" [ref=e353] [cursor=pointer]:
+                - /url: "#cite_note-Toaster_Museum-7"
+            - text: Одно из первых применений компании Hoskins для хромеля было изготовление тостеров, но позже было заброшено для концентраций усилий по производству самого провода.
+            - superscript [ref=e354]:
+              - link "[8]" [ref=e355] [cursor=pointer]:
+                - /url: "#cite_note-George_2003-8"
+          - paragraph [ref=e356]:
+            - text: Первая коммерчески успешная модель электротостера была представлена компанией
+            - link "General Electric" [ref=e357] [cursor=pointer]:
+              - /url: /wiki/General_Electric
+            - text: в 1909 году как GE model D-12.
+            - superscript [ref=e358]:
+              - link "[7]" [ref=e359] [cursor=pointer]:
+                - /url: "#cite_note-Toaster_Museum-7"
+            - superscript [ref=e360]:
+              - link "[10]" [ref=e361] [cursor=pointer]:
+                - /url: "#cite_note-10"
+          - generic [ref=e362]:
+            - heading "Обжарка с двух сторон и автоматическое извлечение тостов" [level=3] [ref=e363]: Обжарка с двух сторон и автоматическое извлечение тостов
+            - generic [ref=e364]:
+              - text: "["
+              - link "править" [ref=e365] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=8
+              - text: "|"
+              - link "править код" [ref=e366] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=8
+              - text: "]"
+          - 'figure "Патент США #1,394,450. «Хлебный тостер», 18 октября 1921 получен Charles Strite" [ref=e367]':
+            - link [ref=e368] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:United_States_patent_1,394,450,_%22Bread-Toaster%22,_1921.pdf?uselang=ru
+              - img [ref=e369]
+            - generic [ref=e370]: "Патент США #1,394,450. «Хлебный тостер», 18 октября 1921 получен Charles Strite"
+          - paragraph [ref=e371]:
+            - text: В 1913 Ллойд Гроф Копеман (Lloyd Groff Copeman) и его жена Хазель Бергер Копеман (Hazel Berger Copeman) подали множество заявок на патент конструкции тостеров, и в этот же год Copeman Electric Stove Company представила тостер с простым разворотом хлеба.
+            - superscript [ref=e372]:
+              - link "[11]" [ref=e373] [cursor=pointer]:
+                - /url: "#cite_note-lloydcopeman-11"
+            - text: Компания производила «тостер, который переворачивает хлеб». До этого тостер зажаривал хлеб только с одной стороны и требовалось перевернуть его руками, в то время как тостер компании Copeman позволял перевернуть хлеб, не касаясь его.
+            - superscript [ref=e374]:
+              - link "[12]" [ref=e375] [cursor=pointer]:
+                - /url: "#cite_note-12"
+          - paragraph [ref=e376]:
+            - text: Тостеры с автоматическим выбросом хлеба были изобретены Чарльзом Стритом (Charles Strite) в 1921.
+            - superscript [ref=e377]:
+              - link "[13]" [ref=e378] [cursor=pointer]:
+                - /url: "#cite_note-13"
+            - text: В 1925, используя переделанную версию тостера Стрита, Waters Genter Company представила Model 1-A-1 Toastmaster,
+            - superscript [ref=e379]:
+              - link "[14]" [ref=e380] [cursor=pointer]:
+                - /url: "#cite_note-14"
+            - text: первая модель тостера, которая могла зажарить хлеб с двух сторон одновременно управлением нагревательным элементом по таймеру и выбросом хлеба по готовности.
+          - generic [ref=e381]:
+            - heading "Опасности" [level=2] [ref=e382]: Опасности
+            - generic [ref=e383]:
+              - text: "["
+              - link "править" [ref=e384] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=9
+              - text: "|"
+              - link "править код" [ref=e385] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=9
+              - text: "]"
+          - paragraph [ref=e386]:
+            - text: Тостеры служат причиной 800 смертей ежегодно от поражения электрическим током или пожара.
+            - superscript [ref=e387]:
+              - link "[15]" [ref=e388] [cursor=pointer]:
+                - /url: "#cite_note-15"
+          - paragraph [ref=e389]:
+            - text: Иногда люди пытаюся достать тост
+            - link "вилкой" [ref=e390] [cursor=pointer]:
+              - /url: /wiki/%D0%92%D0%B8%D0%BB%D0%BA%D0%B0_(%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B%D0%B9_%D0%BF%D1%80%D0%B8%D0%B1%D0%BE%D1%80)
+            - text: "не думая о том, что тостер питается электричеством. Результат:"
+            - link "поражение электрическим током" [ref=e391] [cursor=pointer]:
+              - /url: /wiki/%D0%9F%D0%BE%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%BC_%D1%82%D0%BE%D0%BA%D0%BE%D0%BC
+            - text: .
+          - generic [ref=e392]:
+            - heading "Разработки" [level=2] [ref=e393]: Разработки
+            - generic [ref=e394]:
+              - text: "["
+              - link "править" [ref=e395] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=10
+              - text: "|"
+              - link "править код" [ref=e396] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=10
+              - text: "]"
+          - figure "Тостер для хот-догов" [ref=e397]:
+            - link [ref=e398] [cursor=pointer]:
+              - /url: https://commons.wikimedia.org/wiki/File:Hot_Dog_Toaster.jpg?uselang=ru
+              - img [ref=e399]
+            - generic [ref=e400]: Тостер для хот-догов
+          - paragraph [ref=e401]:
+            - text: Множество разработок вносило современные технологии в конструкцию тостера. В 1990 Саймон Хаскетт (Simon Hackett) и Джон Ромки (John Romkey) создали The Internet Toaster — тостер, которым можно управлять через
+            - link "интернет" [ref=e402] [cursor=pointer]:
+              - /url: /wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82
+            - text: .
+            - superscript [ref=e403]:
+              - link "[16]" [ref=e404] [cursor=pointer]:
+                - /url: "#cite_note-tIn-16"
+            - text: В 2001 Робин Саутгейт (Robin Southgate) из университета Брунеля в Англии создал тостер, который мог зажаркой создавать рисунок на тосте, предсказывающий погоду (ограниченный солнечной и облачной погодой)
+            - superscript [ref=e405]:
+              - link "[17]" [ref=e406] [cursor=pointer]:
+                - /url: "#cite_note-17"
+            - text: Тостер звонил по заранее заданному номеру для получения прогноза погоды.
+            - superscript [ref=e407]:
+              - link "[18]" [ref=e408] [cursor=pointer]:
+                - /url: "#cite_note-18"
+          - paragraph [ref=e409]:
+            - text: В 2005 Technologic Systems, вендор встраиваемых систем, создали тостер, работающий под операционной системой
+            - link "NetBSD" [ref=e410] [cursor=pointer]:
+              - /url: /wiki/NetBSD
+            - text: ", в рекламных целях."
+            - superscript [ref=e411]:
+              - link "[19]" [ref=e412] [cursor=pointer]:
+                - /url: "#cite_note-19"
+            - text: В 2012 Башир Том (Basheer Tome), студент технологического института Джорджии, создал тостер с цветовым датчиком, зажаривающий тост до заранее заданного цвета.
+            - superscript [ref=e413]:
+              - link "[20]" [ref=e414] [cursor=pointer]:
+                - /url: "#cite_note-20"
+          - paragraph [ref=e415]:
+            - text: Тостер, который использует
+            - link "Twitter" [ref=e416] [cursor=pointer]:
+              - /url: /wiki/Twitter
+            - text: ", упоминался как ранний образец интернета вещей."
+            - superscript [ref=e417]:
+              - link "[21]" [ref=e418] [cursor=pointer]:
+                - /url: "#cite_note-21"
+            - superscript [ref=e419]:
+              - link "[22]" [ref=e420] [cursor=pointer]:
+                - /url: "#cite_note-22"
+            - text: Тостеры использовались как рекламные объекты для онлайн-маркетинга.
+            - superscript [ref=e421]:
+              - link "[23]" [ref=e422] [cursor=pointer]:
+                - /url: "#cite_note-23"
+          - paragraph [ref=e423]:
+            - text: После переделки тостовые печи могут использоваться для пайки печатных плат.
+            - superscript [ref=e424]:
+              - link "[24]" [ref=e425] [cursor=pointer]:
+                - /url: "#cite_note-hackaday_081022-24"
+            - superscript [ref=e426]:
+              - link "[25]" [ref=e427] [cursor=pointer]:
+                - /url: "#cite_note-circuitcellar_1785-25"
+          - paragraph [ref=e428]: Тостер для хот-догов — разновидность конструкции тостера, он готовит хотдог без микроволновой печи. Он выглядит как обычный тостер, только имеет в центре отделение для жарки сосисок и пазы для булки по краям.
+          - generic [ref=e429]:
+            - heading "В культуре" [level=2] [ref=e430]: В культуре
+            - generic [ref=e431]:
+              - text: "["
+              - link "править" [ref=e432] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=11
+              - text: "|"
+              - link "править код" [ref=e433] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=11
+              - text: "]"
+          - list [ref=e434]:
+            - listitem [ref=e435]:
+              - text: Главный герой — тостер показывается в трилогии полнометражных мультфильмов «
+              - link "Отважный маленький тостер" [ref=e436] [cursor=pointer]:
+                - /url: /wiki/%D0%9E%D1%82%D0%B2%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9_%D1%82%D0%BE%D1%81%D1%82%D0%B5%D1%80
+              - text: ».
+            - listitem [ref=e437]:
+              - text: Летающие тостеры — герои
+              - link "скринсейвера" [ref=e438] [cursor=pointer]:
+                - /url: /wiki/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%81%D0%B5%D0%B9%D0%B2%D0%B5%D1%80
+              - link "After Dark" [ref=e439] [cursor=pointer]:
+                - /url: /wiki/After_Dark
+              - text: .
+            - listitem [ref=e440]:
+              - text: В научно-фантастическом интернет-проекте
+              - link "SCP Foundation" [ref=e441] [cursor=pointer]:
+                - /url: /wiki/SCP_Foundation
+              - text: ": SCP-426 — тостер, восприятие которого заставляет говорить от его лица, а на поздних стадиях — имитировать функции тостера, вплоть до смерти"
+              - superscript [ref=e442]:
+                - link "[26]" [ref=e443] [cursor=pointer]:
+                  - /url: "#cite_note-26"
+              - text: .
+          - generic [ref=e444]:
+            - heading "См. также" [level=2] [ref=e445]: См. также
+            - generic [ref=e446]:
+              - text: "["
+              - link "править" [ref=e447] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=12
+              - text: "|"
+              - link "править код" [ref=e448] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=12
+              - text: "]"
+          - list [ref=e449]:
+            - listitem [ref=e450]:
+              - link "Бытовая техника" [ref=e451] [cursor=pointer]:
+                - /url: /wiki/%D0%91%D1%8B%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0
+            - listitem [ref=e452]:
+              - link "Духовой шкаф" [ref=e453] [cursor=pointer]:
+                - /url: /wiki/%D0%94%D1%83%D1%85%D0%BE%D0%B2%D0%BE%D0%B9_%D1%88%D0%BA%D0%B0%D1%84
+          - generic [ref=e454]:
+            - heading "Примечания" [level=2] [ref=e455]: Примечания
+            - generic [ref=e456]:
+              - text: "["
+              - link "править" [ref=e457] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=13
+              - text: "|"
+              - link "править код" [ref=e458] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=13
+              - text: "]"
+          - link "↑ Показать компактно" [ref=e460] [cursor=pointer]:
+            - /url: "javascript:"
+          - list [ref=e462]:
+            - listitem [ref=e463]:
+              - generic [ref=e464]:
+                - text: ↑
+                - 'link "Перейти обратно: 1" [ref=e465] [cursor=pointer]':
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-0"
+                  - generic [ref=e466]: "Перейти обратно:"
+                  - superscript [ref=e467]:
+                    - generic [ref=e468]: "1"
+                - link "2" [ref=e469] [cursor=pointer]:
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-1"
+                  - superscript [ref=e470]:
+                    - generic [ref=e471]: "2"
+                - link "3" [ref=e472] [cursor=pointer]:
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-2"
+                  - superscript [ref=e473]:
+                    - generic [ref=e474]: "3"
+                - link "4" [ref=e475] [cursor=pointer]:
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-3"
+                  - superscript [ref=e476]:
+                    - generic [ref=e477]: "4"
+                - link "5" [ref=e478] [cursor=pointer]:
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-4"
+                  - superscript [ref=e479]:
+                    - generic [ref=e480]: "5"
+                - link "6" [ref=e481] [cursor=pointer]:
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-5"
+                  - superscript [ref=e482]:
+                    - generic [ref=e483]: "6"
+                - link "7" [ref=e484] [cursor=pointer]:
+                  - /url: "#cite_ref-Consumer_Reports_Nov_2012_1-6"
+                  - superscript [ref=e485]:
+                    - generic [ref=e486]: "7"
+              - generic [ref=e488]:
+                - generic [ref=e489]:
+                  - link "Consumer Reports" [ref=e490] [cursor=pointer]:
+                    - /url: /wiki/Consumer_Reports
+                  - text: .
+                - link "Toaster Buying Guide" [ref=e492] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20140317230035/http://consumerreports.org/cro/toasters/buying-guide.htm
+                - text: ". consumerreports.org (ноябрь 2012). Дата обращения: 17 марта 2014. Архивировано из"
+                - link "оригинала" [ref=e493] [cursor=pointer]:
+                  - /url: http://consumerreports.org/cro/toasters/buying-guide.htm
+                - text: 17 марта 2014 года.
+            - listitem [ref=e494]:
+              - link "Обратно к тексту" [ref=e496] [cursor=pointer]:
+                - /url: "#cite_ref-2"
+                - text: ↑
+              - generic [ref=e498]:
+                - link "Automatic Toaster Guide-Melpomene.org-" [ref=e500] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20180617043140/http://www.melpomene.org/review/automatic-toaster-guide
+                - text: ". www.melpomene.org. Дата обращения: 29 января 2017. Архивировано из"
+                - link "оригинала" [ref=e501] [cursor=pointer]:
+                  - /url: http://www.melpomene.org/review/automatic-toaster-guide
+                - text: 17 июня 2018 года.
+            - listitem [ref=e502]:
+              - link "Обратно к тексту" [ref=e504] [cursor=pointer]:
+                - /url: "#cite_ref-3"
+                - text: ↑
+              - generic [ref=e506]:
+                - text: no author listed.
+                - link "Commercial Toaster Guide" [ref=e508] [cursor=pointer]:
+                  - /url: https://www.webstaurantstore.com/guide/515/commercial-toaster-guide.html
+                - text: .
+                - link "WebstaurantStore" [ref=e510] [cursor=pointer]:
+                  - /url: /w/index.php?title=WebstaurantStore&action=edit&redlink=1
+                - text: "(2012). Дата обращения: 17 января 2017."
+                - link "Архивировано" [ref=e511] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20170118051230/http://www.webstaurantstore.com/guide/515/commercial-toaster-guide.html
+                - text: 18 января 2017 года.
+            - listitem [ref=e512]:
+              - link "Обратно к тексту" [ref=e514] [cursor=pointer]:
+                - /url: "#cite_ref-4"
+                - text: ↑
+              - generic [ref=e516]:
+                - text: Snodgrass, Mary Ellen.
+                - link "Encyclopedia of Kitchen History" [ref=e517] [cursor=pointer]:
+                  - /url: https://archive.org/details/encyclopediakitc00snod
+                - text: . —
+                - link "Taylor & Francis" [ref=e518] [cursor=pointer]:
+                  - /url: /wiki/Taylor_%26_Francis
+                - text: ", 2004. — С."
+                - link "392" [ref=e519] [cursor=pointer]:
+                  - /url: https://archive.org/details/encyclopediakitc00snod/page/392
+                - text: . —
+                - link "ISBN 9781579583804" [ref=e520] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/9781579583804
+                - text: .
+            - listitem [ref=e521]:
+              - link "Обратно к тексту" [ref=e523] [cursor=pointer]:
+                - /url: "#cite_ref-5"
+                - text: ↑
+              - generic [ref=e524]:
+                - generic [ref=e525]:
+                  - link "The Howard Roth Collection of Early American Iron | Skinner Auctions 2744M, 2743T and 2757B" [ref=e526] [cursor=pointer]:
+                    - /url: https://issuu.com/skinnerinc/docs/2744m-2743t-2757b-wrought-iron
+                  - text: . issuu (англ.).
+                  - link "Архивировано" [ref=e527] [cursor=pointer]:
+                    - /url: https://web.archive.org/web/20200809100930/https://issuu.com/skinnerinc/docs/2744m-2743t-2757b-wrought-iron
+                  - text: "9 августа 2020. Дата обращения: 13 января 2018."
+                - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.jtitle=issuu&rft.atitle=The+Howard+Roth+Collection+of+Early+American+Iron+%7C+Skinner+Auctions+2744M%2C+2743T+and+2757B&rft_id=https%3A%2F%2Fissuu.com%2Fskinnerinc%2Fdocs%2F2744m-2743t-2757b-wrought-iron&rfr_id=info%3Asid%2Fru.wikipedia.org%3A%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80"
+            - listitem [ref=e528]:
+              - link "Обратно к тексту" [ref=e530] [cursor=pointer]:
+                - /url: "#cite_ref-US_Patent_811859_6-0"
+                - text: ↑
+              - link "U.S. Patent 811 859" [ref=e533] [cursor=pointer]:
+                - /url: http://www.google.com/patents/US811859
+            - listitem [ref=e534]:
+              - generic [ref=e535]:
+                - text: ↑
+                - 'link "Перейти обратно: 1" [ref=e536] [cursor=pointer]':
+                  - /url: "#cite_ref-Toaster_Museum_7-0"
+                  - generic [ref=e537]: "Перейти обратно:"
+                  - superscript [ref=e538]:
+                    - generic [ref=e539]: "1"
+                - link "2" [ref=e540] [cursor=pointer]:
+                  - /url: "#cite_ref-Toaster_Museum_7-1"
+                  - superscript [ref=e541]:
+                    - generic [ref=e542]: "2"
+                - link "3" [ref=e543] [cursor=pointer]:
+                  - /url: "#cite_ref-Toaster_Museum_7-2"
+                  - superscript [ref=e544]:
+                    - generic [ref=e545]: "3"
+              - generic [ref=e547]:
+                - text: Norcross, Eric.
+                - link "The Cyber Toaster Museum" [ref=e549] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20080815211550/http://www.toaster.org/museum.html
+                - text: ". Toaster.org section \"1900–1920\". The Toaster Museum Foundation (2006). Дата обращения: 16 августа 2008. Архивировано из"
+                - link "оригинала" [ref=e550] [cursor=pointer]:
+                  - /url: http://www.toaster.org/museum.html
+                - text: 15 августа 2008 года.
+            - listitem [ref=e551]:
+              - generic [ref=e552]:
+                - text: ↑
+                - 'link "Перейти обратно: 1" [ref=e553] [cursor=pointer]':
+                  - /url: "#cite_ref-George_2003_8-0"
+                  - generic [ref=e554]: "Перейти обратно:"
+                  - superscript [ref=e555]:
+                    - generic [ref=e556]: "1"
+                - link "2" [ref=e557] [cursor=pointer]:
+                  - /url: "#cite_ref-George_2003_8-1"
+                  - superscript [ref=e558]:
+                    - generic [ref=e559]: "2"
+              - generic [ref=e561]:
+                - text: George, William F.
+                - 'link "Antique Electric Waffle Irons 1900–1960: A History of the Appliance Industry in 20th Century America" [ref=e562] [cursor=pointer]':
+                  - /url: https://books.google.com/books?id=SzdrtFSFG6IC&pg=PA20&lpg=PA20&dq=%22William+Hoskins%22+high-resistance+wire+electric+heating
+                - text: (англ.). —
+                - link "Trafford Publishing" [ref=e564] [cursor=pointer]:
+                  - /url: /w/index.php?title=Trafford_Publishing&action=edit&redlink=1
+                - superscript [ref=e565]:
+                  - link "[англ.]" [ref=e566] [cursor=pointer]:
+                    - /url: https://en.wikipedia.org/wiki/Trafford_Publishing
+                - text: ", 2003. — P. 20. —"
+                - link "ISBN 1-55395-632-X" [ref=e567] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/155395632X
+                - text: . — [
+                - link "Архивировано" [ref=e568] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20190102161902/https://books.google.com/books?id=SzdrtFSFG6IC&pg=PA20&lpg=PA20&dq=%22William+Hoskins%22+high-resistance+wire+electric+heating
+                - text: 2 января 2019 года.]
+            - listitem [ref=e569]:
+              - link "Обратно к тексту" [ref=e571] [cursor=pointer]:
+                - /url: "#cite_ref-Clark_9-0"
+                - text: ↑
+              - generic [ref=e572]:
+                - generic [ref=e573]:
+                  - text: Clark, Neil M.
+                  - link "The World's Most Tragic Man Is the One Who Never Starts" [ref=e574] [cursor=pointer]:
+                    - /url: http://www.toaster.org/hoskins_tragic.html
+                  - text: (англ.) //
+                  - link "The American" [ref=e576] [cursor=pointer]:
+                    - /url: /w/index.php?title=The_American_(magazine)&action=edit&redlink=1
+                  - superscript [ref=e577]:
+                    - link "[англ.]" [ref=e578] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/The_American_(magazine)
+                  - text: ": magazine. — 1927. — May."
+                  - link "Архивировано" [ref=e579] [cursor=pointer]:
+                    - /url: https://web.archive.org/web/20060825063214/http://www.toaster.org/hoskins_tragic.html
+                  - text: 25 августа 2006 года.
+                - text: "; republished in hotwire: The Newsletter of the Toaster Museum Foundation, vol. 3, no. 3, online edition."
+            - listitem [ref=e580]:
+              - link "Обратно к тексту" [ref=e582] [cursor=pointer]:
+                - /url: "#cite_ref-10"
+                - text: ↑
+              - generic [ref=e584]:
+                - text: Dana Gloger.
+                - link "A Toast to the Toaster... 100 Years Old and Still Going Strong" [ref=e586] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20090403073400/http://www.dailyexpress.co.uk/posts/view/92299
+                - text: .
+                - link "Daily Express" [ref=e587] [cursor=pointer]:
+                  - /url: /wiki/Daily_Express
+                - text: "(31 марта 2009). Дата обращения: 31 марта 2009. Архивировано из"
+                - link "оригинала" [ref=e588] [cursor=pointer]:
+                  - /url: http://www.dailyexpress.co.uk/posts/view/92299
+                - text: 3 апреля 2009 года.
+            - listitem [ref=e589]:
+              - link "Обратно к тексту" [ref=e591] [cursor=pointer]:
+                - /url: "#cite_ref-lloydcopeman_11-0"
+                - text: ↑
+              - generic [ref=e593]:
+                - text: Copeman, Kent L.
+                - link "Lloyd Groff Copeman" [ref=e595] [cursor=pointer]:
+                  - /url: http://www.lloydcopeman.com/biography/bio3.html
+                - text: ". LloydCopeman.com. Дата обращения: 18 октября 2011."
+                - link "Архивировано" [ref=e596] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20110930230214/http://www.lloydcopeman.com/biography/bio3.html
+                - text: 30 сентября 2011 года.
+            - listitem [ref=e597]:
+              - link "Обратно к тексту" [ref=e599] [cursor=pointer]:
+                - /url: "#cite_ref-12"
+                - text: ↑
+              - generic [ref=e601]:
+                - 'link "Lloyd Groff Copeman: The Patent Man" [ref=e603] [cursor=pointer]':
+                  - /url: http://www.absolutemichigan.com/dig/michigan/lloyd-groff-copeman-the-patent-man/
+                - text: ". Absolute Michigan. Leelanau Communications, Inc (5 мая 2006). Дата обращения: 18 октября 2011."
+                - link "Архивировано" [ref=e604] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20110929153715/http://www.absolutemichigan.com/dig/michigan/lloyd-groff-copeman-the-patent-man/
+                - text: 29 сентября 2011 года.
+            - listitem [ref=e605]:
+              - link "Обратно к тексту" [ref=e607] [cursor=pointer]:
+                - /url: "#cite_ref-13"
+                - text: ↑
+              - link "United States patent 1,394,450, «Bread-Toaster», 1921" [ref=e609] [cursor=pointer]:
+                - /url: /wiki/%D0%A4%D0%B0%D0%B9%D0%BB:United_States_patent_1,394,450,_%22Bread-Toaster%22,_1921.pdf
+            - listitem [ref=e610]:
+              - link "Обратно к тексту" [ref=e612] [cursor=pointer]:
+                - /url: "#cite_ref-14"
+                - text: ↑
+              - generic [ref=e614]:
+                - 'link "Toastmaster Toasters: When They Were Made" [ref=e616] [cursor=pointer]':
+                  - /url: https://web.archive.org/web/20160929100544/http://www.toaster.org/tmaster_when.html
+                - text: ". Toaster Museum Foundation. Дата обращения: 19 октября 2011. Архивировано из"
+                - link "оригинала" [ref=e617] [cursor=pointer]:
+                  - /url: http://www.toaster.org/tmaster_when.html
+                - text: 29 сентября 2016 года.
+            - listitem [ref=e618]:
+              - link "Обратно к тексту" [ref=e620] [cursor=pointer]:
+                - /url: "#cite_ref-15"
+                - text: ↑
+              - generic [ref=e621]:
+                - generic [ref=e622]:
+                  - text: Doyle, Alister (17 января 2008).
+                  - link "Toasters deadlier than sharks?" [ref=e623] [cursor=pointer]:
+                    - /url: http://blogs.reuters.com/environment/2008/01/17/toasters-deadlier-than-sharks/
+                  - text: .
+                  - link "Reuters" [ref=e625] [cursor=pointer]:
+                    - /url: /wiki/Reuters
+                  - text: .
+                  - link "Архивировано" [ref=e626] [cursor=pointer]:
+                    - /url: https://web.archive.org/web/20160330070101/http://blogs.reuters.com/environment/2008/01/17/toasters-deadlier-than-sharks/
+                  - text: "30 марта 2016. Дата обращения: 5 апреля 2016."
+                - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.jtitle=Reuters&rft.atitle=Toasters+deadlier+than+sharks%3F&rft.date=2008-01-17&rft.aulast=Doyle&rft.aufirst=Alister&rft_id=http%3A%2F%2Fblogs.reuters.com%2Fenvironment%2F2008%2F01%2F17%2Ftoasters-deadlier-than-sharks%2F&rfr_id=info%3Asid%2Fru.wikipedia.org%3A%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80"
+            - listitem [ref=e627]:
+              - link "Обратно к тексту" [ref=e629] [cursor=pointer]:
+                - /url: "#cite_ref-tIn_16-0"
+                - text: ↑
+              - generic [ref=e631]:
+                - link "savetz.com" [ref=e633] [cursor=pointer]:
+                  - /url: http://www.savetz.com/yic/YIC11FI_6.html
+                - text: ". Internet Toaster, John Romkey, Simon Hackett. Дата обращения: 25 ноября 2008."
+                - link "Архивировано" [ref=e634] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20081204232315/http://www.savetz.com/yic/YIC11FI_6.html
+                - text: 4 декабря 2008 года.
+            - listitem [ref=e635]:
+              - link "Обратно к тексту" [ref=e637] [cursor=pointer]:
+                - /url: "#cite_ref-17"
+                - text: ↑
+              - generic [ref=e638]:
+                - generic [ref=e639]:
+                  - link "A small slice of design" [ref=e640] [cursor=pointer]:
+                    - /url: http://news.bbc.co.uk/1/hi/sci/tech/1264205.stm
+                  - text: . BBC News. 6 апреля 2001.
+                  - link "Архивировано" [ref=e641] [cursor=pointer]:
+                    - /url: https://web.archive.org/web/20090205222110/http://news.bbc.co.uk/1/hi/sci/tech/1264205.stm
+                  - text: "5 февраля 2009. Дата обращения: 25 мая 2010."
+                - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.jtitle=BBC+News&rft.atitle=A+small+slice+of+design&rft.date=2001-04-06&rft_id=http%3A%2F%2Fnews.bbc.co.uk%2F1%2Fhi%2Fsci%2Ftech%2F1264205.stm&rfr_id=info%3Asid%2Fru.wikipedia.org%3A%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80"
+            - listitem [ref=e642]:
+              - link "Обратно к тексту" [ref=e644] [cursor=pointer]:
+                - /url: "#cite_ref-18"
+                - text: ↑
+              - generic [ref=e646]:
+                - text: Orlowski, Andrew.
+                - link "Bread as a display device – we have pictures" [ref=e648] [cursor=pointer]:
+                  - /url: https://www.theregister.co.uk/2001/06/04/bread_as_a_display_device/
+                - text: ". The Register (4 июня 2001). Дата обращения: 19 октября 2011."
+                - link "Архивировано" [ref=e649] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20111207004831/http://www.theregister.co.uk/2001/06/04/bread_as_a_display_device/
+                - text: 7 декабря 2011 года.
+            - listitem [ref=e650]:
+              - link "Обратно к тексту" [ref=e652] [cursor=pointer]:
+                - /url: "#cite_ref-19"
+                - text: ↑
+              - generic [ref=e654]:
+                - link "NetBSD Toaster with the TS-7200 ARM9 SBC" [ref=e656] [cursor=pointer]:
+                  - /url: http://www.embeddedarm.com/software/arm-netbsd-toaster.php
+                - text: ". Technologic Systems. Дата обращения: 19 октября 2011."
+                - link "Архивировано" [ref=e657] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20111019004907/http://www.embeddedarm.com/software/arm-netbsd-toaster.php
+                - text: 19 октября 2011 года.
+            - listitem [ref=e658]:
+              - link "Обратно к тексту" [ref=e660] [cursor=pointer]:
+                - /url: "#cite_ref-20"
+                - text: ↑
+              - generic [ref=e662]:
+                - link "Color-Sensing Toasters? A Student Reimagines the Home" [ref=e664] [cursor=pointer]:
+                  - /url: http://www.businessweek.com/articles/2012-12-26/the-hue-color-sensing-toaster-a-student-reimagines-the-modern-home
+                - text: ". BloombergBusinessweek. Дата обращения: 28 декабря 2012."
+                - link "Архивировано" [ref=e665] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20121229233204/http://www.businessweek.com/articles/2012-12-26/the-hue-color-sensing-toaster-a-student-reimagines-the-modern-home
+                - text: 29 декабря 2012 года.
+            - listitem [ref=e666]:
+              - link "Обратно к тексту" [ref=e668] [cursor=pointer]:
+                - /url: "#cite_ref-21"
+                - text: ↑
+              - generic [ref=e669]:
+                - generic [ref=e670]:
+                  - text: Costanzo, Sam (25 июля 2013).
+                  - link "This high-tech toaster can Tweet" [ref=e671] [cursor=pointer]:
+                    - /url: http://www.boston.com/business/technology/2013/07/25/this-high-tech-toaster-can-tweet/j9QvF2Fo0wvjeeGyOXoHsJ/story.html
+                  - text: .
+                  - link "The Boston Globe" [ref=e673] [cursor=pointer]:
+                    - /url: /wiki/The_Boston_Globe
+                  - text: .
+                  - link "Boston" [ref=e674] [cursor=pointer]:
+                    - /url: /w/index.php?title=Boston,_MA&action=edit&redlink=1
+                  - text: ":"
+                  - link "NYTC" [ref=e675] [cursor=pointer]:
+                    - /url: /w/index.php?title=New_York_Times_Company&action=edit&redlink=1
+                  - text: .
+                  - link "ISSN" [ref=e676] [cursor=pointer]:
+                    - /url: /wiki/ISSN_(%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80)
+                  - link "0743-1791" [ref=e677] [cursor=pointer]:
+                    - /url: https://search.worldcat.org/issn/0743-1791
+                  - text: .
+                  - link "Архивировано" [ref=e678] [cursor=pointer]:
+                    - /url: https://web.archive.org/web/20140317224610/http://www.boston.com/business/technology/2013/07/25/this-high-tech-toaster-can-tweet/j9QvF2Fo0wvjeeGyOXoHsJ/story.html
+                  - text: "17 марта 2014. Дата обращения: 17 марта 2014."
+                - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.jtitle=The+Boston+Globe&rft.atitle=This+high-tech+toaster+can+Tweet&rft.date=2013-07-25&rft.issn=0743-1791&rft.aulast=Costanzo&rft.aufirst=Sam&rft_id=http%3A%2F%2Fwww.boston.com%2Fbusiness%2Ftechnology%2F2013%2F07%2F25%2Fthis-high-tech-toaster-can-tweet%2Fj9QvF2Fo0wvjeeGyOXoHsJ%2Fstory.html&rfr_id=info%3Asid%2Fru.wikipedia.org%3A%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80"
+            - listitem [ref=e679]:
+              - link "Обратно к тексту" [ref=e681] [cursor=pointer]:
+                - /url: "#cite_ref-22"
+                - text: ↑
+              - generic [ref=e683]:
+                - text: Ganapati, Priya.
+                - link "Toaster, Toilet Lead Appliance Invasion of Twitter" [ref=e685] [cursor=pointer]:
+                  - /url: https://www.wired.com/gadgetlab/2009/08/twittering-toaster/
+                - text: ". wired.com (5 августа 2009). Дата обращения: 17 марта 2014."
+                - link "Архивировано" [ref=e686] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20140319101151/http://www.wired.com/gadgetlab/2009/08/twittering-toaster/
+                - text: 19 марта 2014 года.
+            - listitem [ref=e687]:
+              - link "Обратно к тексту" [ref=e689] [cursor=pointer]:
+                - /url: "#cite_ref-23"
+                - text: ↑
+              - generic [ref=e691]:
+                - text: Murphy Kelly, Samantha.
+                - 'link "Eat What You Tweet: Toaster Strudel Personalizes Pastries on Twitter" [ref=e693] [cursor=pointer]':
+                  - /url: http://mashable.com/2013/08/26/toaster-studel-twitter/
+                - text: ". mashable.com (26 августа 2013). Дата обращения: 17 марта 2014."
+                - link "Архивировано" [ref=e694] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20140317213201/http://mashable.com/2013/08/26/toaster-studel-twitter/
+                - text: 17 марта 2014 года.
+            - listitem [ref=e695]:
+              - link "Обратно к тексту" [ref=e697] [cursor=pointer]:
+                - /url: "#cite_ref-hackaday_081022_24-0"
+                - text: ↑
+              - generic [ref=e699]:
+                - text: Kraft, Caleb.
+                - link "Reflowing with a toaster" [ref=e701] [cursor=pointer]:
+                  - /url: http://hackaday.com/2008/10/22/reflowing-with-a-toaster/
+                - text: ". Hack a Day (22 октября 2008). Дата обращения: 19 октября 2011."
+                - link "Архивировано" [ref=e702] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20111005044833/http://hackaday.com/2008/10/22/reflowing-with-a-toaster/
+                - text: 5 октября 2011 года.
+            - listitem [ref=e703]:
+              - link "Обратно к тексту" [ref=e705] [cursor=pointer]:
+                - /url: "#cite_ref-circuitcellar_1785_25-0"
+                - text: ↑
+              - generic [ref=e707]:
+                - link "Honorable Mention" [ref=e709] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20110927045212/http://www.circuitcellar.com/designstellaris2006/winners/1785.html
+                - text: ". DesignStellaris2006. Дата обращения: 19 октября 2011. Архивировано из"
+                - link "оригинала" [ref=e710] [cursor=pointer]:
+                  - /url: http://www.circuitcellar.com/designstellaris2006/winners/1785.html
+                - text: 27 сентября 2011 года.
+            - listitem [ref=e711]:
+              - link "Обратно к тексту" [ref=e713] [cursor=pointer]:
+                - /url: "#cite_ref-26"
+                - text: ↑
+              - generic [ref=e715]:
+                - text: Michelle Starr.
+                - link "SCP Foundation web series coming to YouTube" [ref=e717] [cursor=pointer]:
+                  - /url: https://www.cnet.com/culture/scp-foundation-web-series-coming-to-youtube/
+                - text: (англ.).
+                - link "CNET" [ref=e719] [cursor=pointer]:
+                  - /url: /wiki/CNET
+                - text: "(11 августа 2013). Дата обращения: 5 июня 2023."
+                - link "Архивировано" [ref=e720] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20160801084826/http://www.cnet.com/news/scp-foundation-web-series-coming-to-youtube/#!
+                - text: 1 августа 2016 года.
+          - generic [ref=e721]:
+            - heading "Литература" [level=2] [ref=e722]: Литература
+            - generic [ref=e723]:
+              - text: "["
+              - link "править" [ref=e724] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=14
+              - text: "|"
+              - link "править код" [ref=e725] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=14
+              - text: "]"
+          - list [ref=e726]:
+            - listitem [ref=e727]:
+              - generic [ref=e728]:
+                - text: "Электротостер // Культура питания. Энциклопедический справочник / Под ред. И. А. Чаховского. — 3-е издание. — Минск:"
+                - link "Белорусская энциклопедия имени Петруся Бровки" [ref=e729] [cursor=pointer]:
+                  - /url: /wiki/%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F_%D1%8D%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%9F%D0%B5%D1%82%D1%80%D1%83%D1%81%D1%8F_%D0%91%D1%80%D0%BE%D0%B2%D0%BA%D0%B8
+                - text: ", 1993. — С. 420. — 540 с. —"
+                - link "ISBN 5-85700-122-6" [ref=e730] [cursor=pointer]:
+                  - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/5857001226
+                - text: .
+            - listitem [ref=e731]:
+              - generic [ref=e732]:
+                - text: Тостеры электрические бытовые //
+                - link "Товарный словарь" [ref=e733] [cursor=pointer]:
+                  - /url: /wiki/%D0%A2%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C
+                - text: "/ И. А. Пугачёв (главный редактор). — М.: Государственное издательство торговой литературы, 1960. — Т. VIII. — Стб. 939—942."
+            - listitem [ref=e734]:
+              - generic [ref=e735]: Наталья Шинкарёва, Надежда Бондаренко. Тостер // Кулинарная энциклопедия / Ольга Ивенская. — Litres, 2017. — Т. 36.
+          - generic [ref=e736]:
+            - heading "Ссылки" [level=2] [ref=e737]: Ссылки
+            - generic [ref=e738]:
+              - text: "["
+              - link "править" [ref=e739] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&veaction=edit&section=15
+              - text: "|"
+              - link "править код" [ref=e740] [cursor=pointer]:
+                - /url: /w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&action=edit&section=15
+              - text: "]"
+          - list [ref=e741]:
+            - listitem [ref=e742]:
+              - link "The International Central Services Toaster Museum" [ref=e743] [cursor=pointer]:
+                - /url: http://www.toastermuseum.com
+            - listitem [ref=e744]:
+              - link "Rethink the Shark" [ref=e745] [cursor=pointer]:
+                - /url: https://www.youtube.com/watch?v=htpxGXOlh3U
+              - text: ", an animal conservation campaign which also warns of toaster death. See also the"
+              - link "campaign site" [ref=e746] [cursor=pointer]:
+                - /url: http://www.lesleyrochat.com/conservationist/campaigner/rethink-the-shark
+              - link "Архивная копия" [ref=e747] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20140318210636/http://www.lesleyrochat.com/conservationist/campaigner/rethink-the-shark
+              - text: от 18 марта 2014 на
+              - link "Wayback Machine" [ref=e748] [cursor=pointer]:
+                - /url: /wiki/Wayback_Machine
+              - text: .
+            - listitem [ref=e749]:
+              - link "Логотип Викисклада" [ref=e751] [cursor=pointer]:
+                - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BA%D0%BB%D0%B0%D0%B4
+                - img "Логотип Викисклада" [ref=e752]
+              - text: На
+              - link "Викискладе" [ref=e753] [cursor=pointer]:
+                - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BA%D0%BB%D0%B0%D0%B4
+              - text: есть медиафайлы по теме
+              - link "Тостеры" [ref=e754] [cursor=pointer]:
+                - /url: https://commons.wikimedia.org/wiki/Category:Toasters
+            - listitem [ref=e755]:
+              - link "Иллюстрированный исторический обзор ретро-тостеров" [ref=e756] [cursor=pointer]:
+                - /url: https://web.archive.org/web/20100612003652/http://hrenovina.net/2826
+          - navigation "Ссылки на внешние ресурсы" [ref=e757]:
+            - table [ref=e758]:
+              - rowgroup [ref=e759]:
+                - row
+                - row "Перейти к шаблону «Внешние ссылки» Перейти к элементу Викиданных Словари и энциклопедии Большая датская · Большая каталанская · Большая каталанская · Большая норвежская" [ref=e760]:
+                  - rowheader "Перейти к шаблону «Внешние ссылки» Перейти к элементу Викиданных Словари и энциклопедии" [ref=e761]:
+                    - generic [ref=e762]:
+                      - generic [ref=e763]:
+                        - link "Перейти к шаблону «Внешние ссылки»" [ref=e765] [cursor=pointer]:
+                          - /url: /wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B5_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8
+                          - img "Перейти к шаблону «Внешние ссылки»" [ref=e766]
+                        - link "Перейти к элементу Викиданных" [ref=e768] [cursor=pointer]:
+                          - /url: https://www.wikidata.org/wiki/Q14890#identifiers
+                          - img "Перейти к элементу Викиданных" [ref=e769]
+                      - text: Словари и энциклопедии
+                  - cell "Большая датская · Большая каталанская · Большая каталанская · Большая норвежская" [ref=e770]:
+                    - list [ref=e772]:
+                      - listitem [ref=e773]:
+                        - link "Большая датская" [ref=e774] [cursor=pointer]:
+                          - /url: https://wikidata-externalid-url.toolforge.org/?p=8313&url_prefix=https://denstoredanske.lex.dk/&id=brødrister
+                        - text: ·
+                      - listitem [ref=e775]:
+                        - link "Большая каталанская" [ref=e776] [cursor=pointer]:
+                          - /url: https://www.enciclopedia.cat/ec-gec-0214420.xml
+                        - text: ·
+                      - listitem [ref=e777]:
+                        - link "Большая каталанская" [ref=e778] [cursor=pointer]:
+                          - /url: https://www.enciclopedia.cat/ec-gec-0239475.xml
+                        - text: ·
+                      - listitem [ref=e779]:
+                        - link "Большая норвежская" [ref=e780] [cursor=pointer]:
+                          - /url: https://snl.no/brødrister
+                - 'row "В библиографических каталогах GND: 4619001-6 · J9U: 987007536695505171 · LCCN: sh88002305" [ref=e781]':
+                  - rowheader "В библиографических каталогах" [ref=e782]
+                  - 'cell "GND: 4619001-6 · J9U: 987007536695505171 · LCCN: sh88002305" [ref=e783]':
+                    - list [ref=e785]:
+                      - listitem [ref=e786]:
+                        - link "GND" [ref=e787] [cursor=pointer]:
+                          - /url: /wiki/Gemeinsame_Normdatei
+                        - text: ":"
+                        - link "4619001-6" [ref=e788] [cursor=pointer]:
+                          - /url: https://d-nb.info/gnd/4619001-6
+                        - text: ·
+                      - listitem [ref=e789]:
+                        - link "J9U" [ref=e790] [cursor=pointer]:
+                          - /url: /wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D0%98%D0%B7%D1%80%D0%B0%D0%B8%D0%BB%D1%8F
+                        - text: ":"
+                        - link "987007536695505171" [ref=e791] [cursor=pointer]:
+                          - /url: https://www.nli.org.il/en/authorities/987007536695505171
+                        - text: ·
+                      - listitem [ref=e792]:
+                        - link "LCCN" [ref=e793] [cursor=pointer]:
+                          - /url: /wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BD%D0%BE%D0%BC%D0%B5%D1%80_%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B8_%D0%9A%D0%BE%D0%BD%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B0
+                        - text: ":"
+                        - link "sh88002305" [ref=e794] [cursor=pointer]:
+                          - /url: https://id.loc.gov/authorities/sh88002305
+          - navigation "Кухонная техника" [ref=e795]:
+            - table [ref=e796]:
+              - rowgroup [ref=e797]:
+                - row "[показать] Перейти к шаблону «Кухонная техника» Кухонная техника" [ref=e798]:
+                  - columnheader "[показать] Перейти к шаблону «Кухонная техника» Кухонная техника" [ref=e799]:
+                    - button "[показать]" [ref=e800] [cursor=pointer]
+                    - link "Перейти к шаблону «Кухонная техника»" [ref=e803] [cursor=pointer]:
+                      - /url: /wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%9A%D1%83%D1%85%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0
+                      - img "Перейти к шаблону «Кухонная техника»" [ref=e804]
+                    - generic [ref=e805]: Кухонная техника
+                - row: · · · · · · · · ·
+                - row: · · · · · ·
+                - row: · ·
+                - row: · · · ·
+                - row: · · · · · ·
+                - row: ( · · ) ·
+                - row
+        - generic [ref=e807]:
+          - link "Категории" [ref=e808] [cursor=pointer]:
+            - /url: /wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8
+          - text: ":"
+          - list [ref=e809]:
+            - listitem [ref=e810]:
+              - link "Кухонная техника" [ref=e811] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D1%83%D1%85%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0
+            - listitem [ref=e812]:
+              - link "Хлеб" [ref=e813] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A5%D0%BB%D0%B5%D0%B1
+            - listitem [ref=e814]:
+              - link "Жарка" [ref=e815] [cursor=pointer]:
+                - /url: /wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%96%D0%B0%D1%80%D0%BA%D0%B0
+    - contentinfo [ref=e817]:
+      - list [ref=e818]:
+        - listitem [ref=e819]: Эта страница в последний раз была отредактирована 9 марта 2026 года в 08:10.
+        - listitem [ref=e820]:
+          - text: Текст доступен по
+          - link "лицензии Creative Commons «С указанием авторства — С сохранением условий» (CC BY-SA)" [ref=e821] [cursor=pointer]:
+            - /url: //creativecommons.org/licenses/by-sa/4.0/deed.ru
+          - text: ; в отдельных случаях могут действовать дополнительные условия.
+          - generic [ref=e822]:
+            - text: Подробнее см.
+            - link "Условия использования" [ref=e823] [cursor=pointer]:
+              - /url: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ru
+            - text: .
+          - text: Wikipedia® — зарегистрированный товарный знак некоммерческой организации
+          - link "«Фонд Викимедиа» (Wikimedia Foundation, Inc.)" [ref=e824] [cursor=pointer]:
+            - /url: https://wikimediafoundation.org/ru/
+      - list:
+        - listitem [ref=e825]:
+          - link "Политика конфиденциальности" [ref=e826] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru
+        - listitem [ref=e827]:
+          - link "Описание Википедии" [ref=e828] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5
+        - listitem [ref=e829]:
+          - link "Отказ от ответственности" [ref=e830] [cursor=pointer]:
+            - /url: /wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8
+        - listitem [ref=e831]:
+          - link "Свяжитесь с нами" [ref=e832] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/wiki/Википедия:Контакты
+        - listitem [ref=e833]:
+          - link "Контакты по вопросам права и безопасности" [ref=e834] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=e835]:
+          - link "Кодекс поведения" [ref=e836] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru
+        - listitem [ref=e837]:
+          - link "Разработчики" [ref=e838] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=e839]:
+          - link "Статистика" [ref=e840] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/ru.wikipedia.org
+        - listitem [ref=e841]:
+          - link "Заявление о куки" [ref=e842] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=e843]:
+          - link "Мобильная версия" [ref=e844] [cursor=pointer]:
+            - /url: //ru.wikipedia.org/w/index.php?title=%D0%A2%D0%BE%D1%81%D1%82%D0%B5%D1%80&mobileaction=toggle_view_mobile
+      - list [ref=e845]:
+        - listitem [ref=e846]:
+          - link "Wikimedia Foundation" [ref=e847] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=e849]
+        - listitem [ref=e850]:
+          - link "Powered by MediaWiki" [ref=e851] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=e853]
+  - generic [ref=e854]:
+    - list

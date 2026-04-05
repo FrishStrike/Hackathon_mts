@@ -1,0 +1,38 @@
+[    3042ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    3245ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    3253ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[    4519ms] [WARNING] null @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[    5088ms] The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
+[    5457ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://sntr.avito.ru/api/2296/envelope/?sentry_key=f1cfe913d6f44732a4b1601444eccb74&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.116.0:0
+[    5461ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.avito.ru/web/1/criteo/cookieMatch?partner=yandex&clientID=1775348617409912802:0
+[    6035ms] [LOG] Undefined event - user_unauthorized @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[    6077ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://static.a.mts.ru/front-metric-sdk/metric.js?mo=mtsDSPMetricObject:0
+[    6102ms] [ERROR] Failed to load resource: net::ERR_CERT_DATE_INVALID @ https://simbad.pro/trg.js:0
+[    6102ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://static.a.mts.ru/front-metric-sdk/metric.js?mo=mtsDSPMetricObject:0
+[    6192ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://static.a.mts.ru/id/pixel.js:0
+[    6192ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://static.a.mts.ru/id/pixel.js:0
+[    9034ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://static.a.mts.ru/front-metric-sdk/metric.js?mo=mtsDSPMetricObject:0
+[    9036ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://static.a.mts.ru/id/pixel.js:0
+[   11475ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   13273ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13287ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13296ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13438ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13452ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13458ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13758ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   13954ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   14322ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   14509ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://www.avito.ru/web/1/adv/network/creative:0
+[   14762ms] [LOG] Placement created {placementId: 1268681, unitSubtype: inread, unitType: inread, unitSettings: Object, unitSettingsList: Array(9)} @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14762ms] [LOG] %cerror: color:rgb(240,58,66); no creatives @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14762ms] [LOG] Destroying player @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14762ms] [LOG] Deinit @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14962ms] [LOG] Placement created {placementId: 1268681, unitSubtype: inread, unitType: inread, unitSettings: Object, unitSettingsList: Array(9)} @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14963ms] [LOG] %cerror: color:rgb(240,58,66); no creatives @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14963ms] [LOG] Destroying player @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   14963ms] [LOG] Deinit @ https://www.avito.st/dstatic/build/client/ru-RU/sentry.5474695c9758f86c.js:0
+[   15781ms] [WARNING] The resource chrome-extension://invalid/ was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://www.avito.ru/:0
+[   16737ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://a.giraff.io/rtb/sync?dsp=programmatica-dsp&user_id=${UID}:0
+[   17423ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://ssp.bidster.net/bind/66bace16-a8e0-4d38-8936-c5e15c217738?id=NGQ1NTYxNGY4ZGNmMWE4OQ:0
+[   36369ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://visitor-betweenx.omnitagjs.com/visitor/bsync?uid=cd6403e2c067b584fecdd6a3847819bf&name=gen01&url=https%3A%2F%2Fads.betweendigital.com%2Fmatch%3Fbidder_id%3D416%26external_user_id%3DPARTNER_USER_ID&visitor=d5ee82df-0377-525f-9c90-473ff541ecae&gdpr=0&gdpr_consent=&us_privacy=${GPP_STRING_123}:0

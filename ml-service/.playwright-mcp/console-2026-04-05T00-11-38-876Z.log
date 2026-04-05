@@ -1,0 +1,3 @@
+[    1441ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://ru.wikipedia.org/wiki/Samsung_Mon%D0%B8%D1%82%D0%BE%D1%80_24:0
+[    1811ms] [WARNING] This page is using the deprecated ResourceLoader module "mediawiki.legacy.messageBox".
+[1.43] The use of the `interface-message-box` feature with SkinModule is deprecated in favor of CodexModule. Please remove this feature.More information can be found at [[mw:Manual:ResourceLoaderSkinModule]].  @ https://ru.wikipedia.org/wiki/Samsung_Mon%D0%B8%D1%82%D0%BE%D1%80_24:621
