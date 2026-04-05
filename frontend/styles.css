@@ -116,3 +116,35 @@ body {
 .footer { color: var(--muted); font-size: 12px; padding: 0 2px; }
 
 code { color: color-mix(in srgb, var(--pist) 80%, var(--text)); }
+
+.hidden { display: none; }
+
+.answer-section {
+  border-color: rgba(249, 168, 212, 0.18);
+  background: color-mix(in srgb, var(--panel) 92%, rgba(249,168,212,0.06));
+}
+
+.answer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--text);
+  min-height: 1.4em;
+}
+
+.answer-text::after {
+  content: '▋';
+  color: var(--rose);
+  animation: blink 0.8s step-end infinite;
+  margin-left: 1px;
+}
+
+.answer-text.done::after {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

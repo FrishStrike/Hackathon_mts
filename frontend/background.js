@@ -132,6 +132,7 @@ const executeAgentLoop = async (prompt) => {
       if (action.type === "done") {
         await setStatus("ok", "done");
         await log(`ANSWER: ${action.answer}`);
+        await sendToPanel({ type: "ANSWER", text: action.answer });
         break;
       }
 

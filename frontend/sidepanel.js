@@ -3,6 +3,8 @@ const statusText = document.getElementById("statusText");
 const promptEl = document.getElementById("prompt");
 const planEl = document.getElementById("plan");
 const logEl = document.getElementById("log");
+const answerSection = document.getElementById("answerSection");
+const answerEl = document.getElementById("answerEl");
 
 const runBtn = document.getElementById("runBtn");
 const stopBtn = document.getElementById("stopBtn");
@@ -32,6 +34,27 @@ const send = (msg) =>
     });
   });
 
+let typewriterTimer = null;
+
+const typewriter = (text, delay = 18) => {
+  if (typewriterTimer !== null) clearTimeout(typewriterTimer);
+  answerSection.classList.remove("hidden");
+  answerEl.classList.remove("done");
+  answerEl.textContent = "";
+
+  let i = 0;
+  const tick = () => {
+    if (i < text.length) {
+      answerEl.textContent += text[i++];
+      typewriterTimer = setTimeout(tick, delay);
+    } else {
+      answerEl.classList.add("done");
+      typewriterTimer = null;
+    }
+  };
+  tick();
+};
+
 const parsePlanJson = () => {
   const raw = planEl.value.trim();
   if (!raw) throw new Error("План пустой");
@@ -45,6 +68,8 @@ const runPrompt = async () => {
   if (!prompt) return;
   setStatus("busy", "planning…");
   appendLog(`PROMPT: ${prompt}`);
+  answerSection.classList.add("hidden");
+  answerEl.textContent = "";
 
   try {
     const resp = await send({ type: "RUN_PROMPT", prompt });
@@ -96,6 +121,10 @@ chrome.runtime.onMessage.addListener((msg) => {
   }
   if (msg?.type === "LOG") {
     appendLog(msg.line);
+    return;
+  }
+  if (msg?.type === "ANSWER") {
+    typewriter(msg.text);
     return;
   }
 });
