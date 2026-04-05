@@ -118,6 +118,50 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
         return;
       }
 
+      if (type === "hover") {
+        const el = findEl(String(action.selector ?? ""));
+        if (!el) throw new Error(`hover: element not found: ${action.selector}`);
+        scrollIntoViewCentered(el);
+        el.dispatchEvent(new MouseEvent("mouseenter", { bubbles: true }));
+        el.dispatchEvent(new MouseEvent("mouseover", { bubbles: true }));
+        sendResponse({ ok: true });
+        return;
+      }
+
+      if (type === "select") {
+        const el = findEl(String(action.selector ?? ""));
+        if (!el) throw new Error(`select: element not found: ${action.selector}`);
+        if (el.tagName !== "SELECT") throw new Error(`select: not a <select>: ${action.selector}`);
+        scrollIntoViewCentered(el);
+        el.value = String(action.value ?? "");
+        el.dispatchEvent(new Event("change", { bubbles: true }));
+        el.dispatchEvent(new Event("input", { bubbles: true }));
+        sendResponse({ ok: true });
+        return;
+      }
+
+      if (type === "focus") {
+        const el = findEl(String(action.selector ?? ""));
+        if (!el) throw new Error(`focus: element not found: ${action.selector}`);
+        scrollIntoViewCentered(el);
+        el.focus();
+        sendResponse({ ok: true });
+        return;
+      }
+
+      if (type === "getAttribute") {
+        const el = findEl(String(action.selector ?? ""));
+        if (!el) throw new Error(`getAttribute: element not found: ${action.selector}`);
+        const val = el.getAttribute(String(action.attr ?? ""));
+        sendResponse({ ok: true, text: val ?? "" });
+        return;
+      }
+
+      if (type === "getUrl") {
+        sendResponse({ ok: true, text: window.location.href });
+        return;
+      }
+
       if (type === "extractText") {
         const el = findEl(String(action.selector ?? ""));
         if (!el) throw new Error(`extractText: element not found: ${action.selector}`);

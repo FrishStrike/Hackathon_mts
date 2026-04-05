@@ -9,7 +9,7 @@
   "side_panel": {
     "default_path": "ui/panel.html"
   },
-  "permissions": ["activeTab", "scripting", "tabs", "sidePanel", "storage"],
+  "permissions": ["activeTab", "scripting", "tabs", "sidePanel", "storage", "alarms"],
   "host_permissions": ["<all_urls>", "http://localhost/*", "http://127.0.0.1/*"],
   "background": {
     "service_worker": "background.js",

@@ -13,6 +13,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 COPY ml-service/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Устанавливаем Playwright и Chromium для браузерного агента
+RUN npx playwright install chromium --with-deps
+
 COPY ml-service/ .
 
 EXPOSE 8001

@@ -840,6 +840,7 @@
           body: JSON.stringify({ query: prompt }),
         });
         const mlData = await mlResp.json();
+
         return new Response(JSON.stringify(mlData), {
           status: 200,
           headers: { 'Content-Type': 'application/json' },

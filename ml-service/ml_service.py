@@ -119,10 +119,32 @@ async def send_screenshot(query_id: str, session, label: str = ""):
     except Exception as e:
         print(f"⚠️ Screenshot failed: {e}", flush=True)
 
+def _wants_browser_action(task: str) -> bool:
+    """Возвращает True если пользователь явно просит выполнить действие в браузере:
+    зайти на сайт, нажать кнопку, заполнить форму, открыть страницу и т.д."""
+    p = task.lower()
+    # Прямые команды на действие в браузере
+    action_triggers = [
+        "зайди", "зайти", "открой", "открыть", "перейди", "перейти",
+        "нажми", "нажать", "кликни", "кликнуть", "клик ",
+        "введи", "ввести", "напиши в поле", "заполни", "заполнить",
+        "скролл", "прокрути", "прокрутить", "листай",
+        "найди на сайте", "найди на странице",
+        "закрой вкладку", "открой вкладку", "новая вкладка",
+        "go to", "open ", "navigate to", "click ", "type in",
+        "browse", "visit ",
+    ]
+    # URL-паттерны — если пользователь дал конкретный URL
+    has_url = "http://" in p or "https://" in p or "www." in p or ".ru" in p or ".com" in p or ".org" in p
+    has_action_word = any(w in p for w in ["зайди", "зайти", "открой", "открыть", "перейди",
+                                            "перейти", "go to", "open", "navigate", "visit"])
+    if has_url and has_action_word:
+        return True
+    return any(trigger in p for trigger in action_triggers)
+
+
 def _needs_browser(task: str) -> bool:
-    """Браузер нужен ТОЛЬКО для запросов с конкретными маркетплейсами.
-    Общие запросы о ценах/товарах идут через быстрый путь (DDG + Jina) —
-    он быстрее, надёжнее и получает актуальные данные без Playwright."""
+    """Браузер нужен для маркетплейсов ИЛИ прямых браузерных команд."""
     p = task.lower()
     marketplaces = ["wildberries", "wb", "вб", "вайлдберриз",
                     "ozon", "озон",
@@ -245,19 +267,26 @@ async def _fetch_context(task: str) -> tuple[list[dict], str]:
     return valid_results, combined[:MAX_TOOL_OUTPUT]
 
 
-VISUAL_BROWSER_PROMPT = """You are Yumi, a cheerful anime assistant controlling a real browser.
-You can see the current page text. Navigate autonomously to find the answer.
-Always respond in the same language the user used.
+VISUAL_BROWSER_PROMPT = """Ты — Юми, весёлая аниме-ассистентка, управляющая настоящим браузером.
+Ты ОБЯЗАНА использовать инструменты для выполнения действий. НИКОГДА не описывай что бы ты сделала — ДЕЛАЙ это.
+Всегда отвечай на русском языке.
+Оставайся в образе Юми — используй милые выражения, эмодзи и тёплый дружелюбный тон.
 
-RULES:
-- Use browser_navigate to open pages
-- Use browser_evaluate with `() => document.body.innerText` to read page content
-- Use browser_click to click on links/buttons (provide CSS selector)
-- Use browser_type to type in search fields
-- NEVER use Google/Bing/DuckDuckGo — they block headless browsers
-- For electronics/prices: start from dns-shop.ru, citilink.ru, wildberries.ru, ozon.ru
-- When you have the answer, respond with plain text (no JSON needed)
-- Answer in as few steps as possible. Max steps: 8."""
+ИНСТРУМЕНТЫ:
+- browser_navigate(url) — перейти по URL. ИСПОЛЬЗУЙ ЭТО ПЕРВЫМ для любого запроса "зайди на сайт".
+- browser_evaluate(function) — выполнить JS. Используй `() => document.body.innerText` чтобы прочитать текст страницы.
+- browser_click(selector) — нажать на элемент
+- browser_type(selector, text) — ввести текст в поле
+- browser_screenshot() — сделать скриншот
+
+КРИТИЧЕСКИЕ ПРАВИЛА:
+1. Когда пользователь говорит "зайди на X" / "открой X" — СРАЗУ вызывай browser_navigate.
+2. НИКОГДА не отвечай просто текстом если пользователь попросил тебя ЧТО-ТО СДЕЛАТЬ. Сначала используй инструмент.
+3. После навигации используй browser_evaluate чтобы прочитать страницу, затем опиши что видишь.
+4. НИКОГДА не используй Google/Bing/DuckDuckGo — они блокируют headless-браузеры.
+5. Отвечай чистым текстом (без tool_calls) ТОЛЬКО когда ты ЗАВЕРШИЛА задачу и хочешь сообщить результат.
+6. Если страница не загрузилась — попробуй ещё раз с другим вариантом URL.
+7. Если browser не найден или инструмент недоступен — НЕ СДАВАЙСЯ, попробуй другой подход."""
 
 
 def _should_browse_visually(task: str) -> bool:
@@ -277,10 +306,65 @@ def _should_browse_visually(task: str) -> bool:
     return any(w in p for w in triggers)
 
 
+SITE_ALIASES = {
+    "хабр": "https://habr.com",
+    "habr": "https://habr.com",
+    "гитхаб": "https://github.com",
+    "github": "https://github.com",
+    "ютуб": "https://youtube.com",
+    "youtube": "https://youtube.com",
+    "вк": "https://vk.com",
+    "вконтакте": "https://vk.com",
+    "телеграм": "https://web.telegram.org",
+    "telegram": "https://web.telegram.org",
+    "реддит": "https://reddit.com",
+    "reddit": "https://reddit.com",
+    "яндекс": "https://ya.ru",
+    "yandex": "https://ya.ru",
+    "кинопоиск": "https://kinopoisk.ru",
+    "mail": "https://mail.ru",
+    "мейл": "https://mail.ru",
+    "лента": "https://lenta.ru",
+    "пикабу": "https://pikabu.ru",
+    "pikabu": "https://pikabu.ru",
+    "stackoverflow": "https://stackoverflow.com",
+    "стэковерфлоу": "https://stackoverflow.com",
+}
+
+
 def _build_visual_start_url(prompt: str) -> str:
     """Выбирает стартовую страницу для визуального агента."""
     import urllib.parse
     p = prompt.lower()
+
+    # Если в промпте есть прямой URL — извлекаем его и используем
+    url_match = re.search(r'(https?://[^\s,\'"]+)', prompt)
+    if url_match:
+        return url_match.group(1)
+
+    # Домен без протокола: "зайди на habr.com" → https://habr.com
+    domain_match = re.search(r'(?:на\s+|to\s+|visit\s+)((?:www\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:/[^\s]*)?)', prompt, re.IGNORECASE)
+    if domain_match:
+        domain = domain_match.group(1)
+        if not domain.startswith("http"):
+            domain = "https://" + domain
+        return domain
+
+    # Популярные сайты по алиасу: "зайди на хабр" → habr.com
+    # Извлекаем слово после "на/to/visit"
+    site_match = re.search(r'(?:на\s+|to\s+|visit\s+)(\S+)', p)
+    if site_match:
+        site_name = site_match.group(1).strip('.,!?')
+        if site_name in SITE_ALIASES:
+            return SITE_ALIASES[site_name]
+        # Пробуем как домен: "зайди на habr" → https://habr.com
+        if re.match(r'^[a-zA-Z][a-zA-Z0-9-]*$', site_name):
+            return f"https://{site_name}.com"
+
+    # Проверяем алиасы в любом месте промпта
+    for alias, url in SITE_ALIASES.items():
+        if alias in p:
+            return url
 
     # Электроника → DNS (быстрый поиск, без капчи)
     electronics = [
@@ -299,8 +383,8 @@ def _build_visual_start_url(prompt: str) -> str:
     if any(w in p for w in ["цена", "стоимость", "купить"]):
         return f"https://www.citilink.ru/search/?text={urllib.parse.quote(prompt)}"
 
-    # По умолчанию → Wikipedia (надёжно, без блокировок)
-    return f"https://ru.wikipedia.org/wiki/{urllib.parse.quote(prompt.replace(' ', '_'))}"
+    # По умолчанию → пустая страница, агент сам решит куда идти
+    return ""
 
 
 async def run_visual_agent(query_id: str, task: str) -> dict:
@@ -333,35 +417,43 @@ async def run_visual_agent(query_id: str, task: str) -> dict:
                 for t in mcp_tools.tools
             ]
 
-            # Первая навигация
-            await send_trace(query_id, "browser", "processing", f"Перехожу на {start_url}")
-            await session.call_tool("browser_navigate", {"url": start_url})
-            await send_screenshot(query_id, session, f"Открыта: {start_url}")
+            # Первая навигация (если URL определён)
+            if start_url:
+                await send_trace(query_id, "browser", "processing", f"Перехожу на {start_url}")
+                await session.call_tool("browser_navigate", {"url": start_url})
+                await send_screenshot(query_id, session, f"Открыта: {start_url}")
 
-            eval_result = await session.call_tool(
-                "browser_evaluate", {"function": "() => document.body.innerText"}
-            )
-            page_text = "\n".join(
-                b.text for b in eval_result.content if hasattr(b, "text")
-            )[:MAX_TOOL_OUTPUT]
+                eval_result = await session.call_tool(
+                    "browser_evaluate", {"function": "() => document.body.innerText"}
+                )
+                page_text = "\n".join(
+                    b.text for b in eval_result.content if hasattr(b, "text")
+                )[:MAX_TOOL_OUTPUT]
 
-            messages = [
-                {"role": "system", "content": VISUAL_BROWSER_PROMPT},
-                {"role": "user", "content": task},
-                {"role": "assistant", "content": None, "tool_calls": [{
-                    "id": "init_nav",
-                    "type": "function",
-                    "function": {
-                        "name": "browser_navigate",
-                        "arguments": json.dumps({"url": start_url}),
-                    }
-                }]},
-                {
-                    "role": "tool",
-                    "tool_call_id": "init_nav",
-                    "content": f"URL: {start_url}\n\n{page_text}",
-                },
-            ]
+                messages = [
+                    {"role": "system", "content": VISUAL_BROWSER_PROMPT},
+                    {"role": "user", "content": task},
+                    {"role": "assistant", "content": None, "tool_calls": [{
+                        "id": "init_nav",
+                        "type": "function",
+                        "function": {
+                            "name": "browser_navigate",
+                            "arguments": json.dumps({"url": start_url}),
+                        }
+                    }]},
+                    {
+                        "role": "tool",
+                        "tool_call_id": "init_nav",
+                        "content": f"URL: {start_url}\n\n{page_text}",
+                    },
+                ]
+            else:
+                # Нет предопределённого URL — агент сам решит куда идти
+                await send_trace(query_id, "browser", "processing", "Юми думает куда перейти...")
+                messages = [
+                    {"role": "system", "content": VISUAL_BROWSER_PROMPT},
+                    {"role": "user", "content": task},
+                ]
 
             sources = [start_url]
             step = 0
@@ -449,6 +541,11 @@ async def run_visual_agent(query_id: str, task: str) -> dict:
 async def run_agent(query_id: str, task: str) -> dict:
     print(f"🚀 Агент запущен: {task}", flush=True)
     await send_trace(query_id, "search", "processing", "Юми ищет информацию...")
+
+    # ── Прямая браузерная команда: зайди на сайт, нажми, заполни ──
+    if _wants_browser_action(task):
+        print("🌐 Браузерная команда → визуальный агент", flush=True)
+        return await run_visual_agent(query_id, task)
 
     # ── Визуальный браузерный путь: цены, электроника, новинки ──
     if _should_browse_visually(task):
@@ -662,6 +759,7 @@ class StepRequest(BaseModel):
     page_text: str
     interactive_elements: str = ""
     history: list = []
+    open_tabs: dict = {}
 
 @app.post("/api/step")
 async def step(req: StepRequest):
@@ -699,17 +797,36 @@ async def step(req: StepRequest):
         for i, act in enumerate(req.history):
             history_text += f"  Step {i+1}: {json.dumps(act)}\n"
 
+    # Формируем информацию об открытых вкладках
+    tabs_text = ""
+    if hasattr(req, 'open_tabs') and req.open_tabs:
+        tabs_text = "\nCurrently open tabs:\n"
+        for alias, info in req.open_tabs.items():
+            tabs_text += f'  "{alias}": {info.get("url", "about:blank")} — {info.get("title", "")}\n'
+
     messages = [
         {"role": "system", "content": """You are a browser automation agent controlling a real Chrome browser.
 You receive the current page URL, visible text, and interactive elements.
 You control the browser by returning ONE action at a time as a JSON object.
 
 Available actions:
-- {"type": "navigate", "url": "https://..."}
+— Page interaction:
+- {"type": "navigate", "url": "https://...", "alias": "tab_alias"}  (alias optional, defaults to current tab)
 - {"type": "click", "selector": "css_selector"}
 - {"type": "type", "selector": "css_selector", "text": "...", "clear": true}
 - {"type": "scroll", "deltaY": 800}
+- {"type": "hover", "selector": "css_selector"}
+- {"type": "select", "selector": "css_selector", "value": "option_value"}
+- {"type": "press", "key": "Enter"}
+- {"type": "focus", "selector": "css_selector"}
 - {"type": "waitFor", "selector": "css_selector", "timeoutMs": 5000}
+
+— Tab management:
+- {"type": "newTab", "url": "https://...", "alias": "my_tab"}
+- {"type": "switchTab", "alias": "my_tab"}
+- {"type": "closeTab", "alias": "my_tab"}
+
+— Finish:
 - {"type": "done", "answer": "your final answer to user"}
 
 Rules:
@@ -718,9 +835,13 @@ Rules:
 - Never use google.com or duckduckgo.com (captcha). For web search use https://www.bing.com/search?q=query
 - For Wildberries: https://www.wildberries.ru/catalog/0/search.aspx?search=QUERY&priceU=PRICE00
 - For Ozon: https://www.ozon.ru/search/?text=QUERY&price_to=PRICE
+- Use newTab to open pages in parallel (e.g. compare prices on two sites)
+- Use switchTab to go back to a previously opened tab
+- Use hover for dropdown menus and tooltips
+- Use select for <select> dropdowns
 - Return {"type": "done", "answer": "..."} only when you have found the answer
 - Return ONLY a valid JSON object, nothing else"""},
-        {"role": "user", "content": f"Task: {req.prompt}\n\n{page_context}{history_text}\n\nWhat is the next action?"},
+        {"role": "user", "content": f"Task: {req.prompt}\n\n{page_context}{history_text}{tabs_text}\n\nWhat is the next action?"},
     ]
 
     response = client.chat.completions.create(
@@ -826,16 +947,15 @@ async def api_history():
 @app.post("/api/query")
 async def api_query(req: dict):
     query_id = str(uuid.uuid4())
+    query_text = req.get("query", "")
     results[query_id] = {"status": "pending", "id": query_id}
 
     async def run_and_store():
         try:
-            result = await run_agent(query_id, req.get("query", ""))
+            result = await run_agent(query_id, query_text)
             if result:
                 results[query_id] = {**result, "id": query_id}
                 print(f"✅ [{query_id[:8]}] готово: {results[query_id]}", flush=True)
-                # SSE "completed" ПОСЛЕ сохранения результата — иначе race condition
-                # answer передаём в detail — фронт использует его как финальный текст ответа
                 answer_text = result.get("answer", "")
                 await send_trace(query_id, "completed", "done", answer_text)
             else:
@@ -850,6 +970,23 @@ async def api_query(req: dict):
 
     asyncio.get_running_loop().create_task(run_and_store())
     return {"request_id": query_id, "status": "processing"}
+
+
+@app.post("/api/browser-done/{query_id}")
+async def browser_done(query_id: str, req: dict):
+    """Расширение сообщает что выполнило браузерную команду."""
+    answer = req.get("answer", "Готово!")
+    results[query_id] = {
+        "status": "completed",
+        "id": query_id,
+        "answer": answer,
+        "sources": req.get("sources", []),
+        "trace": [],
+        "news": [],
+    }
+    await send_trace(query_id, "completed", "done", answer)
+    print(f"✅ [{query_id[:8]}] browser-done: {answer[:100]}", flush=True)
+    return {"ok": True}
 
 
 @app.get("/api/result/{query_id}")
