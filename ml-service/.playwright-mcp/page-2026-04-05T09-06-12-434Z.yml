@@ -1,0 +1,2136 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "Реклама" [ref=e14] [cursor=pointer]:
+      - /url: https://yandex.ru/adfox/406261/clickURL?ad-session-id=6002531775379967420&adfox-version=1&duid=1775379869309253428&erid=F7NfYUJCUneTVTcFtVJq&hash=585470f08beeb1cc&initial-engine-id=hcq&p1=djueo&p2=joaq&p5=bitosc&pr=myxtzds&puid1=feed&puid4=no&puid5=%2Fru%2Ffeed%2F&puid6=ru&rand=lrtkeyv&rqs=2KYTkXURCiQAJtJpz0TtmcSeHb9qye6L&sj=m79x6SpUo4L75H_ujl5QjzZSwwYYb0q9m_0RzfHqaQ4xt-N7GzQIum4t4GeJJFRaE-I9NDSUEIkHO1IC-O_GRKVq7A9pu0tN5RlrxEurtrmhBRJYhcplIw5CeU8xwN1YR5-8qUdm5mQCAQ36kLte98H38Nyg-znNWlYMhjamR3mv-7d3W3ewGQSmw_eBEVIu7FE2nxUbOiFBn83_Mj-Hu4UzyJ3Cvr4XkizVk4Jb4MNhPlIfK08KHTa4Ry1VeZcd1L6P6wJaQXL4XU1eoaR6vROYRygm2CZ6vIHgB3OyniKTfqHXBlT7CYP-h0xdMEmFdj5vD1sr8jA_EnSrQFt3jNRkZ9xCaBVKRwpcUBRuVEY%3D&ybv=0.1304432&ylv=0.1304432&ytt=483785116221445&pf=https%3A%2F%2Fcareer.habr.com%2Fcourses%3Futm_source%3Dhabr%26utm_medium%3Dhead_banner%26utm_campaign%3Dcourses
+      - img [ref=e17]
+      - generic:
+        - generic: Реклама
+    - banner [ref=e21]:
+      - link [ref=e23]:
+        - /url: https://habr.com/ru/docs/help/rules
+      - generic [ref=e25]:
+        - button "Toggle menu" [ref=e26] [cursor=pointer]
+        - link "Хабр" [ref=e31] [cursor=pointer]:
+          - /url: /ru/feed
+          - img "Хабр" [ref=e32]
+        - link "Все потоки" [ref=e35] [cursor=pointer]:
+          - /url: /ru/articles/
+        - link "Чему научиться в этом году? Чему научиться в этом году?" [ref=e37] [cursor=pointer]:
+          - /url: https://effect.habr.com/a/wCpAR21VuFaZHm6AK6HtGYcbBSURXJF1W3XTeRt-6lLFMZebKIZsGlN-hSqN6NxOSfkuMEyTVehcGe9OVqRBWAzXTXaj5lCGnzMZr5ql9bA-43beDdDUY_WyVrABRwziErHz55xfNWnBQJec79XawxpGavsCdxZAKG6cFrwiHY3TSPeTxIdfAr_eQsQ6iaGoxwaJIRDdMFPc7BHTWJHD
+          - img "Чему научиться в этом году?" [ref=e38]
+          - text: Чему научиться в этом году?
+        - generic [ref=e39]:
+          - link "Поиск" [ref=e40] [cursor=pointer]:
+            - /url: /ru/search/
+            - img "Поиск" [ref=e41]
+          - link "Написать публикацию" [ref=e44] [cursor=pointer]:
+            - /url: /ru/sandbox/start/
+            - img "Написать публикацию" [ref=e45]
+          - button "Настройки" [ref=e48] [cursor=pointer]:
+            - img "Настройки" [ref=e49]
+          - button "Войти" [ref=e51] [cursor=pointer]
+    - main [ref=e53]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - img "Обновить" [ref=e60]
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - heading "Моя лента" [level=1] [ref=e66]
+              - generic [ref=e67]:
+                - button "Настройки ленты Открыть список" [ref=e69] [cursor=pointer]:
+                  - text: Настройки ленты
+                  - img "Открыть список" [ref=e70]
+                - generic [ref=e72]:
+                  - group "Тип публикации" [ref=e73]:
+                    - generic [ref=e74]: Тип публикации
+                    - generic [ref=e75]:
+                      - generic [ref=e76] [cursor=pointer]:
+                        - checkbox "Статьи" [checked] [ref=e78]
+                        - generic [ref=e80]: Статьи
+                      - generic [ref=e81] [cursor=pointer]:
+                        - checkbox "Посты" [checked] [ref=e83]
+                        - generic [ref=e85]: Посты
+                      - generic [ref=e86] [cursor=pointer]:
+                        - checkbox "Новости" [checked] [ref=e88]
+                        - generic [ref=e90]: Новости
+                  - group "Порог рейтинга" [ref=e91]:
+                    - generic [ref=e92]: Порог рейтинга
+                    - generic [ref=e93]:
+                      - generic [ref=e94]:
+                        - radio "Все" [checked] [ref=e95]
+                        - generic [ref=e96] [cursor=pointer]: Все
+                      - generic [ref=e97]:
+                        - radio "≥0" [ref=e98]
+                        - generic [ref=e99] [cursor=pointer]: ≥0
+                      - generic [ref=e100]:
+                        - radio "≥10" [ref=e101]
+                        - generic [ref=e102] [cursor=pointer]: ≥10
+                      - generic [ref=e103]:
+                        - radio "≥25" [ref=e104]
+                        - generic [ref=e105] [cursor=pointer]: ≥25
+                      - generic [ref=e106]:
+                        - radio "≥50" [ref=e107]
+                        - generic [ref=e108] [cursor=pointer]: ≥50
+                      - generic [ref=e109]:
+                        - radio "≥100" [ref=e110]
+                        - generic [ref=e111] [cursor=pointer]: ≥100
+                  - group "Уровень сложности" [ref=e112]:
+                    - generic [ref=e113]: Уровень сложности
+                    - generic [ref=e114]:
+                      - generic [ref=e115]:
+                        - radio "Все" [checked] [ref=e116]
+                        - generic [ref=e117] [cursor=pointer]: Все
+                      - generic [ref=e118]:
+                        - radio "Простой" [ref=e119]
+                        - generic [ref=e120] [cursor=pointer]: Простой
+                      - generic [ref=e121]:
+                        - radio "Средний" [ref=e122]
+                        - generic [ref=e123] [cursor=pointer]: Средний
+                      - generic [ref=e124]:
+                        - radio "Сложный" [ref=e125]
+                        - generic [ref=e126] [cursor=pointer]: Сложный
+                  - generic [ref=e128]:
+                    - img "Предупреждение" [ref=e130]
+                    - generic [ref=e132]:
+                      - link "Войдите" [ref=e133] [cursor=pointer]:
+                        - /url: https://habr.com/kek/v1/auth//habrahabr/?back=/ru/feed/&hl=ru
+                      - text: или
+                      - link "зарегистрируйтесь" [ref=e134] [cursor=pointer]:
+                        - /url: https://habr.com/kek/v1/auth//habrahabr-register/?back=/ru/feed/&hl=ru
+                      - text: ", чтобы настроить фильтры"
+                  - button "Применить" [disabled] [ref=e135]
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - article [ref=e138]:
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: Статья
+                    - generic [ref=e143]:
+                      - link [ref=e144] [cursor=pointer]:
+                        - /url: /ru/users/Bright_Translate/
+                      - generic [ref=e146]:
+                        - link "Bright_Translate" [ref=e147] [cursor=pointer]:
+                          - /url: /ru/users/Bright_Translate/
+                        - link "4 минуты назад" [ref=e148] [cursor=pointer]:
+                          - /url: /ru/companies/ruvds/articles/1018448/
+                          - time [ref=e149]: 4 минуты назад
+                    - heading "Как собрать роутер из подручного железа" [level=2] [ref=e150]:
+                      - link "Как собрать роутер из подручного железа" [ref=e151] [cursor=pointer]:
+                        - /url: /ru/companies/ruvds/articles/1018448/
+                    - generic [ref=e152]:
+                      - generic [ref=e153]:
+                        - img "Уровень сложности" [ref=e155]
+                        - generic [ref=e157]: Средний
+                      - generic [ref=e158]:
+                        - img "Время на прочтение" [ref=e160]
+                        - generic [ref=e162]: 11 мин
+                      - generic [ref=e163] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e164]
+                        - generic "24" [ref=e166]
+                    - generic [ref=e168]:
+                      - generic [ref=e169]:
+                        - link "Блог компании RUVDS.com" [ref=e170] [cursor=pointer]:
+                          - /url: /ru/companies/ruvds/articles/
+                          - generic [ref=e171]: Блог компании RUVDS.com
+                        - text: ","
+                      - generic [ref=e172]:
+                        - link "Системное администрирование *" [ref=e173] [cursor=pointer]:
+                          - /url: /ru/hubs/sys_admin/
+                          - generic [ref=e174]: Системное администрирование
+                          - generic "Профильный хаб" [ref=e175]: "*"
+                        - text: ","
+                      - generic [ref=e176]:
+                        - link "Беспроводные технологии *" [ref=e177] [cursor=pointer]:
+                          - /url: /ru/hubs/wireless/
+                          - generic [ref=e178]: Беспроводные технологии
+                          - generic "Профильный хаб" [ref=e179]: "*"
+                        - text: ","
+                      - generic [ref=e180]:
+                        - link "Сетевое оборудование" [ref=e181] [cursor=pointer]:
+                          - /url: /ru/hubs/network_hardware/
+                          - generic [ref=e182]: Сетевое оборудование
+                        - text: ","
+                      - link "DIY или Сделай сам" [ref=e184] [cursor=pointer]:
+                        - /url: /ru/hubs/DIY/
+                        - generic [ref=e185]: DIY или Сделай сам
+                    - generic [ref=e187]:
+                      - generic [ref=e188]: Туториал
+                      - generic [ref=e189]: Перевод
+                    - generic [ref=e190]:
+                      - img [ref=e192]
+                      - generic [ref=e195]:
+                        - paragraph [ref=e196]:
+                          - text: Я не особо люблю освещать «текущие события», но правительство США на днях заявило о введении реально
+                          - link "шокирующего запрета" [ref=e197] [cursor=pointer]:
+                            - /url: https://arstechnica.com/tech-policy/2026/03/trump-fcc-prohibits-import-and-sale-of-new-wi-fi-routers-made-outside-us/
+                          - text: на импорт роутеров потребительского сегмента. Это идиотский запрет по целому ряду причин, но если он действительно вступит в силу, то навык сборки «самопального» роутера может оказаться весьма кстати.
+                        - paragraph [ref=e198]: К счастью, вы можете собрать его из практически всего, что можно хоть в какой-то степени назвать компьютером.
+                      - link "Читать далее" [ref=e199] [cursor=pointer]:
+                        - /url: /ru/companies/ruvds/articles/1018448/
+                        - generic [ref=e200]: Читать далее
+                  - generic [ref=e202]:
+                    - generic [ref=e203]:
+                      - img "Рейтинг" [ref=e204]
+                      - generic [ref=e206]: "0"
+                    - button "Добавить в закладки 0" [ref=e207] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e209]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e211]: "0"
+                    - generic "Поделиться" [ref=e212]:
+                      - button [ref=e213]:
+                        - img [ref=e214] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e216]:
+                      - link "Комментарии 0" [ref=e217] [cursor=pointer]:
+                        - /url: /ru/companies/ruvds/articles/1018448/comments/
+                        - img "Комментарии" [ref=e218]
+                        - generic [ref=e220]: "0"
+                - generic [ref=e222]:
+                  - generic [ref=e224]:
+                    - heading "Новости" [level=2] [ref=e225]
+                    - generic [ref=e226]:
+                      - button "все подряд" [disabled] [ref=e227]
+                      - button "лучшие" [ref=e228] [cursor=pointer]
+                  - generic [ref=e230]:
+                    - list [ref=e231]:
+                      - listitem [ref=e232]:
+                        - heading "В Великобритании подросток решил раздеться перед Gemini Live в режиме камеры, после этого ИИ удалил все аккаунты семьи" [level=3] [ref=e233]:
+                          - link "В Великобритании подросток решил раздеться перед Gemini Live в режиме камеры, после этого ИИ удалил все аккаунты семьи" [ref=e234] [cursor=pointer]:
+                            - /url: /ru/news/1019406/
+                        - generic [ref=e235]:
+                          - time [ref=e236]: 10:48
+                          - link "Комментарии 5 +5" [ref=e237] [cursor=pointer]:
+                            - /url: /ru/news/1019406/comments/
+                            - generic [ref=e238]:
+                              - img "Комментарии" [ref=e239]
+                              - generic [ref=e241]: "5"
+                              - generic [ref=e242]: "+5"
+                      - listitem [ref=e243]:
+                        - heading "Приглашаем на День открытых дверей онлайн-магистратуры «Кибербезопасность» НИЯУ МИФИ в партнёрстве с Яндексом" [level=3] [ref=e244]:
+                          - link "Приглашаем на День открытых дверей онлайн-магистратуры «Кибербезопасность» НИЯУ МИФИ в партнёрстве с Яндексом" [ref=e245] [cursor=pointer]:
+                            - /url: /ru/companies/yandex_praktikum/news/1018994/
+                        - generic [ref=e246]:
+                          - time [ref=e247]: 10:42
+                          - link "Комментарии 1 +1" [ref=e248] [cursor=pointer]:
+                            - /url: /ru/companies/yandex_praktikum/news/1018994/comments/
+                            - generic [ref=e249]:
+                              - img "Комментарии" [ref=e250]
+                              - generic [ref=e252]: "1"
+                              - generic [ref=e253]: "+1"
+                      - listitem [ref=e254]:
+                        - heading "Большое обновление текстового движка UniText" [level=3] [ref=e255]:
+                          - link "Большое обновление текстового движка UniText" [ref=e256] [cursor=pointer]:
+                            - /url: /ru/news/1019400/
+                        - generic [ref=e257]:
+                          - time [ref=e258]: 10:06
+                          - link "Комментарии 0" [ref=e259] [cursor=pointer]:
+                            - /url: /ru/news/1019400/comments/
+                            - generic [ref=e260]:
+                              - img "Комментарии" [ref=e261]
+                              - generic [ref=e263]: "0"
+                      - listitem [ref=e264]:
+                        - heading "Итальянский суд постановил, что Netflix должен вернуть клиентам деньги за многолетнее повышение цен" [level=3] [ref=e265]:
+                          - link "Итальянский суд постановил, что Netflix должен вернуть клиентам деньги за многолетнее повышение цен" [ref=e266] [cursor=pointer]:
+                            - /url: /ru/news/1019398/
+                        - generic [ref=e267]:
+                          - time [ref=e268]: 09:43
+                          - link "Комментарии 11 +11" [ref=e269] [cursor=pointer]:
+                            - /url: /ru/news/1019398/comments/
+                            - generic [ref=e270]:
+                              - img "Комментарии" [ref=e271]
+                              - generic [ref=e273]: "11"
+                              - generic [ref=e274]: "+11"
+                      - listitem [ref=e275]:
+                        - heading "Разработчик Amazon выявил регрессию в тестовом ядре Linux 7.0, в два раза снижающую производительность PostgreSQL" [level=3] [ref=e276]:
+                          - link "Разработчик Amazon выявил регрессию в тестовом ядре Linux 7.0, в два раза снижающую производительность PostgreSQL" [ref=e277] [cursor=pointer]:
+                            - /url: /ru/news/1019386/
+                        - generic [ref=e278]:
+                          - time [ref=e279]: 08:16
+                          - link "Комментарии 0" [ref=e280] [cursor=pointer]:
+                            - /url: /ru/news/1019386/comments/
+                            - generic [ref=e281]:
+                              - img "Комментарии" [ref=e282]
+                              - generic [ref=e284]: "0"
+                    - button "Показать еще" [ref=e286] [cursor=pointer]
+                - article [ref=e287]:
+                  - generic [ref=e288]:
+                    - generic [ref=e289]: Статья
+                    - generic [ref=e292]:
+                      - link [ref=e293] [cursor=pointer]:
+                        - /url: /ru/users/tmplts/
+                      - generic [ref=e295]:
+                        - link "tmplts" [ref=e296] [cursor=pointer]:
+                          - /url: /ru/users/tmplts/
+                        - link "32 минуты назад" [ref=e297] [cursor=pointer]:
+                          - /url: /ru/articles/1019416/
+                          - time [ref=e298]: 32 минуты назад
+                    - 'heading "Управление проектами: дайджест публикаций #53" [level=2] [ref=e299]':
+                      - 'link "Управление проектами: дайджест публикаций #53" [ref=e300] [cursor=pointer]':
+                        - /url: /ru/articles/1019416/
+                    - generic [ref=e301]:
+                      - generic [ref=e302]:
+                        - img "Уровень сложности" [ref=e304]
+                        - generic [ref=e306]: Простой
+                      - generic [ref=e307]:
+                        - img "Время на прочтение" [ref=e309]
+                        - generic [ref=e311]: 7 мин
+                      - generic [ref=e312] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e313]
+                        - generic "1169" [ref=e315]: 1.2K
+                    - generic [ref=e317]:
+                      - generic [ref=e318]:
+                        - link "Управление разработкой *" [ref=e319] [cursor=pointer]:
+                          - /url: /ru/hubs/dev_management/
+                          - generic [ref=e320]: Управление разработкой
+                          - generic "Профильный хаб" [ref=e321]: "*"
+                        - text: ","
+                      - link "Управление проектами *" [ref=e323] [cursor=pointer]:
+                        - /url: /ru/hubs/pm/
+                        - generic [ref=e324]: Управление проектами
+                        - generic "Профильный хаб" [ref=e325]: "*"
+                    - generic [ref=e328]: Дайджест
+                    - generic [ref=e329]:
+                      - img [ref=e331]
+                      - paragraph [ref=e335]: Проектный шестиугольник, документация проектов, внутрянка проектных команд, фреймворки обратной связи, система обучения в проектной команде и всё самое интересное, что писали за последние 2 недели про управление проектами. Мы прочитали все публикации и выбрали для вас самые крутые и полезные. Читайте, сохраняйте и применяйте!
+                      - link "Читать далее" [ref=e336] [cursor=pointer]:
+                        - /url: /ru/articles/1019416/
+                        - generic [ref=e337]: Читать далее
+                  - generic [ref=e339]:
+                    - generic [ref=e340]:
+                      - img "Рейтинг" [ref=e341]
+                      - generic [ref=e343]: "0"
+                    - button "Добавить в закладки 1" [ref=e344] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e346]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e348]: "1"
+                    - generic "Поделиться" [ref=e349]:
+                      - button [ref=e350]:
+                        - img [ref=e351] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e353]:
+                      - link "Комментарии 0" [ref=e354] [cursor=pointer]:
+                        - /url: /ru/articles/1019416/comments/
+                        - img "Комментарии" [ref=e355]
+                        - generic [ref=e357]: "0"
+                - article [ref=e358]:
+                  - generic [ref=e359]:
+                    - generic [ref=e360]: Статья
+                    - generic [ref=e363]:
+                      - link [ref=e364] [cursor=pointer]:
+                        - /url: /ru/users/MaryBlackie/
+                      - generic [ref=e366]:
+                        - link "MaryBlackie" [ref=e367] [cursor=pointer]:
+                          - /url: /ru/users/MaryBlackie/
+                        - link "35 минут назад" [ref=e368] [cursor=pointer]:
+                          - /url: /ru/articles/1019414/
+                          - time [ref=e369]: 35 минут назад
+                    - heading "Эффективный менеджмент, автобусы, или почему в компании вдруг все стало слишком сложно" [level=2] [ref=e370]:
+                      - link "Эффективный менеджмент, автобусы, или почему в компании вдруг все стало слишком сложно" [ref=e371] [cursor=pointer]:
+                        - /url: /ru/articles/1019414/
+                    - generic [ref=e372]:
+                      - generic [ref=e373]:
+                        - img "Уровень сложности" [ref=e375]
+                        - generic [ref=e377]: Простой
+                      - generic [ref=e378]:
+                        - img "Время на прочтение" [ref=e380]
+                        - generic [ref=e382]: 3 мин
+                      - generic [ref=e383] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e384]
+                        - generic "755" [ref=e386]
+                    - generic [ref=e388]:
+                      - generic [ref=e389]:
+                        - link "Управление персоналом *" [ref=e390] [cursor=pointer]:
+                          - /url: /ru/hubs/hr_management/
+                          - generic [ref=e391]: Управление персоналом
+                          - generic "Профильный хаб" [ref=e392]: "*"
+                        - text: ","
+                      - link "Карьера в IT-индустрии" [ref=e394] [cursor=pointer]:
+                        - /url: /ru/hubs/career/
+                        - generic [ref=e395]: Карьера в IT-индустрии
+                    - generic [ref=e397]:
+                      - generic [ref=e398]: Мнение
+                      - link "Из песочницы" [ref=e400] [cursor=pointer]:
+                        - /url: /ru/sandbox/
+                    - generic [ref=e401]:
+                      - img [ref=e403]
+                      - generic [ref=e406]:
+                        - paragraph [ref=e407]: Итак, более 90% российских компаний признались в ухудшении своего положения за последний год, и на Хабре уже регулярно вижу статьи о том, что «незаменимый сотрудник — это плохо», но предлагают в первую очередь лечить симптоматику, но не саму изначальную проблему.
+                        - paragraph [ref=e408]: Это примерно как лечить перелом ноги анальгином — главное чтоб не болело. Только кость как‑то странно срастётся, если срастётся вообще. Но главное же — что не болит!
+                        - paragraph [ref=e409]: Вообще, общемировая практика показывает, что есть две основные системы бизнеса — рабочая лошадка, которая планируется надолго, которая может со временем переформатироваться под новые моменты, но общая база у неё остаётся, и вообще владельцы её ещё планируют внукам завещать. А возможно, они и сами те внуки, которым компанию зазавещали.
+                        - paragraph [ref=e410]: Второй вид компаний — можно назвать его «тактическим».
+                      - link "Читать далее" [ref=e411] [cursor=pointer]:
+                        - /url: /ru/articles/1019414/
+                        - generic [ref=e412]: Читать далее
+                  - generic [ref=e414]:
+                    - generic [ref=e415]:
+                      - 'img "Всего голосов 2: ↑1 и ↓1" [ref=e416]'
+                      - 'generic "Всего голосов 2: ↑1 и ↓1" [ref=e418]': "0"
+                    - button "Добавить в закладки 0" [ref=e419] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e421]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e423]: "0"
+                    - generic "Поделиться" [ref=e424]:
+                      - button [ref=e425]:
+                        - img [ref=e426] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e428]:
+                      - link "Комментарии 1" [ref=e429] [cursor=pointer]:
+                        - /url: /ru/articles/1019414/comments/
+                        - img "Комментарии" [ref=e430]
+                        - generic [ref=e432]: "1"
+                      - link "+1" [ref=e433] [cursor=pointer]:
+                        - /url: /ru/articles/1019414/comments/
+                        - generic "Читать новые комментарии" [ref=e434]: "+1"
+                - article [ref=e435]:
+                  - generic [ref=e436]:
+                    - generic [ref=e437]: Статья
+                    - generic [ref=e440]:
+                      - link [ref=e441] [cursor=pointer]:
+                        - /url: /ru/users/maybe_elf/
+                      - generic [ref=e443]:
+                        - link "maybe_elf" [ref=e444] [cursor=pointer]:
+                          - /url: /ru/users/maybe_elf/
+                        - link "38 минут назад" [ref=e445] [cursor=pointer]:
+                          - /url: /ru/articles/1019412/
+                          - time [ref=e446]: 38 минут назад
+                    - heading "Улучшение концентрации внимания за счёт отказа от большого монитора" [level=2] [ref=e447]:
+                      - link "Улучшение концентрации внимания за счёт отказа от большого монитора" [ref=e448] [cursor=pointer]:
+                        - /url: /ru/articles/1019412/
+                    - generic [ref=e449]:
+                      - generic [ref=e450]:
+                        - img "Уровень сложности" [ref=e452]
+                        - generic [ref=e454]: Простой
+                      - generic [ref=e455]:
+                        - img "Время на прочтение" [ref=e457]
+                        - generic [ref=e459]: 4 мин
+                      - generic [ref=e460] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e461]
+                        - generic "1011" [ref=e463]: 1K
+                    - generic [ref=e465]:
+                      - generic [ref=e466]:
+                        - link "Периферия" [ref=e467] [cursor=pointer]:
+                          - /url: /ru/hubs/Peripheral/
+                          - generic [ref=e468]: Периферия
+                        - text: ","
+                      - generic [ref=e469]:
+                        - link "Ноутбуки" [ref=e470] [cursor=pointer]:
+                          - /url: /ru/hubs/notebooks/
+                          - generic [ref=e471]: Ноутбуки
+                        - text: ","
+                      - generic [ref=e472]:
+                        - link "Мониторы и ТВ" [ref=e473] [cursor=pointer]:
+                          - /url: /ru/hubs/displays/
+                          - generic [ref=e474]: Мониторы и ТВ
+                        - text: ","
+                      - generic [ref=e475]:
+                        - link "Настольные компьютеры" [ref=e476] [cursor=pointer]:
+                          - /url: /ru/hubs/desktops/
+                          - generic [ref=e477]: Настольные компьютеры
+                        - text: ","
+                      - link "Удалённая работа" [ref=e479] [cursor=pointer]:
+                        - /url: /ru/hubs/remote/
+                        - generic [ref=e480]: Удалённая работа
+                    - generic [ref=e483]: Перевод
+                    - generic [ref=e484]:
+                      - img [ref=e486]
+                      - paragraph [ref=e490]:
+                        - text: Старший продакт-инженер из Таллина Герман Ыунапуу
+                        - link "рассказывает" [ref=e491] [cursor=pointer]:
+                          - /url: https://ounapuu.ee/posts/2026/04/01/focus/#fnref:2
+                        - text: ", как он оптимизировал рабочую конфигурацию своей системы за счёт отказа от большого монитора, чтобы меньше отвлекаться."
+                      - link "Читать далее" [ref=e492] [cursor=pointer]:
+                        - /url: /ru/articles/1019412/
+                        - generic [ref=e493]: Читать далее
+                  - generic [ref=e495]:
+                    - generic [ref=e496]:
+                      - img "Рейтинг" [ref=e497]
+                      - generic [ref=e499]: "0"
+                    - button "Добавить в закладки 0" [ref=e500] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e502]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e504]: "0"
+                    - generic "Поделиться" [ref=e505]:
+                      - button [ref=e506]:
+                        - img [ref=e507] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e509]:
+                      - link "Комментарии 0" [ref=e510] [cursor=pointer]:
+                        - /url: /ru/articles/1019412/comments/
+                        - img "Комментарии" [ref=e511]
+                        - generic [ref=e513]: "0"
+                - generic [ref=e516]:
+                  - heading "Истории" [level=2] [ref=e519]
+                  - generic [ref=e521]:
+                    - generic [ref=e522]:
+                      - generic [ref=e524]:
+                        - button "author-logo" [ref=e525] [cursor=pointer]:
+                          - img "author-logo" [ref=e528]
+                        - generic [ref=e529]: Просто взять и пошутить
+                      - generic [ref=e531]:
+                        - button "author-logo" [ref=e532] [cursor=pointer]:
+                          - img "author-logo" [ref=e535]
+                        - generic [ref=e536]: Популярное из блогов компаний
+                      - generic [ref=e538]:
+                        - button "author-logo" [ref=e539] [cursor=pointer]:
+                          - link "author-logo" [ref=e541]:
+                            - /url: https://effect.habr.com/a/5lJNJVlvuxjRrSHjVNUB_GvtOz0a24SrtCSfB5e6wI7JpMJb-TGXOvUYWp0cdvQg3aywYLfonmo3kyLpPBuFgzxMyC0jsFHDLNcZSSsqznldDKlia_F96urGzdXZ
+                            - img "author-logo" [ref=e542]
+                        - generic [ref=e543]: Со статьями о Heavy Digital — на завод
+                      - generic [ref=e545]:
+                        - button "author-logo" [ref=e546] [cursor=pointer]:
+                          - img "author-logo" [ref=e549]
+                        - generic [ref=e550]: Пресс, который мы заслужили
+                      - generic [ref=e552]:
+                        - button "author-logo" [ref=e553] [cursor=pointer]:
+                          - img "author-logo" [ref=e556]
+                        - generic [ref=e557]: Ваша спина очень важна для вас
+                    - button "Вправо" [ref=e558] [cursor=pointer]:
+                      - img "Вправо" [ref=e560]
+                - article [ref=e562]:
+                  - generic [ref=e563]:
+                    - generic [ref=e564]: Статья
+                    - generic [ref=e567]:
+                      - link [ref=e568] [cursor=pointer]:
+                        - /url: /ru/users/TrexSelectel/
+                      - generic [ref=e570]:
+                        - link "TrexSelectel" [ref=e571] [cursor=pointer]:
+                          - /url: /ru/users/TrexSelectel/
+                        - link "1 час назад" [ref=e572] [cursor=pointer]:
+                          - /url: /ru/companies/selectel/articles/1018314/
+                          - time [ref=e573]: 1 час назад
+                    - heading "«Теплый» и «объемный» звук по кабелю за $4000 и $7 — есть ли разница? Аудиофильский тест" [level=2] [ref=e574]:
+                      - link "«Теплый» и «объемный» звук по кабелю за $4000 и $7 — есть ли разница? Аудиофильский тест" [ref=e575] [cursor=pointer]:
+                        - /url: /ru/companies/selectel/articles/1018314/
+                    - generic [ref=e576]:
+                      - generic [ref=e577]:
+                        - img "Время на прочтение" [ref=e579]
+                        - generic [ref=e581]: 5 мин
+                      - generic [ref=e582] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e583]
+                        - generic "2127" [ref=e585]: 2.1K
+                    - generic [ref=e587]:
+                      - generic [ref=e588]:
+                        - link "Блог компании Selectel" [ref=e589] [cursor=pointer]:
+                          - /url: /ru/companies/selectel/articles/
+                          - generic [ref=e590]: Блог компании Selectel
+                        - text: ","
+                      - generic [ref=e591]:
+                        - link "Гаджеты" [ref=e592] [cursor=pointer]:
+                          - /url: /ru/hubs/gadgets/
+                          - generic [ref=e593]: Гаджеты
+                        - text: ","
+                      - generic [ref=e594]:
+                        - link "Исследования и прогнозы в IT *" [ref=e595] [cursor=pointer]:
+                          - /url: /ru/hubs/research/
+                          - generic [ref=e596]: Исследования и прогнозы в IT
+                          - generic "Профильный хаб" [ref=e597]: "*"
+                        - text: ","
+                      - link "Звук" [ref=e599] [cursor=pointer]:
+                        - /url: /ru/hubs/sound/
+                        - generic [ref=e600]: Звук
+                    - generic [ref=e601]:
+                      - img [ref=e603]
+                      - paragraph [ref=e607]:
+                        - text: "В мире аудиотехники уже давно сложилась традиция: чем дороже аксессуар, тем больше ожиданий от него. Энтузиасты готовы выкладывать кругленькие суммы за кабели, обещающие «чистейший сигнал», «теплый звук» и «глубину сцены». При этом простые бюджетные компоненты из магазина часто вызывают у аудиофилов снисходительные улыбки. Такие споры не утихают годами, потому что затрагивают сразу и физику, и психологию восприятия. Недавно один из гиков решил"
+                        - link "поставить точку" [ref=e608] [cursor=pointer]:
+                          - /url: https://www.tomshardware.com/pc-components/sound-cards/comparison-of-usd4-000-boutique-audio-cable-to-usd7-amazon-basics-cable-shows-audiophiles-waste-a-lot-of-money-scientific-audio-equipment-analysis-with-analyzer-shows-no-difference-in-quality
+                        - text: в этой дискуссии. Он взял interconnect RCA-кабель за $4500 и сравнил его кабелем за $7. Давайте посмотрим, что получилось, результаты весьма любопытные.
+                      - link "Читать далее" [ref=e609] [cursor=pointer]:
+                        - /url: /ru/companies/selectel/articles/1018314/
+                        - generic [ref=e610]: Читать далее
+                  - generic [ref=e612]:
+                    - generic [ref=e613]:
+                      - 'img "Всего голосов 4: ↑3 и ↓1" [ref=e614]'
+                      - 'generic "Всего голосов 4: ↑3 и ↓1" [ref=e616]': "+4"
+                    - button "Добавить в закладки 1" [ref=e617] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e619]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e621]: "1"
+                    - generic "Поделиться" [ref=e622]:
+                      - button [ref=e623]:
+                        - img [ref=e624] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e626]:
+                      - link "Комментарии 4" [ref=e627] [cursor=pointer]:
+                        - /url: /ru/companies/selectel/articles/1018314/comments/
+                        - img "Комментарии" [ref=e628]
+                        - generic [ref=e630]: "4"
+                      - link "+4" [ref=e631] [cursor=pointer]:
+                        - /url: /ru/companies/selectel/articles/1018314/comments/
+                        - generic "Читать новые комментарии" [ref=e632]: "+4"
+                - article [ref=e633]:
+                  - generic [ref=e634]:
+                    - generic [ref=e635]: Статья
+                    - generic [ref=e638]:
+                      - link [ref=e639] [cursor=pointer]:
+                        - /url: /ru/users/AriaQA/
+                      - generic [ref=e641]:
+                        - link "AriaQA" [ref=e642] [cursor=pointer]:
+                          - /url: /ru/users/AriaQA/
+                        - link "1 час назад" [ref=e643] [cursor=pointer]:
+                          - /url: /ru/articles/1019410/
+                          - time [ref=e644]: 1 час назад
+                    - 'heading "Как нанимают сказочников: разбор статьи одного рекрутера" [level=2] [ref=e645]':
+                      - 'link "Как нанимают сказочников: разбор статьи одного рекрутера" [ref=e646] [cursor=pointer]':
+                        - /url: /ru/articles/1019410/
+                    - generic [ref=e647]:
+                      - generic [ref=e648]:
+                        - img "Время на прочтение" [ref=e650]
+                        - generic [ref=e652]: 4 мин
+                      - generic [ref=e653] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e654]
+                        - generic "1891" [ref=e656]: 1.9K
+                    - generic [ref=e658]:
+                      - generic [ref=e659]:
+                        - link "IT-компании" [ref=e660] [cursor=pointer]:
+                          - /url: /ru/hubs/itcompanies/
+                          - generic [ref=e661]: IT-компании
+                        - text: ","
+                      - generic [ref=e662]:
+                        - link "Карьера в IT-индустрии" [ref=e663] [cursor=pointer]:
+                          - /url: /ru/hubs/career/
+                          - generic [ref=e664]: Карьера в IT-индустрии
+                        - text: ","
+                      - generic [ref=e665]:
+                        - link "Управление персоналом *" [ref=e666] [cursor=pointer]:
+                          - /url: /ru/hubs/hr_management/
+                          - generic [ref=e667]: Управление персоналом
+                          - generic "Профильный хаб" [ref=e668]: "*"
+                        - text: ","
+                      - link "Управление сообществом *" [ref=e670] [cursor=pointer]:
+                        - /url: /ru/hubs/community_management/
+                        - generic [ref=e671]: Управление сообществом
+                        - generic "Профильный хаб" [ref=e672]: "*"
+                    - generic [ref=e675]: Мнение
+                    - generic [ref=e676]:
+                      - img [ref=e678]
+                      - generic [ref=e681]:
+                        - paragraph [ref=e682]: Вы думаете, что на собеседовании выбирают лучшего? Рекрутеры пишут статьи про «снижение неопределённости», «оценку рисков» и «понятных кандидатов». А по факту сами не знают, кого ищут, нанимают сказочников и называют это оптимизацией потока.
+                        - paragraph [ref=e683]: "Спойлер: «понятный» кандидат обходится бизнесу дороже, чем «непонятный» профессионал. И да, Жизнь за Нер'зула!"
+                      - link "Читать далее" [ref=e684] [cursor=pointer]:
+                        - /url: /ru/articles/1019410/
+                        - generic [ref=e685]: Читать далее
+                  - generic [ref=e687]:
+                    - generic [ref=e688]:
+                      - 'img "Всего голосов 5: ↑4 и ↓1" [ref=e689]'
+                      - 'generic "Всего голосов 5: ↑4 и ↓1" [ref=e691]': "+5"
+                    - button "Добавить в закладки 0" [ref=e692] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e694]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e696]: "0"
+                    - generic "Поделиться" [ref=e697]:
+                      - button [ref=e698]:
+                        - img [ref=e699] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e701]:
+                      - link "Комментарии 0" [ref=e702] [cursor=pointer]:
+                        - /url: /ru/articles/1019410/comments/
+                        - img "Комментарии" [ref=e703]
+                        - generic [ref=e705]: "0"
+                - article [ref=e706]:
+                  - generic [ref=e707]:
+                    - generic [ref=e708]: Статья
+                    - generic [ref=e711]:
+                      - link [ref=e712] [cursor=pointer]:
+                        - /url: /ru/users/RoboForm/
+                      - generic [ref=e714]:
+                        - link "RoboForm" [ref=e715] [cursor=pointer]:
+                          - /url: /ru/users/RoboForm/
+                        - link "1 час назад" [ref=e716] [cursor=pointer]:
+                          - /url: /ru/articles/1019408/
+                          - time [ref=e717]: 1 час назад
+                    - 'heading "Мобильная разработка за неделю #626 (30 марта — 5 апреля)" [level=2] [ref=e718]':
+                      - 'link "Мобильная разработка за неделю #626 (30 марта — 5 апреля)" [ref=e719] [cursor=pointer]':
+                        - /url: /ru/articles/1019408/
+                    - generic [ref=e720]:
+                      - generic [ref=e721]:
+                        - img "Уровень сложности" [ref=e723]
+                        - generic [ref=e725]: Простой
+                      - generic [ref=e726]:
+                        - img "Время на прочтение" [ref=e728]
+                        - generic [ref=e730]: 5 мин
+                      - generic [ref=e731] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e732]
+                        - generic "1540" [ref=e734]: 1.5K
+                    - generic [ref=e736]:
+                      - generic [ref=e737]:
+                        - link "iOS *" [ref=e738] [cursor=pointer]:
+                          - /url: /ru/hubs/ios_dev/
+                          - generic [ref=e739]: iOS
+                          - generic "Профильный хаб" [ref=e740]: "*"
+                        - text: ","
+                      - generic [ref=e741]:
+                        - link "Android *" [ref=e742] [cursor=pointer]:
+                          - /url: /ru/hubs/android_dev/
+                          - generic [ref=e743]: Android
+                          - generic "Профильный хаб" [ref=e744]: "*"
+                        - text: ","
+                      - generic [ref=e745]:
+                        - link "Монетизация мобильных приложений *" [ref=e746] [cursor=pointer]:
+                          - /url: /ru/hubs/mobile_monetization/
+                          - generic [ref=e747]: Монетизация мобильных приложений
+                          - generic "Профильный хаб" [ref=e748]: "*"
+                        - text: ","
+                      - link "Аналитика мобильных приложений *" [ref=e750] [cursor=pointer]:
+                        - /url: /ru/hubs/mobileanalytics/
+                        - generic [ref=e751]: Аналитика мобильных приложений
+                        - generic "Профильный хаб" [ref=e752]: "*"
+                    - generic [ref=e755]: Дайджест
+                    - generic [ref=e756]:
+                      - img [ref=e758]
+                      - paragraph [ref=e762]: В новом выпуске выпуск приложений в App Store без Mac и Android Service своей мечты, узкие места в производительности Android-приложений и как Swift работает с памятью, Android SDK на Swift, кризис в RuStore и путь к тёмной стороне, захват категории Cast to TV в Google Play, галлюцинации LLM и многое другое. Заходите!
+                      - link "Читать далее" [ref=e763] [cursor=pointer]:
+                        - /url: /ru/articles/1019408/
+                        - generic [ref=e764]: Читать далее
+                  - generic [ref=e766]:
+                    - generic [ref=e767]:
+                      - img "Рейтинг" [ref=e768]
+                      - generic [ref=e770]: "0"
+                    - button "Добавить в закладки 1" [ref=e771] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e773]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e775]: "1"
+                    - generic "Поделиться" [ref=e776]:
+                      - button [ref=e777]:
+                        - img [ref=e778] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e780]:
+                      - link "Комментарии 0" [ref=e781] [cursor=pointer]:
+                        - /url: /ru/articles/1019408/comments/
+                        - img "Комментарии" [ref=e782]
+                        - generic [ref=e784]: "0"
+                - generic [ref=e788]:
+                  - heading "Минуточку внимания" [level=2] [ref=e791]
+                  - generic [ref=e793]:
+                    - link "Событие Качаем к лету хард- и софт-скиллы на айтишных ивентах" [ref=e795] [cursor=pointer]:
+                      - /url: https://effect.habr.com/a/OoeihNhgxf3xhce_Bn-LIOCat0LAZmKQ1WOx0rxwkcntdWPWDiM2-LJ62JdnN1JUED79oJUBjWoQgMXXUEDieGZH9PlQD0j6UNJPM0fc5yFV5GxFo42nDHVVFfd9kWGK
+                      - generic [ref=e798]: Событие
+                      - heading "Качаем к лету хард- и софт-скиллы на айтишных ивентах" [level=3] [ref=e800]
+                    - link "Промо Как сделать так, чтобы сотрудники говорили о компании хорошее" [ref=e802] [cursor=pointer]:
+                      - /url: https://effect.habr.com/a/ngbVa-cl58haGPPWyWZvBB1SAdZc3W29ohMnyQxM8hiK-O0P5iKzf7jeGf7QQv2j7q77iBhsz3DTBP2GDdTKNSQyRgFJoocxmpj2JA8a3IpcpT5XRaNSUzhHG86gxJVlXBs
+                      - generic [ref=e805]: Промо
+                      - heading "Как сделать так, чтобы сотрудники говорили о компании хорошее" [level=3] [ref=e807]
+                    - 'link "Турбо Хочу – валю проект, хочу – помогаю: как чинить ИИ-агенты" [ref=e809] [cursor=pointer]':
+                      - /url: https://effect.habr.com/a/bUh4_e9QzFWNwCeOXXfScKHYUX1SpkydVSmU_Xfa1rpThc-sF-Ebo5_eoIp8mmr-T4M2zgwfG_Z1AtRwY76yRJg2ysClRPcyt2ARC67X5QzSy0Zz5fc-EC2gT7Um-8Xa0I5mMYPdimLHDDPOFIKMCFyspFG4CmzzLWJ5Bxg
+                      - generic [ref=e812]: Турбо
+                      - 'heading "Хочу – валю проект, хочу – помогаю: как чинить ИИ-агенты" [level=3] [ref=e814]'
+                - article [ref=e815]:
+                  - generic [ref=e816]:
+                    - generic [ref=e817]: Новость
+                    - generic [ref=e820]:
+                      - link [ref=e821] [cursor=pointer]:
+                        - /url: /ru/users/Travis_Macrif/
+                      - generic [ref=e823]:
+                        - link "Travis_Macrif" [ref=e824] [cursor=pointer]:
+                          - /url: /ru/users/Travis_Macrif/
+                        - link "1 час назад" [ref=e825] [cursor=pointer]:
+                          - /url: /ru/news/1019406/
+                          - time [ref=e826]: 1 час назад
+                    - heading "В Великобритании подросток решил раздеться перед Gemini Live в режиме камеры, после этого ИИ удалил все аккаунты семьи" [level=2] [ref=e827]:
+                      - link "В Великобритании подросток решил раздеться перед Gemini Live в режиме камеры, после этого ИИ удалил все аккаунты семьи" [ref=e828] [cursor=pointer]:
+                        - /url: /ru/news/1019406/
+                    - generic [ref=e829]:
+                      - generic [ref=e830]:
+                        - img "Время на прочтение" [ref=e832]
+                        - generic [ref=e834]: 2 мин
+                      - generic [ref=e835] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e836]
+                        - generic "5000" [ref=e838]: 5K
+                    - generic [ref=e840]:
+                      - generic [ref=e841]:
+                        - link "Искусственный интеллект" [ref=e842] [cursor=pointer]:
+                          - /url: /ru/hubs/artificial_intelligence/
+                          - generic [ref=e843]: Искусственный интеллект
+                        - text: ","
+                      - generic [ref=e844]:
+                        - link "Законодательство в IT" [ref=e845] [cursor=pointer]:
+                          - /url: /ru/hubs/business-laws/
+                          - generic [ref=e846]: Законодательство в IT
+                        - text: ","
+                      - generic [ref=e847]:
+                        - link "Управление продуктом *" [ref=e848] [cursor=pointer]:
+                          - /url: /ru/hubs/productpm/
+                          - generic [ref=e849]: Управление продуктом
+                          - generic "Профильный хаб" [ref=e850]: "*"
+                        - text: ","
+                      - generic [ref=e851]:
+                        - link "Информационная безопасность *" [ref=e852] [cursor=pointer]:
+                          - /url: /ru/hubs/infosecurity/
+                          - generic [ref=e853]: Информационная безопасность
+                          - generic "Профильный хаб" [ref=e854]: "*"
+                        - text: ","
+                      - link "Голосовые интерфейсы *" [ref=e856] [cursor=pointer]:
+                        - /url: /ru/hubs/voice_interfaces/
+                        - generic [ref=e857]: Голосовые интерфейсы
+                        - generic "Профильный хаб" [ref=e858]: "*"
+                    - generic [ref=e859]:
+                      - img [ref=e861]
+                      - paragraph [ref=e865]:
+                        - text: В Великобритании 14-летний подросток решил раздеться перед голосовым помощником Gemini Live с доступом к камере планшета. В результате искусственный интеллект
+                        - link "удалил" [ref=e866] [cursor=pointer]:
+                          - /url: https://www.pcworld.com/article/3104521/teenagers-gemini-mistake-locks-entire-family-out-of-google-accounts.html
+                        - text: все аккаунты семьи и документы родителей несовершеннолетнего.
+                      - link "Читать далее" [ref=e867] [cursor=pointer]:
+                        - /url: /ru/news/1019406/
+                        - generic [ref=e868]: Читать далее
+                  - generic [ref=e870]:
+                    - generic [ref=e871]:
+                      - 'img "Всего голосов 6: ↑6 и ↓0" [ref=e872]'
+                      - 'generic "Всего голосов 6: ↑6 и ↓0" [ref=e874]': "+10"
+                    - button "Добавить в закладки 0" [ref=e875] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e877]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e879]: "0"
+                    - generic "Поделиться" [ref=e880]:
+                      - button [ref=e881]:
+                        - img [ref=e882] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e884]:
+                      - link "Комментарии 4" [ref=e885] [cursor=pointer]:
+                        - /url: /ru/news/1019406/comments/
+                        - img "Комментарии" [ref=e886]
+                        - generic [ref=e888]: "4"
+                      - link "+4" [ref=e889] [cursor=pointer]:
+                        - /url: /ru/news/1019406/comments/
+                        - generic "Читать новые комментарии" [ref=e890]: "+4"
+                - article [ref=e891]:
+                  - generic [ref=e892]:
+                    - generic [ref=e893]: Новость
+                    - generic [ref=e896]:
+                      - link [ref=e897] [cursor=pointer]:
+                        - /url: /ru/users/ira-b/
+                      - generic [ref=e899]:
+                        - link "ira-b" [ref=e900] [cursor=pointer]:
+                          - /url: /ru/users/ira-b/
+                        - link "1 час назад" [ref=e901] [cursor=pointer]:
+                          - /url: /ru/companies/yandex_praktikum/news/1018994/
+                          - time [ref=e902]: 1 час назад
+                    - heading "Приглашаем на День открытых дверей онлайн-магистратуры «Кибербезопасность» НИЯУ МИФИ в партнёрстве с Яндексом" [level=2] [ref=e903]:
+                      - link "Приглашаем на День открытых дверей онлайн-магистратуры «Кибербезопасность» НИЯУ МИФИ в партнёрстве с Яндексом" [ref=e904] [cursor=pointer]:
+                        - /url: /ru/companies/yandex_praktikum/news/1018994/
+                    - generic [ref=e905]:
+                      - generic [ref=e906]:
+                        - img "Время на прочтение" [ref=e908]
+                        - generic [ref=e910]: 2 мин
+                      - generic [ref=e911] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e912]
+                        - generic "1559" [ref=e914]: 1.6K
+                    - generic [ref=e916]:
+                      - generic [ref=e917]:
+                        - link "Блог компании Яндекс Практикум" [ref=e918] [cursor=pointer]:
+                          - /url: /ru/companies/yandex_praktikum/articles/
+                          - generic [ref=e919]: Блог компании Яндекс Практикум
+                        - text: ","
+                      - generic [ref=e920]:
+                        - link "Информационная безопасность *" [ref=e921] [cursor=pointer]:
+                          - /url: /ru/hubs/infosecurity/
+                          - generic [ref=e922]: Информационная безопасность
+                          - generic "Профильный хаб" [ref=e923]: "*"
+                        - text: ","
+                      - generic [ref=e924]:
+                        - link "Искусственный интеллект" [ref=e925] [cursor=pointer]:
+                          - /url: /ru/hubs/artificial_intelligence/
+                          - generic [ref=e926]: Искусственный интеллект
+                        - text: ","
+                      - generic [ref=e927]:
+                        - link "Учебный процесс в IT" [ref=e928] [cursor=pointer]:
+                          - /url: /ru/hubs/study/
+                          - generic [ref=e929]: Учебный процесс в IT
+                        - text: ","
+                      - link "Карьера в IT-индустрии" [ref=e931] [cursor=pointer]:
+                        - /url: /ru/hubs/career/
+                        - generic [ref=e932]: Карьера в IT-индустрии
+                    - generic [ref=e933]:
+                      - img [ref=e935]
+                      - paragraph [ref=e939]:
+                        - text: Привет! Это команда Яндекс Практикума — приглашаем вас на
+                        - link "День открытых дверей онлайн-магистратуры «Кибербезопасность»" [ref=e940] [cursor=pointer]:
+                          - /url: https://practicum.yandex.ru/high-education/dod/info-security_dod/?utm_source=content&utm_medium=media&utm_campaign=habr_media_RF_HighEd_highInSe_b2c_Article_None_hadr&utm_content=article&utm_term=5-04-26
+                        - text: НИЯУ МИФИ в партнёрстве с Яндекс Практикумом. На мероприятии мы вместе с экспертами МИФИ расскажем о том, какие есть пути для развития специалистов в сфере кибербезопасности, как оставаться востребованным на рынке и почему за такими специалистами — будущее сферы IT.
+                      - link "Читать далее" [ref=e941] [cursor=pointer]:
+                        - /url: /ru/companies/yandex_praktikum/news/1018994/
+                        - generic [ref=e942]: Читать далее
+                  - generic [ref=e944]:
+                    - generic [ref=e945]:
+                      - img "Рейтинг" [ref=e946]
+                      - generic [ref=e948]: "0"
+                    - button "Добавить в закладки 0" [ref=e949] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e951]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e953]: "0"
+                    - generic "Поделиться" [ref=e954]:
+                      - button [ref=e955]:
+                        - img [ref=e956] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e958]:
+                      - link "Комментарии 1" [ref=e959] [cursor=pointer]:
+                        - /url: /ru/companies/yandex_praktikum/news/1018994/comments/
+                        - img "Комментарии" [ref=e960]
+                        - generic [ref=e962]: "1"
+                      - link "+1" [ref=e963] [cursor=pointer]:
+                        - /url: /ru/companies/yandex_praktikum/news/1018994/comments/
+                        - generic "Читать новые комментарии" [ref=e964]: "+1"
+                - article [ref=e965]:
+                  - generic [ref=e966]:
+                    - generic [ref=e967]: Статья
+                    - generic [ref=e970]:
+                      - link [ref=e971] [cursor=pointer]:
+                        - /url: /ru/users/dmitry-go/
+                      - generic [ref=e973]:
+                        - link "dmitry-go" [ref=e974] [cursor=pointer]:
+                          - /url: /ru/users/dmitry-go/
+                        - link "1 час назад" [ref=e975] [cursor=pointer]:
+                          - /url: /ru/articles/1019402/
+                          - time [ref=e976]: 1 час назад
+                    - heading "Потратил на безопасность 10 зарплат и попал в странную петлю" [level=2] [ref=e977]:
+                      - link "Потратил на безопасность 10 зарплат и попал в странную петлю" [ref=e978] [cursor=pointer]:
+                        - /url: /ru/articles/1019402/
+                    - generic [ref=e979]:
+                      - generic [ref=e980]:
+                        - img "Уровень сложности" [ref=e982]
+                        - generic [ref=e984]: Простой
+                      - generic [ref=e985]:
+                        - img "Время на прочтение" [ref=e987]
+                        - generic [ref=e989]: 6 мин
+                      - generic [ref=e990] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e991]
+                        - generic "1847" [ref=e993]: 1.8K
+                    - generic [ref=e995]:
+                      - generic [ref=e996]:
+                        - link "Читальный зал" [ref=e997] [cursor=pointer]:
+                          - /url: /ru/hubs/read/
+                          - generic [ref=e998]: Читальный зал
+                        - text: ","
+                      - generic [ref=e999]:
+                        - link "Развитие стартапа" [ref=e1000] [cursor=pointer]:
+                          - /url: /ru/hubs/startuprise/
+                          - generic [ref=e1001]: Развитие стартапа
+                        - text: ","
+                      - link "Лайфхаки для гиков" [ref=e1003] [cursor=pointer]:
+                        - /url: /ru/hubs/lifehacks/
+                        - generic [ref=e1004]: Лайфхаки для гиков
+                    - generic [ref=e1007]: Мнение
+                    - generic [ref=e1008]:
+                      - generic [ref=e1011]:
+                        - paragraph [ref=e1012]: Вы когда-нибудь тратили деньги на то чтобы чувствовать себя спокойнее, а после этого начинали тревожиться еще сильнее? Поставили сигнализацию на машину и начали дергаться от каждого писка на парковке. Купили страховку и вдруг осознали сколько всего еще не застраховано. Сделали резервную копию рабочих файлов и тут же подумали, а что если и облако упадет.
+                        - paragraph [ref=e1013]: Я создаю наборы еды для чрезвычайных ситуаций. И вижу эту штуку в концентрированном виде. Человек покупает набор. Потом еще один. Потом спрашивает про генераторы, фильтры для воды, сроки хранения топлива. Потом пишет что смотрит участок за городом. Каждый следующий шаг логичен. А последнего шага не существует.
+                      - link "Читать далее" [ref=e1014] [cursor=pointer]:
+                        - /url: /ru/articles/1019402/
+                        - generic [ref=e1015]: Читать далее
+                  - generic [ref=e1017]:
+                    - generic [ref=e1018]:
+                      - 'img "Всего голосов 1: ↑1 и ↓0" [ref=e1019]'
+                      - 'generic "Всего голосов 1: ↑1 и ↓0" [ref=e1021]': "+1"
+                    - button "Добавить в закладки 2" [ref=e1022] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1024]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1026]: "2"
+                    - generic "Поделиться" [ref=e1027]:
+                      - button [ref=e1028]:
+                        - img [ref=e1029] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1031]:
+                      - link "Комментарии 1" [ref=e1032] [cursor=pointer]:
+                        - /url: /ru/articles/1019402/comments/
+                        - img "Комментарии" [ref=e1033]
+                        - generic [ref=e1035]: "1"
+                      - link "+1" [ref=e1036] [cursor=pointer]:
+                        - /url: /ru/articles/1019402/comments/
+                        - generic "Читать новые комментарии" [ref=e1037]: "+1"
+                - generic [ref=e1040]:
+                  - link "Курсы" [ref=e1043] [cursor=pointer]:
+                    - /url: https://career.habr.com/courses?utm_content=courses&utm_source=habr
+                  - list [ref=e1045]:
+                    - listitem [ref=e1046]:
+                      - link "Инженер по тестированию" [ref=e1047] [cursor=pointer]:
+                        - /url: https://fas.st/9lGV0_?erid=2bL9aMPo2e49hMef4pfysZW5NS&utm_source=habr
+                        - img [ref=e1048]
+                        - text: Инженер по тестированию
+                      - generic [ref=e1049]: По мере набора группы
+                    - listitem [ref=e1050]:
+                      - link "Аналитик данных" [ref=e1051] [cursor=pointer]:
+                        - /url: https://practicum.yandex.ru/data-analyst/?utm_source=habr-career&utm_medium=partners&utm_campaign=habrcareer-cpa1_partners_RF_Data_dataAn_b2c_Course-catalogue_None_None&utm_source=habr
+                        - img [ref=e1052]
+                        - text: Аналитик данных
+                      - generic [ref=e1053]: По мере набора группы
+                    - listitem [ref=e1054]:
+                      - link "Нейросети. Практический курс" [ref=e1055] [cursor=pointer]:
+                        - /url: https://go.2038.pro/7a4fa14f4afbff20?m=1&utm_source=habr
+                        - img [ref=e1056]
+                        - text: Нейросети. Практический курс
+                      - generic [ref=e1057]: По мере набора группы
+                    - listitem [ref=e1058]:
+                      - link "ИТ-директор" [ref=e1059] [cursor=pointer]:
+                        - /url: https://eduson.academy/it-director?utm_source=cpa&utm_medium=habr&utm_source=habr
+                        - img [ref=e1060]
+                        - text: ИТ-директор
+                      - generic [ref=e1061]: По мере набора группы
+                    - listitem [ref=e1062]:
+                      - 'link "Аналитик данных: тариф Базовый" [ref=e1063] [cursor=pointer]':
+                        - /url: https://eduson.academy/data-analyst?utm_source=cpa&utm_medium=habr&utm_source=habr
+                        - img [ref=e1064]
+                        - text: "Аналитик данных: тариф Базовый"
+                      - generic [ref=e1065]: По мере набора группы
+                  - link "Больше курсов на Хабр Карьере" [ref=e1067] [cursor=pointer]:
+                    - /url: https://career.habr.com/courses?utm_content=courses_all&utm_source=habr
+                - article [ref=e1068]:
+                  - generic [ref=e1069]:
+                    - generic [ref=e1070]: Статья
+                    - generic [ref=e1073]:
+                      - link [ref=e1074] [cursor=pointer]:
+                        - /url: /ru/users/i-savelev/
+                      - generic [ref=e1076]:
+                        - link "i-savelev" [ref=e1077] [cursor=pointer]:
+                          - /url: /ru/users/i-savelev/
+                        - link "1 час назад" [ref=e1078] [cursor=pointer]:
+                          - /url: /ru/articles/1019272/
+                          - time [ref=e1079]: 1 час назад
+                    - 'heading "Renga API: автоматизируем автоматизацию с помощью ИИ-агентов" [level=2] [ref=e1080]':
+                      - 'link "Renga API: автоматизируем автоматизацию с помощью ИИ-агентов" [ref=e1081] [cursor=pointer]':
+                        - /url: /ru/articles/1019272/
+                    - generic [ref=e1082]:
+                      - generic [ref=e1083]:
+                        - img "Уровень сложности" [ref=e1085]
+                        - generic [ref=e1087]: Средний
+                      - generic [ref=e1088]:
+                        - img "Время на прочтение" [ref=e1090]
+                        - generic [ref=e1092]: 7 мин
+                      - generic [ref=e1093] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1094]
+                        - generic "1812" [ref=e1096]: 1.8K
+                    - generic [ref=e1098]:
+                      - generic [ref=e1099]:
+                        - link "CAD/CAM *" [ref=e1100] [cursor=pointer]:
+                          - /url: /ru/hubs/cad_cam/
+                          - generic [ref=e1101]: CAD/CAM
+                          - generic "Профильный хаб" [ref=e1102]: "*"
+                        - text: ","
+                      - link "Искусственный интеллект" [ref=e1104] [cursor=pointer]:
+                        - /url: /ru/hubs/artificial_intelligence/
+                        - generic [ref=e1105]: Искусственный интеллект
+                    - generic [ref=e1106]:
+                      - img [ref=e1108]
+                      - generic [ref=e1111]:
+                        - paragraph [ref=e1112]: Щупаем внутренности Renga. В этой статье залезу под капот к отечественному ПО и разберу его API. Сравню с западным конкурентом и заставлю подружиться с ИИ.
+                        - paragraph [ref=e1113]: "В этой статье:"
+                        - paragraph [ref=e1114]:
+                          - text: "- посмотрим на суть API - тут будет не пересказ примеров из SDK, а общий взгляд на технологию"
+                          - text: "- сравним с Revit API"
+                          - text: "- подключим ии-агента к Ренге и заставим работать"
+                      - link "Читать далее" [ref=e1115] [cursor=pointer]:
+                        - /url: /ru/articles/1019272/
+                        - generic [ref=e1116]: Читать далее
+                  - generic [ref=e1118]:
+                    - generic [ref=e1119]:
+                      - 'img "Всего голосов 2: ↑1 и ↓1" [ref=e1120]'
+                      - 'generic "Всего голосов 2: ↑1 и ↓1" [ref=e1122]': "0"
+                    - button "Добавить в закладки 3" [ref=e1123] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1125]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1127]: "3"
+                    - generic "Поделиться" [ref=e1128]:
+                      - button [ref=e1129]:
+                        - img [ref=e1130] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1132]:
+                      - link "Комментарии 0" [ref=e1133] [cursor=pointer]:
+                        - /url: /ru/articles/1019272/comments/
+                        - img "Комментарии" [ref=e1134]
+                        - generic [ref=e1136]: "0"
+                - article [ref=e1137]:
+                  - generic [ref=e1138]:
+                    - generic [ref=e1139]: Новость
+                    - generic [ref=e1142]:
+                      - link [ref=e1143] [cursor=pointer]:
+                        - /url: /ru/users/aks2dio/
+                      - generic [ref=e1145]:
+                        - link "aks2dio" [ref=e1146] [cursor=pointer]:
+                          - /url: /ru/users/aks2dio/
+                        - link "1 час назад" [ref=e1147] [cursor=pointer]:
+                          - /url: /ru/news/1019400/
+                          - time [ref=e1148]: 1 час назад
+                    - heading "Большое обновление текстового движка UniText" [level=2] [ref=e1149]:
+                      - link "Большое обновление текстового движка UniText" [ref=e1150] [cursor=pointer]:
+                        - /url: /ru/news/1019400/
+                    - generic [ref=e1151]:
+                      - generic [ref=e1152]:
+                        - img "Время на прочтение" [ref=e1154]
+                        - generic [ref=e1156]: 3 мин
+                      - generic [ref=e1157] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1158]
+                        - generic "2520" [ref=e1160]: 2.5K
+                    - generic [ref=e1162]:
+                      - generic [ref=e1163]:
+                        - link "Разработка игр *" [ref=e1164] [cursor=pointer]:
+                          - /url: /ru/hubs/gamedev/
+                          - generic [ref=e1165]: Разработка игр
+                          - generic "Профильный хаб" [ref=e1166]: "*"
+                        - text: ","
+                      - link "Unity *" [ref=e1168] [cursor=pointer]:
+                        - /url: /ru/hubs/unity/
+                        - generic [ref=e1169]: Unity
+                        - generic "Профильный хаб" [ref=e1170]: "*"
+                    - generic [ref=e1171]:
+                      - img [ref=e1173]
+                      - generic [ref=e1176]:
+                        - paragraph [ref=e1177]:
+                          - text: Пару месяцев назад писал
+                          - link "про новый текстовый движок для Unity" [ref=e1178] [cursor=pointer]:
+                            - /url: https://habr.com/p/1003656/
+                          - text: . Настолько он выглядел амбициозно, что вообще не верилось в его правдивость.
+                        - paragraph [ref=e1179]:
+                          - text: На этой неделе подкрался релиз новой версии 2.0. Это уже буквально другой продукт. Судя по
+                          - link "гигантскому Changelog" [ref=e1180] [cursor=pointer]:
+                            - /url: https://github.com/LightSideMeowshop/UniText/blob/2.0.0/CHANGELOG.md
+                          - text: ", переработано там чуть ли не всё. При этом плюшки первой версии остались на месте, стали лучше и их стало ещё больше."
+                      - link "Читать далее" [ref=e1181] [cursor=pointer]:
+                        - /url: /ru/news/1019400/
+                        - generic [ref=e1182]: Читать далее
+                  - generic [ref=e1184]:
+                    - generic [ref=e1185]:
+                      - img "Рейтинг" [ref=e1186]
+                      - generic [ref=e1188]: "0"
+                    - button "Добавить в закладки 2" [ref=e1189] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1191]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1193]: "2"
+                    - generic "Поделиться" [ref=e1194]:
+                      - button [ref=e1195]:
+                        - img [ref=e1196] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1198]:
+                      - link "Комментарии 0" [ref=e1199] [cursor=pointer]:
+                        - /url: /ru/news/1019400/comments/
+                        - img "Комментарии" [ref=e1200]
+                        - generic [ref=e1202]: "0"
+                - article [ref=e1203]:
+                  - generic [ref=e1204]:
+                    - generic [ref=e1205]: Новость
+                    - generic [ref=e1208]:
+                      - link [ref=e1209] [cursor=pointer]:
+                        - /url: /ru/users/Travis_Macrif/
+                      - generic [ref=e1211]:
+                        - link "Travis_Macrif" [ref=e1212] [cursor=pointer]:
+                          - /url: /ru/users/Travis_Macrif/
+                        - link "2 часа назад" [ref=e1213] [cursor=pointer]:
+                          - /url: /ru/news/1019398/
+                          - time [ref=e1214]: 2 часа назад
+                    - heading "Итальянский суд постановил, что Netflix должен вернуть клиентам деньги за многолетнее повышение цен" [level=2] [ref=e1215]:
+                      - link "Итальянский суд постановил, что Netflix должен вернуть клиентам деньги за многолетнее повышение цен" [ref=e1216] [cursor=pointer]:
+                        - /url: /ru/news/1019398/
+                    - generic [ref=e1217]:
+                      - generic [ref=e1218]:
+                        - img "Время на прочтение" [ref=e1220]
+                        - generic [ref=e1222]: 2 мин
+                      - generic [ref=e1223] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1224]
+                        - generic "3388" [ref=e1226]: 3.4K
+                    - generic [ref=e1228]:
+                      - generic [ref=e1229]:
+                        - link "Законодательство в IT" [ref=e1230] [cursor=pointer]:
+                          - /url: /ru/hubs/business-laws/
+                          - generic [ref=e1231]: Законодательство в IT
+                        - text: ","
+                      - generic [ref=e1232]:
+                        - link "Облачные сервисы *" [ref=e1233] [cursor=pointer]:
+                          - /url: /ru/hubs/cloud_services/
+                          - generic [ref=e1234]: Облачные сервисы
+                          - generic "Профильный хаб" [ref=e1235]: "*"
+                        - text: ","
+                      - generic [ref=e1236]:
+                        - link "Финансы в IT" [ref=e1237] [cursor=pointer]:
+                          - /url: /ru/hubs/finance/
+                          - generic [ref=e1238]: Финансы в IT
+                        - text: ","
+                      - generic [ref=e1239]:
+                        - link "Управление продажами *" [ref=e1240] [cursor=pointer]:
+                          - /url: /ru/hubs/sales/
+                          - generic [ref=e1241]: Управление продажами
+                          - generic "Профильный хаб" [ref=e1242]: "*"
+                        - text: ","
+                      - link "Управление продуктом *" [ref=e1244] [cursor=pointer]:
+                        - /url: /ru/hubs/productpm/
+                        - generic [ref=e1245]: Управление продуктом
+                        - generic "Профильный хаб" [ref=e1246]: "*"
+                    - generic [ref=e1247]:
+                      - img [ref=e1249]
+                      - paragraph [ref=e1253]:
+                        - text: Столичный суд Италии
+                        - link "признал незаконным" [ref=e1254] [cursor=pointer]:
+                          - /url: https://arstechnica.com/gadgets/2026/04/netflix-ordered-to-refund-subscribers-up-to-e500-for-unlawful-price-hikes/
+                        - text: повышение цен на подписки стримингового сервиса Netflix в 2017, 2019, 2021 и 2024 годах. Инстанция обязала американскую компанию возместить пострадавшим клиентам по €500.
+                      - link "Читать далее" [ref=e1255] [cursor=pointer]:
+                        - /url: /ru/news/1019398/
+                        - generic [ref=e1256]: Читать далее
+                  - generic [ref=e1258]:
+                    - generic [ref=e1259]:
+                      - 'img "Всего голосов 2: ↑2 и ↓0" [ref=e1260]'
+                      - 'generic "Всего голосов 2: ↑2 и ↓0" [ref=e1262]': "+4"
+                    - button "Добавить в закладки 1" [ref=e1263] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1265]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1267]: "1"
+                    - generic "Поделиться" [ref=e1268]:
+                      - button [ref=e1269]:
+                        - img [ref=e1270] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1272]:
+                      - link "Комментарии 11" [ref=e1273] [cursor=pointer]:
+                        - /url: /ru/news/1019398/comments/
+                        - img "Комментарии" [ref=e1274]
+                        - generic [ref=e1276]: "11"
+                      - link "+11" [ref=e1277] [cursor=pointer]:
+                        - /url: /ru/news/1019398/comments/
+                        - generic "Читать новые комментарии" [ref=e1278]: "+11"
+                - generic [ref=e1281]:
+                  - heading "Ближайшие события" [level=2] [ref=e1284]
+                  - generic [ref=e1286]:
+                    - generic [ref=e1287]:
+                      - generic [ref=e1290]:
+                        - link [ref=e1291] [cursor=pointer]:
+                          - /url: /ru/events/944/
+                        - generic [ref=e1292]:
+                          - generic [ref=e1294]: 2 марта – 10 августа
+                          - link "PROBA Awards — международная коммуникационная премия, учрежденная в 2000 году" [ref=e1295] [cursor=pointer]:
+                            - /url: /ru/events/944/
+                          - generic [ref=e1298]: Санкт-Петербург
+                        - generic [ref=e1299]:
+                          - link "Больше событий в календаре" [ref=e1300] [cursor=pointer]:
+                            - /url: /ru/events/#944
+                          - generic [ref=e1302]: Маркетинг
+                      - generic [ref=e1305]:
+                        - link [ref=e1306] [cursor=pointer]:
+                          - /url: /ru/events/920/
+                        - generic [ref=e1307]:
+                          - generic [ref=e1309]: 3 марта – 9 июня
+                          - link "Экспедиция «Рэйдикс»" [ref=e1310] [cursor=pointer]:
+                            - /url: /ru/events/920/
+                          - generic [ref=e1312]:
+                            - generic [ref=e1313]: Екатеринбург •
+                            - generic [ref=e1314]: Новосибирск •
+                            - generic [ref=e1315]: Краснодар •
+                            - generic [ref=e1316]: Минск •
+                            - generic [ref=e1317]: Калининград •
+                            - generic [ref=e1318]: Ростов-на-Дону
+                        - generic [ref=e1319]:
+                          - link "Больше событий в календаре" [ref=e1320] [cursor=pointer]:
+                            - /url: /ru/events/#920
+                          - generic [ref=e1321]:
+                            - generic [ref=e1322]: Разработка
+                            - generic [ref=e1323]: Другое
+                      - generic [ref=e1326]:
+                        - link [ref=e1327] [cursor=pointer]:
+                          - /url: /ru/events/932/
+                        - generic [ref=e1328]:
+                          - generic [ref=e1330]: 19 марта – 28 апреля
+                          - link "Серия вебинаров «Эволюция приложения в облаке»" [ref=e1331] [cursor=pointer]:
+                            - /url: /ru/events/932/
+                          - generic [ref=e1334]: Онлайн
+                        - generic [ref=e1335]:
+                          - link "Больше событий в календаре" [ref=e1336] [cursor=pointer]:
+                            - /url: /ru/events/#932
+                          - generic [ref=e1338]: Разработка
+                      - generic [ref=e1341]:
+                        - link [ref=e1342] [cursor=pointer]:
+                          - /url: /ru/events/930/
+                        - generic [ref=e1343]:
+                          - generic [ref=e1345]: 7 апреля
+                          - link "Онлайн-конференция «Сильный медицинский бренд»" [ref=e1346] [cursor=pointer]:
+                            - /url: /ru/events/930/
+                          - generic [ref=e1349]: Онлайн
+                        - generic [ref=e1350]:
+                          - link "Больше событий в календаре" [ref=e1351] [cursor=pointer]:
+                            - /url: /ru/events/#930
+                          - generic [ref=e1352]:
+                            - generic [ref=e1353]: Менеджмент
+                            - generic [ref=e1354]: Маркетинг
+                            - generic [ref=e1355]: Другое
+                      - generic [ref=e1358]:
+                        - link [ref=e1359] [cursor=pointer]:
+                          - /url: /ru/events/874/
+                        - generic [ref=e1360]:
+                          - generic [ref=e1362]: 9 апреля
+                          - link "Deckhouse Conf 2026 — конференция для тех, кто работает с ИТ-инфраструктурой" [ref=e1363] [cursor=pointer]:
+                            - /url: /ru/events/874/
+                          - generic [ref=e1366]: Москва
+                        - generic [ref=e1367]:
+                          - link "Больше событий в календаре" [ref=e1368] [cursor=pointer]:
+                            - /url: /ru/events/#874
+                          - generic [ref=e1370]: Разработка
+                      - generic [ref=e1373]:
+                        - link [ref=e1374] [cursor=pointer]:
+                          - /url: /ru/events/900/
+                        - generic [ref=e1375]:
+                          - generic [ref=e1377]: 9 апреля
+                          - link "GoCloud 2026 — ежегодная IT-конференция про AI и облака" [ref=e1378] [cursor=pointer]:
+                            - /url: /ru/events/900/
+                          - generic [ref=e1380]:
+                            - generic [ref=e1381]: Москва •
+                            - generic [ref=e1382]: Онлайн
+                        - generic [ref=e1383]:
+                          - link "Больше событий в календаре" [ref=e1384] [cursor=pointer]:
+                            - /url: /ru/events/#900
+                          - generic [ref=e1385]:
+                            - generic [ref=e1386]: Разработка
+                            - generic [ref=e1387]: Менеджмент
+                            - generic [ref=e1388]: Другое
+                      - generic [ref=e1391]:
+                        - link [ref=e1392] [cursor=pointer]:
+                          - /url: /ru/events/904/
+                        - generic [ref=e1393]:
+                          - generic [ref=e1395]: 14 апреля
+                          - link "K2 Cloud Conf 2026" [ref=e1396] [cursor=pointer]:
+                            - /url: /ru/events/904/
+                          - generic [ref=e1398]:
+                            - generic [ref=e1399]: Москва •
+                            - generic [ref=e1400]: Онлайн
+                        - generic [ref=e1401]:
+                          - link "Больше событий в календаре" [ref=e1402] [cursor=pointer]:
+                            - /url: /ru/events/#904
+                          - generic [ref=e1403]:
+                            - generic [ref=e1404]: Разработка
+                            - generic [ref=e1405]: Администрирование
+                            - generic [ref=e1406]: Другое
+                      - generic [ref=e1409]:
+                        - link [ref=e1410] [cursor=pointer]:
+                          - /url: /ru/events/952/
+                        - generic [ref=e1411]:
+                          - generic [ref=e1413]: 14 апреля
+                          - link "ИИ-секция в собеседованиях X5 Tech (мобильная разработка)" [ref=e1414] [cursor=pointer]:
+                            - /url: /ru/events/952/
+                          - generic [ref=e1417]: Онлайн
+                        - generic [ref=e1418]:
+                          - link "Больше событий в календаре" [ref=e1419] [cursor=pointer]:
+                            - /url: /ru/events/#952
+                          - generic [ref=e1420]:
+                            - generic [ref=e1421]: Разработка
+                            - generic [ref=e1422]: Менеджмент
+                      - generic [ref=e1425]:
+                        - link [ref=e1426] [cursor=pointer]:
+                          - /url: /ru/events/946/
+                        - generic [ref=e1427]:
+                          - generic [ref=e1429]: 15 апреля
+                          - link "Как сделать руководителей своими союзниками?" [ref=e1430] [cursor=pointer]:
+                            - /url: /ru/events/946/
+                          - generic [ref=e1433]: Санкт-Петербург
+                        - generic [ref=e1434]:
+                          - link "Больше событий в календаре" [ref=e1435] [cursor=pointer]:
+                            - /url: /ru/events/#946
+                          - generic [ref=e1437]: Другое
+                      - generic [ref=e1440]:
+                        - link [ref=e1441] [cursor=pointer]:
+                          - /url: /ru/events/948/
+                        - generic [ref=e1442]:
+                          - generic [ref=e1444]: 16 апреля
+                          - link "Как сделать так, чтобы сотрудники сами говорили о компании хорошее каждый день?" [ref=e1445] [cursor=pointer]:
+                            - /url: /ru/events/948/
+                          - generic [ref=e1448]: Онлайн
+                        - generic [ref=e1449]:
+                          - link "Больше событий в календаре" [ref=e1450] [cursor=pointer]:
+                            - /url: /ru/events/#948
+                          - generic [ref=e1452]: Другое
+                      - generic [ref=e1455]:
+                        - link [ref=e1456] [cursor=pointer]:
+                          - /url: /ru/events/898/
+                        - generic [ref=e1457]:
+                          - generic [ref=e1459]: 17 – 18 апреля
+                          - link "Профессиональная IT-конференция Merge Tatarstan 2026" [ref=e1460] [cursor=pointer]:
+                            - /url: /ru/events/898/
+                          - generic [ref=e1463]: Иннополис
+                        - generic [ref=e1464]:
+                          - link "Больше событий в календаре" [ref=e1465] [cursor=pointer]:
+                            - /url: /ru/events/#898
+                          - generic [ref=e1466]:
+                            - generic [ref=e1467]: Разработка
+                            - generic [ref=e1468]: Маркетинг
+                            - generic [ref=e1469]: Другое
+                      - generic [ref=e1472]:
+                        - link [ref=e1473] [cursor=pointer]:
+                          - /url: /ru/events/924/
+                        - generic [ref=e1474]:
+                          - generic [ref=e1476]: 20 апреля
+                          - link "AiConf — прикладная конференция по data science" [ref=e1477] [cursor=pointer]:
+                            - /url: /ru/events/924/
+                          - generic [ref=e1479]:
+                            - generic [ref=e1480]: Москва •
+                            - generic [ref=e1481]: Онлайн
+                        - generic [ref=e1482]:
+                          - link "Больше событий в календаре" [ref=e1483] [cursor=pointer]:
+                            - /url: /ru/events/#924
+                          - generic [ref=e1484]:
+                            - generic [ref=e1485]: Разработка
+                            - generic [ref=e1486]: Тестирование
+                      - generic [ref=e1489]:
+                        - link [ref=e1490] [cursor=pointer]:
+                          - /url: /ru/events/950/
+                        - generic [ref=e1491]:
+                          - generic [ref=e1493]: 20 апреля
+                          - link "GolangConf — профессиональная конференция для Go-разработчиков и их руководителе" [ref=e1494] [cursor=pointer]:
+                            - /url: /ru/events/950/
+                          - generic [ref=e1496]:
+                            - generic [ref=e1497]: Москва •
+                            - generic [ref=e1498]: Онлайн
+                        - generic [ref=e1499]:
+                          - link "Больше событий в календаре" [ref=e1500] [cursor=pointer]:
+                            - /url: /ru/events/#950
+                          - generic [ref=e1501]:
+                            - generic [ref=e1502]: Разработка
+                            - generic [ref=e1503]: Менеджмент
+                      - generic [ref=e1506]:
+                        - link [ref=e1507] [cursor=pointer]:
+                          - /url: /ru/events/940/
+                        - generic [ref=e1508]:
+                          - generic [ref=e1510]: 19 мая
+                          - link "Первая в России конференция по HR Этике" [ref=e1511] [cursor=pointer]:
+                            - /url: /ru/events/940/
+                          - generic [ref=e1514]: Москва
+                        - generic [ref=e1515]:
+                          - link "Больше событий в календаре" [ref=e1516] [cursor=pointer]:
+                            - /url: /ru/events/#940
+                          - generic [ref=e1518]: Менеджмент
+                      - generic [ref=e1521]:
+                        - link [ref=e1522] [cursor=pointer]:
+                          - /url: /ru/events/890/
+                        - generic [ref=e1523]:
+                          - generic [ref=e1525]: 3 – 5 июля
+                          - link "Летняя антиконференция Summer Merge" [ref=e1526] [cursor=pointer]:
+                            - /url: /ru/events/890/
+                          - generic [ref=e1529]: Село Успенское
+                        - generic [ref=e1530]:
+                          - link "Больше событий в календаре" [ref=e1531] [cursor=pointer]:
+                            - /url: /ru/events/#890
+                          - generic [ref=e1532]:
+                            - generic [ref=e1533]: Разработка
+                            - generic [ref=e1534]: Менеджмент
+                            - generic [ref=e1535]: Другое
+                      - generic [ref=e1538]:
+                        - link [ref=e1539] [cursor=pointer]:
+                          - /url: /ru/events/918/
+                        - generic [ref=e1540]:
+                          - generic [ref=e1542]: 5 июля
+                          - link "Фестиваль RUNIT by AGIMA" [ref=e1543] [cursor=pointer]:
+                            - /url: /ru/events/918/
+                          - generic [ref=e1546]: Москва
+                        - generic [ref=e1547]:
+                          - link "Больше событий в календаре" [ref=e1548] [cursor=pointer]:
+                            - /url: /ru/events/#918
+                          - generic [ref=e1550]: Другое
+                      - generic [ref=e1553]:
+                        - link [ref=e1554] [cursor=pointer]:
+                          - /url: /ru/events/942/
+                        - generic [ref=e1555]:
+                          - generic [ref=e1557]: 23 – 25 сентября
+                          - link "Baltic Weekend – Крупнейший в России и Европе форум по коммуникациям" [ref=e1558] [cursor=pointer]:
+                            - /url: /ru/events/942/
+                          - generic [ref=e1561]: Санкт-Петербург
+                        - generic [ref=e1562]:
+                          - link "Больше событий в календаре" [ref=e1563] [cursor=pointer]:
+                            - /url: /ru/events/#942
+                          - generic [ref=e1565]: Маркетинг
+                    - button "Вправо" [ref=e1566] [cursor=pointer]:
+                      - img "Вправо" [ref=e1568]
+                - article [ref=e1570]:
+                  - generic [ref=e1571]:
+                    - generic [ref=e1572]: Пост
+                    - generic [ref=e1574]:
+                      - link [ref=e1575] [cursor=pointer]:
+                        - /url: /ru/users/nmivan/
+                      - generic [ref=e1577]:
+                        - link "nmivan" [ref=e1578] [cursor=pointer]:
+                          - /url: /ru/users/nmivan/
+                        - generic [ref=e1579]:
+                          - link "2 часа назад" [ref=e1580] [cursor=pointer]:
+                            - /url: /ru/posts/1019396/
+                            - time [ref=e1581]: 2 часа назад
+                          - generic [ref=e1582]:
+                            - img "Охват" [ref=e1583]
+                            - generic "1778" [ref=e1585]: 1.8K
+                    - link "Здоровье" [ref=e1589] [cursor=pointer]:
+                      - /url: /ru/hubs/health/posts/
+                      - generic [ref=e1590]: Здоровье
+                    - generic [ref=e1595]:
+                      - paragraph [ref=e1596]: Случайно наткнулся в интернете на информацию о OMAD-диете (One Meal A Day — «один прием пищи в день»). Оказывается, популярная штука, особенно среди голливудских звёзд, т.к. сильно упрощает контроль за приёмами пищи, калориями и т.д. при высоконагруженном графике работы.
+                      - paragraph [ref=e1597]: Кроме, собственно, снижения веса у OMAD есть положительные эффекты, связанные со здоровьем - снижение сахара, улучшение метаболизма. Связывают с явлением аутофагии, которая подключается из-за 23-часового интервала голодания. И вообще, само появление OMAD связывают с открытием и популяризацией аутофагии - Нобелевскую премию её открывателю выдали в 2016 году.
+                      - paragraph [ref=e1598]: Почему пишу об этом… Я ж тоже раз в день питаюсь, как прям в OMAD-диете :) Начал, правда, сильно раньше 2016 года, когда не было информации ни про OMAD, ни про аутофагию.
+                      - paragraph [ref=e1599]: Саму эту идею я узнал из двух старых книг. Одна была Галины Шаталовой, советского врача (вот только не помню, какую именно книгу читал). Вторая - Арнольда Эрета, который писал вообще в начале 20 века (название книги, увы, тоже не помню).
+                      - paragraph [ref=e1600]: Что ж теперь получается? Во-первых, я (и вы) получил независимое подтверждение, верификацию действенности такого метода снижения и контроля веса. Ссылаться на OMAD - проще и авторитетнее, чем на себя несчастного. Во-вторых, могу служить объектом-доказательством, а то и объектом исследований как действенности OMAD, так и долговременного её влияния на здоровье (всё-таки опыт более 10 лет).
+                      - paragraph [ref=e1601]: Такие вот дела.
+                      - paragraph [ref=e1602]:
+                        - link "https://t.me/bodymath" [ref=e1603] [cursor=pointer]:
+                          - /url: https://t.me/bodymath
+                    - generic [ref=e1604]:
+                      - text: "Теги:"
+                      - list [ref=e1605]:
+                        - listitem [ref=e1606]:
+                          - link "черт знает что" [ref=e1607] [cursor=pointer]:
+                            - /url: /ru/search/?target_type=posts&order=relevance&q=[%D1%87%D0%B5%D1%80%D1%82+%D0%B7%D0%BD%D0%B0%D0%B5%D1%82+%D1%87%D1%82%D0%BE]
+                    - generic [ref=e1608]:
+                      - 'generic "Всего голосов 2: ↑2 и ↓0" [ref=e1610]':
+                        - button "Нравится" [ref=e1611]:
+                          - img "Нравится" [ref=e1612]
+                        - generic [ref=e1615]: "+4"
+                        - button "Не нравится" [ref=e1616]:
+                          - img "Не нравится" [ref=e1617]
+                      - button "Добавить в закладки 1" [ref=e1619] [cursor=pointer]:
+                        - img "Добавить в закладки" [ref=e1621]
+                        - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1623]: "1"
+                      - generic "Поделиться" [ref=e1624]:
+                        - button [ref=e1625]:
+                          - img [ref=e1626] [cursor=pointer]
+                      - generic "Читать комментарии" [ref=e1628]:
+                        - link "Комментарии 6" [ref=e1629] [cursor=pointer]:
+                          - /url: /ru/posts/1019396/#publication-comments
+                          - img "Комментарии" [ref=e1630]
+                          - generic [ref=e1632]: "6"
+                        - link "+6" [ref=e1633] [cursor=pointer]:
+                          - /url: /ru/posts/1019396/#publication-comments
+                          - generic "Читать новые комментарии" [ref=e1634]: "+6"
+                - article [ref=e1635]:
+                  - generic [ref=e1636]:
+                    - generic [ref=e1637]: Статья
+                    - generic [ref=e1640]:
+                      - link [ref=e1641] [cursor=pointer]:
+                        - /url: /ru/users/memrook/
+                      - generic [ref=e1643]:
+                        - link "memrook" [ref=e1644] [cursor=pointer]:
+                          - /url: /ru/users/memrook/
+                        - link "2 часа назад" [ref=e1645] [cursor=pointer]:
+                          - /url: /ru/articles/1019394/
+                          - time [ref=e1646]: 2 часа назад
+                    - 'heading "Claude Code для тех, кто не пишет код: полный гайд для старта" [level=2] [ref=e1647]':
+                      - 'link "Claude Code для тех, кто не пишет код: полный гайд для старта" [ref=e1648] [cursor=pointer]':
+                        - /url: /ru/articles/1019394/
+                    - generic [ref=e1649]:
+                      - generic [ref=e1650]:
+                        - img "Уровень сложности" [ref=e1652]
+                        - generic [ref=e1654]: Простой
+                      - generic [ref=e1655]:
+                        - img "Время на прочтение" [ref=e1657]
+                        - generic [ref=e1659]: 5 мин
+                      - generic [ref=e1660] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1661]
+                        - generic "4325" [ref=e1663]: 4.3K
+                    - generic [ref=e1665]:
+                      - generic [ref=e1666]:
+                        - link "Искусственный интеллект" [ref=e1667] [cursor=pointer]:
+                          - /url: /ru/hubs/artificial_intelligence/
+                          - generic [ref=e1668]: Искусственный интеллект
+                        - text: ","
+                      - generic [ref=e1669]:
+                        - link "Будущее здесь" [ref=e1670] [cursor=pointer]:
+                          - /url: /ru/hubs/futurenow/
+                          - generic [ref=e1671]: Будущее здесь
+                        - text: ","
+                      - link "Машинное обучение *" [ref=e1673] [cursor=pointer]:
+                        - /url: /ru/hubs/machine_learning/
+                        - generic [ref=e1674]: Машинное обучение
+                        - generic "Профильный хаб" [ref=e1675]: "*"
+                    - generic [ref=e1677]:
+                      - generic [ref=e1678]: Туториал
+                      - link "Из песочницы" [ref=e1680] [cursor=pointer]:
+                        - /url: /ru/sandbox/
+                      - generic [ref=e1681]: Перевод
+                    - generic [ref=e1682]:
+                      - img [ref=e1684]
+                      - generic [ref=e1687]:
+                        - paragraph [ref=e1688]: Большинство воспринимает Claude Code как инструмент исключительно для разработчиков. Но на практике это один из самых мощных инструментов персональной автоматизации — и пользоваться им можно вообще без навыков программирования.
+                        - paragraph [ref=e1689]: С момента выхода Claude Code в начале 2025 года я использую его для ведения базы знаний, обработки заметок со встреч, учёта фильмов и сериалов, а также автоматизации рабочих и бытовых процессов.
+                        - paragraph [ref=e1690]: Да, иногда — и для программирования. Но это уже не тема этого гайда.
+                      - link "Разберёмся, с чего начать" [ref=e1691] [cursor=pointer]:
+                        - /url: /ru/articles/1019394/
+                        - generic [ref=e1692]: Разберёмся, с чего начать
+                  - generic [ref=e1694]:
+                    - generic [ref=e1695]:
+                      - 'img "Всего голосов 7: ↑3 и ↓4" [ref=e1696]'
+                      - 'generic "Всего голосов 7: ↑3 и ↓4" [ref=e1698]': "-1"
+                    - button "Добавить в закладки 20" [ref=e1699] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1701]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1703]: "20"
+                    - generic "Поделиться" [ref=e1704]:
+                      - button [ref=e1705]:
+                        - img [ref=e1706] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1708]:
+                      - link "Комментарии 0" [ref=e1709] [cursor=pointer]:
+                        - /url: /ru/articles/1019394/comments/
+                        - img "Комментарии" [ref=e1710]
+                        - generic [ref=e1712]: "0"
+                - article [ref=e1713]:
+                  - generic [ref=e1714]:
+                    - generic [ref=e1715]: Статья
+                    - generic [ref=e1718]:
+                      - link [ref=e1719] [cursor=pointer]:
+                        - /url: /ru/users/svgnovosibirsk/
+                      - generic [ref=e1721]:
+                        - link "svgnovosibirsk" [ref=e1722] [cursor=pointer]:
+                          - /url: /ru/users/svgnovosibirsk/
+                        - link "2 часа назад" [ref=e1723] [cursor=pointer]:
+                          - /url: /ru/articles/1019392/
+                          - time [ref=e1724]: 2 часа назад
+                    - heading "Исследование макросов @Generable и @Guide во фреймворке FoundationModels" [level=2] [ref=e1725]:
+                      - link "Исследование макросов @Generable и @Guide во фреймворке FoundationModels" [ref=e1726] [cursor=pointer]:
+                        - /url: /ru/articles/1019392/
+                    - generic [ref=e1727]:
+                      - generic [ref=e1728]:
+                        - img "Время на прочтение" [ref=e1730]
+                        - generic [ref=e1732]: 3 мин
+                      - generic [ref=e1733] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1734]
+                        - generic "3201" [ref=e1736]: 3.2K
+                    - generic [ref=e1738]:
+                      - generic [ref=e1739]:
+                        - link "iOS *" [ref=e1740] [cursor=pointer]:
+                          - /url: /ru/hubs/ios_dev/
+                          - generic [ref=e1741]: iOS
+                          - generic "Профильный хаб" [ref=e1742]: "*"
+                        - text: ","
+                      - generic [ref=e1743]:
+                        - link "Swift *" [ref=e1744] [cursor=pointer]:
+                          - /url: /ru/hubs/swift/
+                          - generic [ref=e1745]: Swift
+                          - generic "Профильный хаб" [ref=e1746]: "*"
+                        - text: ","
+                      - link "Искусственный интеллект" [ref=e1748] [cursor=pointer]:
+                        - /url: /ru/hubs/artificial_intelligence/
+                        - generic [ref=e1749]: Искусственный интеллект
+                    - generic [ref=e1752]: Перевод
+                    - generic [ref=e1753]:
+                      - img [ref=e1755]
+                      - generic [ref=e1758]:
+                        - paragraph [ref=e1759]: Приветствую, Хабр!
+                        - paragraph [ref=e1760]: Макросы Swift предоставляют мощный механизм для генерации кода, позволяя разработчикам уменьшать количество шаблонного кода и повышать читаемость. Фреймворк FoundationModels представляет новые макросы, призванные упростить генерацию данных для определённых типов моделей с использованием языковых моделей.
+                      - link "Читать далее" [ref=e1761] [cursor=pointer]:
+                        - /url: /ru/articles/1019392/
+                        - generic [ref=e1762]: Читать далее
+                  - generic [ref=e1764]:
+                    - generic [ref=e1765]:
+                      - img "Рейтинг" [ref=e1766]
+                      - generic [ref=e1768]: "0"
+                    - button "Добавить в закладки 0" [ref=e1769] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1771]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1773]: "0"
+                    - generic "Поделиться" [ref=e1774]:
+                      - button [ref=e1775]:
+                        - img [ref=e1776] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1778]:
+                      - link "Комментарии 0" [ref=e1779] [cursor=pointer]:
+                        - /url: /ru/articles/1019392/comments/
+                        - img "Комментарии" [ref=e1780]
+                        - generic [ref=e1782]: "0"
+                - iframe [ref=e1792]
+                - article [ref=e1793]:
+                  - generic [ref=e1794]:
+                    - generic [ref=e1795]: Статья
+                    - generic [ref=e1798]:
+                      - link [ref=e1799] [cursor=pointer]:
+                        - /url: /ru/users/svgnovosibirsk/
+                      - generic [ref=e1801]:
+                        - link "svgnovosibirsk" [ref=e1802] [cursor=pointer]:
+                          - /url: /ru/users/svgnovosibirsk/
+                        - link "3 часа назад" [ref=e1803] [cursor=pointer]:
+                          - /url: /ru/articles/1019388/
+                          - time [ref=e1804]: 3 часа назад
+                    - heading "Использование фреймворка Foundation Models для локального ИИ в SwiftUI" [level=2] [ref=e1805]:
+                      - link "Использование фреймворка Foundation Models для локального ИИ в SwiftUI" [ref=e1806] [cursor=pointer]:
+                        - /url: /ru/articles/1019388/
+                    - generic [ref=e1807]:
+                      - generic [ref=e1808]:
+                        - img "Время на прочтение" [ref=e1810]
+                        - generic [ref=e1812]: 3 мин
+                      - generic [ref=e1813] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1814]
+                        - generic "3096" [ref=e1816]: 3.1K
+                    - generic [ref=e1818]:
+                      - generic [ref=e1819]:
+                        - link "Swift *" [ref=e1820] [cursor=pointer]:
+                          - /url: /ru/hubs/swift/
+                          - generic [ref=e1821]: Swift
+                          - generic "Профильный хаб" [ref=e1822]: "*"
+                        - text: ","
+                      - generic [ref=e1823]:
+                        - link "iOS *" [ref=e1824] [cursor=pointer]:
+                          - /url: /ru/hubs/ios_dev/
+                          - generic [ref=e1825]: iOS
+                          - generic "Профильный хаб" [ref=e1826]: "*"
+                        - text: ","
+                      - link "Искусственный интеллект" [ref=e1828] [cursor=pointer]:
+                        - /url: /ru/hubs/artificial_intelligence/
+                        - generic [ref=e1829]: Искусственный интеллект
+                    - generic [ref=e1832]: Перевод
+                    - generic [ref=e1833]:
+                      - img [ref=e1835]
+                      - generic [ref=e1838]:
+                        - paragraph [ref=e1839]: Приветствую, Хабр!
+                        - paragraph [ref=e1840]:
+                          - text: На конференции WWDC 2025 компания Apple представила фреймворк
+                          - strong [ref=e1841]: Foundation Models
+                          - text: — набор инструментов, позволяющий разработчикам интегрировать локальные ИИ-модели Apple в свои приложения. По заявлению Apple, эти модели работают полностью на устройстве, не требуют подключения к облаку, не влекут затрат на инференс и ставят во главу угла конфиденциальность пользователей. В этой статье показано, как реализовать фреймворк Foundation Models в приложении на SwiftUI для обработки пользовательских запросов и отображения ответов, сгенерированных ИИ, в реальном времени.
+                      - link "Читать далее" [ref=e1842] [cursor=pointer]:
+                        - /url: /ru/articles/1019388/
+                        - generic [ref=e1843]: Читать далее
+                  - generic [ref=e1845]:
+                    - generic [ref=e1846]:
+                      - img "Рейтинг" [ref=e1847]
+                      - generic [ref=e1849]: "0"
+                    - button "Добавить в закладки 1" [ref=e1850] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1852]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1854]: "1"
+                    - generic "Поделиться" [ref=e1855]:
+                      - button [ref=e1856]:
+                        - img [ref=e1857] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1859]:
+                      - link "Комментарии 0" [ref=e1860] [cursor=pointer]:
+                        - /url: /ru/articles/1019388/comments/
+                        - img "Комментарии" [ref=e1861]
+                        - generic [ref=e1863]: "0"
+                - article [ref=e1864]:
+                  - generic [ref=e1865]:
+                    - generic [ref=e1866]: Новость
+                    - generic [ref=e1869]:
+                      - link [ref=e1870] [cursor=pointer]:
+                        - /url: /ru/users/denis-19/
+                      - generic [ref=e1872]:
+                        - link "denis-19" [ref=e1873] [cursor=pointer]:
+                          - /url: /ru/users/denis-19/
+                        - link "3 часа назад" [ref=e1874] [cursor=pointer]:
+                          - /url: /ru/news/1019386/
+                          - time [ref=e1875]: 3 часа назад
+                    - heading "Разработчик Amazon выявил регрессию в тестовом ядре Linux 7.0, в два раза снижающую производительность PostgreSQL" [level=2] [ref=e1876]:
+                      - link "Разработчик Amazon выявил регрессию в тестовом ядре Linux 7.0, в два раза снижающую производительность PostgreSQL" [ref=e1877] [cursor=pointer]:
+                        - /url: /ru/news/1019386/
+                    - generic [ref=e1878]:
+                      - generic [ref=e1879]:
+                        - img "Время на прочтение" [ref=e1881]
+                        - generic [ref=e1883]: 2 мин
+                      - generic [ref=e1884] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1885]
+                        - generic "5428" [ref=e1887]: 5.4K
+                    - generic [ref=e1889]:
+                      - generic [ref=e1890]:
+                        - link "Open source *" [ref=e1891] [cursor=pointer]:
+                          - /url: /ru/hubs/open_source/
+                          - generic [ref=e1892]: Open source
+                          - generic "Профильный хаб" [ref=e1893]: "*"
+                        - text: ","
+                      - generic [ref=e1894]:
+                        - link "PostgreSQL *" [ref=e1895] [cursor=pointer]:
+                          - /url: /ru/hubs/postgresql/
+                          - generic [ref=e1896]: PostgreSQL
+                          - generic "Профильный хаб" [ref=e1897]: "*"
+                        - text: ","
+                      - generic [ref=e1898]:
+                        - link "Linux *" [ref=e1899] [cursor=pointer]:
+                          - /url: /ru/hubs/linux_dev/
+                          - generic [ref=e1900]: Linux
+                          - generic "Профильный хаб" [ref=e1901]: "*"
+                        - text: ","
+                      - generic [ref=e1902]:
+                        - link "Настройка Linux *" [ref=e1903] [cursor=pointer]:
+                          - /url: /ru/hubs/linux/
+                          - generic [ref=e1904]: Настройка Linux
+                          - generic "Профильный хаб" [ref=e1905]: "*"
+                        - text: ","
+                      - link "Тестирование IT-систем *" [ref=e1907] [cursor=pointer]:
+                        - /url: /ru/hubs/it_testing/
+                        - generic [ref=e1908]: Тестирование IT-систем
+                        - generic "Профильный хаб" [ref=e1909]: "*"
+                    - generic [ref=e1910]:
+                      - img [ref=e1912]
+                      - paragraph [ref=e1916]:
+                        - text: Разработчик из Amazon Сальваторе Дипьетро
+                        - link "обнаружил" [ref=e1917] [cursor=pointer]:
+                          - /url: https://lore.kernel.org/lkml/20260403191942.21410-1-dipiets@amazon.it/
+                        - text: регрессию при тестировании СУБД PostgreSQL и компонентов готовившегося к релизу ядра Linux 7.0. Выпуск новой версии ядра Linux, которая будет использоваться в Ubuntu 26.04 LTS,
+                        - link "ожидается" [ref=e1918] [cursor=pointer]:
+                          - /url: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/?h=v7.0-rc6
+                        - text: в середине апреля 2026 года.
+                      - link "Читать далее" [ref=e1919] [cursor=pointer]:
+                        - /url: /ru/news/1019386/
+                        - generic [ref=e1920]: Читать далее
+                  - generic [ref=e1922]:
+                    - generic [ref=e1923]:
+                      - 'img "Всего голосов 4: ↑4 и ↓0" [ref=e1924]'
+                      - 'generic "Всего голосов 4: ↑4 и ↓0" [ref=e1926]': "+5"
+                    - button "Добавить в закладки 2" [ref=e1927] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1929]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1931]: "2"
+                    - generic "Поделиться" [ref=e1932]:
+                      - button [ref=e1933]:
+                        - img [ref=e1934] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e1936]:
+                      - link "Комментарии 0" [ref=e1937] [cursor=pointer]:
+                        - /url: /ru/news/1019386/comments/
+                        - img "Комментарии" [ref=e1938]
+                        - generic [ref=e1940]: "0"
+                - article [ref=e1941]:
+                  - generic [ref=e1942]:
+                    - generic [ref=e1943]: Новость
+                    - generic [ref=e1946]:
+                      - link [ref=e1947] [cursor=pointer]:
+                        - /url: /ru/users/denis-19/
+                      - generic [ref=e1949]:
+                        - link "denis-19" [ref=e1950] [cursor=pointer]:
+                          - /url: /ru/users/denis-19/
+                        - link "4 часа назад" [ref=e1951] [cursor=pointer]:
+                          - /url: /ru/news/1019382/
+                          - time [ref=e1952]: 4 часа назад
+                    - heading "Экипаж миссии «Артемида» II на космическом корабле «Орион» преодолел больше половины пути до Луны" [level=2] [ref=e1953]:
+                      - link "Экипаж миссии «Артемида» II на космическом корабле «Орион» преодолел больше половины пути до Луны" [ref=e1954] [cursor=pointer]:
+                        - /url: /ru/news/1019382/
+                    - generic [ref=e1955]:
+                      - generic [ref=e1956]:
+                        - img "Время на прочтение" [ref=e1958]
+                        - generic [ref=e1960]: 2 мин
+                      - generic [ref=e1961] [cursor=pointer]:
+                        - img "Охват и читатели" [ref=e1962]
+                        - generic "7550" [ref=e1964]: 7.6K
+                    - generic [ref=e1966]:
+                      - generic [ref=e1967]:
+                        - link "Космонавтика" [ref=e1968] [cursor=pointer]:
+                          - /url: /ru/hubs/space/
+                          - generic [ref=e1969]: Космонавтика
+                        - text: ","
+                      - generic [ref=e1970]:
+                        - link "Астрономия" [ref=e1971] [cursor=pointer]:
+                          - /url: /ru/hubs/astronomy/
+                          - generic [ref=e1972]: Астрономия
+                        - text: ","
+                      - generic [ref=e1973]:
+                        - link "Будущее здесь" [ref=e1974] [cursor=pointer]:
+                          - /url: /ru/hubs/futurenow/
+                          - generic [ref=e1975]: Будущее здесь
+                        - text: ","
+                      - link "Научно-популярное" [ref=e1977] [cursor=pointer]:
+                        - /url: /ru/hubs/popular_science/
+                        - generic [ref=e1978]: Научно-популярное
+                    - generic [ref=e1979]:
+                      - img [ref=e1981]
+                      - paragraph [ref=e1985]:
+                        - text: В НАСА
+                        - link "сообщили" [ref=e1986] [cursor=pointer]:
+                          - /url: https://www.nasa.gov/blogs/missions/2026/04/04/artemis-ii-flight-day-4-deep-space-flying-lunar-flyby-prep/
+                        - text: ", что экипаж лунной миссии «Артемида» II на космическом корабле «Орион» преодолел больше половины пути до Луны. В настоящий момент корабль находится примерно в 141 тыс. км от Луны и в 311 тыс. км от Земли и продолжает двигаться со скоростью около 3,2 тыс. км в час. Экипаж готовится к пролёту вокруг Луны, который намечен на 6 апреля."
+                      - link "Читать далее" [ref=e1987] [cursor=pointer]:
+                        - /url: /ru/news/1019382/
+                        - generic [ref=e1988]: Читать далее
+                  - generic [ref=e1990]:
+                    - generic [ref=e1991]:
+                      - 'img "Всего голосов 7: ↑7 и ↓0" [ref=e1992]'
+                      - 'generic "Всего голосов 7: ↑7 и ↓0" [ref=e1994]': "+8"
+                    - button "Добавить в закладки 2" [ref=e1995] [cursor=pointer]:
+                      - img "Добавить в закладки" [ref=e1997]
+                      - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e1999]: "2"
+                    - generic "Поделиться" [ref=e2000]:
+                      - button [ref=e2001]:
+                        - img [ref=e2002] [cursor=pointer]
+                    - generic "Читать комментарии" [ref=e2004]:
+                      - link "Комментарии 13" [ref=e2005] [cursor=pointer]:
+                        - /url: /ru/news/1019382/comments/
+                        - img "Комментарии" [ref=e2006]
+                        - generic [ref=e2008]: "13"
+                      - link "+13" [ref=e2009] [cursor=pointer]:
+                        - /url: /ru/news/1019382/comments/
+                        - generic "Читать новые комментарии" [ref=e2010]: "+13"
+                - article [ref=e2011]:
+                  - generic [ref=e2012]:
+                    - generic [ref=e2013]: Пост
+                    - generic [ref=e2015]:
+                      - link [ref=e2016] [cursor=pointer]:
+                        - /url: /ru/users/denis-19/
+                      - generic [ref=e2018]:
+                        - link "denis-19" [ref=e2019] [cursor=pointer]:
+                          - /url: /ru/users/denis-19/
+                        - generic [ref=e2020]:
+                          - link "5 часов назад" [ref=e2021] [cursor=pointer]:
+                            - /url: /ru/posts/1019380/
+                            - time [ref=e2022]: 5 часов назад
+                          - generic [ref=e2023]:
+                            - img "Охват" [ref=e2024]
+                            - generic "3591" [ref=e2026]: 3.6K
+                    - generic [ref=e2028]:
+                      - generic [ref=e2029]:
+                        - link "Учебный процесс в IT" [ref=e2030] [cursor=pointer]:
+                          - /url: /ru/hubs/study/posts/
+                          - generic [ref=e2031]: Учебный процесс в IT
+                        - text: ","
+                      - generic [ref=e2032]:
+                        - link "Карьера в IT-индустрии" [ref=e2033] [cursor=pointer]:
+                          - /url: /ru/hubs/career/posts/
+                          - generic [ref=e2034]: Карьера в IT-индустрии
+                        - text: ","
+                      - generic [ref=e2035]:
+                        - link "Фототехника" [ref=e2036] [cursor=pointer]:
+                          - /url: /ru/hubs/photo/posts/
+                          - generic [ref=e2037]: Фототехника
+                        - text: ","
+                      - link "Урбанизм" [ref=e2039] [cursor=pointer]:
+                        - /url: /ru/hubs/urban/posts/
+                        - generic [ref=e2040]: Урбанизм
+                    - generic [ref=e2045]:
+                      - paragraph [ref=e2046]:
+                        - text: В Исландии срочно ищут самого худшего фотографа в мире на зарплату $50 тыс.. Авиакомпания Icelandair готова
+                        - link "оплатить" [ref=e2047] [cursor=pointer]:
+                          - /url: https://www.icelandair.com/flights/campaign/really-bad-photographer/
+                        - text: работу и перелёт тому, кто будет 10 дней исследовать пейзажи страны и делать неудачные фото. Принять участие можно на сайте авиакомпании до 30 апреля.
+                      - figure [ref=e2048]:
+                        - img [ref=e2049]
+                    - generic [ref=e2050]:
+                      - text: "Теги:"
+                      - list [ref=e2051]:
+                        - listitem [ref=e2052]:
+                          - link "Icelandair" [ref=e2053] [cursor=pointer]:
+                            - /url: /ru/search/?target_type=posts&order=relevance&q=[Icelandair]
+                    - generic [ref=e2054]:
+                      - 'generic "Всего голосов 1: ↑1 и ↓0" [ref=e2056]':
+                        - button "Нравится" [ref=e2057]:
+                          - img "Нравится" [ref=e2058]
+                        - generic [ref=e2061]: "+1"
+                        - button "Не нравится" [ref=e2062]:
+                          - img "Не нравится" [ref=e2063]
+                      - button "Добавить в закладки 1" [ref=e2065] [cursor=pointer]:
+                        - img "Добавить в закладки" [ref=e2067]
+                        - generic "Количество пользователей, добавивших публикацию в закладки" [ref=e2069]: "1"
+                      - generic "Поделиться" [ref=e2070]:
+                        - button [ref=e2071]:
+                          - img [ref=e2072] [cursor=pointer]
+                      - generic "Читать комментарии" [ref=e2074]:
+                        - link "Комментарии 2" [ref=e2075] [cursor=pointer]:
+                          - /url: /ru/posts/1019380/#publication-comments
+                          - img "Комментарии" [ref=e2076]
+                          - generic [ref=e2078]: "2"
+                        - link "+2" [ref=e2079] [cursor=pointer]:
+                          - /url: /ru/posts/1019380/#publication-comments
+                          - generic "Читать новые комментарии" [ref=e2080]: "+2"
+              - generic [ref=e2081]:
+                - generic [ref=e2082]:
+                  - img "Назад" [ref=e2083]
+                  - generic [ref=e2085]: Сюда
+                - generic [ref=e2086]:
+                  - generic [ref=e2087]: "1"
+                  - generic [ref=e2088]:
+                    - link "2" [ref=e2089] [cursor=pointer]:
+                      - /url: /ru/feed/page2/
+                    - link "3" [ref=e2090] [cursor=pointer]:
+                      - /url: /ru/feed/page3/
+                    - generic [ref=e2091]: ...
+                  - generic [ref=e2092]:
+                    - link "49" [ref=e2093] [cursor=pointer]:
+                      - /url: /ru/feed/page49/
+                    - link "50" [ref=e2094] [cursor=pointer]:
+                      - /url: /ru/feed/page50/
+                - link "Туда Назад" [ref=e2095] [cursor=pointer]:
+                  - /url: /ru/feed/page2/
+                  - generic [ref=e2096]: Туда
+                  - img "Назад" [ref=e2097]
+        - generic [ref=e2100]:
+          - iframe [ref=e2115]
+          - generic [ref=e2118]:
+            - heading "Читают сейчас" [level=2] [ref=e2121]
+            - list [ref=e2123]:
+              - listitem [ref=e2124]:
+                - article [ref=e2125]:
+                  - heading "«Telegram обошёл блокировку РКН» — нет, не Telegram" [level=2] [ref=e2126]:
+                    - link "«Telegram обошёл блокировку РКН» — нет, не Telegram" [ref=e2127] [cursor=pointer]:
+                      - /url: /ru/articles/1019200/
+                  - generic [ref=e2128]:
+                    - generic [ref=e2129]:
+                      - img "Охват" [ref=e2130]
+                      - generic "123995" [ref=e2132]: 124K
+                    - generic "Читать комментарии" [ref=e2133]:
+                      - link "Комментарии 205" [ref=e2134] [cursor=pointer]:
+                        - /url: /ru/articles/1019200/comments/
+                        - img "Комментарии" [ref=e2135]
+                        - generic [ref=e2137]: "205"
+                      - link "+205" [ref=e2138] [cursor=pointer]:
+                        - /url: /ru/articles/1019200/comments/
+                        - generic "Читать новые комментарии" [ref=e2139]: "+205"
+              - listitem [ref=e2140]:
+                - article [ref=e2141]:
+                  - heading "В Великобритании подросток решил раздеться перед Gemini Live в режиме камеры, после этого ИИ удалил все аккаунты семьи" [level=2] [ref=e2142]:
+                    - link "В Великобритании подросток решил раздеться перед Gemini Live в режиме камеры, после этого ИИ удалил все аккаунты семьи" [ref=e2143] [cursor=pointer]:
+                      - /url: /ru/news/1019406/
+                  - generic [ref=e2144]:
+                    - generic [ref=e2145]:
+                      - img "Охват" [ref=e2146]
+                      - generic "5000" [ref=e2148]: 5K
+                    - generic "Читать комментарии" [ref=e2149]:
+                      - link "Комментарии 5" [ref=e2150] [cursor=pointer]:
+                        - /url: /ru/news/1019406/comments/
+                        - img "Комментарии" [ref=e2151]
+                        - generic [ref=e2153]: "5"
+                      - link "+5" [ref=e2154] [cursor=pointer]:
+                        - /url: /ru/news/1019406/comments/
+                        - generic "Читать новые комментарии" [ref=e2155]: "+5"
+              - listitem [ref=e2156]:
+                - article [ref=e2157]:
+                  - heading "Экипаж миссии «Артемида» II на космическом корабле «Орион» преодолел больше половины пути до Луны" [level=2] [ref=e2158]:
+                    - link "Экипаж миссии «Артемида» II на космическом корабле «Орион» преодолел больше половины пути до Луны" [ref=e2159] [cursor=pointer]:
+                      - /url: /ru/news/1019382/
+                  - generic [ref=e2160]:
+                    - generic [ref=e2161]:
+                      - img "Охват" [ref=e2162]
+                      - generic "7793" [ref=e2164]: 7.8K
+                    - generic "Читать комментарии" [ref=e2165]:
+                      - link "Комментарии 14" [ref=e2166] [cursor=pointer]:
+                        - /url: /ru/news/1019382/comments/
+                        - img "Комментарии" [ref=e2167]
+                        - generic [ref=e2169]: "14"
+                      - link "+14" [ref=e2170] [cursor=pointer]:
+                        - /url: /ru/news/1019382/comments/
+                        - generic "Читать новые комментарии" [ref=e2171]: "+14"
+              - listitem [ref=e2172]:
+                - article [ref=e2173]:
+                  - heading "Экипаж лунной миссии «Артемида II» прислал первые снимки планеты Земля, сделанные с борта космического корабля «Орион»" [level=2] [ref=e2174]:
+                    - link "Экипаж лунной миссии «Артемида II» прислал первые снимки планеты Земля, сделанные с борта космического корабля «Орион»" [ref=e2175] [cursor=pointer]:
+                      - /url: /ru/news/1019156/
+                  - generic [ref=e2176]:
+                    - generic [ref=e2177]:
+                      - img "Охват" [ref=e2178]
+                      - generic "92234" [ref=e2180]: 92K
+                    - generic "Читать комментарии" [ref=e2181]:
+                      - link "Комментарии 80" [ref=e2182] [cursor=pointer]:
+                        - /url: /ru/news/1019156/comments/
+                        - img "Комментарии" [ref=e2183]
+                        - generic [ref=e2185]: "80"
+                      - link "+80" [ref=e2186] [cursor=pointer]:
+                        - /url: /ru/news/1019156/comments/
+                        - generic "Читать новые комментарии" [ref=e2187]: "+80"
+              - listitem [ref=e2188]:
+                - article [ref=e2189]:
+                  - heading "Бомж нода Meshtastic за 500 рублей" [level=2] [ref=e2190]:
+                    - link "Бомж нода Meshtastic за 500 рублей" [ref=e2191] [cursor=pointer]:
+                      - /url: /ru/articles/1019364/
+                  - generic [ref=e2192]:
+                    - generic [ref=e2193]:
+                      - img "Охват" [ref=e2194]
+                      - generic "17209" [ref=e2196]: 17K
+                    - generic "Читать комментарии" [ref=e2197]:
+                      - link "Комментарии 25" [ref=e2198] [cursor=pointer]:
+                        - /url: /ru/articles/1019364/comments/
+                        - img "Комментарии" [ref=e2199]
+                        - generic [ref=e2201]: "25"
+                      - link "+25" [ref=e2202] [cursor=pointer]:
+                        - /url: /ru/articles/1019364/comments/
+                        - generic "Читать новые комментарии" [ref=e2203]: "+25"
+              - listitem [ref=e2204]:
+                - generic [ref=e2205]:
+                  - 'link "Результаты исследования: как айтишники относятся к ИИ" [ref=e2206] [cursor=pointer]':
+                    - /url: https://effect.habr.com/a/0E6EUnOqRprLCHgsNIOi-14BseQw3raEpkXTUBwlG-68Hb_4m_HcTJLJHRxAhjUumKQC-SDCEVZ5CZlZMtUToqN8g1NDECoB99BpfV9hp0BnN9m2D_u5bgJsZlBYdZKf-J5C0sKJFAZqt5Zzgbk6VtjXYAdpTNmO
+                  - generic [ref=e2207]: Турбо
+          - generic [ref=e2209]:
+            - iframe [ref=e2222]
+            - generic [ref=e2223]:
+              - heading "Лучшие блоги" [level=2] [ref=e2226]
+              - generic [ref=e2228]:
+                - link "RUVDS.com 4042.89" [ref=e2229] [cursor=pointer]:
+                  - /url: /ru/companies/ruvds/articles/
+                  - generic [ref=e2231]: RUVDS.com
+                  - generic [ref=e2232]: "4042.89"
+                - link "Selectel 2470.02" [ref=e2233] [cursor=pointer]:
+                  - /url: /ru/companies/selectel/articles/
+                  - generic [ref=e2235]: Selectel
+                  - generic [ref=e2236]: "2470.02"
+                - link "Amnezia VPN 1997.67" [ref=e2237] [cursor=pointer]:
+                  - /url: /ru/companies/amnezia/articles/
+                  - generic [ref=e2239]: Amnezia VPN
+                  - generic [ref=e2240]: "1997.67"
+                - link "Timeweb Cloud 1887.05" [ref=e2241] [cursor=pointer]:
+                  - /url: /ru/companies/timeweb/articles/
+                  - generic [ref=e2243]: Timeweb Cloud
+                  - generic [ref=e2244]: "1887.05"
+                - link "МТС 1790" [ref=e2245] [cursor=pointer]:
+                  - /url: /ru/companies/ru_mts/articles/
+                  - generic [ref=e2247]: МТС
+                  - generic [ref=e2248]: "1790"
+                - link "Beget 1066.96" [ref=e2249] [cursor=pointer]:
+                  - /url: /ru/companies/beget/articles/
+                  - generic [ref=e2251]: Beget
+                  - generic [ref=e2252]: "1066.96"
+                - link "Яндекс 675.53" [ref=e2253] [cursor=pointer]:
+                  - /url: /ru/companies/yandex/articles/
+                  - generic [ref=e2255]: Яндекс
+                  - generic [ref=e2256]: "675.53"
+                - link "Альфа-Банк 663.14" [ref=e2257] [cursor=pointer]:
+                  - /url: /ru/companies/alfa/articles/
+                  - generic [ref=e2259]: Альфа-Банк
+                  - generic [ref=e2260]: "663.14"
+                - link "OTUS 637.73" [ref=e2261] [cursor=pointer]:
+                  - /url: /ru/companies/otus/articles/
+                  - generic [ref=e2263]: OTUS
+                  - generic [ref=e2264]: "637.73"
+                - link "Сбер 526.23" [ref=e2265] [cursor=pointer]:
+                  - /url: /ru/companies/sberbank/articles/
+                  - generic [ref=e2267]: Сбер
+                  - generic [ref=e2268]: "526.23"
+              - link "Все компании" [ref=e2270] [cursor=pointer]:
+                - /url: /ru/companies/
+          - iframe [ref=e2285]
+          - iframe [ref=e2300]
+          - iframe [ref=e2315]
+          - generic [ref=e2330]:
+            - generic:
+              - insertion
+    - generic [ref=e2333]:
+      - generic [ref=e2334]:
+        - paragraph [ref=e2335]: Ваш аккаунт
+        - list [ref=e2337]:
+          - listitem [ref=e2338]:
+            - link "Войти" [ref=e2339] [cursor=pointer]:
+              - /url: /kek/v1/auth/habrahabr/?back=/ru/feed/&hl=ru
+          - listitem [ref=e2340]:
+            - link "Регистрация" [ref=e2341] [cursor=pointer]:
+              - /url: /kek/v1/auth/habrahabr-register/?back=/ru/feed/&hl=ru
+      - generic [ref=e2342]:
+        - paragraph [ref=e2343]: Разделы
+        - list [ref=e2345]:
+          - listitem [ref=e2346]:
+            - link "Статьи" [ref=e2347] [cursor=pointer]:
+              - /url: /ru/articles/
+          - listitem [ref=e2348]:
+            - link "Новости" [ref=e2349] [cursor=pointer]:
+              - /url: /ru/news/
+          - listitem [ref=e2350]:
+            - link "Хабы" [ref=e2351] [cursor=pointer]:
+              - /url: /ru/hubs/
+          - listitem [ref=e2352]:
+            - link "Компании" [ref=e2353] [cursor=pointer]:
+              - /url: /ru/companies/
+          - listitem [ref=e2354]:
+            - link "Авторы" [ref=e2355] [cursor=pointer]:
+              - /url: /ru/users/
+          - listitem [ref=e2356]:
+            - link "Песочница" [ref=e2357] [cursor=pointer]:
+              - /url: /ru/sandbox/
+      - generic [ref=e2358]:
+        - paragraph [ref=e2359]: Информация
+        - list [ref=e2361]:
+          - listitem [ref=e2362]:
+            - link "Устройство сайта" [ref=e2363] [cursor=pointer]:
+              - /url: /ru/docs/help/
+          - listitem [ref=e2364]:
+            - link "Для авторов" [ref=e2365] [cursor=pointer]:
+              - /url: /ru/docs/authors/codex/
+          - listitem [ref=e2366]:
+            - link "Для компаний" [ref=e2367] [cursor=pointer]:
+              - /url: /ru/docs/companies/corpblogs/
+          - listitem [ref=e2368]:
+            - link "Документы" [ref=e2369] [cursor=pointer]:
+              - /url: /ru/docs/docs/transparency/
+          - listitem [ref=e2370]:
+            - link "Соглашение" [ref=e2371] [cursor=pointer]:
+              - /url: https://account.habr.com/info/agreement/?hl=ru_RU
+          - listitem [ref=e2372]:
+            - link "Конфиденциальность" [ref=e2373] [cursor=pointer]:
+              - /url: https://account.habr.com/info/confidential/?hl=ru_RU
+      - generic [ref=e2374]:
+        - paragraph [ref=e2375]: Услуги
+        - list [ref=e2377]:
+          - listitem [ref=e2378]:
+            - link "Корпоративный блог" [ref=e2379] [cursor=pointer]:
+              - /url: https://company.habr.com/ru/corporate-blogs/
+          - listitem [ref=e2380]:
+            - link "Медийная реклама" [ref=e2381] [cursor=pointer]:
+              - /url: https://company.habr.com/ru/advertising/
+          - listitem [ref=e2382]:
+            - link "Нативные проекты" [ref=e2383] [cursor=pointer]:
+              - /url: https://company.habr.com/ru/native-special/
+          - listitem [ref=e2384]:
+            - link "Образовательные программы" [ref=e2385] [cursor=pointer]:
+              - /url: https://company.habr.com/ru/education-programs/
+          - listitem [ref=e2386]:
+            - link "Стартапам" [ref=e2387] [cursor=pointer]:
+              - /url: https://company.habr.com/ru/hello-startup/
+    - generic [ref=e2390]:
+      - generic [ref=e2391]:
+        - link "VK" [ref=e2392] [cursor=pointer]:
+          - /url: https://vk.com/habr
+          - img "VK" [ref=e2393]
+        - link "Telegram" [ref=e2395] [cursor=pointer]:
+          - /url: https://telegram.me/habr_com
+          - img "Telegram" [ref=e2396]
+        - link "Youtube" [ref=e2398] [cursor=pointer]:
+          - /url: http://www.youtube.com/@Habr_com
+          - img "Youtube" [ref=e2399]
+        - link "Яндекс Дзен" [ref=e2401] [cursor=pointer]:
+          - /url: https://dzen.ru/habr
+          - img "Яндекс Дзен" [ref=e2402]
+      - button "Настройка языка" [ref=e2404] [cursor=pointer]
+      - link "Техническая поддержка" [ref=e2405] [cursor=pointer]:
+        - /url: /ru/feedback/
+      - generic [ref=e2407]:
+        - text: © 2006–2026,
+        - link "Habr" [ref=e2409] [cursor=pointer]:
+          - /url: https://company.habr.com/
+  - iframe

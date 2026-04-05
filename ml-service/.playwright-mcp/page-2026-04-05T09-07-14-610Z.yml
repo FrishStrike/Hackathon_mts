@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - link "Мобильная версия с улучшенной поддержкой озвучивания экрана." [ref=e2]
+  - generic:
+    - img
+  - generic [ref=e6]:
+    - img [ref=e8]
+    - banner [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Поиск ВКонтакте
+          - generic [ref=e17]:
+            - img [ref=e18]
+            - searchbox "Поиск ВКонтакте" [ref=e20]
+          - button "Очистить" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Очистить
+            - img [ref=e24]
+        - button "Создать страницу для бизнеса" [ref=e28] [cursor=pointer]:
+          - generic [ref=e30]: Создать страницу для бизнеса
+    - generic [ref=e35]:
+      - generic [ref=e47]:
+        - status [ref=e50]:
+          - img [ref=e51]
+          - generic [ref=e53]: Загружается...
+        - heading "Вход ВКонтакте" [level=2] [ref=e55]
+        - generic [ref=e56]: Наведите камеру устройства на QR-код
+        - link "Подробнее" [ref=e58] [cursor=pointer]:
+          - /url: https://id.vk.com/about/faq/users/registration_and_login/login/QR/20313
+          - generic [ref=e60]: Подробнее
+        - button "Войти другим способом" [ref=e61] [cursor=pointer]:
+          - generic [ref=e63]: Войти другим способом
+        - button "Создать аккаунт" [ref=e64] [cursor=pointer]:
+          - generic [ref=e66]: Создать аккаунт
+      - link "Помощь" [ref=e68] [cursor=pointer]:
+        - /url: https://id.vk.com/about/faq/users/registration_and_login/login?utm_source=auth_help_web2&utm_medium=organic&utm_content=init-START_QR_PAGE
+        - generic [ref=e69]: Помощь
+    - generic [ref=e73]:
+      - generic [ref=e75]:
+        - link "ВКонтакте © 2006–2026" [ref=e77] [cursor=pointer]:
+          - /url: /about
+        - button "Информация о контенте" [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]:
+            - img [ref=e81]
+            - text: Информация о контенте
+        - link "Правила" [ref=e84] [cursor=pointer]:
+          - /url: /terms
+        - link "Узнать больше о VK ID" [ref=e86] [cursor=pointer]:
+          - /url: https://id.vk.com/about/id
+      - generic [ref=e88]:
+        - link "VK Реклама" [ref=e90] [cursor=pointer]:
+          - /url: https://ads.vk.com/promo/firstbonus
+        - link "Разработчикам" [ref=e92] [cursor=pointer]:
+          - /url: https://dev.vk.com/
+      - link "Русский" [ref=e96] [cursor=pointer]:
+        - /url: "#"
